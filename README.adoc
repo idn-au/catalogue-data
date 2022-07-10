@@ -4,16 +4,15 @@ This repository contains the data of the https://mspgh.unimelb.edu.au/centres-in
 
 The IDN is producing a catalogue of Australian datasets with varying levels of indigenous relevance to demonstrate several aspects of indigenous data governance, sovereignty and how to even rate the "indigenous-ness" of data in the first place.
 
-This repository only contains the bare data files of the catalogue, not the catalogue's system code. The catalogue data is dataset metadata formulated according to the _IDN metadata profile_ of https://www.w3.org/TR/vocab-dcat/[DCAT] which is a data cataloguing standard. Individual metadata records are stored in the `catalogue/` folder of this repository, named with each record's Persistent Identifier. The data files are both human- and machine-readable and the catalogue tool reads these files, joins them to background details (models, vocabularies etc) and presents them online in pleasent HTML (web pages) and (will) also give https://force11.org/info/the-fair-data-principles/[FAIR], https://www.gida-global.org/care[CARE] and https://localcontexts.org/labels/traditional-knowledge-labels/[TK Label] ratings/assessments of them, based on their medata and mappings that the IDN have created.
+This repository only contains the bare data files of the catalogue, not the catalogue's system code. The catalogue data is dataset metadata formulated according to the _IDN metadata profile_ of https://www.w3.org/TR/vocab-dcat/[DCAT] which is a data cataloguing standard. Individual metadata records are stored in the `data/` folder of this repository, named with each record's Persistent Identifier. The data files are both human- and machine-readable and the catalogue tool reads these files, joins them to background details (models, vocabularies etc) and presents them online in pleasent HTML (web pages) and (will) also give https://force11.org/info/the-fair-data-principles/[FAIR], https://www.gida-global.org/care[CARE] and https://localcontexts.org/labels/traditional-knowledge-labels/[TK Label] ratings/assessments of them, based on their medata and mappings that the IDN have created.
 
 NOTE: _The catalogue for this data is not yet operational!_
-
-
 
 
 == License & Rights
 
 The contents of this repository is licensed under Creative Commons 4.0 International. See the LICENSE file in the repository for details.
+
 
 == Contacts
 
