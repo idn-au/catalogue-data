@@ -11,7 +11,7 @@ A simple listing of the assets in this repository are:
 * `data/` folder
 ** contains metadata records for the catalogue
 * `background/` folder within `data/`
-** contains further subfolders for ontologies & vocabularies to be joined with the data for catalogue display
+** contains further subfolders for `ontologies/` & `vocabularies/` to be joined with the data for catalogue display
 
 NOTE: _The catalogue for this data is not yet operational!_
 
