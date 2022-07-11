@@ -6,6 +6,13 @@ The IDN is producing a catalogue of Australian datasets with varying levels of i
 
 This repository only contains the bare data files of the catalogue, not the catalogue's system code. The catalogue data is dataset metadata formulated according to the _IDN metadata profile_ of https://www.w3.org/TR/vocab-dcat/[DCAT] which is a data cataloguing standard. Individual metadata records are stored in the `data/` folder of this repository, named with each record's Persistent Identifier. The data files are both human- and machine-readable and the catalogue tool reads these files, joins them to background details (models, vocabularies etc) and presents them online in pleasent HTML (web pages) and (will) also give https://force11.org/info/the-fair-data-principles/[FAIR], https://www.gida-global.org/care[CARE] and https://localcontexts.org/labels/traditional-knowledge-labels/[TK Label] ratings/assessments of them, based on their medata and mappings that the IDN have created.
 
+A simple listing of the assets in this repository are:
+
+* `data/` folder
+** contains metadata records for the catalogue
+* `background/` folder within `data/`
+** contains further subfolders for ontologies & vocabularies to be joined with the data for catalogue display
+
 NOTE: _The catalogue for this data is not yet operational!_
 
 
@@ -20,7 +27,7 @@ Initial technical development of this work is being undertaken by the following,
 
 **Nicholas J. Car** +
 *Data Architect* +
-<nick@kurrawong.net>  
+nick@kurrawong.net  
 
 **Sandra Silcot** +
 *Analyst* +
