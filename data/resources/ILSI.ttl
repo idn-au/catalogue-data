@@ -8,7 +8,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a dcat:Dataset ;
     dcterms:accessRights "Metadata only access" ;
     dcterms:description "Land that is owned or managed by Australia’s Indigenous communities, or over which Indigenous people have use and rights, was compiled from information supplied by Australian, state and territory governments and other statutory authorities with Indigenous land and sea management interests."@en ;
-    dcterms:identifier ""^^xsd:token ;
+    dcterms:identifier "ILSI"^^xsd:token ;
     dcterms:issued "2019-04-03"^^xsd:date ;
     dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
     dcterms:rights "All Rights (including copyright) CSIRO, Australian Government Department of Environment, Geoscience Australia 2016." ;
@@ -31,3 +31,5 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
             prov:agent <https://linked.data.gov.au/org/au>
         ] ;
 .
+
+<https://linked.data.gov.au/dataset/idndc> dcterms:hasPart <https://doi.org/10.25919/5c36dcc0956a4> .

@@ -46,3 +46,5 @@ This dataset is NOT a complete listing of all locations at which indigenous peop
         ] ;
 .
 
+<https://linked.data.gov.au/dataset/idndc> dcterms:hasPart <https://data.gov.au/data/dataset/34b1c164-fbe8-44a0-84fd-467dba645aa7> .
+
