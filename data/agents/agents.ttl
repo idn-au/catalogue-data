@@ -1,0 +1,33 @@
+PREFIX idn: <https://linked.data.gov.au/sataset/idn/>
+PREFIX idncp: <https://linked.data.gov.au/def/idncp/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX sdo: <https://schema.org>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/org/au>
+    a sdo:Organization ;
+    sdo:name "Australian Federal Government" ;
+    sdo:url "https://www.australia.gov.au"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/sa>
+    a sdo:Organization ;
+    prov:wasDeriveFrom <https://linked.data.gov.au/org/dhs> ;
+    sdo:name "Services Australia" ;
+    sdo:url "https://www.servicesaustralia.gov.au"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/dhs>
+    a sdo:Organization ;
+    sdo:identifier
+        "O-000880"^^idncp:agorId ,
+        "CA-7853"^^idncp:crsId ;
+    sdo:name "Department of Human Services" ;
+    sdo:url "https://www.humanservices.gov.au"^^xsd:anyURI ;
+.
+
+idn:agilwg
+    a sdo:Organization ;
+    sdo:name "Australian Government Indigenous Locations Working Group 2007-2012" ;
+    sdo:parentOrganization <https://linked.data.gov.au/org/au> ; # TODO: Find a better parent
+.

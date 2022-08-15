@@ -16,10 +16,13 @@ cs:
     dcterms:created "2022-06-11"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/idn> ;
     dcterms:identifier "rolecodes"^^xsd:token ;
-    dcterms:issued "2000-01-01"^^xsd:date ;
-    dcterms:modified "2022-06-11"^^xsd:date ;
+    dcterms:issued "2022-07-18"^^xsd:date ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    dcterms:modified "2022-07-18"^^xsd:date ;
     dcterms:provenance "Derived from the ISO 19115's CI Role Code vocabulary"@en ;
     dcterms:publisher <https://linked.data.gov.au/org/idn> ;
+    dcterms:rights "(c) Indigenous Data Network, 2022" ;
+    dcterms:source "http://iso.kurrawong.net/vocab/CI_RoleCode"^^xsd:anyURI ;
     skos:definition "The Indigenous Data Network's vocabulary of the types of roles Agents - People and Organisations - play in relation to data."@en ;
     skos:hasTopConcept
         iso:author ,

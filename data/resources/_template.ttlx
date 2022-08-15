@@ -1,0 +1,39 @@
+PREFIX idn: <https://linked.data.gov.au/sataset/idn/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX role: <https://linked.data.gov.au/def/idn-role-codes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<>
+    a dcat:Dataset ;
+    dcat:distribution [
+            dcat:accessURL ""^^xsd:anyURI
+        ] ;
+    dcat:theme <> ;
+    dcterms:accessRights "Open access" ;  # TODO: vocabularise this
+    dcterms:description """"""@en ;
+    dcterms:identifier ""^^xsd:token ;
+    dcterms:issued ""^^xsd:date ;
+    dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
+    dcterms:rights "All Rights (including copyright) CSIRO, Australian Government Department of Environment, Geoscience Australia 2016." ;
+    dcterms:spatial <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;  # Australia
+    dcterms:temporal [
+            prov:endedAtTime ""^^xsd:gYear ;
+            prov:startedAtTime ""^^xsd:gYear
+        ] ;
+    dcterms:title "" ;
+    prov:qualifiedAttribution [
+            dcat:hadRole role: ;
+            prov:agent <> ;
+        ] ,
+        [
+            dcat:hadRole role: ;
+            prov:agent <> ;
+        ] ,
+        [
+            dcat:hadRole role:rightsHolder ;
+            prov:agent <https://linked.data.gov.au/org/au> ;
+        ] ;
+.
+

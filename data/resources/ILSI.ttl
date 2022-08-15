@@ -1,0 +1,33 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX role: <https://linked.data.gov.au/def/idn-role-codes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://doi.org/10.25919/5c36dcc0956a4>
+    a dcat:Dataset ;
+    dcterms:accessRights "Metadata only access" ;
+    dcterms:description "Land that is owned or managed by Australia’s Indigenous communities, or over which Indigenous people have use and rights, was compiled from information supplied by Australian, state and territory governments and other statutory authorities with Indigenous land and sea management interests."@en ;
+    dcterms:identifier ""^^xsd:token ;
+    dcterms:issued "2019-04-03"^^xsd:date ;
+    dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
+    dcterms:rights "All Rights (including copyright) CSIRO, Australian Government Department of Environment, Geoscience Australia 2016." ;
+    dcterms:spatial <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;
+    dcterms:temporal [
+            prov:endedAtTime "2016"^^xsd:gYear ;
+            prov:startedAtTime "2016"^^xsd:gYear
+        ] ;
+    dcterms:title "Indigenous Land and Sea Interests" ;
+    dcat:distribution [
+            dcat:accessURL ""^^xsd:anyURI
+        ] ;
+    prov:qualifiedAttribution
+        [
+            dcat:hadRole role:custodian ;
+            prov:agent <https://linked.data.gov.au/org/csiro>
+        ] ,
+        [
+            dcat:hadRole role:rightsHolder ;
+            prov:agent <https://linked.data.gov.au/org/au>
+        ] ;
+.

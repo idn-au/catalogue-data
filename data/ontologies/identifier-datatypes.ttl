@@ -1,0 +1,19 @@
+PREFIX : <https://linked.data.gov.au/def/idncp>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:agorId
+    a rdfs:Datatype ;
+    rdfs:label "AGOR ID" ;
+    rdfs:comment "The identifier for the Agent in the Department of Finance's AGOR database" ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf xsd:token ;
+.
+
+:crsId
+    a rdfs:Datatype ;
+    rdfs:label "CRS ID" ;
+    rdfs:comment "The identifier for the Agent in the National Archives of Australia's Commonwealth Record Series database" ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf xsd:token ;
+.
