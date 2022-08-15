@@ -1,6 +1,17 @@
 PREFIX : <https://linked.data.gov.au/def/idncp>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+:abnId
+    a rdfs:Datatype ;
+    rdfs:label "Australian Business Number"
+    skos:altLabel "ABN" ;
+    rdfs:comment "The identifier issued by the Australian Business Register (https://abr.business.gov.au)" ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf xsd:token ;
+.
 
 :agorId
     a rdfs:Datatype ;
