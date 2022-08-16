@@ -23,6 +23,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sdo:name "Kurrawong AI" ;
     sdo:description "Kurrawong AI is a small, Artificial Intelligence, company in Australia specialising in Knowledge Graphs." ;
     sdo:url "https://kurrawong.net"^^xsd:anyURI ;
+    sdo:identifier "31 353 542 036"^^idncp:abnId ;
 .
 
 <https://linked.data.gov.au/org/au>
