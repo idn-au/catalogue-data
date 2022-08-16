@@ -28,3 +28,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy : ;
     rdfs:subClassOf xsd:token ;
 .
+
+:icnId
+    a rdfs:Datatype ;
+    rdfs:label "Indigenous Corporation Number" ;
+    rdfs:comment "The identifier issued by the Registrar of Indigenous Corporations appointed by the Minister for Indigenous Affairs" ;
+    rdfs:isDefinedBy : ;
+    rdfs:subClassOf xsd:token ;
+.
