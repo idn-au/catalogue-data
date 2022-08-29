@@ -1,0 +1,19 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/dataset/idnc/TLCMap>
+    a dcat:Resource ;
+    dcterms:description """TLCMap is a set of tools that work together for mapping Australian history and culture.
+
+Note that historical placenames in TLCmap is a HASS-I integration activity.""" ;
+    dcterms:identifier "TLCMap"^^xsd:token ;
+    dcterms:title "Time Layered Cultural Map of Australia" ;
+    prov:qualifiedAttribution [
+            dcat:hadRole iso:custodian ;
+            prov:agent "University of Newcastle"
+        ] ;
+.
+

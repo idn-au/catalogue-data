@@ -1,0 +1,48 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX ex: <https://example.com/>
+PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://www.environment.gov.au/fed/catalog/search/resource/downloadData.page?uuid=%7BC64658F0-95AD-4209-8D1E-F94BD0A4E827%7D>
+    a dcat:Resource ;
+    dcterms:description """This dataset details the Dedicated Indigenous Protected Areas (IPA) across Australia through the implementation of the Indigenous Protected Areas Programme. These boundaries are not legally binding.
+An Indigenous Protected Area (IPA) is an area of Indigenous-owned land or sea where traditional Indigenous owners have entered into an agreement with the Australian Government to promote biodiversity and cultural resource conservation- making up over over half of Australia's National Reserve System.
+
+Further information can be found at the website below.
+
+https://www.awe.gov.au/agriculture-land/land/indigenous-protected-areas""" ;
+    dcterms:format "ArcView Shapefile, zip" ;
+    dcterms:identifier "PARKSSDE"^^xsd:token ;
+    dcterms:issued "2201-01-01"^^xsd:date ;
+    dcterms:license "Other rights" ;
+    dcterms:rights "(C) Commonwealth of Australia" ;
+    dcterms:spatial <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;
+    dcterms:temporal "01-08-2006 to 20-06-2022" ;
+    dcterms:title "Indigenous Protected Areas (IPA) - Dedicated" ;
+    dcterms:type "dataset" ;
+    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights> ;
+    dcat:accessURL "https://www.environment.gov.au/fed/catalog/search/resource/details.page?uuid=%7BC64658F0-95AD-4209-8D1E-F94BD0A4E827%7D"^^xsd:anyURI ;
+    dcat:theme
+        <https://linked.data.gov.au/def/idn-th/place> ,
+        <https://linked.data.gov.au/def/indigeneity/about-indigenous-things> ;
+    prov:qualifiedAttribution
+        [
+            dcat:hadRole iso:custodian ;
+            prov:agent "Department of Environment"
+        ] ,
+        [
+            dcat:hadRole iso:originator ;
+            prov:agent "AWE"
+        ] ,
+        [
+            dcat:hadRole iso:rightsHolder ;
+            prov:agent "Australian Government"
+        ] ;
+    ex:home "http://www.environment.gov.au/fed/catalog/main/home.page" ;
+    ex:notes """CreativeCommons Attribution 3.0 Australia License
+
+When using this dataset for analysis or mapping you must always acknowledge the National Indigenous Australians Agency and the Department of Climate Change, Energy, the Environment and Water © Department of Climate Change, Energy, the Environment and Water and National Indigenous Australians Agency, 2022.""" ;
+.
+

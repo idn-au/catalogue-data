@@ -1,0 +1,22 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX ex: <https://example.com/>
+PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/dataset/idnc/IREKEP>
+    a dcat:Resource ;
+    dcterms:description """Various projects from $10 million Indigenous Research Fund administered by AIATSIS.
+A number of projects are described p13-15 here.
+One might expect a number of these would give rise to relevant data collections and information on methods.
+Each of these projects should be catalogued? Or not?""" ;
+    dcterms:identifier "IREKEP"^^xsd:token ;
+    dcterms:title "Indigenous Research Exchange/Knowledge Exchange Platform" ;
+    prov:qualifiedAttribution [
+            dcat:hadRole iso:custodian ;
+            prov:agent <https://linked.data.gov.au/org/aiatsis>
+        ] ;
+    ex:notes "Known as Yumi Sabe - shown below" ;
+.
+

@@ -1,0 +1,25 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX ex: <https://example.com/>
+PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/dataset/idnc/NTEHP>
+    a dcat:Resource ;
+    dcterms:description "This comprises records of about 70,000 Indigenous and 30,000 non-Indigenous people surveyed in the 1970s and 1980s. Some paper records are held at AIATSIS. Microfilms of others are at UNSW Archives. There have been preliminary discussions with AIATSIS, the National Library and former members of the Hollows team about a program to digitise the records. IDN staff/resources would be needed." ;
+    dcterms:identifier "NTEHP"^^xsd:token ;
+    dcterms:title "The Fred Hollows Archive (National Trachoma and Eye Health Program)" ;
+    prov:qualifiedAttribution [
+            dcat:hadRole iso:custodian ;
+            prov:agent "AIATSIS, UNSW Archives"
+        ] ;
+    ex:notes """I met with AIATSIS staff on 23 March 2021 to discuss the HTEHP data: Kylie Moloney, the acting manager of manuscripts; Cathryn Zdanowicz, archivist, and Daryl Ciobal and Gregory Oakes from the digitisation section. Cathy advised that they hold 39 boxes of patient cards, each with about 750-900 cards - say 30 to 35,000 cards in all, from Queensland, NT and WA for the period 1976-1979. The records have not been processed by AIATSIS. These records are for children only. (Microfiche of the adult records, and other NTEHP material, are believed to be with Fred Hollows' papers at the UNSW Archives). They are A4 cardboard carbon copies. The originals went to the communities. Data includes unique ID numbers, name, parents' names, address, place of examination and test results.
+
+Kylie said she would prepare a paper outlining what will be involved in processing, conserving and digitising their records - but nothing has happened.
+
+The AIATSIS digitisation group said they will use this as an opportunity to trial a new system which embeds metadata at the same time as digital capture.
+
+I have consulted with Kalinda about accessing the UNSW Archives and reviewing their NTEHP records.""" ;
+.
+

@@ -1,0 +1,24 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/dataset/idnc/IRC18>
+    a dcat:Resource ;
+    dcterms:description "Printed catalog highlighting ANU Indigenous Research activities at the time of publication" ;
+    dcterms:identifier "IRC18"^^xsd:token ;
+    dcterms:license "All Rights Reserved" ;
+    dcterms:title "Indigenous Research Compendium 2018" ;
+    dcterms:type "collection" ;
+    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights/restricted> ;
+    dcat:accessURL "https://www.google.com/url?q=https://anu365.sharepoint.com/:x:/r/sites/IDC/_layouts/15/Doc.aspx?sourcedoc%3D%257B6CA7BAF9-BE1C-4350-B35A-FE08F923BF5A%257D%26file%3DANU%2520Compendium.xlsx%26action%3Ddefault%26mobileredirect%3Dtrue&sa=D&source=editors&ust=1661738938046846&usg=AOvVaw3E6JsngTSKrHeVUlHistkw"^^xsd:anyURI ;
+    dcat:theme
+        <https://linked.data.gov.au/def/idn-th/subject> ,
+        <https://linked.data.gov.au/def/indigeneity/about-indigenous-things> ;
+    prov:qualifiedAttribution [
+            dcat:hadRole iso:custodian ;
+            prov:agent "ANU Executive"
+        ] ;
+.
+

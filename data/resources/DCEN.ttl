@@ -1,0 +1,41 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX ex: <https://example.com/>
+PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://www.data.qld.gov.au/dataset/correspondence-relating-to-aboriginal-and-torres-strait-islander-people-deebing-creek>
+    a dcat:Resource ;
+    dcterms:description "The Deebing Creek mission was founded by the Aboriginal Protection Society of Ipswich. Work started on the establishment of an Aboriginal mission at Deebing Creek around 1887. The correspondence records of the Home Secretary’s Office, Chief Protector of Aboriginals and the Southern Protector of Aboriginals Offices are a valuable source of information relating to Deebing Creek." ;
+    dcterms:format "csv" ;
+    dcterms:identifier "DCEN"^^xsd:token ;
+    dcterms:issued "2501-01-01"^^xsd:date ;
+    dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
+    dcterms:rights "© The State of Queensland 1995-2022" ;
+    dcterms:spatial "Ipswich area" ;
+    dcterms:temporal "1894  - 1915" ;
+    dcterms:title "Correspondence relating to Aboriginal and Torres Strait Islander people - Deebing Creek explanatory notes" ;
+    dcterms:type "Dataset" ;
+    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights> ;
+    dcat:accessURL "https://www.data.qld.gov.au/dataset/correspondence-relating-to-aboriginal-and-torres-strait-islander-people-deebing-creek/resource/21b98a5e-9d9a-4795-9693-faac505c7e0c"^^xsd:anyURI ;
+    dcat:theme
+        <https://linked.data.gov.au/def/idn-th/subject> ,
+        <https://linked.data.gov.au/def/indigeneity/about-indigenous-people> ;
+    prov:qualifiedAttribution
+        [
+            dcat:hadRole iso:originator ;
+            prov:agent "Qld Department of Seniors, Disability Services and Aboriginal and Torres Strait Islander Partnerships"
+        ] ,
+        [
+            dcat:hadRole iso:rightsHolder ;
+            prov:agent "The State of Queensland"
+        ] ,
+        [
+            dcat:hadRole iso:custodian ;
+            prov:agent "Qld Department of Seniors, Disability Services and Aboriginal and Torres Strait Islander Partnerships"
+        ] ;
+    ex:home "https://www.data.qld.gov.au/dataset/correspondence-relating-to-aboriginal-and-torres-strait-islander-people-deebing-creek" ;
+    ex:notes "This is an index to paper documents available in the Qld State Library" ;
+.
+

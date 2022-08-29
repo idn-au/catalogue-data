@@ -1,0 +1,50 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX ex: <https://example.com/>
+PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/dataset/idnc/NCIG>
+    a dcat:Resource ;
+    dcterms:description """We are making a national resource for Indigenous health and heritage, which is based on our collection of biological samples, genome data and documents from Indigenous communities in many parts of Australia. You can find out more about NCIG and its collections at ncig.anu.edu.au.
+
+Information in these collections tells two kinds of stories.
+
+We are working with Indigenous communities to decide how to tell the stories of the people who are represented in the collection. We do not make personal information available, but the website lets you know what collections we have and how to contact us if you want to know more.
+
+There is also the story about how the collection was made and how it can be useful to researchers and other people.
+
+This website helps to tell this second story by making some records and documents from the collection openly available. There is information about the people who collected the samples and made the records, why they carried out their studies, the places they visited and some of the results of their studies.""" ;
+    dcterms:identifier "NCIG"^^xsd:token ;
+    dcterms:issued "2015-01-01"^^xsd:date ;
+    dcterms:license "CC-BY-SA" ;
+    dcterms:rights """Published by the National Centre for Indigenous Genomics, 2015
+http://www.ncig-ihhr.anu.edu.au/index.html""" ;
+    dcterms:spatial <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;
+    dcterms:title "National Centre for Indigenous Genomics data" ;
+    dcterms:type "collection" ;
+    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights/conditional> ;
+    dcat:accessURL "https://ncig-ihhr.anu.edu.au/browse.html"^^xsd:anyURI ;
+    dcat:theme
+        <https://linked.data.gov.au/def/idn-th/subject> ,
+        <https://linked.data.gov.au/def/indigeneity/about-indigenous-people> ;
+    prov:qualifiedAttribution
+        [
+            dcat:hadRole iso:originator ;
+            prov:agent "National Centre for Indigenous Genomics"
+        ] ,
+        [
+            dcat:hadRole iso:rightsHolder ;
+            prov:agent "National Centre for Indigenous Genomics"
+        ] ,
+        [
+            dcat:hadRole iso:custodian ;
+            prov:agent "NATIONAL CENTRE FOR INDIGENOUS GENOMICS"
+        ] ;
+    ex:home "https://ncig-ihhr.anu.edu.au" ;
+    ex:notes """National Centre for Indigenous Genomics consists of 132 entries with references to 295 archival/heritage resources, 192 published resources, and 1930 digital objects.
+
+Some objects are accessible, others are metadata only""" ;
+.
+

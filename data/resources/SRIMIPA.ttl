@@ -1,0 +1,41 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX ex: <https://example.com/>
+PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/dataset/idnc/SRIMIPA>
+    a dcat:Resource ;
+    dcterms:description "The Minyumai Indigenous Protected Areas (IPA) has provided an opportunity for the Bandjalang clan to re-engage with culture and language through country. Through land and fire management work, Bandjalang traditional owners have seen the restoration of native plants and animals that were thought to have been lost. Their return serves as a powerful reminder of the resilience of the Bandjalang people and enables them to better understand themselves, their culture, and their place in the world. The IPA programme has demonstrated successes across a broad range of outcome areas, effectively overcoming barriers to addressing Indigenous disadvantage and engaging Indigenous Australians in meaningful employment to achieve large scale conservation outcomes, thus aligning the interests of Indigenous Australians and the broader community." ;
+    dcterms:format "PDF, Doc" ;
+    dcterms:identifier "SRIMIPA"^^xsd:token ;
+    dcterms:issued "0601-01-01"^^xsd:date ;
+    dcterms:license "All Rights Reserved" ;
+    dcterms:rights "This information is confidential and was prepared by SVA Consulting solely for the use of our client, it is not to be relied on by any third party without prior consent." ;
+    dcterms:spatial "Tabbimoble" ;
+    dcterms:temporal "July 2011 - July 2015" ;
+    dcterms:title "Social Return on Investment analysis of the Minyumai Indigenous Protected Area" ;
+    dcterms:type "Document" ;
+    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights/conditional> ;
+    dcat:accessURL "https://www.niaa.gov.au/resource-centre/indigenous-affairs/social-return-investment-analysis-minyumai-indigenous-protected-area"^^xsd:anyURI ;
+    dcat:theme
+        <https://linked.data.gov.au/def/idn-th/subject> ,
+        <https://linked.data.gov.au/def/indigeneity/about-indigenous-people> ;
+    prov:qualifiedAttribution
+        [
+            dcat:hadRole iso:rightsHolder ;
+            prov:agent "SVA Consulting"
+        ] ,
+        [
+            dcat:hadRole iso:custodian ;
+            prov:agent <https://linked.data.gov.au/org/niaa>
+        ] ,
+        [
+            dcat:hadRole iso:originator ;
+            prov:agent <https://linked.data.gov.au/org/niaa>
+        ] ;
+    ex:notes """Minyumai is a 2,164 hectare freehold property of largely uncleared native forest, woodland and wetland habitats on the far north coast of NSW. The IPA was declared in August 2011 and is managed under the International Union for Conservation of Nature (IUCN) Categories IV and VI as a protected area managed mainly for conservation through management intervention and for the sustainable use of natural ecosystems.
+Minyumai has been managed by the Bandjalang clan for tens of thousands of years. The land was formerly wetlands and the main route between coastal and inland camp sites. Indeed, the term Minyumai means 'main camp'.""" ;
+.
+

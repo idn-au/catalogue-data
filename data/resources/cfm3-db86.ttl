@@ -1,0 +1,48 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX ex: <https://example.com/>
+PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://doi.org/10.25814/cfm3-db86>
+    a dcat:Resource ;
+    dcterms:description "The Australia's Indigenous land and forest estate (2020) is a continental spatial dataset that identifies and reports separately the individual attributes of Australia's Indigenous estate, namely the extent of land and forest over which Indigenous peoples and communities have ownership, management and co-management, or other special rights." ;
+    dcterms:format "GIS files in ESRI software: Raster and GeoTIFF" ;
+    dcterms:identifier "cfm3-db86"^^xsd:token ;
+    dcterms:issued "0301-01-01"^^xsd:date ;
+    dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
+    dcterms:rights """Australian Bureau of Agricultural and Resource Economics and Sciences, Australia’s Indigenous land and forest estate (2020), Australian Bureau of
+Agricultural and Resource Economics and Sciences, Canberra, June, 2022.""" ;
+    dcterms:spatial <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;
+    dcterms:temporal "2020" ;
+    dcterms:title "Australia's Indigenous land and forest estate (2020)" ;
+    dcterms:type "Datasets" ;
+    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights> ;
+    dcat:accessURL "https://www.agriculture.gov.au/abares/forestsaustralia/forest-data-maps-and-tools/spatial-data/indigenous-land-and-forest#:~:text=The%20Australia's%20Indigenous%20land%20and,management%20and%20co%2Dmanagement%2C%20or"^^xsd:anyURI ;
+    dcat:theme
+        <https://linked.data.gov.au/def/idn-th/place> ,
+        <https://linked.data.gov.au/def/indigeneity/about-indigenous-things> ;
+    prov:qualifiedAttribution
+        [
+            dcat:hadRole iso:originator ;
+            prov:agent <https://linked.data.gov.au/org/abares>
+        ] ,
+        [
+            dcat:hadRole iso:custodian ;
+            prov:agent <https://linked.data.gov.au/org/abares>
+        ] ,
+        [
+            dcat:hadRole iso:rightsHolder ;
+            prov:agent "Commonwealth of Australia"
+        ] ;
+    ex:notes """The following attributes are applied in this dataset:
+Indigenous owned: Freehold land or forest that is owned by Indigenous communities, or land and forest for which ownership is vested through other mechanisms.
+Indigenous managed: Land or forest that is managed by Indigenous communities.
+Indigenous co-managed: Land or forest that has formal, legally binding agreements in place to include input from Indigenous people in the process of developing and implementing a management plan.
+Other special rights: Land or forest subject to native title determinations, registered Indigenous Land Use Agreements and legislated special cultural use provisions.
+In this dataset, the attributes of Indigenous ownership, Indigenous management or co-management, and other special rights are applied separately. The dataset structure therefore differs from Indigenous estate datasets published by ABARES in 2018 or earlier.
+
+This is not in the main ABARES data catalogue: https://data.agriculture.gov.au/geonetwork""" ;
+.
+

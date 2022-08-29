@@ -1,0 +1,14 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://www.catalog.slsa.sa.gov.au/record=b2187904~S10>
+    a dcat:Resource ;
+    dcterms:description """Aboriginal and Torres Strait Islander collections, including the Mountford-Sheard Collection INDIGENOUS COLLECTIONS
+The State Library has a significant and developing amount of specialist material relating to Aboriginal and Torres Strait Islander people including the Mountford-Sheard Collection.
+The papers of the Mountford-Sheard Collection which comprise an extensive collection of Charles P. Mountford's expedition journals, photographs, film, sound recordings, artworks, objects and research. The papers were compiled with the assistance and encouragement of friend and colleague Harold L Sheard. Mountford developed his appreciation of Australian Aboriginal people and their customs, beliefs and art over many years of expeditions, making it his life's work.""" ;
+    dcterms:identifier "SAMSC"^^xsd:token ;
+    dcterms:temporal "1907-1976" ;
+    dcterms:title "Mountford-Sheard Collection" ;
+.
+

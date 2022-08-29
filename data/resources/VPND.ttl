@@ -1,0 +1,42 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX ex: <https://example.com/>
+PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/dataset/idnc/VPND>
+    a dcat:Resource ;
+    dcterms:description """The Victorian Perinatal Data Collection (VPDC) is a population-based surveillance system that collects for analysis comprehensive information on the health of mothers and babies, in order to contribute to improvements in their health.
+
+The VPDC contains information on obstetric conditions, procedures and outcomes, neonatal morbidity and congenital anomalies relating to every birth in Victoria.
+
+This data is reported annually to the AIHW as part of the National Perinatal Data Collection managed by the AIHW. The AIHW produces the annual report Australia’s mothers and babies, using the National Perinatal Data Collection and other data.""" ;
+    dcterms:identifier "VPND"^^xsd:token ;
+    dcterms:issued "2022-01-07"^^xsd:date ;
+    dcterms:license "All Rights Reserved" ;
+    dcterms:rights "© State of Victoria 2021" ;
+    dcterms:spatial <https://linked.data.gov.au/dataset/asgsed3/STE/2> ;
+    dcterms:temporal "2019-2022" ;
+    dcterms:title "The Victorian Perinatal database." ;
+    dcterms:type "collection" ;
+    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights/restricted> ;
+    prov:qualifiedAttribution
+        [
+            dcat:hadRole iso:custodian ;
+            prov:agent "VicHealth"
+        ] ,
+        [
+            dcat:hadRole iso:rightsHolder ;
+            prov:agent "Victorian Department of Health"
+        ] ,
+        [
+            dcat:hadRole iso:originator ;
+            prov:agent "Victorian Department of Health"
+        ] ;
+    ex:notes """I only know the general situation. Jane Freemantle is across it. Negotiation needed with VicHealth.
+hdss.helpdesk@health.vic.gov.au
+
+Data is aggregated into a national dataset by the AIHW""" ;
+.
+

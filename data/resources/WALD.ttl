@@ -1,0 +1,13 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/dataset/idnc/WALD>
+    a dcat:Resource ;
+    dcterms:description """This was nominated by Sandra Eades. Investigation, documentation and negotiation needed.
+
+https://www.datalinkage-wa.org.au/dlb-services/derived-indigenous-status-flag/ ?""" ;
+    dcterms:identifier "WALD"^^xsd:token ;
+    dcterms:title "Western Australia Linked Data" ;
+.
+

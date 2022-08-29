@@ -1,0 +1,43 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX ex: <https://example.com/>
+PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/dataset/idnc/MAYIK>
+    a dcat:Resource ;
+    dcterms:description """The Mayi Kuwayu Study looks at how Aboriginal and Torres Strait Islander wellbeing is linked to things like connection to country, cultural practices, spirituality and language use.
+Our research team follows a large number of Aboriginal and Torres Strait Islander people and asks about their culture and wellbeing. As a longitudinal study, we are surveying people and then ask them to take the same survey every few years, so that we can understand what influences changes over time.
+This is the first time a national study of this type has been done and will provide an evidence base to allow for the creation of better policies and programs.
+This study has been created by and for Aboriginal and Torres Strait Islander people. It is an Aboriginal and Torres Strait Islander controlled research resource.
+The Mayi Kuwayu team are experienced at working closely with communities across Australia, and the study has majority Aboriginal and Torres Strait Islander staffing and study governance (decision making) structure.""" ;
+    dcterms:identifier "MAYIK"^^xsd:token ;
+    dcterms:issued "2018-01-01"^^xsd:date ;
+    dcterms:license "All Rights Reserved" ;
+    dcterms:rights "© 2022 Mayi Kuwayu National Study of Aboriginal and Torres Strait Islander Wellbeing - ANU. All Rights Reserved." ;
+    dcterms:spatial <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;
+    dcterms:temporal "2014 - current" ;
+    dcterms:title "The National Study of Aboriginal and Torres Strait Islander Wellbeing" ;
+    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights/restricted> ;
+    dcat:accessURL "https://mkstudy.com.au/dataapplicationprocess/"^^xsd:anyURI ;
+    dcat:theme
+        <https://linked.data.gov.au/def/idn-th/subject> ,
+        <https://linked.data.gov.au/def/indigeneity/about-indigenous-people> ;
+    prov:qualifiedAttribution
+        [
+            dcat:hadRole iso:rightsHolder ;
+            prov:agent "Mayi Kuwayu - ANU"
+        ] ,
+        [
+            dcat:hadRole iso:originator ;
+            prov:agent "Mayi Kuwayu - ANU"
+        ] ,
+        [
+            dcat:hadRole iso:custodian ;
+            prov:agent "NATIONAL CENTRE FOR EPIDEMIOLOGY AND POPULATION HEALTH"
+        ] ;
+    ex:home "https://mkstudy.com.au/" ;
+    ex:notes "Longitudinal dataset?" ;
+.
+

@@ -1,0 +1,46 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX ex: <https://example.com/>
+PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/dataset/idnc/RIIC>
+    a dcat:Resource ;
+    dcterms:description """Aboriginal and Torres Strait Islander people are the Indigenous people of Australia. They are not one group, but comprise hundreds of groups that have their own distinct set of languages, histories and cultural traditions.
+
+AIHW reports and other products include information about Indigenous Australians, where data quality permits. Thus, information and statistics about Indigenous Australians can be found in most AIHW products.
+
+In December 2021, AIHW released the Regional Insights for Indigenous Communities (RIFIC). The aim of this website is to provide access to data at a regional level, to help communities set their priorities and participate in joint planning with government and service providers.
+
+AIHW products that focus specifically on Indigenous Australians are captured on this page.""" ;
+    dcterms:format "xlsx" ;
+    dcterms:identifier "RIIC"^^xsd:token ;
+    dcterms:issued "1101-01-01"^^xsd:date ;
+    dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
+    dcterms:rights "(C) Commonwealth of Australia" ;
+    dcterms:spatial <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;
+    dcterms:temporal "2016-2019" ;
+    dcterms:title "Regional Insights for Indigenous Communities" ;
+    dcterms:type "dataset" ;
+    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights> ;
+    dcat:accessURL "https://www.rific.gov.au/Access-Data"^^xsd:anyURI ;
+    dcat:theme
+        <https://linked.data.gov.au/def/idn-th/subject> ,
+        <https://linked.data.gov.au/def/indigeneity/about-indigenous-people> ;
+    prov:qualifiedAttribution
+        [
+            dcat:hadRole iso:originator ;
+            prov:agent <https://linked.data.gov.au/org/abs>
+        ] ,
+        [
+            dcat:hadRole iso:custodian ;
+            prov:agent <https://linked.data.gov.au/org/aihw>
+        ] ,
+        [
+            dcat:hadRole iso:rightsHolder ;
+            prov:agent <https://linked.data.gov.au/org/aihw>
+        ] ;
+    ex:home "https://www.aihw.gov.au/reports-data/population-groups/indigenous-australians/data" ;
+.
+

@@ -1,0 +1,40 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX ex: <https://example.com/>
+PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://datasets.seed.nsw.gov.au/dataset/c29f56f1-c4b6-4260-b831-80aedb08f036>
+    a dcat:Resource ;
+    dcterms:description "Registered & Notified Indigenous Land Use Agreements – (as per s. 24BH(1)(a), s. 24CH and s. 24DI(1)(a)) across Australia, The Central Resource for Sharing and Enabling Environmental Data in NSW" ;
+    dcterms:format "ESRI Shapefile" ;
+    dcterms:identifier "ILUAB"^^xsd:token ;
+    dcterms:issued "2013-12-05"^^xsd:date ;
+    dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
+    dcterms:rights "© Commonwealth of Australia and National Native Title Tribunal 2022" ;
+    dcterms:spatial <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;
+    dcterms:title "Indigenous Land Use Agreement Boundaries with basic metadata and status" ;
+    dcterms:type "dataset" ;
+    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights> ;
+    dcat:accessURL "http://www.nntt.gov.au/assistance/Geospatial/Pages/Spatial-aata.aspx"^^xsd:anyURI ;
+    dcat:theme
+        <https://linked.data.gov.au/def/idn-th/place> ,
+        <https://linked.data.gov.au/def/indigeneity/about-indigenous-people> ;
+    prov:qualifiedAttribution
+        [
+            dcat:hadRole iso:rightsHolder ;
+            prov:agent <https://linked.data.gov.au/org/nntt>
+        ] ,
+        [
+            dcat:hadRole iso:custodian ;
+            prov:agent <https://linked.data.gov.au/org/nntt>
+        ] ,
+        [
+            dcat:hadRole iso:originator ;
+            prov:agent <https://linked.data.gov.au/org/nntt>
+        ] ;
+    ex:home "http://www.nntt.gov.au/searchRegApps/Pages/default.aspx" ;
+    ex:notes "https://www.seed.nsw.gov.au/copyright-disclaimer" ;
+.
+

@@ -1,0 +1,25 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX ex: <https://example.com/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/dataset/idnc/ATSICCP>
+    a dcat:Resource ;
+    dcterms:description """"Census indigenous community profiles" a CORE set of data produced by ABS various levels of abstraction:
+All the EC's (Empowered Communities) would need access to this. Could be an excellent indigenous geospatial/loc-i case study for the the project's Geospatial portal e.g. semantic description of these profiles in a manner which enables easier access to data by EC data groups.First step would be to express EC boundaries in loc-i compatible ways.
+
+e.g. https://quickstats.censusdata.abs.gov.au/census_services/getproduct/census/2016/communityprofile/216?opendocument
+
+See 1991 collection at ATSIDA where there are 52 distinct entries in their data catalog - it's the same data for differing geospatial extents: https://www.atsida.edu.au/archive/search/subject/atsic-community-profile
+It is desirable that our catalog represent the semantics correctly i.e. its a series with multiple temporal and geospatial extents.
+
+ACPs - SUB COLLECTION from ABORIGINAL & TORRES STRAIT ISLANDER DATA ARCHIVE""" ;
+    dcterms:identifier "ATSICCP"^^xsd:token ;
+    dcterms:title "ATSIC Community Profiles" ;
+    dcterms:type "collection" ;
+    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights/metadata-only> ;
+    ex:notes """https://www.atsida.edu.au/search/node/atsic%20community%20profiles
+
+COLLECTION - the next four rows are examples of singular metadata entries comprising the sub collection indicated""" ;
+.
+
