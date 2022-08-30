@@ -5,6 +5,10 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://linked.data.gov.au/dataset/idndc>
+    dcterms:hasPart <https://linked.data.gov.au/dataset/idnc/RIIC> ;
+.
+
 <https://linked.data.gov.au/dataset/idnc/RIIC>
     a dcat:Resource ;
     dcterms:description """Aboriginal and Torres Strait Islander people are the Indigenous people of Australia. They are not one group, but comprise hundreds of groups that have their own distinct set of languages, histories and cultural traditions.
@@ -23,7 +27,7 @@ AIHW products that focus specifically on Indigenous Australians are captured on 
     dcterms:temporal "2016-2019" ;
     dcterms:title "Regional Insights for Indigenous Communities" ;
     dcterms:type "dataset" ;
-    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights> ;
+    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
     dcat:accessURL "https://www.rific.gov.au/Access-Data"^^xsd:anyURI ;
     dcat:theme
         <https://linked.data.gov.au/def/idn-th/subject> ,

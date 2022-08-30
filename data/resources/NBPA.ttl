@@ -5,6 +5,10 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://linked.data.gov.au/dataset/idndc>
+    dcterms:hasPart <https://linked.data.gov.au/dataset/idnc/NBPA> ;
+.
+
 <https://linked.data.gov.au/dataset/idnc/NBPA>
     a dcat:Resource ;
     dcterms:description "Noongar Boodjar Language Centre (NBLC) in Perth have partnered with the Atlas of Living Australia to link Noongar-Wudjari language and knowledge for plants and animals to western science knowledge to create the Noongar-Wudjari Plant and Animal online Encyclopedia. This project focused on the Noongar-Wudjari clan, from the South coast of WA, and worked specifically with Wudjari knowledge holders - Lynette Knapp and Gail Yorkshire to record, preserve and share their ancestral language and knowledge about plants and animals. Knowledge and language for 90 plants and animals were collected and are now ready for publication through the Atlas of Living Australia (ala.org.au)." ;
@@ -15,7 +19,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:temporal "Aug-2020 to Sept-2021" ;
     dcterms:title "Noongar Boodjar Plants and Animals" ;
     dcterms:type "collection" ;
-    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights/conditional> ;
+    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/conditional> ;
     dcat:accessURL "https://profiles.ala.org.au/opus/noongar"^^xsd:anyURI ;
     dcat:theme
         <https://linked.data.gov.au/def/idn-th/indigenous-language> ,

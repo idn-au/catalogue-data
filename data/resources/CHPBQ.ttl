@@ -5,6 +5,10 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://linked.data.gov.au/dataset/idndc>
+    dcterms:hasPart <https://linked.data.gov.au/dataset/idnc/CHPBQ> ;
+.
+
 <https://linked.data.gov.au/dataset/idnc/CHPBQ>
     a dcat:Resource ;
     dcterms:description "The Cultural Heritage Parties dataset is the spatial representation of state-wide Aboriginal and Torres Strait Islander Native Title Party boundaries within Queensland as described under the Aboriginal Cultural Heritage Act 2003 and the Torres Strait Islander Cultural Heritage Act 2003 (the Acts)." ;
@@ -17,7 +21,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:temporal "2004-01-01 to 2022-08-08" ;
     dcterms:title "Cultural Heritage Party boundaries - Queensland" ;
     dcterms:type "dataset" ;
-    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights> ;
+    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
     dcat:accessURL "https://qldspatial.information.qld.gov.au/catalogue/custom/search.page?q=%22Cultural%20Heritage%20Party%20boundaries%20-%20Queensland%22"^^xsd:anyURI ;
     dcat:theme
         <https://linked.data.gov.au/def/idn-th/place> ,

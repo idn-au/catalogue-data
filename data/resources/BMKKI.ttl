@@ -5,6 +5,10 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://linked.data.gov.au/dataset/idndc>
+    dcterms:hasPart <https://linked.data.gov.au/dataset/idnc/BMKKI> ;
+.
+
 <https://linked.data.gov.au/dataset/idnc/BMKKI>
     a dcat:Resource ;
     dcterms:description """The Indigenous Protected Areas (IPA) programme has demonstrated successes across a broad range of outcome areas, effectively overcoming barriers to addressing Indigenous disadvantage and engaging Indigenous Australians in meaningful employment to achieve large scale conservation outcomes, thus aligning the interests of Indigenous Australians and the broader community.
@@ -24,7 +28,7 @@ Increased and diversified investment from a range of funding sources would meet 
     dcterms:temporal "July 2011 - July 2015" ;
     dcterms:title "SRI Investment Analysis of the Birriliburu and Matuwa Kurrara Kurrara Indigenous Protected Areas (2016)" ;
     dcterms:type "Document" ;
-    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights/conditional> ;
+    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/conditional> ;
     dcat:accessURL "https://www.niaa.gov.au/resource-centre/indigenous-affairs/birriliburu-matuwa-kurrara-kurrara-ipa"^^xsd:anyURI ;
     dcat:theme
         <https://linked.data.gov.au/def/idn-th/subject> ,

@@ -13,7 +13,7 @@ The purpose of this catalogue is not to act as a master catalogue of indigenous 
 
 The content of this catalogue conforms to the Indigenous Data Network's Catalogue Profile which is a profile of the DCAT, SKOS and PROV data models."""@en ;
     dcterms:identifier "idndc"^^xsd:token ;
-    dcterms:modified "2022-08-15"^^xsd:date ;
+    dcterms:modified "2022-08-29"^^xsd:date ;
     dcterms:title "IDN Datasets Catalogue" ;
     prov:qualifiedAttribution [
         dcat:hadRole

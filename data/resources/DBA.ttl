@@ -5,6 +5,10 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://linked.data.gov.au/dataset/idndc>
+    dcterms:hasPart <http://search.slv.vic.gov.au/permalink/f/1fe7t3h/SLV_VOYAGER1641200> ;
+.
+
 <http://search.slv.vic.gov.au/permalink/f/1fe7t3h/SLV_VOYAGER1641200>
     a dcat:Resource ;
     dcterms:description """Needs to be integrated with KHRD. Negotiation required with State Library.
@@ -18,7 +22,7 @@ Comprises Barwick's publications and conference papers; Barwick's PhD.; work wit
     dcterms:temporal "1772-2006" ;
     dcterms:title "The Diane Barwick Archive" ;
     dcterms:type "collection" ;
-    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights/restricted> ;
+    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/restricted> ;
     dcat:theme
         <https://linked.data.gov.au/def/idn-th/subject> ,
         <https://linked.data.gov.au/def/indigeneity/about-indigenous-people> ;

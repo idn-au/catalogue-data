@@ -5,6 +5,10 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://linked.data.gov.au/dataset/idndc>
+    dcterms:hasPart <https://www.environment.gov.au/fed/catalog/search/resource/downloadData.page?uuid=%7BC64658F0-95AD-4209-8D1E-F94BD0A4E827%7D> ;
+.
+
 <https://www.environment.gov.au/fed/catalog/search/resource/downloadData.page?uuid=%7BC64658F0-95AD-4209-8D1E-F94BD0A4E827%7D>
     a dcat:Resource ;
     dcterms:description """This dataset details the Dedicated Indigenous Protected Areas (IPA) across Australia through the implementation of the Indigenous Protected Areas Programme. These boundaries are not legally binding.
@@ -22,7 +26,7 @@ https://www.awe.gov.au/agriculture-land/land/indigenous-protected-areas""" ;
     dcterms:temporal "01-08-2006 to 20-06-2022" ;
     dcterms:title "Indigenous Protected Areas (IPA) - Dedicated" ;
     dcterms:type "dataset" ;
-    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights> ;
+    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
     dcat:accessURL "https://www.environment.gov.au/fed/catalog/search/resource/details.page?uuid=%7BC64658F0-95AD-4209-8D1E-F94BD0A4E827%7D"^^xsd:anyURI ;
     dcat:theme
         <https://linked.data.gov.au/def/idn-th/place> ,

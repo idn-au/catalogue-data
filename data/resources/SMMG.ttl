@@ -5,6 +5,10 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://linked.data.gov.au/dataset/idndc>
+    dcterms:hasPart <https://doi.org/10.4225/08/58521aabad9f5> ;
+.
+
 <https://doi.org/10.4225/08/58521aabad9f5>
     a dcat:Resource ;
     dcterms:description "Summarises all available aerial survey data and metadata used to characterise the long-term distribution and abundance of magpie geese in the Northern Territory undertaken by different institutions and publically available in several journals (Appendix A). Summarised also are results from a PhD study (E. Ligtermoet) documenting the cultural harvesting values of magpie geese ascertained by interviews with Kakadu Traditional Owners (2011-2015)." ;
@@ -17,7 +21,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:temporal "01-01-1958 to 01-01-2015" ;
     dcterms:title "Supplementary Material used to characterise the spatial and temporal dynamics of magpie goose populations in the Kakadu Region NT and their cultural harvesting values" ;
     dcterms:type "document" ;
-    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights> ;
+    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
     dcat:accessURL "https://doi.org/10.4225/08/58521aabad9f5"^^xsd:anyURI ;
     dcat:theme
         <https://linked.data.gov.au/def/idn-th/keyword> ,

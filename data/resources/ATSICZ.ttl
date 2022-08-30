@@ -5,6 +5,10 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://linked.data.gov.au/dataset/idndc>
+    dcterms:hasPart <https://www.atsida.edu.au/archive/datasets/au.edu.anu.ada.ddi.08003-atsic-zones> ;
+.
+
 <https://www.atsida.edu.au/archive/datasets/au.edu.anu.ada.ddi.08003-atsic-zones>
     a dcat:Resource ;
     dcterms:description """The Aboriginal and Torres Strait Islander Community Profiles (ACPs) are tabulations giving key census characteristics of Aboriginal and Torres Strait Islander persons, families and dwellings, covering most topics on the 1991 Census of Population and Housing form. This profile is presented at the ATSIC Zone level.
@@ -16,7 +20,7 @@ The ACP consists of 29 tables which crosstabulate characteristics including gend
     dcterms:spatial <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;
     dcterms:temporal "6-8-1991" ;
     dcterms:title "1991 Census of Population and Housing: Aboriginal and Torres Strait Islander Community Profile: ATSIC Zones" ;
-    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights/metadata-only> ;
+    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/metadata-only> ;
     dcat:accessURL "https://www.atsida.edu.au/archive/datasets/au.edu.anu.ada.ddi.08003-atsic-zones"^^xsd:anyURI ;
     dcat:theme
         <https://linked.data.gov.au/def/idn-th/subject> ,

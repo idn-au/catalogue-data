@@ -5,6 +5,10 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://linked.data.gov.au/dataset/idndc>
+    dcterms:hasPart <https://linked.data.gov.au/dataset/idnc/AUSLANG> ;
+.
+
 <https://linked.data.gov.au/dataset/idnc/AUSLANG>
     a dcat:Resource ;
     dcterms:description """Austlang provides information about Indigenous Australian languages which has been assembled from referenced sources.
@@ -17,7 +21,7 @@ The dataset provided here includes the language names, each with a unique alpha-
     dcterms:temporal "2008-" ;
     dcterms:title "Austlang database." ;
     dcterms:type "dataset" ;
-    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights/conditional> ;
+    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/conditional> ;
     dcat:accessURL "https://data.gov.au/data/dataset/70132e6f-259c-4e0f-9f95-4aed1101c053/resource/e9a9ea06-d821-4b53-a05f-877409a1a19c/download/aiatsis_austlang_endpoint_001.csv"^^xsd:anyURI ;
     dcat:theme
         <https://linked.data.gov.au/def/idn-th/indigenous-language> ,

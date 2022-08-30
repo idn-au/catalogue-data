@@ -5,6 +5,10 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://linked.data.gov.au/dataset/idndc>
+    dcterms:hasPart <https://data.sa.gov.au/data/dataset/tandanya-annual-reporting-regulatory-data> ;
+.
+
 <https://data.sa.gov.au/data/dataset/tandanya-annual-reporting-regulatory-data>
     a dcat:Resource ;
     dcterms:description """Tandana is owned and managed by the National Aboriginal Cultural Institute Inc. It is Australia’s oldest Aboriginal-owned and managed multi-arts centre.
@@ -18,7 +22,7 @@ As Tandana is government funded it reports annually on the funding supplied and 
     dcterms:temporal "2011-07-01 to 2017-06-30" ;
     dcterms:title "Tandanya Annual Reporting Regulatory Data" ;
     dcterms:type "dataset" ;
-    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights> ;
+    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
     dcat:accessURL "https://data.sa.gov.au/data/dataset/d70aead0-f61b-4279-b677-685d564b7fd1/resource/71107f3a-6991-4d04-934f-0d31f9fee9ee/download/tandanyaannualreportregulatorydata.xlsx"^^xsd:anyURI ;
     dcat:theme
         <https://linked.data.gov.au/def/idn-th/subject> ,

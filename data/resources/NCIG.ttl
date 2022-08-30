@@ -5,6 +5,10 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://linked.data.gov.au/dataset/idndc>
+    dcterms:hasPart <https://linked.data.gov.au/dataset/idnc/NCIG> ;
+.
+
 <https://linked.data.gov.au/dataset/idnc/NCIG>
     a dcat:Resource ;
     dcterms:description """We are making a national resource for Indigenous health and heritage, which is based on our collection of biological samples, genome data and documents from Indigenous communities in many parts of Australia. You can find out more about NCIG and its collections at ncig.anu.edu.au.
@@ -24,7 +28,7 @@ http://www.ncig-ihhr.anu.edu.au/index.html""" ;
     dcterms:spatial <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;
     dcterms:title "National Centre for Indigenous Genomics data" ;
     dcterms:type "collection" ;
-    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights/conditional> ;
+    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/conditional> ;
     dcat:accessURL "https://ncig-ihhr.anu.edu.au/browse.html"^^xsd:anyURI ;
     dcat:theme
         <https://linked.data.gov.au/def/idn-th/subject> ,

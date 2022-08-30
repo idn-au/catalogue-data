@@ -5,6 +5,10 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://linked.data.gov.au/dataset/idndc>
+    dcterms:hasPart <https://doi.org/10.26193/ESI64N> ;
+.
+
 <https://doi.org/10.26193/ESI64N>
     a dcat:Resource ;
     dcterms:description "Trials on indictment at Western Australia Supreme Court, includes data on name of accused, offence, trial date, judge, verdict, sentence and links to Trove (nla.gov.au) digitised newspaper reports. Prior to 1861 serious offences were tried at Courts of Quarter Sessions (for which see the Dataverse collection Western Australia Criminal Trials 1830-1861). During the later part of the nineteenth century very large numbers of Indigenous people were tried at the Supreme Court, often before a Special Commissioner at sittings in northern settlements - this data collection includes a large number of these accused and details of their trial outcomes." ;
@@ -17,7 +21,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:temporal "1862-1899" ;
     dcterms:title "Western Australia Supreme Court 1862-1899" ;
     dcterms:type "dataset" ;
-    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights> ;
+    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
     dcat:accessURL "https://dataverse.ada.edu.au/dataset.xhtml?persistentId=doi:10.26193/ESI64N"^^xsd:anyURI ;
     dcat:theme
         <https://linked.data.gov.au/def/idn-th/subject> ,

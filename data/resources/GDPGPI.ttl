@@ -4,6 +4,10 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://linked.data.gov.au/dataset/idndc>
+    dcterms:hasPart <https://linked.data.gov.au/dataset/idnc/GDPGPI> ;
+.
+
 <https://linked.data.gov.au/dataset/idnc/GDPGPI>
     a dcat:Resource ;
     dcterms:description "(Torrens University). An earlier application with Marcia for AIATSIS funding was never considered." ;

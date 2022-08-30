@@ -2,6 +2,10 @@ PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://linked.data.gov.au/dataset/idndc>
+    dcterms:hasPart <https://www.catalog.slsa.sa.gov.au/record=b2187904~S10> ;
+.
+
 <https://www.catalog.slsa.sa.gov.au/record=b2187904~S10>
     a dcat:Resource ;
     dcterms:description """Aboriginal and Torres Strait Islander collections, including the Mountford-Sheard Collection INDIGENOUS COLLECTIONS

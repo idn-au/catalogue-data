@@ -5,6 +5,10 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://linked.data.gov.au/dataset/idndc>
+    dcterms:hasPart <https://linked.data.gov.au/dataset/idnc/KHRD> ;
+.
+
 <https://linked.data.gov.au/dataset/idnc/KHRD>
     a dcat:Resource ;
     dcterms:description """Sandra Silcot has identified the steps required to make this fully maintainable and sustainable.
@@ -17,7 +21,7 @@ Koori Health Research Database (Janet McCalman) traces BDM of 7,800 Aboriginals 
     dcterms:temporal "1750-2012" ;
     dcterms:title "The Koori Health Research Database" ;
     dcterms:type "dataset" ;
-    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights/restricted> ;
+    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/restricted> ;
     dcat:theme
         <https://linked.data.gov.au/def/idn-th/subject> ,
         <https://linked.data.gov.au/def/indigeneity/about-indigenous-people> ;

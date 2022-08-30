@@ -5,6 +5,10 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://linked.data.gov.au/dataset/idndc>
+    dcterms:hasPart <https://linked.data.gov.au/dataset/idnc/CGA> ;
+.
+
 <https://linked.data.gov.au/dataset/idnc/CGA>
     a dcat:Resource ;
     dcterms:description """The Composite Gazetteer of Australia is a cloud-based system allowing users to easily discover, interrogate and download place names information from Australia and its external territories. It is developed as a partnership between contributing agencies of the Intergovernmental Committee on Surveying and Mapping (ICSM) and is built on modern infrastructure providing automated ingestion and validation, producing a composite dataset from the individual jurisdictional gazetteers.
@@ -18,7 +22,7 @@ The place names database is a collection of jurisdictional data that is combined
     dcterms:spatial <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;
     dcterms:title "Compound Gazetteer of Australia" ;
     dcterms:type "dataset" ;
-    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights> ;
+    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
     dcat:accessURL "https://placenames.fsdf.org.au/"^^xsd:anyURI ;
     dcat:theme
         <https://linked.data.gov.au/def/idn-th/place> ,

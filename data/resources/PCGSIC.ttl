@@ -4,6 +4,10 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://linked.data.gov.au/dataset/idndc>
+    dcterms:hasPart <https://linked.data.gov.au/dataset/idnc/PCGSIC> ;
+.
+
 <https://linked.data.gov.au/dataset/idnc/PCGSIC>
     a dcat:Resource ;
     dcterms:description "https://www.pc.gov.au/search?collection=productivity-commission-web&query=Indigenous%20compendium&form=site-search&start_rank=1" ;

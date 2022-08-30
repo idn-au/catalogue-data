@@ -5,6 +5,10 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://linked.data.gov.au/dataset/idndc>
+    dcterms:hasPart <https://linked.data.gov.au/dataset/idnc/IBLADE> ;
+.
+
 <https://linked.data.gov.au/dataset/idnc/IBLADE>
     a dcat:Resource ;
     dcterms:description "The Snapshot is an ongoing research project that links enterprises on Indigenous business registries to data held by the Australian Bureau of Statistics. It will enable us to track the industries, revenue, employment outcome and growth of Indigenous businesses. This report provides an unprecedented snapshot of the Indigenous business sector to help dismantle the many stereotypes and myths that have led to lost opportunities for Indigenous business growth. There is mention of an I-BLADE dataset." ;
@@ -17,7 +21,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:temporal "2006-2018" ;
     dcterms:title "Indigenous Business Sector Snapshot 1.1 Indigenous Businesses Sector Snapshot Study, Insights from I-BLADE 1.0" ;
     dcterms:type "document" ;
-    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights> ;
+    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
     dcat:accessURL "https://fbe.unimelb.edu.au/ibl/assets/snapshot/RFQ03898-M-and-M-Snapshot-Study.pdf"^^xsd:anyURI ;
     dcat:theme
         <https://linked.data.gov.au/def/idn-th/subject> ,

@@ -5,6 +5,10 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://linked.data.gov.au/dataset/idndc>
+    dcterms:hasPart <https://linked.data.gov.au/dataset/idnc/YUMI> ;
+.
+
 <https://linked.data.gov.au/dataset/idnc/YUMI>
     a dcat:Resource ;
     dcterms:description """Yumi Sabe is an Australian Kriol term that translates to 'we know', or, 'we have the knowledge'.
@@ -19,7 +23,7 @@ This is a beta product that is still being refined and developed. Please contact
     dcterms:temporal "2022-" ;
     dcterms:title "Indigenous Research Exchange Platform" ;
     dcterms:type "collection" ;
-    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights> ;
+    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
     dcat:accessURL "https://irx.aiatsis.gov.au/explore"^^xsd:anyURI ;
     dcat:theme
         <https://linked.data.gov.au/def/idn-th/subject> ,

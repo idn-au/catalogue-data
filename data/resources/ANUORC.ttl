@@ -3,6 +3,10 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX ex: <https://example.com/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://linked.data.gov.au/dataset/idndc>
+    dcterms:hasPart <https://linked.data.gov.au/dataset/idnc/ANUORC> ;
+.
+
 <https://linked.data.gov.au/dataset/idnc/ANUORC>
     a dcat:Resource ;
     dcterms:description "The University's Open Research digital repository ecompasses a number of research collections which the wider community is free to browse." ;

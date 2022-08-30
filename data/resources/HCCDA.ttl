@@ -5,6 +5,10 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://linked.data.gov.au/dataset/idndc>
+    dcterms:hasPart <https://doi.org/10.26193/MP6WRS> ;
+.
+
 <https://doi.org/10.26193/MP6WRS>
     a dcat:Resource ;
     dcterms:description "The Historical Census and Colonial Data Archive (HCCDA) is an archive of Australian colonial census publications and reports covering the period from 1833 to 1901, the year of Australia's federation. The corpus includes 18,638 pages of text, and approximately 15000 tables, all with full digital images, text conversion and individually identified pages and tables. Please note that the archive contains colonial census reports, but not individual census returns." ;
@@ -17,7 +21,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:temporal "1833-1901" ;
     dcterms:title "The Historical Census and Colonial Data Archive" ;
     dcterms:type "dataset" ;
-    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights/restricted> ;
+    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/restricted> ;
     dcat:accessURL "https://dataverse.ada.edu.au/dataset.xhtml?persistentId=doi:10.26193/MP6WRS"^^xsd:anyURI ;
     prov:qualifiedAttribution
         [

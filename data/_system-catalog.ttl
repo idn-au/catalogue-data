@@ -15,7 +15,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:title "CatPrez System Catalogue" ;
     dcterms:description """This is the system catalogue implemented by this instance of CatPrez that lists all its other Catalog instances"""@en ;
     dcterms:created "2022-08-03"^^xsd:date ;
-    dcterms:modified "2022-08-03"^^xsd:date ;
+    dcterms:modified "2022-08-29"^^xsd:date ;
     prov:qualifiedAttribution [
         a prov:Attribution;
         prov:agent <https://orcid.org/0000-0002-8742-7730> ;

@@ -5,6 +5,10 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://linked.data.gov.au/dataset/idndc>
+    dcterms:hasPart <https://doi.org/10.25919/5c36dcc0956a4> ;
+.
+
 <https://doi.org/10.25919/5c36dcc0956a4>
     a dcat:Resource ;
     dcterms:description "Land that is owned or managed by Australia’s Indigenous communities, or over which Indigenous people have use and rights, was compiled from information supplied by Australian, state and territory governments and other statutory authorities with Indigenous land and sea management interests." ;
@@ -15,7 +19,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:spatial <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;
     dcterms:temporal "2016" ;
     dcterms:title "Indigenous Land and Sea Interests " ;
-    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights/metadata-only> ;
+    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/metadata-only> ;
     dcat:theme
         <https://linked.data.gov.au/def/idn-th/place> ,
         <https://linked.data.gov.au/def/indigeneity/about-indigenous-things> ;

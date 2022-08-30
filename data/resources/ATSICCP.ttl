@@ -3,6 +3,10 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX ex: <https://example.com/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://linked.data.gov.au/dataset/idndc>
+    dcterms:hasPart <https://linked.data.gov.au/dataset/idnc/ATSICCP> ;
+.
+
 <https://linked.data.gov.au/dataset/idnc/ATSICCP>
     a dcat:Resource ;
     dcterms:description """"Census indigenous community profiles" a CORE set of data produced by ABS various levels of abstraction:
@@ -17,7 +21,7 @@ ACPs - SUB COLLECTION from ABORIGINAL & TORRES STRAIT ISLANDER DATA ARCHIVE""" ;
     dcterms:identifier "ATSICCP"^^xsd:token ;
     dcterms:title "ATSIC Community Profiles" ;
     dcterms:type "collection" ;
-    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights/metadata-only> ;
+    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/metadata-only> ;
     ex:notes """https://www.atsida.edu.au/search/node/atsic%20community%20profiles
 
 COLLECTION - the next four rows are examples of singular metadata entries comprising the sub collection indicated""" ;

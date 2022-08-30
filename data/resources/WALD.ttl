@@ -2,6 +2,10 @@ PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://linked.data.gov.au/dataset/idndc>
+    dcterms:hasPart <https://linked.data.gov.au/dataset/idnc/WALD> ;
+.
+
 <https://linked.data.gov.au/dataset/idnc/WALD>
     a dcat:Resource ;
     dcterms:description """This was nominated by Sandra Eades. Investigation, documentation and negotiation needed.

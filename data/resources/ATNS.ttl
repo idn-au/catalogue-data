@@ -5,6 +5,10 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://linked.data.gov.au/dataset/idndc>
+    dcterms:hasPart <https://linked.data.gov.au/dataset/idnc/ATNS> ;
+.
+
 <https://linked.data.gov.au/dataset/idnc/ATNS>
     a dcat:Resource ;
     dcterms:description """Needs to be made fully maintainable, sustainable interoperable and web-accessible
@@ -20,7 +24,7 @@ We gather and review information from publicly available academic sources, onlin
     dcterms:temporal "1976-2020" ;
     dcterms:title "The Agreements, Treaties and Negotiated Settlements Database" ;
     dcterms:type "collection" ;
-    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights> ;
+    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
     dcat:accessURL "https://www.atns.net.au/"^^xsd:anyURI ;
     dcat:theme
         <https://linked.data.gov.au/def/idn-th/subject> ,

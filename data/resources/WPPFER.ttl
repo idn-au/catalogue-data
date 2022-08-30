@@ -5,6 +5,10 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://linked.data.gov.au/dataset/idndc>
+    dcterms:hasPart <http://doi.org/10.5130/lns.v21i1.3328> ;
+.
+
 <http://doi.org/10.5130/lns.v21i1.3328>
     a dcat:Resource ;
     dcterms:description "In 2012, the remote Aboriginal community of Wilcannia in western NSW hosted the first Australian pilot of a Cuban mass adult literacy campaign model known as Yes I Can. The aim was to investigate the appropriateness of this model in Aboriginal Australia. Building on an intensive community development process of ‘socialisation and mobilisation’, sixteen community members with very low literacy graduated from the basic literacy course, with the majority continuing on into post-literacy activities, further training and/or employment." ;
@@ -16,7 +20,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:temporal "2013" ;
     dcterms:title "Aboriginal adult literacy campaign - Wilcannia Pilot Project Final Evaluation Report" ;
     dcterms:type "document" ;
-    dcat:accessRights <http://linked.data.gov.au/def/data-access-rights> ;
+    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
     dcat:accessURL "https://www.researchgate.net/publication/289193131_An_Aboriginal_Adult_Literacy_Campaign_Pilot_Study_in_Australia_using_Yes_I_Can"^^xsd:anyURI ;
     dcat:theme
         <https://linked.data.gov.au/def/idn-th/indigenous-language> ,
