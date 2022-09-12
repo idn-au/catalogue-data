@@ -43,7 +43,7 @@ Aboriginal and Torres Strait Islander people, researchers and other users should
     ex:fair """FAIR=4% (F-UJI)
 https://rdxx.org/notes.len/idc93/https%20__www.atsida.edu.au_archive_datasets_au.edu.anu.ada.ddi.20002-aus.json""" ;
     ex:home "https://www.atsida.edu.au/" ;
-    ex:notes """https://dev.rdxx.org/misc/aac-dale-chatwin/naa-links-20210622.xml
+    ex:notes """See https://dev.rdxx.org/misc/aac-dale-chatwin/naa-links-20210622.xml
 This is password protected""" ;
 .
 
