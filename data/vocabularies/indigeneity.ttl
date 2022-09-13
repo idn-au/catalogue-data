@@ -7,6 +7,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :about-indigenous-people
+    a skos:Concept ;
     dcterms:identifier "aip"^^xsd:token ;
     dcterms:provenance "Created for the IDN project, 2022"@en ;
     rdfs:isDefinedBy cs: ;
@@ -16,6 +17,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 .
 
 :about-indigenous-things
+    a skos:Concept ;
     dcterms:identifier "ait"^^xsd:token ;
     dcterms:provenance "Created for the IDN project, 2022"@en ;
     rdfs:isDefinedBy cs: ;
@@ -25,6 +27,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 .
 
 :by-indigenous-people
+    a skos:Concept ;
     dcterms:identifier "bip"^^xsd:token ;
     dcterms:provenance "Created for the IDN project, 2022"@en ;
     rdfs:isDefinedBy cs: ;

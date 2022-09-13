@@ -17,6 +17,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 .
 
 :indigenous-language
+    a skos:Concept ;
     dcterms:identifier "indigenous-language"^^xsd:token ;
     dcterms:provenance "Created for the IDN project, 2022"@en ;
     rdfs:isDefinedBy cs: ;
@@ -26,6 +27,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 .
 
 :keyword
+    a skos:Concept ;
     dcterms:identifier "keyword"^^xsd:token ;
     dcterms:provenance "Created for the IDN project, 2022"@en ;
     rdfs:isDefinedBy cs: ;
@@ -35,6 +37,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 .
 
 :place
+    a skos:Concept ;
     dcterms:identifier "subject"^^xsd:token ;
     dcterms:provenance "Created for the IDN project, 2022"@en ;
     rdfs:isDefinedBy cs: ;
@@ -44,6 +47,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 .
 
 :subject
+    a skos:Concept ;
     dcterms:identifier "subject"^^xsd:token ;
     dcterms:provenance "Created for the IDN project, 2022"@en ;
     rdfs:isDefinedBy cs: ;

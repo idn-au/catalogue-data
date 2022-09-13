@@ -16,7 +16,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 Query -- given NNTT provides a data model and comprehensive downloads under CC license already, what needs to be negotiated? Perhaps some way of being notified of changes and updates would be beneficial. See their downloads page: http://www.nntt.gov.au/assistance/Geospatial/Pages/DataDownload.aspx and the Copyright page.""" ;
     dcterms:identifier "NNTT"^^xsd:token ;
     dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
-    dcterms:title "Native Title Databases at the National Native Title Tribunal." ;
+    dcterms:title "Native Title Databases at the National Native Title Tribunal" ;
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
     dcat:accessURL "http://www.nntt.gov.au/assistance/Geospatial/Pages/DataDownload.aspx"^^xsd:anyURI ;
     prov:qualifiedAttribution [
