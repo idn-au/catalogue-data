@@ -35,4 +35,5 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:comment "The identifier issued by the Registrar of Indigenous Corporations appointed by the Minister for Indigenous Affairs" ;
     rdfs:isDefinedBy : ;
     rdfs:subClassOf xsd:token ;
+    rdfs:seeAlso "https://www.oric.gov.au"^^xsd:anyURI ;
 .

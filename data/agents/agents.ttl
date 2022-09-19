@@ -34,7 +34,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/org/sa>
     a sdo:Organization ;
-    prov:wasDeriveFrom <https://linked.data.gov.au/org/dhs> ;
+    sdo:hasPredecessor <https://linked.data.gov.au/org/dhs> ;
     sdo:name "Services Australia" ;
     sdo:url "https://www.servicesaustralia.gov.au"^^xsd:anyURI ;
 .
@@ -44,6 +44,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sdo:identifier
         "O-000880"^^idncp:agorId ,
         "CA-7853"^^idncp:crsId ;
+    sdo:hasSuccessor <https://linked.data.gov.au/org/sa> ;
     sdo:name "Department of Human Services" ;
     sdo:url "https://www.humanservices.gov.au"^^xsd:anyURI ;
 .
