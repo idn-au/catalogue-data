@@ -44,6 +44,11 @@ Unsure if I should be using the following as the Resource URI??? https://asgs.li
    dcterms:modified "2022-09-23"^^xsd:date ;
    dcterms:type "collection" ;
    dcat:accessURL "https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/indigenous-structure"^^xsd:anyURI ;
+   prov:qualifiedAttribution
+        [
+            dcat:hadRole iso:custodian ;
+            prov:agent <https://linked.data.gov.au/org/abs>
+        ];
    ex:notes """Added this to show the full ASGS Indigenous hierarchy -- minimal description for now.  """
 .
 
@@ -55,6 +60,11 @@ Unsure if I should be using the following as the Resource URI??? https://asgs.li
    dcterms:modified "2022-09-23"^^xsd:date ;
    dcterms:type "dataset" ;
    dcat:accessURL "https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/indigenous-structure/indigenous-regions"^^xsd:anyURI ;
+   prov:qualifiedAttribution
+        [
+            dcat:hadRole iso:custodian ;
+            prov:agent <https://linked.data.gov.au/org/abs>
+        ];
    ex:notes """Added this to show the full ASGS Indigenous hierarchy -- minimal description for now.  
 
 Experiment using external URI, not an Idn catalog one like idndataset:IREG """
@@ -68,6 +78,11 @@ Experiment using external URI, not an Idn catalog one like idndataset:IREG """
    dcterms:modified "2022-09-23"^^xsd:date ;
    dcterms:type "dataset" ;
    dcat:accessURL "https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/indigenous-structure/indigenous-areas"^^xsd:anyURI ;
+   prov:qualifiedAttribution
+        [
+            dcat:hadRole iso:custodian ;
+            prov:agent <https://linked.data.gov.au/org/abs>
+        ];
    ex:notes """Added this to show the full ASGS Indigenous hierarchy -- minimal description for now.  
 
 Experiment using external URI, not an Idn catalog one like idndataset:IREG """
@@ -147,8 +162,8 @@ This catalog entry refers to the latest ASGS release. For all releases refer to 
      ISTRUCT (Collection, describe Indigenous Structure)
 
 https://asgs.linked.fsdf.org.au/dataset/asgsed3/collections/ILOC (done)
-https://asgs.linked.fsdf.org.au/dataset/asgsed3/collections/IARE (to do)
-https://asgs.linked.fsdf.org.au/dataset/asgsed3/collections/IREG (to do)
+https://asgs.linked.fsdf.org.au/dataset/asgsed3/collections/IARE (done - included here? ok or not?)
+https://asgs.linked.fsdf.org.au/dataset/asgsed3/collections/IREG (done - included here - ok or not?)
 
 *** Should the codes and descriptions be described separately from the geospatial boundaries i.e. different forms of the "logical" collection?
 
