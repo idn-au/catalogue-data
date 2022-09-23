@@ -18,6 +18,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sdo:affiliation <https://kurrawong.net> ;
 .
 
+<https://orcid.org/0000-0003-1983-6687>
+    a sdo:Person ;
+    sdo:name "Sandra Silcot"@en ;
+    sdo:email "ssilcot@gmail.com"^^xsd:anyURI ;
+    sdo:affiliation <https://linked.data.gov.au/org/idn> ;
+.
+
 <https://kurrawong.net>
     a sdo:Organization ;
     sdo:name "Kurrawong AI" ;
@@ -30,6 +37,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a sdo:Organization ;
     sdo:name "Australian Federal Government" ;
     sdo:url "https://www.australia.gov.au"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/abs>
+    a sdo:Organization ;
+    sdo:name "Australian Bureau of Statistics" ;
+    sdo:url "https://www.abs.gov.au"^^xsd:anyURI ;
 .
 
 <https://linked.data.gov.au/org/sa>
