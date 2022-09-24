@@ -12,7 +12,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:hasPart <https://linked.data.gov.au/dataset/asgsed3/ILOC> ;
 .
 
-
 <https://linked.data.gov.au/dataset/asgsed3/ILOC>
     a dcat:Resource ;
     dcterms:title "Indigenous Locations within the ASGS" ;
