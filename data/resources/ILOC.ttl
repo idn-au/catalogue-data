@@ -1,97 +1,20 @@
-PREFIX idndataset: <http://idn.kurrawong.net/catalog/idndc/>
-PREFIX idntheme: <http://idn.kurrawong.net/vocab/idn-th/>
-PREFIX idnaccess: <http://idn.kurrawong.net/vocab/data-access-rights/>
-PREFIX idnrole: <http://idn.kurrawong.net/vocab/rolecodes/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX ex: <https://example.com/>
+PREFIX idnrole: <https://linked.data.gov.au/def/idn-role-codes/>
+PREFIX idnaccess: <http://idn.kurrawong.net/vocab/data-access-rights/>
+PREFIX idntheme: <http://idn.kurrawong.net/vocab/idn-th/>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX ex: <https://example.com/>
 
 <https://linked.data.gov.au/dataset/idndc>
-    dcterms:hasPart <idndataset:ASGS> ;
+    dcterms:hasPart <https://linked.data.gov.au/dataset/asgsed3/ILOC> ;
 .
 
-<idndataset:ASGS>
-   dcterms:hasPart <idndataset:ISTRUCT>;
-   a dcat:Resource ;
-   dcterms:title "Australian Statistical Geography Standard (ASGS)" ;
-   dcterms:description """A classification of Australia into a hierarchy of statistical areas for the publication and analysis of official statistics and other data.  """ ;
-   dcterms:created "2022-09-23"^^xsd:date ;
-   dcterms:modified "2022-09-23"^^xsd:date ;
-   dcterms:type "collection" ;
-   dcat:accessURL "https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026"^^xsd:anyURI ;
-   prov:qualifiedAttribution
-        [
-            dcat:hadRole iso:custodian ;
-            prov:agent <https://linked.data.gov.au/org/abs>
-        ];
-   ex:notes """Added this to show the full ASGS Indigenous hierarchy -- minimal description for now.  
-
-Unsure if I should be using the following as the Resource URI??? https://asgs.linked.fsdf.org.au/dataset/asgsed3/collections 
-"""
-.
-
-<idndataset:ISTRUCT>
-   a dcat:Resource ;
-   dcterms:hasPart <https://asgs.linked.fsdf.org.au/dataset/asgsed3/collections/IREG> ;
-   dcterms:hasPart <https://asgs.linked.fsdf.org.au/dataset/asgsed3/collections/IARE> ;
-   dcterms:hasPart <idndataset:ILOC> ;
-   dcterms:title "Indigenous Structure (ASGS)" ;
-   dcterms:description """The Indigenous Structure is a geographical standard for the publication and analysis of statistics about the Aboriginal and/or Torres Strait Islander peoples of Australia.  """ ;
-   dcterms:created "2022-09-23"^^xsd:date ;
-   dcterms:modified "2022-09-23"^^xsd:date ;
-   dcterms:type "collection" ;
-   dcat:accessURL "https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/indigenous-structure"^^xsd:anyURI ;
-   prov:qualifiedAttribution
-        [
-            dcat:hadRole iso:custodian ;
-            prov:agent <https://linked.data.gov.au/org/abs>
-        ];
-   ex:notes """Added this to show the full ASGS Indigenous hierarchy -- minimal description for now.  """
-.
-
-<https://asgs.linked.fsdf.org.au/dataset/asgsed3/collections/IREG>
-   a dcat:Resource ;
-   dcterms:title "Indigenous Regions (ASGS)" ;
-   dcterms:description """Indigenous Regions (IREGs) are large geographic areas built from whole Indigenous Areas and are based on historical boundaries. The larger population of Indigenous Regions enables highly detailed analysis.  """ ;
-   dcterms:created "2022-09-23"^^xsd:date ;
-   dcterms:modified "2022-09-23"^^xsd:date ;
-   dcterms:type "dataset" ;
-   dcat:accessURL "https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/indigenous-structure/indigenous-regions"^^xsd:anyURI ;
-   prov:qualifiedAttribution
-        [
-            dcat:hadRole iso:custodian ;
-            prov:agent <https://linked.data.gov.au/org/abs>
-        ];
-   ex:notes """Added this to show the full ASGS Indigenous hierarchy -- minimal description for now.  
-
-Experiment using external URI, not an Idn catalog one like idndataset:IREG """
-.
-
-<https://asgs.linked.fsdf.org.au/dataset/asgsed3/collections/IARE>
-   a dcat:Resource ;
-   dcterms:title "Indigenous Areas (ASGS)" ;
-   dcterms:description """Indigenous Areas (IAREs) are medium sized geographic areas built from whole Indigenous Locations. They are designed for the release and analysis of more detailed statistics for Aboriginal and Torres Strait Islander people. Whole Indigenous Areas aggregate to form Indigenous Regions.  """ ;
-   dcterms:created "2022-09-23"^^xsd:date ;
-   dcterms:modified "2022-09-23"^^xsd:date ;
-   dcterms:type "dataset" ;
-   dcat:accessURL "https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/indigenous-structure/indigenous-areas"^^xsd:anyURI ;
-   prov:qualifiedAttribution
-        [
-            dcat:hadRole iso:custodian ;
-            prov:agent <https://linked.data.gov.au/org/abs>
-        ];
-   ex:notes """Added this to show the full ASGS Indigenous hierarchy -- minimal description for now.  
-
-Experiment using external URI, not an Idn catalog one like idndataset:IREG """
-.
-
-
-<idndataset:ILOC>
+<https://linked.data.gov.au/dataset/asgsed3/ILOC>
     a dcat:Resource ;
-    dcterms:title "Indigenous Locations (ASGS)" ;
+    dcterms:title "Indigenous Locations within the ASGS" ;
 dcterms:description """This is a reference geospatial dataset developed by the Australian Bureau of Statistics which provides the most granular form of Indigenous Structure represented in the Australian Statistical Geography Standard (ASGS), currently at Edition 3 (2021).  Indigenous Locations (ILOCs) are designed to allow the production and analysis of statistics relating to Aboriginal and Torres Strait Islander people with a high level of spatial accuracy, while also maintaining the confidentiality of individuals. It has been designed in consultation with the ABS Centre for Aboriginal and Torres Strait Islander Statistics to incorporate statistical and community requirements wherever possible.
 
 ILOCs are geographic areas built from whole Statistical Areas Level 1 (SA1s). They are designed to represent small Aboriginal and Torres Strait Islander communities (urban and rural) that are near each other or that share language, traditional borders or Native Title. They usually have a minimum population of about 90 people. In some cases, Indigenous Locations have a smaller Aboriginal and Torres Strait Islander population to meet statistical requirements or to better represent the local community. 
@@ -106,37 +29,26 @@ Indigenous Locations are identified by eight-digit hierarchical codes consisting
 
 Shapefiles for Indigenous Locations and other components of the ABS's Indigenous Structure are available: https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files 
 
-This catalog entry refers to the latest ASGS release. For all releases refer to the ABS: https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3
-
-""" ;
-    dcterms:created "2022-09-23"^^xsd:date ;
-    dcterms:modified "2022-09-23"^^xsd:date ;
-    dcterms:format "SHP" ;
+This catalog entry refers to the latest ASGS release. For all releases refer to the ABS: https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3"""@en ;
+    dcterms:created "2021-10-06"^^xsd:date ;
+    dcterms:modified "2021-10-06"^^xsd:date ;
     dcterms:identifier "ILOC"^^xsd:token ;
-    dcterms:identifier "https://asgs.linked.fsdf.org.au/dataset/asgsed3/collections/ILOC"^^xsd:token ;
+    dcterms:source "https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/indigenous-structure/indigenous-locations"^^xsd:token ;
     dcterms:issued "2021-10-06"^^xsd:date ;
     dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
-    dcterms:rights "None" ;
+    dcterms:rights "Copyright © Commonwealth of Australia (Australian Bureau of Statistics) 2021" ;
     dcterms:spatial <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;
     dcterms:temporal [
-            prov:endedAtTime "2026-06-30"^^xsd:gYear ;
-            prov:startedAtTime "2021-07-01"^^xsd:gYear
+            prov:endedAtTime "2026"^^xsd:gYear ;
+            prov:startedAtTime "2021"^^xsd:gYear
         ] ;
-
-    dcterms:type "dataset" ;
+    dcterms:type <http://www.opengis.net/ont/geosparql#FeatureCollection> ;
     dcterms:accessRights idnaccess:open ;
-    dcat:accessURL "https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/indigenous-structure/indigenous-locations"^^xsd:anyURI ;
-
-    dcat:distribution [
-            dcat:accessURL "https://asgs.linked.fsdf.org.au/dataset/asgsed3/collections/ILOC"^^xsd:anyURI ;
-            dcat:accessURL "https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads"^^xsd:anyURI 
-        ] ;
-
+    dcat:accessURL "https://linked.data.gov.au/dataset/asgsed3/ILOC"^^xsd:anyURI ;
     dcat:theme
         idntheme:indigenous-demographics ,
         <https://linked.data.gov.au/def/idn-th/place> ,
         <https://linked.data.gov.au/def/indigeneity/about-indigenous-things> ;
-
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:custodian ;
@@ -148,11 +60,8 @@ This catalog entry refers to the latest ASGS release. For all releases refer to 
         ] ,
         [
             dcat:hadRole idnrole:subjectAgentRepresentatitve ;
-            prov:agent "Australian Bureau of Statistics Centre for Aboriginal and Torres Strait Islander Statistics 2021"
+            prov:agent <https://linked.data.gov.au/dataset/idndc/agent/abs-catsis>
         ] ;
-
-    ex:home "abs.gov.au" ;
-
     ex:notes """Access to customised subsets of the ILOC geospatial reference dataset which aggregate the ILOCs of relevance to indigenous community groups - Land councils and Empowered Communities for example - would be a worthwhile excercise for Place-based case studies.
 
 *** QUESTION: First dcat:accessURL is for the ABS description page. Then 2 more in dcat:distribution (one for the linked data edition, one for the spatial dataset)???? Unsure???

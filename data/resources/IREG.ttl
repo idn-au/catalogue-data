@@ -1,0 +1,54 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX ex: <https://example.com/>
+PREFIX idnrole: <https://linked.data.gov.au/def/idn-role-codes/>
+PREFIX idnaccess: <http://idn.kurrawong.net/vocab/data-access-rights/>
+PREFIX idntheme: <http://idn.kurrawong.net/vocab/idn-th/>
+PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/dataset/idndc>
+    dcterms:hasPart <https://linked.data.gov.au/dataset/asgsed3/IREG> ;
+.
+
+<https://linked.data.gov.au/dataset/asgsed3/IREG>
+    a dcat:Resource ;
+    dcterms:title "Indigenous Regions within the ASGS" ;
+    dcterms:description """Indigenous Regions (IREGs) are large geographic areas built from whole Indigenous Areas and are based on historical boundaries. The larger population of Indigenous Regions enables highly detailed analysis."""@en ;
+    dcterms:created "2021-10-06"^^xsd:date ;
+    dcterms:modified "2021-10-06"^^xsd:date ;
+    dcterms:identifier "IREG"^^xsd:token ;
+    dcterms:source "https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/indigenous-structure/indigenous-locations"^^xsd:token ;
+    dcterms:issued "2021-10-06"^^xsd:date ;
+    dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
+    dcterms:rights "Copyright © Commonwealth of Australia (Australian Bureau of Statistics) 2021" ;
+    dcterms:spatial <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;
+    dcterms:temporal [
+            prov:endedAtTime "2026"^^xsd:gYear ;
+            prov:startedAtTime "2021"^^xsd:gYear
+        ] ;
+    dcterms:type <http://www.opengis.net/ont/geosparql#FeatureCollection> ;
+    dcterms:accessRights idnaccess:open ;
+    dcat:accessURL "https://linked.data.gov.au/dataset/asgsed3/ILOC"^^xsd:anyURI ;
+    dcat:theme
+        idntheme:indigenous-demographics ,
+        <https://linked.data.gov.au/def/idn-th/place> ,
+        <https://linked.data.gov.au/def/indigeneity/about-indigenous-things> ;
+    prov:qualifiedAttribution
+        [
+            dcat:hadRole iso:custodian ;
+            prov:agent <https://linked.data.gov.au/org/abs>
+        ] ,
+        [
+            dcat:hadRole iso:rightsHolder ;
+            prov:agent <https://linked.data.gov.au/org/abs>
+        ] ,
+        [
+            dcat:hadRole idnrole:subjectAgentRepresentatitve ;
+            prov:agent <https://linked.data.gov.au/dataset/idndc/agent/abs-catsis>
+        ] ;
+    ex:notes """Added this to show the full ASGS Indigenous hierarchy -- minimal description for now.
+
+Experiment using external URI, not an Idn catalog one like idndataset:IREG """
+.

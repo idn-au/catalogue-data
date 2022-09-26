@@ -1,0 +1,84 @@
+PREFIX : <https://linked.data.gov.au/def/org-indigeneity/>
+PREFIX cs: <https://linked.data.gov.au/def/org-indigeneity>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdo: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:run-by-indigenous-persons
+    a skos:Concept ;
+    dcterms:identifier "rbip"^^xsd:token ;
+    dcterms:provenance "Created for the IDN project, 2022"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The organisation is run (managed) by indigenous people" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Run By Indigenous Persons"@en ;
+.
+
+:owned-by-indigenous-persons
+    a skos:Concept ;
+    dcterms:identifier "obip"^^xsd:token ;
+    dcterms:provenance "Created for the IDN project, 2022"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The organisation is owned by indigenous people" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Owned By Indigenous Persons"@en ;
+.
+
+:indigenous-persons-organisation
+    a skos:Concept ;
+    dcterms:identifier "ipo"^^xsd:token ;
+    dcterms:provenance "Created for the IDN project, 2022"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The organisation comprises of indigenous persons" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Indigenous Persons Organisation"@en ;
+.
+
+:indigeneity-unknown
+    a skos:Concept ;
+    dcterms:identifier "iu"^^xsd:token ;
+    dcterms:provenance "Created for the IDN project, 2022"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The organisation's indigeneity is unknown" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Indigeneity Unknown"@en ;
+.
+
+:non-indigenous
+    a skos:Concept ;
+    dcterms:identifier "ni"^^xsd:token ;
+    dcterms:provenance "Created for the IDN project, 2022"@en ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The organisation is not an indigenous organisation" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Non-Indigenous"@en ;
+.
+
+<https://linked.data.gov.au/org/idn>
+    a sdo:Organization ;
+    sdo:description "The Indigenous Data Network (IDN) was established in 2018 to support and coordinate the governance of Indigenous data for Aboriginal and Torres Strait Islander peoples and empower Aboriginal and Torres Strait Islander communities to decide their own local data priorities."@en ;
+    sdo:name "Indigenous Data Network" ;
+    sdo:url "https://mspgh.unimelb.edu.au/centres-institutes/centre-for-health-equity/research-group/indigenous-data-network"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    dcterms:created "2022-09-24"^^xsd:date ;
+    dcterms:creator <https://linked.data.gov.au/org/idn> ;
+    dcterms:identifier "organisations-indigeneity"^^xsd:token ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    dcterms:modified "2022-09-24"^^xsd:date ;
+    dcterms:publisher <https://linked.data.gov.au/org/idn> ;
+    dcterms:rights "(c) Indigenous Data Network, 2022" ;
+    dcterms:provenance "Created during the generation of the IDN's Data Agents Catalogue, based on IDN staff's perceptions of categories of organisation indigeneity" ;
+    skos:definition "The ways in which organisations may be related to indigenous peoples"@en ;
+    skos:hasTopConcept
+        :run-by-indigenous-persons ,
+        :owned-by-indigenous-persons ,
+        :indigenous-persons-organisation ,
+        :indigeneity-unknown ,
+        :non-indigenous ;
+    skos:prefLabel "Organisations Indigeneity"@en ;
+.
