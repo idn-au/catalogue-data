@@ -60,7 +60,7 @@ This catalog entry refers to the latest ASGS release. For all releases refer to 
         ] ,
         [
             dcat:hadRole idnrole:subjectAgentRepresentatitve ;
-            prov:agent <https://linked.data.gov.au/dataset/idndc/agent/abs-catsis>
+            prov:agent <https://linked.data.gov.au/dataset/idndc/agent/abs-coatsis>
         ] ;
     ex:notes """Access to customised subsets of the ILOC geospatial reference dataset which aggregate the ILOCs of relevance to indigenous community groups - Land councils and Empowered Communities for example - would be a worthwhile excercise for Place-based case studies.
 
