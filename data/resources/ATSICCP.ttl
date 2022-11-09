@@ -3,11 +3,11 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX ex: <https://example.com/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/dataset/idndc>
-    dcterms:hasPart <https://linked.data.gov.au/dataset/idnc/ATSICCP> ;
+<https://w3id.org/idn/resource/idndc>
+    dcterms:hasPart <https://w3id.org/idn/resource/ATSICCP> ;
 .
 
-<https://linked.data.gov.au/dataset/idnc/ATSICCP>
+<https://w3id.org/idn/resource/ATSICCP>
     a dcat:Resource ;
     dcterms:description """"Census indigenous community profiles" a CORE set of data produced by ABS various levels of abstraction:
 All the EC's (Empowered Communities) would need access to this. Could be an excellent indigenous geospatial/loc-i case study for the the project's Geospatial portal e.g. semantic description of these profiles in a manner which enables easier access to data by EC data groups.First step would be to express EC boundaries in loc-i compatible ways.

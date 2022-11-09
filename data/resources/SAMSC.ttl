@@ -2,7 +2,7 @@ PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/dataset/idndc>
+<https://w3id.org/idn/dataset/democat>
     dcterms:hasPart <https://www.catalog.slsa.sa.gov.au/record=b2187904~S10> ;
 .
 

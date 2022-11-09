@@ -4,11 +4,11 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/dataset/idndc>
-    dcterms:hasPart <https://linked.data.gov.au/dataset/idnc/ARIES> ;
+<https://w3id.org/idn/dataset/democat>
+    dcterms:hasPart <https://w3id.org/idn/resource/ARIES> ;
 .
 
-<https://linked.data.gov.au/dataset/idnc/ARIES>
+<https://w3id.org/idn/resource/ARIES>
     a dcat:Resource ;
     dcterms:description "Publications, Ethics, Grants" ;
     dcterms:identifier "ARIES"^^xsd:token ;
@@ -18,8 +18,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/restricted> ;
     dcat:accessURL "https://www.google.com/url?q=https://anu365.sharepoint.com/:x:/s/IDC/EV9nyOj8W_BIv21RBYO0_VgBsFBPGkEr68c7_D5gkjRdnw?e%3DLoKvwU&sa=D&source=editors&ust=1661739128253932&usg=AOvVaw1joY_FzajxLEs2S1I-BImg"^^xsd:anyURI ;
     dcat:theme
-        <https://linked.data.gov.au/def/idn-th/subject> ,
-        <https://linked.data.gov.au/def/indigeneity/about-indigenous-things> ;
+        <https://w3id.org/idn/def/idn-th/subject> ,
+        <https://w3id.org/idn/def/indigeneity/about-indigenous-things> ;
     prov:qualifiedAttribution [
             dcat:hadRole iso:custodian ;
             prov:agent "Research Service Division (RSD)"

@@ -5,11 +5,11 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/dataset/idndc>
-    dcterms:hasPart <https://linked.data.gov.au/dataset/idnc/ATSIDA> ;
+<https://w3id.org/idn/dataset/democat>
+    dcterms:hasPart <https://w3id.org/idn/resource/ATSIDA> ;
 .
 
-<https://linked.data.gov.au/dataset/idnc/ATSIDA>
+<https://w3id.org/idn/resource/ATSIDA>
     a dcat:Resource ;
     dcterms:description
         "ATSIDA is a specialised trusted research data management facility, and thematic archive within the Australian Data Archive for Australian Aboriginal and Torres Strait Islander research data managed by the UTS Library. ATSIDA provides a transformational research platform working at the nexus of researchers, communities and other stakeholders in preserving and ensuring ethical access to research data related to Indigenous communities. ATSIDA works with universities, government and other organisations to increase Indigenous student and staff research capacity, support Indigenous researchers and those working with Indigenous research data. It engages with communities to manage appropriate access and return of digital materials." ,
@@ -27,8 +27,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/metadata-only> ;
     dcat:accessURL "https://www.atsida.edu.au/find"^^xsd:anyURI ;
     dcat:theme
-        <https://linked.data.gov.au/def/idn-th/subject> ,
-        <https://linked.data.gov.au/def/indigeneity/about-indigenous-people> ;
+        <https://w3id.org/idn/def/idn-th/subject> ,
+        <https://w3id.org/idn/def/indigeneity/about-indigenous-people> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:rightsHolder ;

@@ -5,11 +5,11 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/dataset/idndc>
-    dcterms:hasPart <https://linked.data.gov.au/dataset/idnc/YKC> ;
+<https://w3id.org/idn/dataset/democat>
+    dcterms:hasPart <https://w3id.org/idn/resource/YKC> ;
 .
 
-<https://linked.data.gov.au/dataset/idnc/YKC>
+<https://w3id.org/idn/resource/YKC>
     a dcat:Resource ;
     dcterms:description """The Yawuru Knowing Our Community (YKC) Household Survey was commissioned by the Nyamba Buru Yawuru Board of Directors in December 2010. This report and associated data base are the property of the NBY Board. The report was designed and produced by The Kimberley Institute, Centre for Aboriginal Economic Policy Research at The Australian National University, and the Broome Aboriginal community.
 In September 2010, the NBY Board resolved to undertake a comprehensive population survey of Broome to inform the Board’s investment strategy, particularly on social housing.""" ;
@@ -24,7 +24,7 @@ was commissioned by the Nyamba Buru Yawuru Board of Directors in December 2010. 
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
     dcat:accessURL "http://www.kimberleyinstitute.org.au/wp-content/uploads/2015/07/The-2011-Yawuru-Knowing-Our-Community-Survey1.pdf"^^xsd:anyURI ;
     dcat:theme
-        <https://linked.data.gov.au/def/indigeneity/by-indigenous-people> ,
+        <https://w3id.org/idn/def/indigeneity/by-indigenous-people> ,
         "Subject" ;
     prov:qualifiedAttribution
         [

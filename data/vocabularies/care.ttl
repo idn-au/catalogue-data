@@ -1,6 +1,6 @@
-PREFIX cs: <http://linked.data.gov.au/def/care>
+PREFIX cs: <http://w3id.org/idn/def/care>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX care: <http://linked.data.gov.au/def/care/>
+PREFIX care: <http://w3id.org/idn/def/care/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>

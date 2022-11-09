@@ -5,11 +5,11 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/dataset/idndc>
-    dcterms:hasPart <https://linked.data.gov.au/dataset/idnc/ANUARC> ;
+<https://w3id.org/idn/dataset/democat>
+    dcterms:hasPart <https://w3id.org/idn/resource/ANUARC> ;
 .
 
-<https://linked.data.gov.au/dataset/idnc/ANUARC>
+<https://w3id.org/idn/resource/ANUARC>
     a dcat:Resource ;
     dcterms:description "The Australian National University is home to many research collections of national and international significance. Material from the ANU Archives, ANU Classics Museum, ANU Library, Asia Pacific Map Collection and the Noel Butlin Archives Centre are being progressivley digitised and made available through this repository." ;
     dcterms:identifier "ANUARC"^^xsd:token ;
@@ -21,8 +21,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/conditional> ;
     dcat:accessURL "https://archivescollection.anu.edu.au/index.php/informationobject/browse?repos=965&query=Aboriginal&topLod=0"^^xsd:anyURI ;
     dcat:theme
-        <https://linked.data.gov.au/def/idn-th/subject> ,
-        <https://linked.data.gov.au/def/indigeneity/about-indigenous-things> ;
+        <https://w3id.org/idn/def/idn-th/subject> ,
+        <https://w3id.org/idn/def/indigeneity/about-indigenous-things> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:rightsHolder ;

@@ -5,11 +5,11 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/dataset/idndc>
-    dcterms:hasPart <https://linked.data.gov.au/dataset/idnc/IREKEP> ;
+<https://w3id.org/idn/dataset/democat>
+    dcterms:hasPart <https://w3id.org/idn/resource/IREKEP> ;
 .
 
-<https://linked.data.gov.au/dataset/idnc/IREKEP>
+<https://w3id.org/idn/resource/IREKEP>
     a dcat:Resource ;
     dcterms:description """Various projects from $10 million Indigenous Research Fund administered by AIATSIS.
 A number of projects are described p13-15 here.

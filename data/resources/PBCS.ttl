@@ -5,11 +5,11 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/dataset/idndc>
-    dcterms:hasPart <https://linked.data.gov.au/dataset/idnc/PBCS> ;
+<https://w3id.org/idn/dataset/democat>
+    dcterms:hasPart <https://w3id.org/idn/resource/PBCS> ;
 .
 
-<https://linked.data.gov.au/dataset/idnc/PBCS>
+<https://w3id.org/idn/resource/PBCS>
     a dcat:Resource ;
     dcterms:description """Conference powerpoint presentation
 
@@ -29,8 +29,8 @@ Case study in exemplary IDG.
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
     dcat:accessURL "https://aiatsis.gov.au/sites/default/files/research_pub/pbc_survey_2019.pdf"^^xsd:anyURI ;
     dcat:theme
-        <https://linked.data.gov.au/def/idn-th/subject> ,
-        <https://linked.data.gov.au/def/indigeneity/about-indigenous-things> ;
+        <https://w3id.org/idn/def/idn-th/subject> ,
+        <https://w3id.org/idn/def/indigeneity/about-indigenous-things> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:originator ;

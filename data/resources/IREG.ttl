@@ -1,14 +1,14 @@
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX ex: <https://example.com/>
-PREFIX idnrole: <https://linked.data.gov.au/def/idn-role-codes/>
+PREFIX idnrole: <https://w3id.org/idn/def/idn-role-codes/>
 PREFIX idnaccess: <http://idn.kurrawong.net/vocab/data-access-rights/>
 PREFIX idntheme: <http://idn.kurrawong.net/vocab/idn-th/>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/dataset/idndc>
+<https://w3id.org/idn/dataset/democat>
     dcterms:hasPart <https://linked.data.gov.au/dataset/asgsed3/IREG> ;
 .
 
@@ -33,8 +33,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcat:accessURL "https://linked.data.gov.au/dataset/asgsed3/ILOC"^^xsd:anyURI ;
     dcat:theme
         idntheme:indigenous-demographics ,
-        <https://linked.data.gov.au/def/idn-th/place> ,
-        <https://linked.data.gov.au/def/indigeneity/about-indigenous-things> ;
+        <https://w3id.org/idn/def/idn-th/place> ,
+        <https://w3id.org/idn/def/indigeneity/about-indigenous-things> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:custodian ;
@@ -46,7 +46,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         ] ,
         [
             dcat:hadRole idnrole:subjectAgentRepresentatitve ;
-            prov:agent <https://linked.data.gov.au/dataset/idndc/agent/abs-catsis>
+            prov:agent <https://w3id.org/idn/agent/abs-coatsisagent/abs-catsis>
         ] ;
     ex:notes """Added this to show the full ASGS Indigenous hierarchy -- minimal description for now.
 
