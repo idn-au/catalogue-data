@@ -51,10 +51,12 @@ The contents of this repository is licensed under Creative Commons 4.0 Internati
 
 Initial technical development of this work is being undertaken by the following, for the Indigenous Data Network:
 
+**Sandra Silcot** +
+*Data Custodian* +
+University of Melbourne +
+Indigenous Data Network +
+
 **Nicholas J. Car** +
 *Data Architect* +
-nick@kurrawong.net  
-
-**Sandra Silcot** +
-*Analyst* +
-Indigenous Data Network +
+https://kurrawong.net[Kurrawong AI] +
+nick@kurrawong.net
