@@ -1,9 +1,8 @@
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX ex: <https://example.com/>
-PREFIX idnrole: <https://w3id.org/idn/def/idn-role-codes/>
-PREFIX idnaccess: <http://idn.kurrawong.net/vocab/data-access-rights/>
-PREFIX idntheme: <http://idn.kurrawong.net/vocab/idn-th/>
+PREFIX dar: <https://linked.data.gov.au/def/data-access-rights/>
+PREFIX idnth: <https://w3id.org/def/idn-th/>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -43,10 +42,10 @@ This catalog entry refers to the latest ASGS release. For all releases refer to 
             prov:startedAtTime "2021"^^xsd:gYear
         ] ;
     dcterms:type <http://www.opengis.net/ont/geosparql#FeatureCollection> ;
-    dcterms:accessRights idnaccess:open ;
+    dcterms:accessRights dar:open ;
     dcat:accessURL "https://linked.data.gov.au/dataset/asgsed3/ILOC"^^xsd:anyURI ;
     dcat:theme
-        idntheme:indigenous-demographics ,
+        idnth:indigenous-demographics ,
         <https://w3id.org/idn/def/idn-th/place> ,
         <https://w3id.org/idn/def/indigeneity/about-indigenous-things> ;
     prov:qualifiedAttribution
@@ -59,8 +58,8 @@ This catalog entry refers to the latest ASGS release. For all releases refer to 
             prov:agent <https://linked.data.gov.au/org/abs>
         ] ,
         [
-            dcat:hadRole idnrole:subjectAgentRepresentatitve ;
-            prov:agent <https://w3id.org/idn/agent/abs-coatsisagent/abs-catsis>
+            dcat:hadRole <https://w3id.org/def/idn-role-codes/subjectAgentRepresentatitve> ;
+            prov:agent <https://w3id.org/idn/agent/abs-coatsis> ;
         ] ;
     ex:notes """Access to customised subsets of the ILOC geospatial reference dataset which aggregate the ILOCs of relevance to indigenous community groups - Land councils and Empowered Communities for example - would be a worthwhile excercise for Place-based case studies.
 
