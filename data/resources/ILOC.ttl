@@ -13,7 +13,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/dataset/asgsed3/ILOC>
     a dcat:Resource ;
-    dcterms:title "Indigenous Locations within the ASGS" ;
+    dcterms:title "Indigenous Locations within the Australian Statistical Geography Standard (ASGS) Edition 3" ;
 dcterms:description """This is a reference geospatial dataset developed by the Australian Bureau of Statistics which provides the most granular form of Indigenous Structure represented in the Australian Statistical Geography Standard (ASGS), currently at Edition 3 (2021).  Indigenous Locations (ILOCs) are designed to allow the production and analysis of statistics relating to Aboriginal and Torres Strait Islander people with a high level of spatial accuracy, while also maintaining the confidentiality of individuals. It has been designed in consultation with the ABS Centre for Aboriginal and Torres Strait Islander Statistics to incorporate statistical and community requirements wherever possible.
 
 ILOCs are geographic areas built from whole Statistical Areas Level 1 (SA1s). They are designed to represent small Aboriginal and Torres Strait Islander communities (urban and rural) that are near each other or that share language, traditional borders or Native Title. They usually have a minimum population of about 90 people. In some cases, Indigenous Locations have a smaller Aboriginal and Torres Strait Islander population to meet statistical requirements or to better represent the local community. 
