@@ -1,5 +1,8 @@
+PREFIX aarr: <https://w3id.org/idn/def/aarr/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX democat: <https://w3id.org/idn/def/democat/>
+PREFIX idncp: <https://w3id.org/idn/def/idncp/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX sdo: <https://schema.org>
