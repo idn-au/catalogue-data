@@ -20,7 +20,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sdo:name "Nicholas J. Car"@en ;
     rdfs:label "Nicholas J. Car"@en ;
     sdo:email "nick@kurrawong.net"^^xsd:anyURI ;
-    sdo:affiliation <https://kurrawong.net> ;
+    dcat:relation [
+        dcat:hadRole aarr:affiliateOf ;
+        prov:agent <https://kurrawong.net> ;
+    ] ;
     dcterms:type <https://w3id.org/idn/def/org-indigeneity/non-indigenous> ;
 .
 
@@ -29,7 +32,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sdo:name "Sandra Silcot"@en ;
     rdfs:label "Sandra Silcot"@en ;
     sdo:email "ssilcot@gmail.com"^^xsd:anyURI ;
-    sdo:affiliation <https://linked.data.gov.au/org/idn> ;
+    dcat:relation [
+        dcat:hadRole aarr:affiliateOf ;
+        prov:agent <https://linked.data.gov.au/org/idn>;
+    ] ;
 .
 
 <https://kurrawong.net>
@@ -60,7 +66,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/org/sa>
     a sdo:Organization ;
-    sdo:hasPredecessor <https://linked.data.gov.au/org/dhs> ;
+    dcat:relation [
+        dcat:hadRole aarr:precursorOrganisation ;
+        prov:agent <https://linked.data.gov.au/org/dhs> ;
+    ] ;
     sdo:name "Services Australia" ;
     rdfs:label "Services Australia" ;
     sdo:url "https://www.servicesaustralia.gov.au"^^xsd:anyURI ;
@@ -72,7 +81,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sdo:identifier
         "O-000880"^^idncp:agorId ,
         "CA-7853"^^idncp:crsId ;
-    sdo:hasSuccessor <https://linked.data.gov.au/org/sa> ;
+    dcat:relation [
+        dcat:hadRole aarr:descendantOrganisation ;
+        prov:agent <https://linked.data.gov.au/org/sa> ;
+    ] ;
     sdo:name "Department of Human Services" ;
     rdfs:label "Department of Human Services" ;
     sdo:url "https://www.humanservices.gov.au"^^xsd:anyURI ;
@@ -83,7 +95,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a sdo:Organization ;
     sdo:name "Australian Government Indigenous Locations Working Group 2007-2012" ;
     rdfs:label "Australian Government Indigenous Locations Working Group 2007-2012" ;
-    sdo:parentOrganization <https://linked.data.gov.au/org/au> ; # TODO: Find a better parent
+    dcat:relation [
+        dcat:hadRole aarr:partOf ;
+        prov:agent <https://linked.data.gov.au/org/au> ; # TODO: Find a better parent
+    ] ;
     dcterms:type <https://w3id.org/idn/def/org-indigeneity/non-indigenous> ;
 .
 
@@ -91,7 +106,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
   a sdo:Organization ;
   sdo:name "Australian Bureau of Statistics Centre of Aboriginal and Torres Strait Islander Statistics" ;
   rdfs:label "Australian Bureau of Statistics Centre of Aboriginal and Torres Strait Islander Statistics" ;
-  sdo:parentOrganization <https://linked.data.gov.au/org/abs> ;
+  dcat:relation [
+    dcat:hadRole aarr:partOf ;
+    prov:agent <https://linked.data.gov.au/org/abs> ;
+  ] ;
   dcterms:type <https://w3id.org/idn/def/org-indigeneity/indigeneity-unknown> ;
   sdo:url "https://www.abs.gov.au/about/aboriginal-and-torres-strait-islander-peoples/aboriginal-and-torres-strait-islander-engagement"^^xsd:anyURI ;
 .
