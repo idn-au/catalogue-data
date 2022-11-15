@@ -1,8 +1,8 @@
 = IDN Catalogue Data
 
-This repository contains the data of the https://mspgh.unimelb.edu.au/centres-institutes/centre-for-health-equity/research-group/indigenous-data-network[Indigenous Data Network (IDN)]'s Knwoledge Graph which is delivered online via the [Prez](https://github.com/rdflib/prez/) system as a demonstration catalogue, Agents Database and lists of vocabularies:
+This repository contains the data of the https://mspgh.unimelb.edu.au/centres-institutes/centre-for-health-equity/research-group/indigenous-data-network[Indigenous Data Network (IDN)]'s Knowledge Graph which is delivered online via the https://github.com/rdflib/prez/[Prez] system as a demonstration catalogue, Agents Database and lists of vocabularies:
 
-* <http://idn.kurrawong.net>
+* http://idn.kurrawong.net
 
 == IDN Catalogues and Databases
 The IDN is producing three things:
