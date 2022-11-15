@@ -5,7 +5,7 @@ This repository contains the data of the https://mspgh.unimelb.edu.au/centres-in
 * http://idn.kurrawong.net
 
 == IDN Catalogues and Databases
-The IDN is producing three things:
+The IDN is producing four things:
 
 . a **Demonstration Catalogue** of Australian datasets
 .. with varying levels of indigenous relevance to demonstrate several aspects of indigenous data governance, sovereignty and how to even rate the "indigenous-ness" of data in the first place.
@@ -15,6 +15,7 @@ The IDN is producing three things:
 .. see the folder _data/agents/_
 . a **Catalogue of Last Resort** for indigenous data
 .. this data is not linked to that catalogue
+. a **Register** of IDN vocabularies
 
 == Metadata and Data
 This repository only contains the metadata files of resources listed in the Demonstration Catalogue, not the resources' data or the catalogue's system code.
