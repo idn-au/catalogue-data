@@ -46,7 +46,7 @@ cs:
         iso:stakeholder ,
         iso:user ,
         :subjectAgent ,
-        :subjectAgentRepresentatitve ;
+        :subjectAgentRepresentative ;
     skos:prefLabel "IDN Role Codes"@en ;
 .
 
@@ -69,16 +69,16 @@ cs:
     skos:topConceptOf cs: ;
 .
 
-:subjectAgentRepresentatitve
+:subjectAgentRepresentative
     a skos:Concept ;
-    dcterms:identifier "subjectAgentRepresentatitve"^^xsd:token ;
+    dcterms:identifier "subjectAgentRepresentative"^^xsd:token ;
     dcterms:provenance "Created for the IDN project, 2022"@en ;
     reg:status status:addition ;
     rdfs:isDefinedBy cs: ;
     skos:broader iso:stakeholder ;
     skos:definition "party who can be contacted who best represents the interests of the subject agent" ;
     skos:inScheme cs: ;
-    skos:prefLabel "subject agent representatitve"@en ;
+    skos:prefLabel "subject agent representative"@en ;
 .
 
 #

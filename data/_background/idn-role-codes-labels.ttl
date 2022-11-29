@@ -1,0 +1,112 @@
+PREFIX : <https://w3id.org/idn/def/idn-role-codes/>
+PREFIX cs: <https://w3id.org/idn/def/idn-role-codes>
+PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+iso:author
+    skos:prefLabel "author"@en ;
+    skos:topConceptOf cs: ;
+.
+
+iso:coAuthor
+    skos:prefLabel "co author"@en ;
+    skos:topConceptOf cs: ;
+.
+
+iso:collaborator
+    skos:prefLabel "collaborator"@en ;
+    skos:topConceptOf cs: ;
+.
+
+iso:contributor
+    skos:prefLabel "contributor"@en ;
+    skos:topConceptOf cs: ;
+.
+
+iso:custodian
+    skos:prefLabel "custodian"@en ;
+    skos:topConceptOf cs: ;
+.
+
+iso:distributor
+    skos:prefLabel "distributor"@en ;
+    skos:topConceptOf cs: ;
+.
+
+iso:editor
+    skos:prefLabel "editor"@en ;
+    skos:topConceptOf cs: ;
+.
+
+iso:funder
+    skos:prefLabel "funder"@en ;
+    skos:topConceptOf cs: ;
+.
+
+iso:mediator
+    skos:prefLabel "mediator"@en ;
+    skos:topConceptOf cs: ;
+.
+
+iso:originator
+    skos:prefLabel "originator"@en ;
+    skos:topConceptOf cs: ;
+.
+
+iso:owner
+    skos:prefLabel "owner"@en ;
+    skos:topConceptOf cs: ;
+.
+
+iso:pointOfContact
+    skos:prefLabel "point of contact"@en ;
+    skos:topConceptOf cs: ;
+.
+
+iso:principalInvestigator
+    skos:prefLabel "principal investigator"@en ;
+    skos:topConceptOf cs: ;
+.
+
+iso:processor
+    skos:prefLabel "processor"@en ;
+    skos:topConceptOf cs: ;
+.
+
+iso:publisher
+    skos:prefLabel "publisher"@en ;
+    skos:topConceptOf cs: ;
+.
+
+iso:resourceProvider
+    skos:prefLabel "resource provider"@en ;
+    skos:topConceptOf cs: ;
+.
+
+iso:rightsHolder
+    skos:prefLabel "rights holder"@en ;
+    skos:topConceptOf cs: ;
+.
+
+iso:sponsor
+    skos:prefLabel "sponsor"@en ;
+    skos:topConceptOf cs: ;
+.
+
+iso:stakeholder
+    skos:prefLabel "stakeholder"@en ;
+    skos:topConceptOf cs: ;
+.
+
+iso:user
+    skos:prefLabel "user"@en ;
+.
+
+:subjectAgent
+    skos:prefLabel "subject agent"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:subjectAgentRepresentative
+    skos:prefLabel "subject agent representative"@en ;
+.

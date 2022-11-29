@@ -1,0 +1,5 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+<https://linked.data.gov.au/dataset/asgsed3/AUS/AUS>
+    rdfs:label "Australia" ;
+.

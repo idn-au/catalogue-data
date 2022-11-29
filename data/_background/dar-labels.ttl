@@ -1,0 +1,34 @@
+PREFIX da: <https://linked.data.gov.au/def/data-access-rights/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+da:closed-access-rights
+    rdfs:label "Closed data access rights" ;
+.
+
+da:open-access-rights
+    rdfs:label "Open data access rights" ;
+.
+
+da:conditional
+    rdfs:label "Conditionally protected" ;
+.
+
+da:embargoed
+    rdfs:label "Embargoed access" ;
+.
+
+da:metadata-only
+    rdfs:label "Metadata only access" ;
+.
+
+da:open
+    rdfs:label "Open access" ;
+.
+
+da:protected
+    rdfs:label "Protected access" ;
+.
+
+da:restricted
+    rdfs:label "Restricted access" ;
+.

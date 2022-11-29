@@ -1,0 +1,23 @@
+PREFIX : <https://w3id.org/idn/def/idn-th/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+:indigenous-demographics
+    rdfs:label "Indigenous Demographics" ;
+.
+
+:indigenous-language
+    rdfs:label "Indigenous Language" ;
+.
+
+:keyword
+    rdfs:label "Keyword" ;
+.
+
+:place
+    rdfs:label "Place" ;
+.
+
+:subject
+    rdfs:label "Subject" ;
+.
+
