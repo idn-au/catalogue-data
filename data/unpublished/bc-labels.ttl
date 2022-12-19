@@ -1,0 +1,170 @@
+PREFIX bc: <http://w3id.org/idn/vocab/bc-labels/>
+PREFIX cs: <http://w3id.org/idn/vocab/bc-labels>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX lc: <https://linked.data.gov.au/def/lc/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdo: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+cs:
+    a skos:ConceptScheme ;
+    dcterms:created "2022-06-22"^^xsd:date ;
+    dcterms:creator <https://linked.data.gov.au/org/idn> ;
+    dcterms:identifier "bc"^^xsd:token ;
+    dcterms:modified "2022-07-18"^^xsd:date ;
+    dcterms:provenance "This vocabulary was generated from the https://localcontexts.org website's content: https://localcontexts.org/labels/biocultural-labels/" ;
+    dcterms:publisher <https://linked.data.gov.au/org/idn> ;
+    dcterms:source "https://localcontexts.org/labels/biocultural-labels/"^^xsd:anyURI ;
+    owl:versionInfo "1.0"^^xsd:string ;
+    skos:definition "Biocultural Labels define community expectations about appropriate use of biocultural collections and data. The BC Labels focus on accurate provenance, transparency and integrity in research engagements with Indigenous communities. The BC Labels ensure Indigenous people are represented in the metadata and create opportunities for future researchers to connect and support appropriate benefit sharing."@en ;
+    skos:hasTopConcept
+        bc:provenance ,
+        bc:multiple-communities ,
+        bc:clan ,
+        bc:consent-verified ,
+        bc:consent-non-verified ,
+        bc:research-use ,
+        bc:open-to-collaboration ,
+        bc:open-to-commercialization ,
+        bc:outreach ,
+        bc:non-commercial ;
+    skos:prefLabel "Biocultural Labels"@en ;
+.
+
+<https://linked.data.gov.au/org/idn>
+    a sdo:Organization ;
+    sdo:name "Indigenous Data Network" ;
+    sdo:url "https://mspgh.unimelb.edu.au/centres-institutes/centre-for-health-equity/research-group/indigenous-data-network"^^xsd:anyURI ;
+.
+
+bc:provenance
+    a
+        skos:Concept ,
+        lc:BCLabel ;
+    dcterms:identifier "provenance"^^xsd:token ;
+    dcterms:source "https://localcontexts.org/label/bc-provenance/"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "This Label reflects a significant relationship and responsibility to the species or biological entity and associated scientific collections and data, and supports the practice of proper and appropriate acknowledgement into the future."@en ;
+    skos:inScheme cs: ;
+    skos:notation "BC P" ;
+    skos:prefLabel "Provenance"@en ;
+.
+
+bc:multiple-communities
+    a
+        skos:Concept ,
+        lc:BCLabel ;
+    dcterms:identifier "multiple-communities"^^xsd:token ;
+    dcterms:source "https://localcontexts.org/label/bc-multiple-communities/"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "This Label recognizes that whilst one community might exert specific authority, other communities also have rights and responsibilities for use and care."@en ;
+    skos:inScheme cs: ;
+    skos:notation "BC MC" ;
+    skos:prefLabel "Multiple Communities"@en ;
+.
+
+bc:clan
+    a
+        skos:Concept ,
+        lc:BCLabel ;
+    dcterms:identifier "clan"^^xsd:token ;
+    dcterms:source "https://localcontexts.org/label/bc-clan/"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "This Label should be used when you would like external users to know that this material is subject to conditions for circulation relating to clan membership and/or is according to protocols for clan relationships."@en ;
+    skos:inScheme cs: ;
+    skos:notation "BC CL" ;
+    skos:prefLabel "Clan"@en ;
+.
+
+bc:consent-verified
+    a
+        skos:Concept ,
+        lc:BCLabel ;
+    dcterms:identifier "consent-verified"^^xsd:token ;
+    dcterms:source "https://localcontexts.org/label/bc-consent-verified/"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "This Label verifies that there are consent conditions in place for uses of information, collections, data, and digital sequence information."@en ;
+    skos:inScheme cs: ;
+    skos:notation "BC CV" ;
+    skos:prefLabel "Consent Verified"@en ;
+.
+
+bc:consent-non-verified
+    a
+        skos:Concept ,
+        lc:BCLabel ;
+    dcterms:identifier "consent-non-verified"^^xsd:token ;
+    dcterms:source "https://localcontexts.org/label/bc-consent-non-verified/"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The consent associated with this data has not been verified by the community. Reasons for this could include that it has not been appropriately vetted, has mistakes, omissions, lack of informed consent, or its process of creation was through research which did not follow proper community protocols."@en ;
+    skos:inScheme cs: ;
+    skos:notation "BC CNV" ;
+    skos:prefLabel "Consent Non-Verified"@en ;
+.
+
+bc:research-use
+    a
+        skos:Concept ,
+        lc:BCLabel ;
+    dcterms:identifier "research-use"^^xsd:token ;
+    dcterms:source "https://localcontexts.org/label/bc-research-use/"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "This Label should be used to permission use of information, collections, data, and digital sequence information (DSI) for unspecified research. This Label does not give permission for commercialization activities."@en ;
+    skos:inScheme cs: ;
+    skos:notation "BC R" ;
+    skos:prefLabel "Research Use"@en ;
+.
+
+bc:open-to-collaboration
+    a
+        skos:Concept ,
+        lc:BCLabel ;
+    dcterms:identifier "open-to-collaboration"^^xsd:token ;
+    dcterms:source "https://localcontexts.org/label/bc-open-to-collaboration/"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "This Label indicates that the community is open to research collaborations and outreach activities. With this Label, future opportunities for collaboration and engagement are supported."@en ;
+    skos:inScheme cs: ;
+    skos:notation "BC CB" ;
+    skos:prefLabel "Open To Collaboration"@en ;
+.
+
+bc:open-to-commercialization
+    a
+        skos:Concept ,
+        lc:BCLabel ;
+    dcterms:identifier "open-to-commercialization"^^xsd:token ;
+    dcterms:source "https://localcontexts.org/label/bc-open-to-commercialization/"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "This Label indicates the community has an express interest in being a primary party to any future negotiations if future commercialization opportunities arise."@en ;
+    skos:inScheme cs: ;
+    skos:notation "BC OC" ;
+    skos:prefLabel "Open To Commercialization"@en ;
+.
+
+bc:outreach
+    a
+        skos:Concept ,
+        lc:BCLabel ;
+    dcterms:identifier "outreach"^^xsd:token ;
+    dcterms:source "https://localcontexts.org/label/bc-outreach/"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "This Label should be used when you would only like your biocultural materials and/or data used for educational outreach activities. Outreach activities means to share works outside the community in order to increase and raise awareness and education about your family, clan and/or community. Sites for outreach activities can include schools, universities, libraries, archives, museums, online forums, and small learning groups."@en ;
+    skos:inScheme cs: ;
+    skos:notation "BC O" ;
+    skos:prefLabel "Outreach"@en ;
+.
+
+bc:non-commercial
+    a
+        skos:Concept ,
+        lc:BCLabel ;
+    dcterms:identifier "non-commercial"^^xsd:token ;
+    dcterms:source "https://localcontexts.org/label/bc-non-commercial/"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "This Label should be used when you would like to let external users who have access to your biocultural data know that it should only be used in non-commercial ways. You are asking users to be respectful with your data and ask that it not be used to derive economic benefits or used in any way that makes it into a commodity for sale or purchase."@en ;
+    skos:inScheme cs: ;
+    skos:notation "BC NC" ;
+    skos:prefLabel "Non-Commercial"@en ;
+.
