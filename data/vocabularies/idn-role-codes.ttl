@@ -1,5 +1,5 @@
-PREFIX : <https://w3id.org/idn/def/idn-role-codes/>
-PREFIX cs: <https://w3id.org/idn/def/idn-role-codes>
+PREFIX : <https://w3id.org/idn/vocab/idn-role-codes/>
+PREFIX cs: <https://w3id.org/idn/vocab/idn-role-codes>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX isocs: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode>
 PREFIX dcterms: <http://purl.org/dc/terms/>
@@ -15,7 +15,7 @@ cs:
     a skos:ConceptScheme ;
     dcterms:created "2022-06-11"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/idn> ;
-    dcterms:identifier "rolecodes"^^xsd:token ;
+    dcterms:identifier "idn-role-codes"^^xsd:token ;
     dcterms:issued "2022-07-18"^^xsd:date ;
     dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
     dcterms:modified "2022-07-18"^^xsd:date ;
