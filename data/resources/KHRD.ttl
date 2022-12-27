@@ -24,7 +24,8 @@ Koori Health Research Database (Janet McCalman) traces BDM of 7,800 Aboriginals 
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/restricted> ;
     dcat:theme
         <https://w3id.org/idn/def/idn-th/subject> ,
-        <https://w3id.org/idn/def/indigeneity/about-indigenous-people> ;
+        <https://w3id.org/idn/def/indigeneity/about-indigenous-people> ,
+        <https://w3id.org/idn/def/idn-th/indigenous-demographics> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:custodian ;
@@ -38,6 +39,8 @@ Koori Health Research Database (Janet McCalman) traces BDM of 7,800 Aboriginals 
             dcat:hadRole iso:rightsHolder ;
             prov:agent "IDN"
         ] ;
+    dcterms:isReferencedBy <https://doi.org/10.4225/03/5a9779c80f529>;
+    dcterms:isReferencedBy <http://doi.org/10.1007/s12546-020-09253-x>;
     ex:notes "Governance needs to be better established." ;
 .
 
