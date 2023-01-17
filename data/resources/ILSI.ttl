@@ -21,8 +21,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:title "Indigenous Land and Sea Interests " ;
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/metadata-only> ;
     dcat:theme
-        <https://w3id.org/idn/def/idn-th/place> ,
-        <https://w3id.org/idn/def/indigeneity/about-indigenous-things> ;
+        <https://w3id.org/idn/vocab/idn-th/place> ,
+        <https://w3id.org/idn/vocab/indigeneity/about-indigenous-things> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:custodian ;

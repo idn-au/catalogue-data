@@ -22,8 +22,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/conditional> ;
     dcat:accessURL "https://profiles.ala.org.au/opus/noongar"^^xsd:anyURI ;
     dcat:theme
-        <https://w3id.org/idn/def/idn-th/indigenous-language> ,
-        <https://w3id.org/idn/def/indigeneity/by-indigenous-people> ;
+        <https://w3id.org/idn/vocab/idn-th/indigenous-language> ,
+        <https://w3id.org/idn/vocab/indigeneity/by-indigenous-people> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:rightsHolder ;

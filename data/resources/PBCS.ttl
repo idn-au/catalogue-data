@@ -29,8 +29,8 @@ Case study in exemplary IDG.
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
     dcat:accessURL "https://aiatsis.gov.au/sites/default/files/research_pub/pbc_survey_2019.pdf"^^xsd:anyURI ;
     dcat:theme
-        <https://w3id.org/idn/def/idn-th/subject> ,
-        <https://w3id.org/idn/def/indigeneity/about-indigenous-things> ;
+        <https://w3id.org/idn/vocab/idn-th/subject> ,
+        <https://w3id.org/idn/vocab/indigeneity/about-indigenous-things> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:originator ;

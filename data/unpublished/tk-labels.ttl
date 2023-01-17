@@ -308,9 +308,3 @@ tk:women-restricted
     skos:notation "TK WR" ;
     skos:prefLabel "Women Restricted"@en ;
 .
-
-<https://linked.data.gov.au/org/idn>
-    a sdo:Organization ;
-    sdo:name "Indigenous Data Network" ;
-    sdo:url "https://www.idnau.org"^^xsd:anyURI ;
-.

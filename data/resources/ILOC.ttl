@@ -48,8 +48,8 @@ This catalog entry refers to the latest ASGS release. For all releases refer to 
     dcat:accessURL "https://linked.data.gov.au/dataset/asgsed3/ILOC"^^xsd:anyURI ;
     dcat:theme
         idnth:indigenous-demographics ,
-        <https://w3id.org/idn/def/idn-th/place> ,
-        <https://w3id.org/idn/def/indigeneity/about-indigenous-things> ;
+        <https://w3id.org/idn/vocab/idn-th/place> ,
+        <https://w3id.org/idn/vocab/indigeneity/about-indigenous-things> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:custodian ;

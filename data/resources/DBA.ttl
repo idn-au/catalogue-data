@@ -24,8 +24,8 @@ Comprises Barwick's publications and conference papers; Barwick's PhD.; work wit
     dcterms:type "collection" ;
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/restricted> ;
     dcat:theme
-        <https://w3id.org/idn/def/idn-th/subject> ,
-        <https://w3id.org/idn/def/indigeneity/about-indigenous-people> ;
+        <https://w3id.org/idn/vocab/idn-th/subject> ,
+        <https://w3id.org/idn/vocab/indigeneity/about-indigenous-people> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:rightsHolder ;

@@ -24,8 +24,8 @@ Open Research holds a variety of scholarly publications including journal articl
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/metadata-only> ;
     dcat:accessURL "https://openresearch-repository.anu.edu.au/advanced-search?location=1885%2F9048&query=Indigenous"^^xsd:anyURI ;
     dcat:theme
-        <https://w3id.org/idn/def/idn-th/subject> ,
-        <https://w3id.org/idn/def/indigeneity/about-indigenous-things> ;
+        <https://w3id.org/idn/vocab/idn-th/subject> ,
+        <https://w3id.org/idn/vocab/indigeneity/about-indigenous-things> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:rightsHolder ;

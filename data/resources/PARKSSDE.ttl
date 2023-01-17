@@ -29,8 +29,8 @@ https://www.awe.gov.au/agriculture-land/land/indigenous-protected-areas""" ;
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
     dcat:accessURL "https://www.environment.gov.au/fed/catalog/search/resource/details.page?uuid=%7BC64658F0-95AD-4209-8D1E-F94BD0A4E827%7D"^^xsd:anyURI ;
     dcat:theme
-        <https://w3id.org/idn/def/idn-th/place> ,
-        <https://w3id.org/idn/def/indigeneity/about-indigenous-things> ;
+        <https://w3id.org/idn/vocab/idn-th/place> ,
+        <https://w3id.org/idn/vocab/indigeneity/about-indigenous-things> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:custodian ;

@@ -30,8 +30,8 @@ AIHW products that focus specifically on Indigenous Australians are captured on 
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
     dcat:accessURL "https://www.rific.gov.au/Access-Data"^^xsd:anyURI ;
     dcat:theme
-        <https://w3id.org/idn/def/idn-th/subject> ,
-        <https://w3id.org/idn/def/indigeneity/about-indigenous-people> ;
+        <https://w3id.org/idn/vocab/idn-th/subject> ,
+        <https://w3id.org/idn/vocab/indigeneity/about-indigenous-people> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:originator ;

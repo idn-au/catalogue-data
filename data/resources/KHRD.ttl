@@ -23,9 +23,9 @@ Koori Health Research Database (Janet McCalman) traces BDM of 7,800 Aboriginals 
     dcterms:type "dataset" ;
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/restricted> ;
     dcat:theme
-        <https://w3id.org/idn/def/idn-th/subject> ,
-        <https://w3id.org/idn/def/indigeneity/about-indigenous-people> ,
-        <https://w3id.org/idn/def/idn-th/indigenous-demographics> ;
+        <https://w3id.org/idn/vocab/idn-th/subject> ,
+        <https://w3id.org/idn/vocab/indigeneity/about-indigenous-people> ,
+        <https://w3id.org/idn/vocab/idn-th/indigenous-demographics> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:custodian ;

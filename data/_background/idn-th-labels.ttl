@@ -1,4 +1,4 @@
-PREFIX : <https://w3id.org/idn/def/idn-th/>
+PREFIX : <https://w3id.org/idn/vocab/idn-th/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 :indigenous-demographics

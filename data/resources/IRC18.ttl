@@ -18,8 +18,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/restricted> ;
     dcat:accessURL "https://www.google.com/url?q=https://anu365.sharepoint.com/:x:/r/sites/IDC/_layouts/15/Doc.aspx?sourcedoc%3D%257B6CA7BAF9-BE1C-4350-B35A-FE08F923BF5A%257D%26file%3DANU%2520Compendium.xlsx%26action%3Ddefault%26mobileredirect%3Dtrue&sa=D&source=editors&ust=1661738938046846&usg=AOvVaw3E6JsngTSKrHeVUlHistkw"^^xsd:anyURI ;
     dcat:theme
-        <https://w3id.org/idn/def/idn-th/subject> ,
-        <https://w3id.org/idn/def/indigeneity/about-indigenous-things> ;
+        <https://w3id.org/idn/vocab/idn-th/subject> ,
+        <https://w3id.org/idn/vocab/indigeneity/about-indigenous-things> ;
     prov:qualifiedAttribution [
             dcat:hadRole iso:custodian ;
             prov:agent "ANU Executive"

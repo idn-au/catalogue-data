@@ -1,5 +1,5 @@
-PREFIX : <https://w3id.org/idn/def/indigeneity/>
-PREFIX cs: <https://w3id.org/idn/def/indigeneity>
+PREFIX : <https://w3id.org/idn/vocab/indigeneity/>
+PREFIX cs: <https://w3id.org/idn/vocab/indigeneity>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX sdo: <https://schema.org/>

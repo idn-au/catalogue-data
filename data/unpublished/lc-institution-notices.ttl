@@ -1,0 +1,53 @@
+PREFIX cs: <http://w3id.org/idn/vocab/lc-in>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX lc: <https://linked.data.gov.au/def/lc/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdo: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX in: <http://w3id.org/idn/vocab/lc-in/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+cs:
+    a skos:ConceptScheme ;
+    dcterms:created "2023-01-17"^^xsd:date ;
+    dcterms:creator <https://linked.data.gov.au/org/idn> ;
+    dcterms:identifier "in"^^xsd:token ;
+    dcterms:modified "2023-01-17"^^xsd:date ;
+    dcterms:provenance "This vocabulary was generated from the https://localcontexts.org website's content: https://localcontexts.org/notices/cultural-institution-notices/" ;
+    dcterms:publisher <https://linked.data.gov.au/org/idn> ;
+    dcterms:source "https://localcontexts.org/notices/cultural-institution-notices/"^^xsd:anyURI ;
+    owl:versionInfo "1.0"^^xsd:string ;
+    skos:definition "The Notices are specific tools for institutions and researchers which support the recognition of Indigenous interests in collections and data. There are four Notices. The TK (Traditional Knowledge) Notice and the BC (Biocultural) Notice align to the TK and BC Labels.  Then there are two Institution Notices: the Attribution Incomplete Notice and the Open to Collaboration Notice."@en ;
+    skos:hasTopConcept
+        in:attribution-incomplete ,
+        in:open-to-collaborate ;
+    skos:prefLabel "Institution Notices"@en ;
+.
+
+<https://linked.data.gov.au/org/idn>
+    a sdo:Organization ;
+    sdo:name "Indigenous Data Network" ;
+    sdo:url "https://mspgh.unimelb.edu.au/centres-institutes/centre-for-health-equity/research-group/indigenous-data-network"^^xsd:anyURI ;
+.
+
+in:attribution-incomplete
+    a skos:Concept ;
+    dcterms:identifier "attribution-incomplete"^^xsd:token ;
+    dcterms:source "https://localcontexts.org/notice/attribution-incomplete/"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The Attribution Incomplete Notice is attached to a collection or at an item level where there is incomplete, inaccurate, or missing attribution. This Notice indicates to the public that the record and/or metadata is incomplete."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Attribution Incomplete"@en ;
+.
+
+in:open-to-collaborate
+    a skos:Concept ;
+    dcterms:identifier "open-to-collaborate"^^xsd:token ;
+    dcterms:source "https://localcontexts.org/notice/open-to-collaborate"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The Open to Collaborate Notice indicates that an institution is committed to developing new modes of collaboration, engagement, and partnership over Indigenous collections and data that have colonial and/or problematic histories or unclear provenance. This Notice indicates an institutional commitment to change and to develop new processes for the care and stewardship of past and future heritage collections."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Open to Collaborate"@en ;
+.
+

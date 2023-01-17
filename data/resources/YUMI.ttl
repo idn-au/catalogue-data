@@ -30,8 +30,8 @@ This is a beta product that is still being refined and developed. Please contact
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
     dcat:accessURL "https://yumi-sabe.aiatsis.gov.au/explore"^^xsd:anyURI ;
     dcat:theme
-        <https://w3id.org/idn/def/idn-th/subject> ,
-        <https://w3id.org/idn/def/indigeneity/about-indigenous-things> ;
+        <https://w3id.org/idn/vocab/idn-th/subject> ,
+        <https://w3id.org/idn/vocab/indigeneity/about-indigenous-things> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:originator ;

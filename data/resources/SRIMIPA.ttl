@@ -24,8 +24,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/conditional> ;
     dcat:accessURL "https://www.niaa.gov.au/resource-centre/indigenous-affairs/social-return-investment-analysis-minyumai-indigenous-protected-area"^^xsd:anyURI ;
     dcat:theme
-        <https://w3id.org/idn/def/idn-th/subject> ,
-        <https://w3id.org/idn/def/indigeneity/about-indigenous-people> ;
+        <https://w3id.org/idn/vocab/idn-th/subject> ,
+        <https://w3id.org/idn/vocab/indigeneity/about-indigenous-people> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:rightsHolder ;

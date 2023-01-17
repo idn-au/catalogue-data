@@ -23,8 +23,8 @@ The ACP consists of 29 tables which crosstabulate characteristics including gend
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/metadata-only> ;
     dcat:accessURL "https://www.atsida.edu.au/archive/datasets/au.edu.anu.ada.ddi.08003-act-aboriginal-comm"^^xsd:anyURI ;
     dcat:theme
-        <https://w3id.org/idn/def/idn-th/subject> ,
-        <https://w3id.org/idn/def/indigeneity/about-indigenous-people> ;
+        <https://w3id.org/idn/vocab/idn-th/subject> ,
+        <https://w3id.org/idn/vocab/indigeneity/about-indigenous-people> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:custodian ;

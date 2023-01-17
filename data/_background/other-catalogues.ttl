@@ -1,0 +1,11 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX sdo: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://data.gov.au>
+    a dcat:Catalog ;
+    dcterms:title "data.gov.au" ;
+    dcterms:description "Data.gov.au is the central source of Australian open government data" ;
+    sdo:url "https://data.gov.au"^^xsd:anyURI ;
+.

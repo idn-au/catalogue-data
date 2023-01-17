@@ -25,8 +25,8 @@ Aboriginal and Torres Strait Islander people, researchers and other users should
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/metadata-only> ;
     dcat:accessURL "https://www.atsida.edu.au/archive/datasets/au.edu.anu.ada.ddi.20002-aus"^^xsd:anyURI ;
     dcat:theme
-        <https://w3id.org/idn/def/idn-th/subject> ,
-        <https://w3id.org/idn/def/indigeneity/about-indigenous-people> ;
+        <https://w3id.org/idn/vocab/idn-th/subject> ,
+        <https://w3id.org/idn/vocab/indigeneity/about-indigenous-people> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:originator ;

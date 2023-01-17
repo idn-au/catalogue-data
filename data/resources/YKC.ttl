@@ -28,7 +28,7 @@ In September 2010, the NBY Board resolved to undertake a comprehensive populatio
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
     dcat:accessURL "http://www.kimberleyinstitute.org.au/wp-content/uploads/2015/07/The-2011-Yawuru-Knowing-Our-Community-Survey1.pdf"^^xsd:anyURI ;
     dcat:theme
-        <https://w3id.org/idn/def/indigeneity/by-indigenous-people> ,
+        <https://w3id.org/idn/vocab/indigeneity/by-indigenous-people> ,
         "Subject" ;
     prov:qualifiedAttribution
         [

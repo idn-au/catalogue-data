@@ -25,8 +25,8 @@ Agricultural and Resource Economics and Sciences, Canberra, June, 2022.""" ;
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
     dcat:accessURL "https://www.agriculture.gov.au/abares/forestsaustralia/forest-data-maps-and-tools/spatial-data/indigenous-land-and-forest#:~:text=The%20Australia's%20Indigenous%20land%20and,management%20and%20co%2Dmanagement%2C%20or"^^xsd:anyURI ;
     dcat:theme
-        <https://w3id.org/idn/def/idn-th/place> ,
-        <https://w3id.org/idn/def/indigeneity/about-indigenous-things> ;
+        <https://w3id.org/idn/vocab/idn-th/place> ,
+        <https://w3id.org/idn/vocab/indigeneity/about-indigenous-things> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:originator ;

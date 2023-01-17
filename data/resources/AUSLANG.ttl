@@ -24,8 +24,8 @@ The dataset provided here includes the language names, each with a unique alpha-
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/conditional> ;
     dcat:accessURL "https://data.gov.au/data/dataset/70132e6f-259c-4e0f-9f95-4aed1101c053/resource/e9a9ea06-d821-4b53-a05f-877409a1a19c/download/aiatsis_austlang_endpoint_001.csv"^^xsd:anyURI ;
     dcat:theme
-        <https://w3id.org/idn/def/idn-th/indigenous-language> ,
-        <https://w3id.org/idn/def/indigeneity/about-indigenous-people> ;
+        <https://w3id.org/idn/vocab/idn-th/indigenous-language> ,
+        <https://w3id.org/idn/vocab/indigeneity/about-indigenous-people> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:originator ;
