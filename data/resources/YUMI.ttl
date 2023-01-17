@@ -3,6 +3,8 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX ex: <https://example.com/>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX time: <http://www.w3.org/2006/time#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://w3id.org/idn/dataset/democat>
@@ -20,11 +22,13 @@ This is a beta product that is still being refined and developed. Please contact
     dcterms:issued "2022-07-04"^^xsd:date ;
     dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
     dcterms:rights "© The Australian Institute of Aboriginal and Torres Strait Islander Studies" ;
-    dcterms:temporal "2022-" ;
+    dcterms:temporal [
+        time:hasBeginning [ time:inXSDgYear "2022" ] ;
+    ] ;
     dcterms:title "Indigenous Research Exchange Platform" ;
     dcterms:type "collection" ;
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
-    dcat:accessURL "https://irx.aiatsis.gov.au/explore"^^xsd:anyURI ;
+    dcat:accessURL "https://yumi-sabe.aiatsis.gov.au/explore"^^xsd:anyURI ;
     dcat:theme
         <https://w3id.org/idn/def/idn-th/subject> ,
         <https://w3id.org/idn/def/indigeneity/about-indigenous-things> ;
@@ -41,7 +45,6 @@ This is a beta product that is still being refined and developed. Please contact
             dcat:hadRole iso:rightsHolder ;
             prov:agent <https://linked.data.gov.au/org/aiatsis>
         ] ;
-    ex:home "https://irx.aiatsis.gov.au/" ;
-    ex:notes "Emerging catalogue for Indigenous Knowlege" ;
+    skos:note "Emerging catalogue for Indigenous Knowledge" ;
 .
 
