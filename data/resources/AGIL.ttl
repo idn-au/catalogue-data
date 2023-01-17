@@ -2,6 +2,7 @@ PREFIX cat-roles: <https://w3id.org/idn/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX ex: <https://example.com/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 PREFIX in: <http://w3id.org/idn/vocab/lc-in/>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
@@ -25,6 +26,10 @@ This dataset is NOT a complete listing of all locations at which indigenous peop
     dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
     dcterms:rights "None" ;
     dcterms:spatial <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;
+    dcterms:spatial [
+        a geo:Geometry ;
+        geo:asWKT "POLYGON ((96 -45, 96 -9, 168 -9, 168 -45, 96 -45))"^^geo:wktLiteral ;
+    ] ;
     dcterms:temporal [
         time:hasBeginning [ time:inXSDgYear "2008" ] ;
         time:hasEnd [ time:inXSDgYear "2019" ] ;
