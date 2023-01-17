@@ -26,7 +26,7 @@ https://www.awe.gov.au/agriculture-land/land/indigenous-protected-areas""" ;
     dcterms:temporal "01-08-2006 to 20-06-2022" ;
     dcterms:title "Indigenous Protected Areas (IPA) - Dedicated" ;
     dcterms:type "dataset" ;
-    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
+    # dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;  # TODO: no Concept from the vocab selected
     dcat:accessURL "https://www.environment.gov.au/fed/catalog/search/resource/details.page?uuid=%7BC64658F0-95AD-4209-8D1E-F94BD0A4E827%7D"^^xsd:anyURI ;
     dcat:theme
         <https://w3id.org/idn/vocab/idn-th/place> ,

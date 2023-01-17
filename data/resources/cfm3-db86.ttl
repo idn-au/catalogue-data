@@ -22,7 +22,7 @@ Agricultural and Resource Economics and Sciences, Canberra, June, 2022.""" ;
     dcterms:temporal "2020" ;
     dcterms:title "Australia's Indigenous land and forest estate (2020)" ;
     dcterms:type "Datasets" ;
-    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
+    # dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;  # TODO: no Concept from the vocab selected
     dcat:accessURL "https://www.agriculture.gov.au/abares/forestsaustralia/forest-data-maps-and-tools/spatial-data/indigenous-land-and-forest#:~:text=The%20Australia's%20Indigenous%20land%20and,management%20and%20co%2Dmanagement%2C%20or"^^xsd:anyURI ;
     dcat:theme
         <https://w3id.org/idn/vocab/idn-th/place> ,

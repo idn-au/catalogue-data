@@ -27,7 +27,7 @@ AIHW products that focus specifically on Indigenous Australians are captured on 
     dcterms:temporal "2016-2019" ;
     dcterms:title "Regional Insights for Indigenous Communities" ;
     dcterms:type "dataset" ;
-    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
+    # dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;  # TODO: no Concept from the vocab selected
     dcat:accessURL "https://www.rific.gov.au/Access-Data"^^xsd:anyURI ;
     dcat:theme
         <https://w3id.org/idn/vocab/idn-th/subject> ,

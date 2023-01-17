@@ -21,7 +21,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:temporal "2004-01-01 to 2022-08-08" ;
     dcterms:title "Cultural Heritage Party boundaries - Queensland" ;
     dcterms:type "dataset" ;
-    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
+    # dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;  # TODO: no Concept from the vocab selected
     dcat:accessURL "https://qldspatial.information.qld.gov.au/catalogue/custom/search.page?q=%22Cultural%20Heritage%20Party%20boundaries%20-%20Queensland%22"^^xsd:anyURI ;
     dcat:theme
         <https://w3id.org/idn/vocab/idn-th/place> ,

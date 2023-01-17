@@ -27,8 +27,12 @@ This is a beta product that is still being refined and developed. Please contact
     ] ;
     dcterms:title "Indigenous Research Exchange Platform" ;
     dcterms:type "collection" ;
-    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
+    # dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;  # TODO: no Concept from the vocab selected
     dcat:accessURL "https://yumi-sabe.aiatsis.gov.au/explore"^^xsd:anyURI ;
+    dcterms:isPartOf [
+        dcat:hadRole cat-roles:home ;
+        prov:entity <https://yumi-sabe.aiatsis.gov.au> ;
+    ] ;
     dcat:theme
         <https://w3id.org/idn/vocab/idn-th/subject> ,
         <https://w3id.org/idn/vocab/indigeneity/about-indigenous-things> ;

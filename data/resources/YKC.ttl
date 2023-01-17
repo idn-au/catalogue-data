@@ -25,7 +25,7 @@ In September 2010, the NBY Board resolved to undertake a comprehensive populatio
         time:hasEnd [ time:inXSDgYearMonth "2011-07" ] ;
     ] ;
     dcterms:title "Yawuru Knowing Our Community Household Survey" ;
-    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
+    # dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;  # TODO: no Concept from the vocab selected
     dcat:accessURL "http://www.kimberleyinstitute.org.au/wp-content/uploads/2015/07/The-2011-Yawuru-Knowing-Our-Community-Survey1.pdf"^^xsd:anyURI ;
     dcat:theme
         <https://w3id.org/idn/vocab/indigeneity/by-indigenous-people> ,

@@ -21,7 +21,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:temporal "6-30-2015 to 6-30-2022" ;
     dcterms:title "NSW Custody Statistics" ;
     dcterms:type "dataset" ;
-    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
+    # dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;  # TODO: no Concept from the vocab selected
     dcat:accessURL "https://www.bocsar.nsw.gov.au/Pages/bocsar_custody_stats/bocsar_custody_stats.aspx"^^xsd:anyURI ;
     dcat:theme
         <https://w3id.org/idn/vocab/idn-th/subject> ,

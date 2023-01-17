@@ -21,7 +21,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:temporal "1862-1899" ;
     dcterms:title "Western Australia Supreme Court 1862-1899" ;
     dcterms:type "dataset" ;
-    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
+    # dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;  # TODO: no Concept from the vocab selected
     dcat:accessURL "https://dataverse.ada.edu.au/dataset.xhtml?persistentId=doi:10.26193/ESI64N"^^xsd:anyURI ;
     dcat:theme
         <https://w3id.org/idn/vocab/idn-th/subject> ,

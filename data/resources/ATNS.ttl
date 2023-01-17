@@ -24,7 +24,7 @@ We gather and review information from publicly available academic sources, onlin
     dcterms:temporal "1976-2020" ;
     dcterms:title "The Agreements, Treaties and Negotiated Settlements Database" ;
     dcterms:type "collection" ;
-    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
+    # dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;  # TODO: no Concept from the vocab selected
     dcat:accessURL "https://www.atns.net.au/"^^xsd:anyURI ;
     dcat:theme
         <https://w3id.org/idn/vocab/idn-th/subject> ,
@@ -32,17 +32,17 @@ We gather and review information from publicly available academic sources, onlin
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:originator ;
-            prov:agent "ATNS"
+            prov:agent <https://w3id.org/idn/agent/atns>
         ] ,
         [
             dcat:hadRole iso:rightsHolder ;
-            prov:agent "ATNS"
+            prov:agent <https://w3id.org/idn/agent/atns>
         ] ,
         [
             dcat:hadRole iso:custodian ;
-            prov:agent "ISU, University of Melbourne"
+            prov:agent <https://w3id.org/idn/agent/isu>
         ] ;
-    ex:home "https://www.atns.net.au/" ;
+    # ex:home "https://www.atns.net.au/" ;  # online at the accessURL endpoint but this address is a single resource, not a catalogue
     ex:notes "ATNS was launched in 2002 and developed under a series of Australian Research Council (ARC) Linkage Projects focusing on treaties and agreement making with Indigenous Australians. The projects were led by a team of multidisciplinary researchers and partner organisations, including Indigenous organisations and industry partners. " ;
 .
 

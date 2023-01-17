@@ -4,14 +4,16 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX democat: <https://w3id.org/idn/def/democat/>
 PREFIX idncp: <https://w3id.org/idn/def/idncp/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX sdo: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/org/idn>
     a sdo:Organization ;
+    dcat:relation [
+        dcat:hadRole aarr:partOf ;
+        prov:agent <https://w3id.org/idn/agent/isu>
+    ] ;
     sdo:name "Indigenous Data Network" ;
-    rdfs:label "Indigenous Data Network" ;
     sdo:description "The IDN is within the University of Melbourne. It was established in 2018 to support and coordinate the governance of Indigenous data for Aboriginal and Torres Strait Islander peoples and empower Aboriginal and Torres Strait Islander communities to decide their own local data priorities." ;
     sdo:url "https://mspgh.unimelb.edu.au/centres-institutes/centre-for-health-equity/research-group/indigenous-data-network"^^xsd:anyURI ;
     dcterms:type <https://w3id.org/idn/vocab/org-indigeneity/non-indigenous> ;
@@ -21,7 +23,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a sdo:Person ;
     dcterms:type sdo:Person ;
     sdo:name "Nicholas J. Car"@en ;
-    rdfs:label "Nicholas J. Car"@en ;
     sdo:email "nick@kurrawong.net"^^xsd:anyURI ;
     dcat:relation [
         dcat:hadRole aarr:affiliateOf ;
@@ -33,7 +34,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <https://orcid.org/0000-0003-1983-6687>
     a sdo:Person ;
     sdo:name "Sandra Silcot"@en ;
-    rdfs:label "Sandra Silcot"@en ;
     sdo:email "ssilcot@gmail.com"^^xsd:anyURI ;
     dcat:relation [
         dcat:hadRole aarr:affiliateOf ;
@@ -44,7 +44,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <https://kurrawong.net>
     a sdo:Organization ;
     sdo:name "KurrawongAI" ;
-    rdfs:label "KurrawongAI" ;
     sdo:description "Kurrawong AI is a small, Artificial Intelligence, company in Australia specialising in Knowledge Graphs." ;
     sdo:url "https://kurrawong.net"^^xsd:anyURI ;
     sdo:identifier "31 353 542 036"^^idncp:abnId ;
@@ -54,7 +53,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <https://linked.data.gov.au/org/au>
     a sdo:Organization ;
     sdo:name "Australian Federal Government" ;
-    rdfs:label "Australian Federal Government" ;
     sdo:url "https://www.australia.gov.au"^^xsd:anyURI ;
     dcterms:type <https://w3id.org/idn/vocab/org-indigeneity/non-indigenous> ;
 .
@@ -62,7 +60,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <https://linked.data.gov.au/org/abs>
     a sdo:Organization ;
     sdo:name "Australian Bureau of Statistics" ;
-    rdfs:label "Australian Bureau of Statistics" ;
     sdo:url "https://www.abs.gov.au"^^xsd:anyURI ;
     dcterms:type <https://w3id.org/idn/vocab/org-indigeneity/non-indigenous> ;
 .
@@ -74,7 +71,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         prov:agent <https://linked.data.gov.au/org/dhs> ;
     ] ;
     sdo:name "Services Australia" ;
-    rdfs:label "Services Australia" ;
     sdo:url "https://www.servicesaustralia.gov.au"^^xsd:anyURI ;
     dcterms:type <https://w3id.org/idn/vocab/org-indigeneity/non-indigenous> ;
 .
@@ -89,7 +85,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         prov:agent <https://linked.data.gov.au/org/sa> ;
     ] ;
     sdo:name "Department of Human Services" ;
-    rdfs:label "Department of Human Services" ;
     sdo:url "https://www.humanservices.gov.au"^^xsd:anyURI ;
     dcterms:type <https://w3id.org/idn/vocab/org-indigeneity/non-indigenous> ;
 .
@@ -97,7 +92,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <https://w3id.org/idn/agent/agilwg>
     a sdo:Organization ;
     sdo:name "Australian Government Indigenous Locations Working Group 2007-2012" ;
-    rdfs:label "Australian Government Indigenous Locations Working Group 2007-2012" ;
     dcat:relation [
         dcat:hadRole aarr:partOf ;
         prov:agent <https://linked.data.gov.au/org/au> ; # TODO: Find a better parent
@@ -108,7 +102,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <https://w3id.org/idn/agent/abs-coatsis>
   a sdo:Organization ;
   sdo:name "Australian Bureau of Statistics Centre of Aboriginal and Torres Strait Islander Statistics" ;
-  rdfs:label "Australian Bureau of Statistics Centre of Aboriginal and Torres Strait Islander Statistics" ;
   dcat:relation [
     dcat:hadRole aarr:partOf ;
     prov:agent <https://linked.data.gov.au/org/abs> ;
@@ -120,22 +113,23 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <https://linked.data.gov.au/org/uts>
     a sdo:Organization ;
     sdo:name "University of Technology Sydney" ;
-    rdfs:label "University of Technology Sydney" ;
     sdo:url "https://www.uts.edu.au"^^xsd:anyURI ;
     dcterms:type <https://w3id.org/idn/vocab/org-indigeneity/non-indigenous> ;
 .
 
 <http://linked.data.gov.au/org/nla>
     a sdo:Organisation ;
+    dcat:relation [
+      dcat:hadRole aarr:partOf ;
+      prov:agent <https://linked.data.gov.au/org/au> ;
+    ] ;
     sdo:name "National Library of Australia" ;
-    rdfs:label "National Library of Australia" ;
     sdo:url "https://www.nla.gov.au/"^^xsd:anyURI ;
 .
 
 <https://w3id.org/idn/agent/lc>
     a sdo:Organisation ;
     sdo:name "Local Contexts" ;
-    rdfs:label "Local Contexts" ;
     sdo:description "Local Contexts was founded by Jane Anderson and Kim Christen in 2010. The primary objectives of Local Contexts are to enhance and legitimize locally based decision-making and Indigenous governance frameworks for determining ownership, access, and culturally appropriate conditions for sharing historical, contemporary and future collections of cultural heritage and Indigenous data. Local Contexts is focused on increasing Indigenous involvement in data governance through the integration of Indigenous values into data systems. Local Contexts offers digital strategies for Indigenous communities, cultural institutions and researchers through the TK (Traditional Knowledge) & BC (Biocultural) Labels and Notices. Together they function as a practical mechanism to advance aspirations for Indigenous data sovereignty and Indigenous innovation." ;
     sdo:url "https://localcontexts.org/about/about-local-contexts/"^^xsd:anyURI ;
 .
@@ -143,7 +137,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <https://w3id.org/idn/agent/nby>
     a sdo:Organisation ;
     sdo:name "Nyamba Buru Yawuru Ltd" ;
-    rdfs:label "Nyamba Buru Yawuru Ltd" ;
     sdo:description "The Yawuru people are the traditional owners of the lands and waters in and around Rubibi (the town of Broome)" ;
     sdo:url "http://www.yawuru.org.au"^^xsd:anyURI ;
 .
@@ -151,6 +144,47 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <https://w3id.org/idn/agent/agilwg>
     a sdo:Organisation ;
     sdo:name "Australian Government Indigenous Locations Working Group" ;
-    rdfs:label "Australian Government Indigenous Locations Working Group" ;
     sdo:description "Australian Government Indigenous Locations Working Group 2007-2012" ;
+.
+
+<https://w3id.org/idn/agent/isu>
+    a sdo:Organisation ;
+    sdo:name "Indigenous Studies Unit of the University of Melbourne" ;
+    sdo:description "The Indigenous Studies Unit undertakes research aiming to improve outcomes in Indigenous health and wellbeing, particularly in relation to alcohol misuse and family violence, Indigenous data governance, digital archives, cultural heritage, technology and resource management. We make regular contributions to Parliamentary reviews and Inquiries, cross-platform media, and policy development." ;
+    sdo:url "https://mspgh.unimelb.edu.au/centres-institutes/centre-for-health-equity/research-group/indigenous-studies"^^xsd:anyURI ;
+    dcat:relation [
+        dcat:hadRole aarr:partOf ;
+        prov:agent <https://w3id.org/idn/agent/uom>
+    ] ;
+.
+
+<https://w3id.org/idn/agent/uom>
+    a sdo:Organisation ;
+    sdo:name "The University of Melbourne" ;
+    sdo:description "The University of Melbourne is a public research university located in Melbourne, Australia. Founded in 1853, it is Australia's second oldest university and the oldest in Victoria." ;
+    sdo:url "https://www.unimelb.edu.au/"^^xsd:anyURI ;
+.
+
+<https://w3id.org/idn/agent/atns>
+    a sdo:Organisation ;
+    sdo:name "Agreements Treaties and Negotiated Settlements" ;
+    sdo:description "ATNS was launched in 2002 and developed under a series of Australian Research Council (ARC) Linkage Projects focusing on treaties and agreement making with Indigenous Australians. The projects were led by a team of multidisciplinary researchers and partner organisations, including Indigenous organisations and industry partners." ;
+    sdo:url "https://www.atns.net.au"^^xsd:anyURI ;
+.
+
+<https://w3id.org/idn/agent/nntt>
+    a sdo:Organisation ;
+    dcat:relation [
+      dcat:hadRole aarr:partOf ;
+      prov:agent <https://linked.data.gov.au/org/au> ;
+    ] ;
+    sdo:name "National Native Title Tribunal" ;
+    sdo:description """The Native Title Act 1993 (Cth) (the "Act") creates an Australia-wide native title scheme, the objectives of which include:
+
+* providing for the recognition and protection of native title;
+* establishing a mechanism for determining claims to native title; and
+* establishing ways in which future dealings affecting native title (future acts) may proceed.
+
+The Act establishes the Tribunal as an independent body with a wide range of functions. The Act is, itself, a 'special measure' for the advancement and protection of Aboriginal peoples and Torres Strait Islanders (Indigenous Australian peoples). The Act is intended to advance the process of reconciliation among all Australians.""" ;
+    sdo:url "http://www.nntt.gov.au"^^xsd:anyURI ;
 .

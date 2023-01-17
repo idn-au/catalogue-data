@@ -22,7 +22,7 @@ As Tandana is government funded it reports annually on the funding supplied and 
     dcterms:temporal "2011-07-01 to 2017-06-30" ;
     dcterms:title "Tandanya Annual Reporting Regulatory Data" ;
     dcterms:type "dataset" ;
-    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
+    # dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;  # TODO: no Concept from the vocab selected
     dcat:accessURL "https://data.sa.gov.au/data/dataset/d70aead0-f61b-4279-b677-685d564b7fd1/resource/71107f3a-6991-4d04-934f-0d31f9fee9ee/download/tandanyaannualreportregulatorydata.xlsx"^^xsd:anyURI ;
     dcat:theme
         <https://w3id.org/idn/vocab/idn-th/subject> ,

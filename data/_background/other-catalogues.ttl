@@ -1,11 +1,38 @@
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX sdo: <https://schema.org/>
+PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.gov.au>
     a dcat:Catalog ;
+    dcat:accessURL "https://data.gov.au"^^xsd:anyURI ;
     dcterms:title "data.gov.au" ;
     dcterms:description "Data.gov.au is the central source of Australian open government data" ;
-    sdo:url "https://data.gov.au"^^xsd:anyURI ;
+    prov:qualifiedAttribution [
+        dcat:hadRole iso:custodian ;
+        prov:agent <https://linked.data.gov.au/org/abs>
+    ] ;
+.
+
+<https://yumi-sabe.aiatsis.gov.au>
+    a dcat:Catalog ;
+    dcat:accessURL "https://yumi-sabe.aiatsis.gov.au"^^xsd:anyURI ;
+    dcterms:title "Yumi Sabe" ;
+    dcterms:description "Yumi Sabe is an Indigenous Knowledge Exchange that helps Indigenous communities, researchers and policy makers to access and use data to inform and improve policies and programs and demonstrate the complexity and diversity of Aboriginal and Torres Strait Islander peoples', research and culture." ;
+    prov:qualifiedAttribution [
+        dcat:hadRole iso:custodian ;
+        prov:agent <https://linked.data.gov.au/org/aiatsis>
+    ] ;
+.
+
+<https://asgs.linked.fsdf.org.au>
+    a dcat:Catalog ;
+    dcat:accessURL "https://yumi-sabe.aiatsis.gov.au"^^xsd:anyURI ;
+    dcterms:title "Australian Statistical Geography Standard Linked Data API" ;
+    dcterms:description "An Linked Data API system delivering Australian Statistical Geography Standard (ASGS) information. ASGS is a classification of Australia into a hierarchy of statistical areas. " ;
+    prov:qualifiedAttribution [
+        dcat:hadRole iso:custodian ;
+        prov:agent <https://linked.data.gov.au/org/abs>
+    ] ;
 .

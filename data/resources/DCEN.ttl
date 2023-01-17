@@ -21,7 +21,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:temporal "1894  - 1915" ;
     dcterms:title "Correspondence relating to Aboriginal and Torres Strait Islander people - Deebing Creek explanatory notes" ;
     dcterms:type "Dataset" ;
-    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
+    # dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;  # TODO: no Concept from the vocab selected
     dcat:accessURL "https://www.data.qld.gov.au/dataset/correspondence-relating-to-aboriginal-and-torres-strait-islander-people-deebing-creek/resource/21b98a5e-9d9a-4795-9693-faac505c7e0c"^^xsd:anyURI ;
     dcat:theme
         <https://w3id.org/idn/vocab/idn-th/subject> ,

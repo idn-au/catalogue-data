@@ -21,7 +21,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:temporal "01-01-1958 to 01-01-2015" ;
     dcterms:title "Supplementary Material used to characterise the spatial and temporal dynamics of magpie goose populations in the Kakadu Region NT and their cultural harvesting values" ;
     dcterms:type "document" ;
-    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;
+    # dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;  # TODO: no Concept from the vocab selected
     dcat:accessURL "https://doi.org/10.4225/08/58521aabad9f5"^^xsd:anyURI ;
     dcat:theme
         <https://w3id.org/idn/vocab/idn-th/keyword> ,
