@@ -139,3 +139,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     sdo:description "Local Contexts was founded by Jane Anderson and Kim Christen in 2010. The primary objectives of Local Contexts are to enhance and legitimize locally based decision-making and Indigenous governance frameworks for determining ownership, access, and culturally appropriate conditions for sharing historical, contemporary and future collections of cultural heritage and Indigenous data. Local Contexts is focused on increasing Indigenous involvement in data governance through the integration of Indigenous values into data systems. Local Contexts offers digital strategies for Indigenous communities, cultural institutions and researchers through the TK (Traditional Knowledge) & BC (Biocultural) Labels and Notices. Together they function as a practical mechanism to advance aspirations for Indigenous data sovereignty and Indigenous innovation." ;
     sdo:url "https://localcontexts.org/about/about-local-contexts/"^^xsd:anyURI ;
 .
+
+<https://w3id.org/idn/agent/nby>
+    a sdo:Organisation ;
+    sdo:name "Nyamba Buru Yawuru Ltd" ;
+    rdfs:label "Nyamba Buru Yawuru Ltd" ;
+    sdo:description "The Yawuru people are the traditional owners of the lands and waters in and around Rubibi (the town of Broome)" ;
+    sdo:url "http://www.yawuru.org.au"^^xsd:anyURI ;
+.
