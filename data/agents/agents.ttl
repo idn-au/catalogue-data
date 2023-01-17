@@ -52,7 +52,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/org/au>
     a sdo:Organization ;
-    sdo:name "Australian Federal Government" ;
+    sdo:name "Australian Government" ;
     sdo:url "https://www.australia.gov.au"^^xsd:anyURI ;
     dcterms:type <https://w3id.org/idn/vocab/org-indigeneity/non-indigenous> ;
 .
