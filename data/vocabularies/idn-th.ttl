@@ -126,10 +126,11 @@ cs:
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
     dcterms:identifier "N0958"^^xsd:token ;
+    dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader <https://w3id.org/idn/vocab/idn-th/keyword> ;
     skos:definition "Aboriginal reserves"@en ;
-    skos:inScheme <https://w3id.org/idn/vocab/idn-th> ;
+    skos:inScheme cs: ;
     skos:prefLabel "Aboriginal reserves"@en ;
 .
 
@@ -137,10 +138,11 @@ cs:
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
     dcterms:identifier "N0004"^^xsd:token ;
+    dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader <https://w3id.org/idn/vocab/idn-th/keyword> ;
     skos:definition "Aboriginal title"@en ;
-    skos:inScheme <https://w3id.org/idn/vocab/idn-th> ;
+    skos:inScheme cs: ;
     skos:prefLabel "Aboriginal title"@en ;
 .
 
@@ -148,10 +150,11 @@ cs:
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
     dcterms:identifier "N0005"^^xsd:token ;
+    dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader <https://w3id.org/idn/vocab/idn-th/keyword> ;
     skos:definition "Aborigines in history"@en ;
-    skos:inScheme <https://w3id.org/idn/vocab/idn-th> ;
+    skos:inScheme cs: ;
     skos:prefLabel "Aborigines in history"@en ;
 .
 
@@ -159,10 +162,11 @@ cs:
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
     dcterms:identifier "N0279"^^xsd:token ;
+    dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader <https://w3id.org/idn/vocab/idn-th/keyword> ;
     skos:definition "Employment of Aborigines"@en ;
-    skos:inScheme <https://w3id.org/idn/vocab/idn-th> ;
+    skos:inScheme cs: ;
     skos:prefLabel "Employment of Aborigines"@en ;
 .
 
@@ -170,13 +174,14 @@ cs:
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
     dcterms:identifier "R0005"^^xsd:token ;
+    dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:altLabel "Education, Aboriginal"@en ;
     skos:broader
         <https://vocabularyserver.com/apais/xml.php?skosTema=691> ,
         <https://w3id.org/idn/vocab/idn-th/keyword> ;
     skos:definition "Aboriginal education"@en ;
-    skos:inScheme <https://w3id.org/idn/vocab/idn-th> ;
+    skos:inScheme cs: ;
     skos:prefLabel "Aboriginal education"@en ;
     skos:related <https://vocabularyserver.com/apais/xml.php?skosTema=27> ;
     skos:scopeNote "Includes Torres Strait Islander education "@en ;
@@ -186,13 +191,14 @@ cs:
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
     dcterms:identifier "R1671"^^xsd:token ;
+    dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:altLabel "Employment of Aborigines"@en ;
     skos:broader
         <https://vocabularyserver.com/apais/xml.php?skosTema=762> ,
         <https://w3id.org/idn/vocab/idn-th/keyword> ;
     skos:definition "Aboriginal employment"@en ;
-    skos:inScheme <https://w3id.org/idn/vocab/idn-th> ;
+    skos:inScheme cs: ;
     skos:prefLabel "Aboriginal employment"@en ;
     skos:related <https://vocabularyserver.com/apais/xml.php?skosTema=27> ;
     skos:scopeNote "Includes Torres Strait Islander employment "@en ;
@@ -202,12 +208,13 @@ cs:
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
     dcterms:identifier "R0006"^^xsd:token ;
+    dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader
         <https://vocabularyserver.com/apais/xml.php?skosTema=1004> ,
         <https://w3id.org/idn/vocab/idn-th/keyword> ;
     skos:definition "Aboriginal health"@en ;
-    skos:inScheme <https://w3id.org/idn/vocab/idn-th> ;
+    skos:inScheme cs: ;
     skos:prefLabel "Aboriginal health"@en ;
     skos:related <https://vocabularyserver.com/apais/xml.php?skosTema=27> ;
     skos:scopeNote "Includes Torres Strait Islander health "@en ;
@@ -217,6 +224,7 @@ cs:
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
     dcterms:identifier "R1723"^^xsd:token ;
+    dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:altLabel
         "Aborigines in history"@en ,
@@ -225,7 +233,7 @@ cs:
         <https://vocabularyserver.com/apais/xml.php?skosTema=1029> ,
         <https://w3id.org/idn/vocab/idn-th/keyword> ;
     skos:definition "Aboriginal history"@en ;
-    skos:inScheme <https://w3id.org/idn/vocab/idn-th> ;
+    skos:inScheme cs: ;
     skos:prefLabel "Aboriginal history"@en ;
     skos:related
         <https://vocabularyserver.com/apais/xml.php?skosTema=2> ,
@@ -237,13 +245,14 @@ cs:
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
     dcterms:identifier "R1685"^^xsd:token ;
+    dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader
         <https://vocabularyserver.com/apais/xml.php?skosTema=1246> ,
         <https://vocabularyserver.com/apais/xml.php?skosTema=8> ,
         <https://w3id.org/idn/vocab/idn-th/keyword> ;
     skos:definition "Aboriginal languages"@en ;
-    skos:inScheme <https://w3id.org/idn/vocab/idn-th> ;
+    skos:inScheme cs: ;
     skos:prefLabel "Aboriginal languages"@en ;
     skos:scopeNote "Includes Torres Strait Islander languages "@en ;
 .
@@ -252,13 +261,14 @@ cs:
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
     dcterms:identifier "R1817"^^xsd:token ;
+    dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader
         <https://vocabularyserver.com/apais/xml.php?skosTema=1326> ,
         <https://vocabularyserver.com/apais/xml.php?skosTema=5> ,
         <https://w3id.org/idn/vocab/idn-th/keyword> ;
     skos:definition "Aboriginal literature"@en ;
-    skos:inScheme <https://w3id.org/idn/vocab/idn-th> ;
+    skos:inScheme cs: ;
     skos:prefLabel "Aboriginal literature"@en ;
     skos:related
         <https://vocabularyserver.com/apais/xml.php?skosTema=1642> ,
@@ -270,12 +280,13 @@ cs:
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
     dcterms:identifier "R1810"^^xsd:token ;
+    dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader
         <https://vocabularyserver.com/apais/xml.php?skosTema=8> ,
         <https://w3id.org/idn/vocab/idn-th/keyword> ;
     skos:definition "Aboriginal music"@en ;
-    skos:inScheme <https://w3id.org/idn/vocab/idn-th> ;
+    skos:inScheme cs: ;
     skos:prefLabel "Aboriginal music"@en ;
     skos:related <https://vocabularyserver.com/apais/xml.php?skosTema=1469> ;
     skos:scopeNote "Music created by Aboriginal and Torres Strait Islander artists, including music using traditional indigenous forms and/or instruments "@en ;
@@ -285,13 +296,14 @@ cs:
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
     dcterms:identifier "R1686"^^xsd:token ;
+    dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:altLabel "Dreaming stories"@en ;
     skos:broader
         <https://vocabularyserver.com/apais/xml.php?skosTema=1824> ,
         <https://w3id.org/idn/vocab/idn-th/keyword> ;
     skos:definition "Aboriginal religion"@en ;
-    skos:inScheme <https://w3id.org/idn/vocab/idn-th> ;
+    skos:inScheme cs: ;
     skos:prefLabel "Aboriginal religion"@en ;
     skos:related <https://vocabularyserver.com/apais/xml.php?skosTema=8> ;
     skos:scopeNote "Includes Torres Strait Islander religion "@en ;
@@ -301,13 +313,14 @@ cs:
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
     dcterms:identifier "R1818"^^xsd:token ;
+    dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader
         <https://vocabularyserver.com/apais/xml.php?skosTema=154> ,
         <https://vocabularyserver.com/apais/xml.php?skosTema=3> ,
         <https://w3id.org/idn/vocab/idn-th/keyword> ;
     skos:definition "Aboriginal artists"@en ;
-    skos:inScheme <https://w3id.org/idn/vocab/idn-th> ;
+    skos:inScheme cs: ;
     skos:prefLabel "Aboriginal artists"@en ;
     skos:related
         <https://vocabularyserver.com/apais/xml.php?skosTema=1569> ,
@@ -319,12 +332,13 @@ cs:
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
     dcterms:identifier "R1791"^^xsd:token ;
+    dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader
         <https://vocabularyserver.com/apais/xml.php?skosTema=805> ,
         <https://w3id.org/idn/vocab/idn-th/keyword> ;
     skos:definition "Indigenous peoples"@en ;
-    skos:inScheme <https://w3id.org/idn/vocab/idn-th> ;
+    skos:inScheme cs: ;
     skos:narrower
         <https://vocabularyserver.com/apais/xml.php?skosTema=2178> ,
         <https://vocabularyserver.com/apais/xml.php?skosTema=27> ;
@@ -339,11 +353,12 @@ cs:
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
     dcterms:identifier "R1884"^^xsd:token ;
+    dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:altLabel "Racial reconciliation"@en ;
     skos:broader <https://w3id.org/idn/vocab/idn-th/keyword> ;
     skos:definition "Aboriginal reconciliation"@en ;
-    skos:inScheme <https://w3id.org/idn/vocab/idn-th> ;
+    skos:inScheme cs: ;
     skos:prefLabel "Aboriginal reconciliation"@en ;
     skos:related
         <https://vocabularyserver.com/apais/xml.php?skosTema=14> ,
@@ -357,12 +372,13 @@ cs:
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
     dcterms:identifier "R1720"^^xsd:token ;
+    dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader
         <https://vocabularyserver.com/apais/xml.php?skosTema=1774> ,
         <https://w3id.org/idn/vocab/idn-th/keyword> ;
     skos:definition "Torres Strait Islands"@en ;
-    skos:inScheme <https://w3id.org/idn/vocab/idn-th> ;
+    skos:inScheme cs: ;
     skos:prefLabel "Torres Strait Islands"@en ;
     skos:related
         <https://vocabularyserver.com/apais/xml.php?skosTema=1483> ,
@@ -374,6 +390,7 @@ cs:
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
     dcterms:identifier "R0003"^^xsd:token ;
+    dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:altLabel "Aboriginal paintings"@en ;
     skos:broader
@@ -381,7 +398,7 @@ cs:
         <https://vocabularyserver.com/apais/xml.php?skosTema=5> ,
         <https://w3id.org/idn/vocab/idn-th/keyword> ;
     skos:definition "Aboriginal art"@en ;
-    skos:inScheme <https://w3id.org/idn/vocab/idn-th> ;
+    skos:inScheme cs: ;
     skos:narrower
         <https://vocabularyserver.com/apais/xml.php?skosTema=1882> ,
         <https://vocabularyserver.com/apais/xml.php?skosTema=208> ,
@@ -397,11 +414,12 @@ cs:
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
     dcterms:identifier "R1680"^^xsd:token ;
+    dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:altLabel "Aboriginal reserves"@en ;
     skos:broader <https://w3id.org/idn/vocab/idn-th/keyword> ;
     skos:definition "Aboriginal communities"@en ;
-    skos:inScheme <https://w3id.org/idn/vocab/idn-th> ;
+    skos:inScheme cs: ;
     skos:prefLabel "Aboriginal communities"@en ;
     skos:related
         <https://vocabularyserver.com/apais/xml.php?skosTema=14> ,
@@ -413,12 +431,13 @@ cs:
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
     dcterms:identifier "R1796"^^xsd:token ;
+    dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader
         <https://vocabularyserver.com/apais/xml.php?skosTema=1251> ,
         <https://w3id.org/idn/vocab/idn-th/keyword> ;
     skos:definition "Aborigines and the law"@en ;
-    skos:inScheme <https://w3id.org/idn/vocab/idn-th> ;
+    skos:inScheme cs: ;
     skos:prefLabel "Aborigines and the law"@en ;
     skos:related
         <https://vocabularyserver.com/apais/xml.php?skosTema=1350> ,
@@ -432,12 +451,13 @@ cs:
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
     dcterms:identifier "R1682"^^xsd:token ;
+    dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader
         <https://vocabularyserver.com/apais/xml.php?skosTema=8> ,
         <https://w3id.org/idn/vocab/idn-th/keyword> ;
     skos:definition "Aboriginal arts"@en ;
-    skos:inScheme <https://w3id.org/idn/vocab/idn-th> ;
+    skos:inScheme cs: ;
     skos:narrower
         <https://vocabularyserver.com/apais/xml.php?skosTema=16> ,
         <https://vocabularyserver.com/apais/xml.php?skosTema=3> ;
@@ -449,13 +469,14 @@ cs:
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
     dcterms:identifier "R1467"^^xsd:token ;
+    dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader
         <https://vocabularyserver.com/apais/xml.php?skosTema=559> ,
         <https://vocabularyserver.com/apais/xml.php?skosTema=8> ,
         <https://w3id.org/idn/vocab/idn-th/keyword> ;
     skos:definition "Aboriginal customary law"@en ;
-    skos:inScheme <https://w3id.org/idn/vocab/idn-th> ;
+    skos:inScheme cs: ;
     skos:prefLabel "Aboriginal customary law"@en ;
     skos:related
         <https://vocabularyserver.com/apais/xml.php?skosTema=27> ,
@@ -467,13 +488,14 @@ cs:
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
     dcterms:identifier "R1891"^^xsd:token ;
+    dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:altLabel "Aboriginal title"@en ;
     skos:broader
         <https://vocabularyserver.com/apais/xml.php?skosTema=14> ,
         <https://w3id.org/idn/vocab/idn-th/keyword> ;
     skos:definition "Native title"@en ;
-    skos:inScheme <https://w3id.org/idn/vocab/idn-th> ;
+    skos:inScheme cs: ;
     skos:prefLabel "Native title"@en ;
     skos:related
         <https://vocabularyserver.com/apais/xml.php?skosTema=1428> ,
@@ -488,13 +510,14 @@ cs:
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
     dcterms:identifier "R1883"^^xsd:token ;
+    dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader
         <https://vocabularyserver.com/apais/xml.php?skosTema=1391> ,
         <https://vocabularyserver.com/apais/xml.php?skosTema=27> ,
         <https://w3id.org/idn/vocab/idn-th/keyword> ;
     skos:definition "Aboriginal men"@en ;
-    skos:inScheme <https://w3id.org/idn/vocab/idn-th> ;
+    skos:inScheme cs: ;
     skos:prefLabel "Aboriginal men"@en ;
     skos:related
         <https://vocabularyserver.com/apais/xml.php?skosTema=25> ,
@@ -507,13 +530,14 @@ cs:
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
     dcterms:identifier "R1287"^^xsd:token ;
+    dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader
         <https://vocabularyserver.com/apais/xml.php?skosTema=1096> ,
         <https://vocabularyserver.com/apais/xml.php?skosTema=189> ,
         <https://w3id.org/idn/vocab/idn-th/keyword> ;
     skos:definition "Torres Strait Islanders"@en ;
-    skos:inScheme <https://w3id.org/idn/vocab/idn-th> ;
+    skos:inScheme cs: ;
     skos:prefLabel "Torres Strait Islanders"@en ;
     skos:related
         <https://vocabularyserver.com/apais/xml.php?skosTema=1483> ,
@@ -525,13 +549,14 @@ cs:
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
     dcterms:identifier "R1681"^^xsd:token ;
+    dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader
         <https://vocabularyserver.com/apais/xml.php?skosTema=2320> ,
         <https://vocabularyserver.com/apais/xml.php?skosTema=27> ,
         <https://w3id.org/idn/vocab/idn-th/keyword> ;
     skos:definition "Aboriginal women"@en ;
-    skos:inScheme <https://w3id.org/idn/vocab/idn-th> ;
+    skos:inScheme cs: ;
     skos:prefLabel "Aboriginal women"@en ;
     skos:related
         <https://vocabularyserver.com/apais/xml.php?skosTema=17> ,
@@ -544,13 +569,14 @@ cs:
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
     dcterms:identifier "R1885"^^xsd:token ;
+    dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader
         <https://vocabularyserver.com/apais/xml.php?skosTema=2355> ,
         <https://vocabularyserver.com/apais/xml.php?skosTema=27> ,
         <https://w3id.org/idn/vocab/idn-th/keyword> ;
     skos:definition "Aboriginal youth"@en ;
-    skos:inScheme <https://w3id.org/idn/vocab/idn-th> ;
+    skos:inScheme cs: ;
     skos:prefLabel "Aboriginal youth"@en ;
     skos:related
         <https://vocabularyserver.com/apais/xml.php?skosTema=17> ,
@@ -563,13 +589,14 @@ cs:
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
     dcterms:identifier "R1834"^^xsd:token ;
+    dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader
         <https://vocabularyserver.com/apais/xml.php?skosTema=27> ,
         <https://vocabularyserver.com/apais/xml.php?skosTema=359> ,
         <https://w3id.org/idn/vocab/idn-th/keyword> ;
     skos:definition "Aboriginal children"@en ;
-    skos:inScheme <https://w3id.org/idn/vocab/idn-th> ;
+    skos:inScheme cs: ;
     skos:prefLabel "Aboriginal children"@en ;
     skos:related
         <https://vocabularyserver.com/apais/xml.php?skosTema=17> ,
@@ -583,13 +610,14 @@ cs:
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
     dcterms:identifier "R0007"^^xsd:token ;
+    dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:altLabel "Land rights, Aboriginal"@en ;
     skos:broader
         <https://vocabularyserver.com/apais/xml.php?skosTema=1291> ,
         <https://w3id.org/idn/vocab/idn-th/keyword> ;
     skos:definition "Aboriginal land rights"@en ;
-    skos:inScheme <https://w3id.org/idn/vocab/idn-th> ;
+    skos:inScheme cs: ;
     skos:narrower <https://vocabularyserver.com/apais/xml.php?skosTema=1483> ;
     skos:prefLabel "Aboriginal land rights"@en ;
     skos:related
@@ -605,12 +633,13 @@ cs:
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
     dcterms:identifier "R0004"^^xsd:token ;
+    dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader
         <https://vocabularyserver.com/apais/xml.php?skosTema=553> ,
         <https://w3id.org/idn/vocab/idn-th/keyword> ;
     skos:definition "Aboriginal culture"@en ;
-    skos:inScheme <https://w3id.org/idn/vocab/idn-th> ;
+    skos:inScheme cs: ;
     skos:narrower
         <https://vocabularyserver.com/apais/xml.php?skosTema=15> ,
         <https://vocabularyserver.com/apais/xml.php?skosTema=18> ,
@@ -627,6 +656,7 @@ cs:
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
     dcterms:identifier "R0009"^^xsd:token ;
+    dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:altLabel
         "Australian Aborigines"@en ,
@@ -637,7 +667,7 @@ cs:
         <https://vocabularyserver.com/apais/xml.php?skosTema=189> ,
         <https://w3id.org/idn/vocab/idn-th/keyword> ;
     skos:definition "Aborigines"@en ;
-    skos:inScheme <https://w3id.org/idn/vocab/idn-th> ;
+    skos:inScheme cs: ;
     skos:narrower
         <https://vocabularyserver.com/apais/xml.php?skosTema=17> ,
         <https://vocabularyserver.com/apais/xml.php?skosTema=25> ,

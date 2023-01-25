@@ -15,13 +15,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:title "CatPrez System Catalogue" ;
     dcterms:description """This is the system catalogue implemented by this instance of CatPrez that lists all its other Catalog instances"""@en ;
     dcterms:created "2022-08-03"^^xsd:date ;
-    dcterms:modified "2022-08-29"^^xsd:date ;
+    dcterms:modified "2023-01-24"^^xsd:date ;
     prov:qualifiedAttribution [
         a prov:Attribution;
         prov:agent <https://orcid.org/0000-0002-8742-7730> ;
-        dcat:hadRole isoroles:author , isoroles:owner , isoroles:custodian ;
+        dcat:hadRole
+            isoroles:author ,
+            isoroles:owner ,
+            isoroles:custodian ;
     ] ;
     dcterms:hasPart
-        <https://linked.data.gov.au/dataset/idndc> ,
-        <https://linked.data.gov.au/dataset/idnac> ;
+        <https://w3id.org/idn/dataset/democat> ;
 .

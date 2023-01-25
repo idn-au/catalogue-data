@@ -11,6 +11,7 @@ PREFIX time: <http://www.w3.org/2006/time#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://w3id.org/idn/dataset/democat>
+    a dcat:Catalog ;
     dcterms:hasPart <https://data.gov.au/data/dataset/34b1c164-fbe8-44a0-84fd-467dba645aa7> ;
 .
 
