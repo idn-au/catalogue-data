@@ -106,7 +106,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcat:hadRole aarr:partOf ;
     prov:agent <https://linked.data.gov.au/org/abs> ;
   ] ;
-  dcterms:type <https://w3id.org/idn/vocab/org-indigeneity/indigeneity-unknown> ;
+  dcterms:type <https://w3id.org/idn/vocab/org-indigeneity/run-by-indigenous-persons> ;
   sdo:url "https://www.abs.gov.au/about/aboriginal-and-torres-strait-islander-peoples/aboriginal-and-torres-strait-islander-engagement"^^xsd:anyURI ;
 .
 
@@ -118,7 +118,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 .
 
 <http://linked.data.gov.au/org/nla>
-    a sdo:Organisation ;
+    a sdo:Organization ;
     dcat:relation [
       dcat:hadRole aarr:partOf ;
       prov:agent <https://linked.data.gov.au/org/au> ;
@@ -128,27 +128,27 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 .
 
 <https://w3id.org/idn/agent/lc>
-    a sdo:Organisation ;
+    a sdo:Organization ;
     sdo:name "Local Contexts" ;
     sdo:description "Local Contexts was founded by Jane Anderson and Kim Christen in 2010. The primary objectives of Local Contexts are to enhance and legitimize locally based decision-making and Indigenous governance frameworks for determining ownership, access, and culturally appropriate conditions for sharing historical, contemporary and future collections of cultural heritage and Indigenous data. Local Contexts is focused on increasing Indigenous involvement in data governance through the integration of Indigenous values into data systems. Local Contexts offers digital strategies for Indigenous communities, cultural institutions and researchers through the TK (Traditional Knowledge) & BC (Biocultural) Labels and Notices. Together they function as a practical mechanism to advance aspirations for Indigenous data sovereignty and Indigenous innovation." ;
     sdo:url "https://localcontexts.org/about/about-local-contexts/"^^xsd:anyURI ;
 .
 
 <https://w3id.org/idn/agent/nby>
-    a sdo:Organisation ;
+    a sdo:Organization ;
     sdo:name "Nyamba Buru Yawuru Ltd" ;
     sdo:description "The Yawuru people are the traditional owners of the lands and waters in and around Rubibi (the town of Broome)" ;
     sdo:url "http://www.yawuru.org.au"^^xsd:anyURI ;
 .
 
 <https://w3id.org/idn/agent/agilwg>
-    a sdo:Organisation ;
+    a sdo:Organization ;
     sdo:name "Australian Government Indigenous Locations Working Group" ;
     sdo:description "Australian Government Indigenous Locations Working Group 2007-2012" ;
 .
 
 <https://w3id.org/idn/agent/isu>
-    a sdo:Organisation ;
+    a sdo:Organization ;
     sdo:name "Indigenous Studies Unit of the University of Melbourne" ;
     sdo:description "The Indigenous Studies Unit undertakes research aiming to improve outcomes in Indigenous health and wellbeing, particularly in relation to alcohol misuse and family violence, Indigenous data governance, digital archives, cultural heritage, technology and resource management. We make regular contributions to Parliamentary reviews and Inquiries, cross-platform media, and policy development." ;
     sdo:url "https://mspgh.unimelb.edu.au/centres-institutes/centre-for-health-equity/research-group/indigenous-studies"^^xsd:anyURI ;
@@ -156,24 +156,25 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         dcat:hadRole aarr:partOf ;
         prov:agent <https://w3id.org/idn/agent/uom>
     ] ;
+    dcterms:type <https://w3id.org/idn/vocab/org-indigeneity/run-by-indigenous-persons> ;
 .
 
 <https://w3id.org/idn/agent/uom>
-    a sdo:Organisation ;
+    a sdo:Organization ;
     sdo:name "The University of Melbourne" ;
     sdo:description "The University of Melbourne is a public research university located in Melbourne, Australia. Founded in 1853, it is Australia's second oldest university and the oldest in Victoria." ;
     sdo:url "https://www.unimelb.edu.au/"^^xsd:anyURI ;
 .
 
 <https://w3id.org/idn/agent/atns>
-    a sdo:Organisation ;
+    a sdo:Organization ;
     sdo:name "Agreements Treaties and Negotiated Settlements" ;
     sdo:description "ATNS was launched in 2002 and developed under a series of Australian Research Council (ARC) Linkage Projects focusing on treaties and agreement making with Indigenous Australians. The projects were led by a team of multidisciplinary researchers and partner organisations, including Indigenous organisations and industry partners." ;
     sdo:url "https://www.atns.net.au"^^xsd:anyURI ;
 .
 
 <https://w3id.org/idn/agent/nntt>
-    a sdo:Organisation ;
+    a sdo:Organization ;
     dcat:relation [
       dcat:hadRole aarr:partOf ;
       prov:agent <https://linked.data.gov.au/org/au> ;
