@@ -1,13 +1,15 @@
+PREFIX croles: <https://w3id.org/idn/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX ex: <https://example.com/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://w3id.org/idn/resource/idndc>
-    dcterms:hasPart <https://w3id.org/idn/resource/ATSICCP> ;
+<https://data.idnau.org/pid/democat/idndc>
+    dcterms:hasPart <https://data.idnau.org/pid/democat/ATSICCP> ;
 .
 
-<https://w3id.org/idn/resource/ATSICCP>
+<https://data.idnau.org/pid/democat/ATSICCP>
     a dcat:Resource ;
     dcterms:description """"Census indigenous community profiles" a CORE set of data produced by ABS various levels of abstraction:
 All the EC's (Empowered Communities) would need access to this. Could be an excellent indigenous geospatial/loc-i case study for the the project's Geospatial portal e.g. semantic description of these profiles in a manner which enables easier access to data by EC data groups.First step would be to express EC boundaries in loc-i compatible ways.
@@ -22,8 +24,10 @@ ACPs - SUB COLLECTION from ABORIGINAL & TORRES STRAIT ISLANDER DATA ARCHIVE""" ;
     dcterms:title "ATSIC Community Profiles" ;
     dcterms:type "collection" ;
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/metadata-only> ;
-    ex:notes """https://www.atsida.edu.au/search/node/atsic%20community%20profiles
+    dcat:accessURL "https://www.atsida.edu.au/search/node/atsic%20community%20profiles"^^xsd:anyURI ;
+    skos:note """https://www.atsida.edu.au/search/node/atsic%20community%20profiles
 
 COLLECTION - the next four rows are examples of singular metadata entries comprising the sub collection indicated""" ;
+    dcterms:isPartOf [ dcat:hadRole croles:home ; prov:entity <https://www.atsida.edu.au> ] ;
 .
 

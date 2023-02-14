@@ -1,15 +1,15 @@
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX ex: <https://example.com/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://w3id.org/idn/dataset/democat>
-    dcterms:hasPart <https://w3id.org/idn/resource/IBLADE> ;
+<https://data.idnau.org/pid/democat>
+    dcterms:hasPart <https://data.idnau.org/pid/democat/IBLADE> ;
 .
 
-<https://w3id.org/idn/resource/IBLADE>
+<https://data.idnau.org/pid/democat/IBLADE>
     a dcat:Resource ;
     dcterms:description "The Snapshot is an ongoing research project that links enterprises on Indigenous business registries to data held by the Australian Bureau of Statistics. It will enable us to track the industries, revenue, employment outcome and growth of Indigenous businesses. This report provides an unprecedented snapshot of the Indigenous business sector to help dismantle the many stereotypes and myths that have led to lost opportunities for Indigenous business growth. There is mention of an I-BLADE dataset." ;
     dcterms:format "PDF" ;
@@ -37,9 +37,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         ] ,
         [
             dcat:hadRole iso:custodian ;
-            prov:agent <https://data.idnau.org/org/um-ddcibl>
+            prov:agent <https://data.idnau.org/pid/adb/org/um-ddcibl>
         ] ;
-    ex:notes """The report describes the building of an I-BLADE dataset. Alot of linkage work has been done across various business registries. Cannot find any public trace of the actual dataset? Why not? Is there a data management plan? Marcia's name is on this report.
+    skos:note """The report describes the building of an I-BLADE dataset. Alot of linkage work has been done across various business registries. Cannot find any public trace of the actual dataset? Why not? Is there a data management plan? Marcia's name is on this report.
 
 Very interesting case as a depth study, geospatial potential.
 

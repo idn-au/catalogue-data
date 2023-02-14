@@ -36,3 +36,37 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         prov:agent <https://linked.data.gov.au/org/abs>
     ] ;
 .
+
+
+<https://www.atsida.edu.au>
+    a dcat:Catalog ;
+    dcat:accessURL "https://www.atsida.edu.au"^^xsd:anyURI ;
+    dcterms:title "Aboriginal & Torres Strait Islander Data Archive" ;
+    dcterms:description "UTS was invited to establish a national trusted repository for Australian Indigenous data in 2008. This node of the Australian Data Archive (ADA) manages the collection and storage of Aboriginal and Torres Strait Islander research data." ;
+    prov:qualifiedAttribution [
+        dcat:hadRole iso:custodian ;
+        prov:agent <https://linked.data.gov.au/org/uts>
+    ] ;
+.
+
+<https://www.slv.vic.gov.au>
+    a dcat:Catalog ;
+    dcat:accessURL "https://www.slv.vic.gov.au"^^xsd:anyURI ;
+    dcterms:title "State Library of Victoria" ;
+    dcterms:description "Established in 1854 as the Melbourne Public Library, State Library Victoria is Australia's oldest public library and one of the first free public libraries in the world." ;
+    prov:qualifiedAttribution [
+        dcat:hadRole iso:custodian ;
+        prov:agent <https://data.idnau.org/pid/adb/org/73-190-237-854>
+    ] ;
+.
+
+<https://data.csiro.au>
+    a dcat:Catalog ;
+    dcat:accessURL "https://data.csiro.au"^^xsd:anyURI ;
+    dcterms:title "CSIRO's Data Access Portal" ;
+    dcterms:description "The CSIRO Data Access Portal provides access to research data, software and other digital assets published by CSIRO across a range of disciplines." ;
+    prov:qualifiedAttribution [
+        dcat:hadRole iso:custodian ;
+        prov:agent <http://linked.data.gov.au/org/csiro>
+    ] ;
+.

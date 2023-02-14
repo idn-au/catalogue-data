@@ -4,18 +4,18 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://w3id.org/idn/dataset/democat>
-    dcterms:hasPart <https://w3id.org/idn/resource/DUALPN> ;
+<https://data.idnau.org/pid/democat>
+    dcterms:hasPart <https://data.idnau.org/pid/democat/DUALPN> ;
 .
 
-<https://w3id.org/idn/resource/DUALPN>
+<https://data.idnau.org/pid/democat/DUALPN>
     a dcat:Resource ;
     dcterms:description "Need to work with GA and Commonwealth-State placenames committee." ;
     dcterms:identifier "DUALPN"^^xsd:token ;
     dcterms:title "Dual Placenames" ;
     prov:qualifiedAttribution [
         dcat:hadRole iso:custodian ;
-        prov:agent <https://data.idnau.org/org/icsm-wgpn>
+        prov:agent <https://data.idnau.org/pid/adb/org/icsm-wgpn>
     ] ;
 .
 

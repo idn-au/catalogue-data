@@ -4,18 +4,18 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://w3id.org/idn/dataset/democat>
-    dcterms:hasPart <https://w3id.org/idn/resource/PCGSIC> ;
+<https://data.idnau.org/pid/democat>
+    dcterms:hasPart <https://data.idnau.org/pid/democat/PCGSIC> ;
 .
 
-<https://w3id.org/idn/resource/PCGSIC>
+<https://data.idnau.org/pid/democat/PCGSIC>
     a dcat:Resource ;
     dcterms:source "https://www.pc.gov.au/ongoing/report-on-government-services/indigenous-compendium-2014"^^xsd:anyURI ;
     dcterms:identifier "PCGSIC"^^xsd:token ;
     dcterms:title "AG Productivity Commission - Report on Government Services: Indigenous Compendium reports 2005-2015" ;
     prov:qualifiedAttribution [
         dcat:hadRole iso:custodian ;
-        prov:agent <https://data.idnau.org/org/78-094-372-050>
+        prov:agent <https://data.idnau.org/pid/adb/org/78-094-372-050>
     ] ;
 .
 

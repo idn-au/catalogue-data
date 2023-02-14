@@ -4,11 +4,11 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://w3id.org/idn/dataset/democat>
-    dcterms:hasPart <https://w3id.org/idn/resource/ARIES> ;
+<https://data.idnau.org/pid/democat>
+    dcterms:hasPart <https://data.idnau.org/pid/democat/ARIES> ;
 .
 
-<https://w3id.org/idn/resource/ARIES>
+<https://data.idnau.org/pid/democat/ARIES>
     a dcat:Resource ;
     dcterms:description "Publications, Ethics, Grants" ;
     dcterms:identifier "ARIES"^^xsd:token ;
@@ -22,7 +22,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         <https://w3id.org/idn/vocab/indigeneity/about-indigenous-things> ;
     prov:qualifiedAttribution [
             dcat:hadRole iso:custodian ;
-            prov:agent <https://data.idnau.org/org/anu-rsd>
+            prov:agent <https://data.idnau.org/pid/adb/org/anu-rsd>
         ] ;
 .
 

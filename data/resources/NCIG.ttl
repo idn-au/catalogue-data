@@ -1,15 +1,16 @@
+PREFIX croles: <https://w3id.org/idn/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX ex: <https://example.com/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://w3id.org/idn/dataset/democat>
-    dcterms:hasPart <https://w3id.org/idn/resource/NCIG> ;
+<https://data.idnau.org/pid/democat>
+    dcterms:hasPart <https://data.idnau.org/pid/democat/NCIG> ;
 .
 
-<https://w3id.org/idn/resource/NCIG>
+<https://data.idnau.org/pid/democat/NCIG>
     a dcat:Resource ;
     dcterms:description """We are making a national resource for Indigenous health and heritage, which is based on our collection of biological samples, genome data and documents from Indigenous communities in many parts of Australia. You can find out more about NCIG and its collections at ncig.anu.edu.au.
 
@@ -36,18 +37,18 @@ http://www.ncig-ihhr.anu.edu.au/index.html""" ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:originator ;
-            prov:agent <https://data.idnau.org/org/ncig>
+            prov:agent <https://data.idnau.org/pid/adb/org/ncig>
         ] ,
         [
             dcat:hadRole iso:rightsHolder ;
-            prov:agent <https://data.idnau.org/org/ncig>
+            prov:agent <https://data.idnau.org/pid/adb/org/ncig>
         ] ,
         [
             dcat:hadRole iso:custodian ;
-            prov:agent <https://data.idnau.org/org/ncig>
+            prov:agent <https://data.idnau.org/pid/adb/org/ncig>
         ] ;
-    ex:home "https://ncig-ihhr.anu.edu.au" ;
-    ex:notes """National Centre for Indigenous Genomics consists of 132 entries with references to 295 archival/heritage resources, 192 published resources, and 1930 digital objects.
+    dcterms:isPartOf [ dcat:hadRole croles:home ; prov:entity <https://ncig-ihhr.anu.edu.au> ] ;
+    skos:note """National Centre for Indigenous Genomics consists of 132 entries with references to 295 archival/heritage resources, 192 published resources, and 1930 digital objects.
 
 Some objects are accessible, others are metadata only""" ;
 .

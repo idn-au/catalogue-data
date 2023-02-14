@@ -1,0 +1,28 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://data.idnau.org/pid/democat>
+    dcterms:hasPart <https://data.idnau.org/pid/democat/AGENTSDB> ;
+.
+
+<https://data.idnau.org/pid/democat/AGENTSDB>
+    a dcat:Resource ;
+    dcterms:description "A database of Agents - Organisations & People - with roles relating to indigenous data" ;
+    dcterms:identifier "AGENTSDB"^^xsd:token ;
+    dcterms:title "Indigenous Data Network's Agents DB" ;
+    prov:qualifiedAttribution [
+        dcat:hadRole
+            iso:custodian ,
+            iso:originator ;
+        prov:agent <https://linked.data.gov.au/org/idn>
+    ] ;
+    dcat:distributions <https://data.idnau.org/pid/adb> ;
+.
+
+<https://data.idnau.org/pid/adb>
+    dcat:accessURL "https://data.idnau.org/pid/adb"^^xsd:anyURI ;
+.
+

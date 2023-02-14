@@ -1,19 +1,22 @@
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX ex: <https://example.com/>
+PREFIX democat: <https://data.idnau.org/pid/democat/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://w3id.org/idn/dataset/democat>
-    dcterms:hasPart <https://doi.org/10.25814/cfm3-db86> ;
+<https://data.idnau.org/pid/democat>
+    dcterms:hasPart <https://data.idnau.org/pid/democat/cfm3-db86> ;
 .
 
-<https://doi.org/10.25814/cfm3-db86>
+<https://data.idnau.org/pid/democat/cfm3-db86>
     a dcat:Resource ;
     dcterms:description "The Australia's Indigenous land and forest estate (2020) is a continental spatial dataset that identifies and reports separately the individual attributes of Australia's Indigenous estate, namely the extent of land and forest over which Indigenous peoples and communities have ownership, management and co-management, or other special rights." ;
     dcterms:format "GIS files in ESRI software: Raster and GeoTIFF" ;
-    dcterms:identifier "cfm3-db86"^^xsd:token ;
+    dcterms:identifier
+        "cfm3-db86"^^xsd:token ,
+        "https://doi.org/10.25814/cfm3-db86"^^democat:doi ;
     dcterms:issued "0301-01-01"^^xsd:date ;
     dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
     dcterms:rights """Australian Bureau of Agricultural and Resource Economics and Sciences, Australia’s Indigenous land and forest estate (2020), Australian Bureau of
@@ -40,7 +43,7 @@ Agricultural and Resource Economics and Sciences, Canberra, June, 2022.""" ;
             dcat:hadRole iso:rightsHolder ;
             prov:agent <https://linked.data.gov.au/org/au>
         ] ;
-    ex:notes """The following attributes are applied in this dataset:
+    skos:note """The following attributes are applied in this dataset:
 Indigenous owned: Freehold land or forest that is owned by Indigenous communities, or land and forest for which ownership is vested through other mechanisms.
 Indigenous managed: Land or forest that is managed by Indigenous communities.
 Indigenous co-managed: Land or forest that has formal, legally binding agreements in place to include input from Indigenous people in the process of developing and implementing a management plan.

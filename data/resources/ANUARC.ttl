@@ -1,15 +1,16 @@
+PREFIX croles: <https://w3id.org/idn/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX ex: <https://example.com/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://w3id.org/idn/dataset/democat>
-    dcterms:hasPart <https://w3id.org/idn/resource/ANUARC> ;
+<https://data.idnau.org/pid/democat>
+    dcterms:hasPart <https://data.idnau.org/pid/democat/ANUARC> ;
 .
 
-<https://w3id.org/idn/resource/ANUARC>
+<https://data.idnau.org/pid/democat/ANUARC>
     a dcat:Resource ;
     dcterms:description "The Australian National University is home to many research collections of national and international significance. Material from the ANU Archives, ANU Classics Museum, ANU Library, Asia Pacific Map Collection and the Noel Butlin Archives Centre are being progressivley digitised and made available through this repository." ;
     dcterms:identifier "ANUARC"^^xsd:token ;
@@ -30,13 +31,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         ] ,
         [
             dcat:hadRole iso:originator ;
-            prov:agent <https://data.idnau.org/org/anu-library>
+            prov:agent <https://data.idnau.org/pid/adb/org/anu-library>
         ] ,
         [
             dcat:hadRole iso:custodian ;
-            prov:agent <https://data.idnau.org/org/anu-archives>
+            prov:agent <https://data.idnau.org/pid/adb/org/anu-archives>
         ] ;
-    ex:home "https://openresearch-repository.anu.edu.au/handle/1885/2" ;
-    ex:notes "This link is for research tagged as 'Indigenous' - which is a subset of the collection" ;
+    dcterms:isPartOf [ dcat:hadRole croles:home ; prov:entity <https://openresearch-repository.anu.edu.au/handle/1885/2> ] ;
+    skos:note "This link is for research tagged as 'Indigenous' - which is a subset of the collection" ;
 .
 

@@ -1,15 +1,16 @@
+PREFIX croles: <https://w3id.org/idn/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX ex: <https://example.com/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://w3id.org/idn/dataset/democat>
-    dcterms:hasPart <https://w3id.org/idn/resource/MAYIK> ;
+<https://data.idnau.org/pid/democat>
+    dcterms:hasPart <https://data.idnau.org/pid/democat/MAYIK> ;
 .
 
-<https://w3id.org/idn/resource/MAYIK>
+<https://data.idnau.org/pid/democat/MAYIK>
     a dcat:Resource ;
     dcterms:description """The Mayi Kuwayu Study looks at how Aboriginal and Torres Strait Islander wellbeing is linked to things like connection to country, cultural practices, spirituality and language use.
 Our research team follows a large number of Aboriginal and Torres Strait Islander people and asks about their culture and wellbeing. As a longitudinal study, we are surveying people and then ask them to take the same survey every few years, so that we can understand what influences changes over time.
@@ -31,17 +32,17 @@ The Mayi Kuwayu team are experienced at working closely with communities across 
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:rightsHolder ;
-            prov:agent <https://data.idnau.org/org/mayi-kuwayu-study>
+            prov:agent <https://data.idnau.org/pid/adb/org/mayi-kuwayu-study>
         ] ,
         [
             dcat:hadRole iso:originator ;
-            prov:agent <https://data.idnau.org/org/mayi-kuwayu-study>
+            prov:agent <https://data.idnau.org/pid/adb/org/mayi-kuwayu-study>
         ] ,
         [
             dcat:hadRole iso:custodian ;
-            prov:agent <https://data.idnau.org/org/anu-nceph>
+            prov:agent <https://data.idnau.org/pid/adb/org/anu-nceph>
         ] ;
-    ex:home "https://mkstudy.com.au/" ;
-    ex:notes "Longitudinal dataset?" ;
+    dcterms:isPartOf [ dcat:hadRole croles:home ; prov:entity <https://mkstudy.com.au/> ] ;
+    skos:note "Longitudinal dataset?" ;
 .
 

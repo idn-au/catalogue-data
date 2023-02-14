@@ -4,18 +4,18 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://w3id.org/idn/dataset/democat>
-    dcterms:hasPart <https://w3id.org/idn/resource/ANUCOL> ;
+<https://data.idnau.org/pid/democat>
+    dcterms:hasPart <https://data.idnau.org/pid/democat/ANUCOL> ;
 .
 
-<https://w3id.org/idn/resource/ANUCOL>
+<https://data.idnau.org/pid/democat/ANUCOL>
     a dcat:Resource ;
     dcterms:description "A 2020 review of First Nations Identified physical collections held by the ANU. Not published." ;
     dcterms:identifier "ANUCOL"^^xsd:token ;
     dcterms:title "2020 ANU First Nations Collections Review" ;
     prov:qualifiedAttribution [
         dcat:hadRole iso:custodian ;
-        prov:agent <https://data.idnau.org/org/anu-collections>
+        prov:agent <https://data.idnau.org/pid/adb/org/anu-collections>
     ] ;
 .
 

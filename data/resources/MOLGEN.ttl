@@ -4,18 +4,18 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://w3id.org/idn/dataset/democat>
-    dcterms:hasPart <https://w3id.org/idn/resource/MOLGEN> ;
+<https://data.idnau.org/pid/democat>
+    dcterms:hasPart <https://data.idnau.org/pid/democat/MOLGEN> ;
 .
 
-<https://w3id.org/idn/resource/MOLGEN>
+<https://data.idnau.org/pid/democat/MOLGEN>
     a dcat:Resource ;
     dcterms:description "These are extensive paper records which Ian Anderson has proposed incorporating in a database. Negotiation is still needed." ;
     dcterms:identifier "MOLGEN"^^xsd:token ;
     dcterms:title "Tasmanian Aboriginal genealogies" ;
     prov:qualifiedAttribution [
         dcat:hadRole iso:custodian ;
-        prov:agent <https://data.idnau.org/org/17-334-217-592>
+        prov:agent <https://data.idnau.org/pid/adb/org/17-334-217-592>
     ] ;
 .
 

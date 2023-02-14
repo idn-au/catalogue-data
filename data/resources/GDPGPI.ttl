@@ -4,18 +4,18 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://w3id.org/idn/dataset/democat>
-    dcterms:hasPart <https://w3id.org/idn/resource/GDPGPI> ;
+<https://data.idnau.org/pid/democat>
+    dcterms:hasPart <https://data.idnau.org/pid/democat/GDPGPI> ;
 .
 
-<https://w3id.org/idn/resource/GDPGPI>
+<https://data.idnau.org/pid/democat/GDPGPI>
     a dcat:Resource ;
     dcterms:description "(Torrens University). An earlier application with Marcia for AIATSIS funding was never considered." ;
     dcterms:identifier "GDPGPI"^^xsd:token ;
     dcterms:title "GDP and Genuine Progress Indicator" ;
     prov:qualifiedAttribution [
         dcat:hadRole iso:custodian ;
-        prov:agent <https://data.idnau.org/org/99-154-937-005>
+        prov:agent <https://data.idnau.org/pid/adb/org/99-154-937-005>
     ] ;
 .
 

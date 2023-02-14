@@ -1,15 +1,16 @@
+PREFIX croles: <https://w3id.org/idn/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX ex: <https://example.com/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://w3id.org/idn/dataset/democat>
-    dcterms:hasPart <https://w3id.org/idn/resource/CTGIR> ;
+<https://data.idnau.org/pid/democat>
+    dcterms:hasPart <https://data.idnau.org/pid/democat/CTGIR> ;
 .
 
-<https://w3id.org/idn/resource/CTGIR>
+<https://data.idnau.org/pid/democat/CTGIR>
     a dcat:Resource ;
     dcterms:description "Productivity Commissions data dashboard arising from the National Agreement on Closing the Gap." ;
     dcterms:identifier "CTGIR"^^xsd:token ;
@@ -17,9 +18,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:title "Closing the gap information repository" ;
     prov:qualifiedAttribution [
             dcat:hadRole iso:custodian ;
-            prov:agent <https://data.idnau.org/org/78-094-372-050>
+            prov:agent <https://data.idnau.org/pid/adb/org/78-094-372-050>
         ] ;
-    ex:home "https://www.pc.gov.au/closing-the-gap-data" ;
-    ex:notes "As at March 2022, reporting for Priority Reform 4 \"Shared access to data and information at a regional level\" is yet to be developed. See: https://www.pc.gov.au/closing-the-gap-data/dashboard/priority/reform4" ;
+    dcterms:isPartOf [ dcat:hadRole croles:home ; prov:entity <https://www.pc.gov.au/closing-the-gap-data> ] ;
+    skos:note "As at March 2022, reporting for Priority Reform 4 \"Shared access to data and information at a regional level\" is yet to be developed. See: https://www.pc.gov.au/closing-the-gap-data/dashboard/priority/reform4" ;
 .
 

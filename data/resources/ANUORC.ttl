@@ -1,17 +1,19 @@
+PREFIX croles: <https://w3id.org/idn/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX ex: <https://example.com/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://w3id.org/idn/dataset/democat>
-    dcterms:hasPart <https://w3id.org/idn/resource/ANUORC> ;
+<https://data.idnau.org/pid/democat>
+    dcterms:hasPart <https://data.idnau.org/pid/democat/ANUORC> ;
 .
 
-<https://w3id.org/idn/resource/ANUORC>
+<https://data.idnau.org/pid/democat/ANUORC>
     a dcat:Resource ;
     dcterms:description "The University's Open Research digital repository ecompasses a number of research collections which the wider community is free to browse." ;
     dcterms:identifier "ANUORC"^^xsd:token ;
     dcterms:title "ANU Open Research Collections" ;
-    ex:home "https://openresearch.anu.edu.au/open-research-collections" ;
+    dcterms:isPartOf [ dcat:hadRole croles:home ; prov:entity <https://openresearch.anu.edu.au/open-research-collections> ] ;
 .
 

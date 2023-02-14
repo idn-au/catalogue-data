@@ -1,18 +1,22 @@
+PREFIX croles: <https://w3id.org/idn/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX ex: <https://example.com/>
+PREFIX democat: <https://data.idnau.org/pid/democat/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://w3id.org/idn/dataset/democat>
-    dcterms:hasPart <https://doi.org/10.25919/5c36dcc0956a4> ;
+<https://data.idnau.org/pid/democat>
+    dcterms:hasPart <https://data.idnau.org/pid/democat/ILSI> ;
 .
 
-<https://doi.org/10.25919/5c36dcc0956a4>
+<https://data.idnau.org/pid/democat/ILSI>
     a dcat:Resource ;
     dcterms:description "Land that is owned or managed by Australia’s Indigenous communities, or over which Indigenous people have use and rights, was compiled from information supplied by Australian, state and territory governments and other statutory authorities with Indigenous land and sea management interests." ;
-    dcterms:identifier "ILSI"^^xsd:token ;
+    dcterms:identifier
+        "ILSI"^^xsd:token ,
+        "https://doi.org/10.25919/5c36dcc0956a4"^^democat:doi ;
     dcterms:issued "2019-04-03"^^xsd:date ;
     dcterms:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
     dcterms:rights "All Rights (including copyright) CSIRO, Australian Government Department of Environment, Geoscience Australia 2016." ;
@@ -36,7 +40,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
             dcat:hadRole iso:originator ;
             prov:agent <https://linked.data.gov.au/org/csiro>
         ] ;
-    ex:home "CSIRO's Data Access Portal" ;
+    dcterms:isPartOf [ dcat:hadRole croles:home ; prov:entity <https://data.csiro.au> ] ;
     ex:localContext "Attribution Incomplete Notice" ;
 .
 

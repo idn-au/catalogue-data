@@ -1,19 +1,23 @@
+PREFIX croles: <https://w3id.org/idn/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX ex: <https://example.com/>
+PREFIX democat: <https://data.idnau.org/pid/democat/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://w3id.org/idn/dataset/democat>
-    dcterms:hasPart <https://www.atsida.edu.au/archive/datasets/au.edu.anu.ada.ddi.08003-atsic-zones> ;
+<https://data.idnau.org/pid/democat>
+    dcterms:hasPart <https://data.idnau.org/pid/democat/ATSICZ> ;
 .
 
-<https://www.atsida.edu.au/archive/datasets/au.edu.anu.ada.ddi.08003-atsic-zones>
+<https://data.idnau.org/pid/democat/ATSICZ>
     a dcat:Resource ;
     dcterms:description """The Aboriginal and Torres Strait Islander Community Profiles (ACPs) are tabulations giving key census characteristics of Aboriginal and Torres Strait Islander persons, families and dwellings, covering most topics on the 1991 Census of Population and Housing form. This profile is presented at the ATSIC Zone level.
 The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.""" ;
-    dcterms:identifier "ATSICZ"^^xsd:token ;
+    dcterms:identifier
+        "ATSICZ"^^xsd:token ,
+        "au.edu.anu.ada.ddi.08003-atsic-zones"^^democat:adaId ;
     dcterms:issued "2005-01-01"^^xsd:date ;
     dcterms:license "All Rights Reserved" ;
     dcterms:rights "Copyright © 2005, The Australian National University. All rights reserved." ;
@@ -38,8 +42,8 @@ The ACP consists of 29 tables which crosstabulate characteristics including gend
             dcat:hadRole iso:custodian ;
             prov:agent <https://linked.data.gov.au/org/ada>
         ] ;
-    ex:home "ABORIGINAL & TORRES STRAIT ISLANDER DATA ARCHIVE" ;
-    ex:notes """Citation: The Australian Bureau of Statistics. 1991 Census of Population and Housing: Basic Community Profile: Collection District: ACT. [codebook] Canberra: Australian Data Archives, the Australian National University, 2005.
+    dcterms:isPartOf [ dcat:hadRole croles:home ; prov:entity <https://www.atsida.edu.au> ] ;
+    skos:note """Citation: The Australian Bureau of Statistics. 1991 Census of Population and Housing: Basic Community Profile: Collection District: ACT. [codebook] Canberra: Australian Data Archives, the Australian National University, 2005.
 
 https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026/access-and-downloads/digital-boundary-files""" ;
 .

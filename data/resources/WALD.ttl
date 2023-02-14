@@ -2,11 +2,11 @@ PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://w3id.org/idn/dataset/democat>
-    dcterms:hasPart <https://w3id.org/idn/resource/WALD> ;
+<https://data.idnau.org/pid/democat>
+    dcterms:hasPart <https://data.idnau.org/pid/democat/WALD> ;
 .
 
-<https://w3id.org/idn/resource/WALD>
+<https://data.idnau.org/pid/democat/WALD>
     a dcat:Resource ;
     dcterms:description """This was nominated by Sandra Eades. Investigation, documentation and negotiation needed.
 

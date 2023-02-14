@@ -1,11 +1,12 @@
+PREFIX croles: <https://w3id.org/idn/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX ex: <https://example.com/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://w3id.org/idn/dataset/democat>
+<https://data.idnau.org/pid/democat>
     dcterms:hasPart <https://data.sa.gov.au/data/dataset/tandanya-annual-reporting-regulatory-data> ;
 .
 
@@ -34,14 +35,14 @@ As Tandana is government funded it reports annually on the funding supplied and 
         ] ,
         [
             dcat:hadRole iso:originator ;
-            prov:agent <https://data.idnau.org/org/tandanya>
+            prov:agent <https://data.idnau.org/pid/adb/org/tandanya>
         ] ,
         [
             dcat:hadRole iso:custodian ;
-            prov:agent <https://data.idnau.org/org/tandanya>
+            prov:agent <https://data.idnau.org/pid/adb/org/tandanya>
         ] ;
-    ex:home "https://data.sa.gov.au/" ;
-    ex:notes """Tandana is owned and managed by the National Aboriginal Cultural Institute Inc. It is Australia’s oldest Aboriginal-owned and managed multi-arts centre. In 2014, Tandanya celebrated 25 years of continuous operation since the institute was incorporated in 1989.
+    dcterms:isPartOf [ dcat:hadRole croles:home ; prov:entity <https://data.sa.gov.au/> ] ;
+    skos:note """Tandana is owned and managed by the National Aboriginal Cultural Institute Inc. It is Australia’s oldest Aboriginal-owned and managed multi-arts centre. In 2014, Tandanya celebrated 25 years of continuous operation since the institute was incorporated in 1989.
 www.tandanya.com.au""" ;
 .
 

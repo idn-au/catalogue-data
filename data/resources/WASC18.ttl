@@ -1,19 +1,23 @@
+PREFIX croles: <https://w3id.org/idn/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX ex: <https://example.com/>
+PREFIX democat: <https://data.idnau.org/pid/democat/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://w3id.org/idn/dataset/democat>
-    dcterms:hasPart <https://doi.org/10.26193/ESI64N> ;
+<https://data.idnau.org/pid/democat>
+    dcterms:hasPart <https://data.idnau.org/pid/WASC18democat> ;
 .
 
-<https://doi.org/10.26193/ESI64N>
+<https://data.idnau.org/pid/WASC18>
     a dcat:Resource ;
     dcterms:description "Trials on indictment at Western Australia Supreme Court, includes data on name of accused, offence, trial date, judge, verdict, sentence and links to Trove (nla.gov.au) digitised newspaper reports. Prior to 1861 serious offences were tried at Courts of Quarter Sessions (for which see the Dataverse collection Western Australia Criminal Trials 1830-1861). During the later part of the nineteenth century very large numbers of Indigenous people were tried at the Supreme Court, often before a Special Commissioner at sittings in northern settlements - this data collection includes a large number of these accused and details of their trial outcomes." ;
     dcterms:format "txt, tab" ;
-    dcterms:identifier "WASC18"^^xsd:token ;
+    dcterms:identifier
+        "WASC18"^^xsd:token ,
+        "https://doi.org/10.26193/ESI64N"^^democat:doi ;
     dcterms:issued "2020-10-29"^^xsd:date ;
     dcterms:license "All Rights Reserved" ;
     dcterms:rights <https://linked.data.gov.au/org/ada> ;
@@ -39,7 +43,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
             dcat:hadRole iso:rightsHolder ;
             prov:agent <https://linked.data.gov.au/org/ada>
         ] ;
-    ex:home "https://dataverse.ada.edu.au/" ;
-    ex:notes "Use of the material is solely at the user's risk. The depositor, The Australian National University and the Australian Data Archive shall not be held responsible for the accuracy and completeness of the material supplied." ;
+    dcterms:isPartOf [ dcat:hadRole croles:home ; prov:entity <https://dataverse.ada.edu.au/> ] ;
+    skos:note "Use of the material is solely at the user's risk. The depositor, The Australian National University and the Australian Data Archive shall not be held responsible for the accuracy and completeness of the material supplied." ;
 .
 

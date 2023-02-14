@@ -1,15 +1,16 @@
+PREFIX croles: <https://w3id.org/idn/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX ex: <https://example.com/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://w3id.org/idn/dataset/democat>
-    dcterms:hasPart <https://w3id.org/idn/resource/ATSIDA> ;
+<https://data.idnau.org/pid/democat>
+    dcterms:hasPart <https://data.idnau.org/pid/democat/ATSIDA> ;
 .
 
-<https://w3id.org/idn/resource/ATSIDA>
+<https://data.idnau.org/pid/democat/ATSIDA>
     a dcat:Resource ;
     dcterms:description
         "ATSIDA is a specialised trusted research data management facility, and thematic archive within the Australian Data Archive for Australian Aboriginal and Torres Strait Islander research data managed by the UTS Library. ATSIDA provides a transformational research platform working at the nexus of researchers, communities and other stakeholders in preserving and ensuring ethical access to research data related to Indigenous communities. ATSIDA works with universities, government and other organisations to increase Indigenous student and staff research capacity, support Indigenous researchers and those working with Indigenous research data. It engages with communities to manage appropriate access and return of digital materials." ,
@@ -32,11 +33,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:rightsHolder ;
-            prov:agent <https://data.idnau.org/org/77-257-686-961>
+            prov:agent <https://data.idnau.org/pid/adb/org/77-257-686-961>
         ] ,
         [
             dcat:hadRole iso:originator ;
-            prov:agent <https://data.idnau.org/org/77-257-686-961>
+            prov:agent <https://data.idnau.org/pid/adb/org/77-257-686-961>
         ] ,
         [
             dcat:hadRole iso:custodian ;
@@ -44,10 +45,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         ] ,
         [
             dcat:hadRole iso:custodian ;
-            prov:agent <https://data.idnau.org/org/77-257-686-961>
+            prov:agent <https://data.idnau.org/pid/adb/org/77-257-686-961>
         ] ;
-    ex:home "https://www.atsida.edu.au/" ;
-    ex:notes
+    dcterms:isPartOf [ dcat:hadRole croles:home ; prov:entity <https://www.atsida.edu.au> ] ;
+    skos:note
         """Issue with ADA/ATSIDA of how to design in catalog interoperability and leverage of existing metadata. ATSIDA at UTS does not appear to be well maintained (broken links, only one new deposit in recent years etc. Check with Kirsten about ongoing status).
 
 The issue of catalog interoperability arises for ALL university data catalogs (where "Indigenous" content is involved.

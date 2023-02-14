@@ -1,15 +1,16 @@
+PREFIX croles: <https://w3id.org/idn/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX ex: <https://example.com/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://w3id.org/idn/dataset/democat>
-    dcterms:hasPart <https://w3id.org/idn/resource/NCS> ;
+<https://data.idnau.org/pid/democat>
+    dcterms:hasPart <https://data.idnau.org/pid/democat/NCS> ;
 .
 
-<https://w3id.org/idn/resource/NCS>
+<https://data.idnau.org/pid/democat/NCS>
     a dcat:Resource ;
     dcterms:description "NSW prison population data and quarterly custody reports" ;
     dcterms:format "csv" ;
@@ -29,7 +30,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:custodian ;
-            prov:agent <https://data.idnau.org/org/nsw-bcsar>
+            prov:agent <https://data.idnau.org/pid/adb/org/nsw-bcsar>
         ] ,
         [
             dcat:hadRole iso:rightsHolder ;
@@ -37,9 +38,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         ] ,
         [
             dcat:hadRole iso:originator ;
-            prov:agent <https://data.idnau.org/org/nsw-dcj>
+            prov:agent <https://data.idnau.org/pid/adb/org/nsw-dcj>
         ] ;
-    ex:home "https://data.nsw.gov.au/data/dataset/nsw-custody-statistics" ;
-    ex:notes "Access to point data for research requires an application process." ;
+    dcterms:isPartOf [ dcat:hadRole croles:home ; prov:entity <https://data.nsw.gov.au/data/dataset/nsw-custody-statistics> ] ;
+    skos:note "Access to point data for research requires an application process." ;
 .
 

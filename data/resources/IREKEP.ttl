@@ -1,15 +1,15 @@
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX ex: <https://example.com/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://w3id.org/idn/dataset/democat>
-    dcterms:hasPart <https://w3id.org/idn/resource/IREKEP> ;
+<https://data.idnau.org/pid/democat>
+    dcterms:hasPart <https://data.idnau.org/pid/democat/IREKEP> ;
 .
 
-<https://w3id.org/idn/resource/IREKEP>
+<https://data.idnau.org/pid/democat/IREKEP>
     a dcat:Resource ;
     dcterms:description """Various projects from $10 million Indigenous Research Fund administered by AIATSIS.
 A number of projects are described p13-15 here.
@@ -21,6 +21,6 @@ Each of these projects should be catalogued? Or not?""" ;
             dcat:hadRole iso:custodian ;
             prov:agent <https://linked.data.gov.au/org/aiatsis>
         ] ;
-    ex:notes "Known as Yumi Sabe - shown below" ;
+    skos:note "Known as Yumi Sabe - shown below" ;
 .
 

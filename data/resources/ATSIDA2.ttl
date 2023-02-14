@@ -4,18 +4,18 @@ PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePart
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://w3id.org/idn/dataset/democat>
-    dcterms:hasPart <https://w3id.org/idn/resource/ATSIDA2> ;
+<https://data.idnau.org/pid/democat>
+    dcterms:hasPart <https://data.idnau.org/pid/democat/ATSIDA2> ;
 .
 
-<https://w3id.org/idn/resource/ATSIDA2>
+<https://data.idnau.org/pid/democat/ATSIDA2>
     a dcat:Resource ;
     dcterms:description "This looks like a mirror of the ADA archive. Many links are broken." ;
     dcterms:identifier "ATSIDA2"^^xsd:token ;
     dcterms:title "The Aboriginal and Torres Strait Islander Data Archive at Jumbunna, UTS" ;
     prov:qualifiedAttribution [
             dcat:hadRole iso:custodian ;
-            prov:agent <hhttps://data.idnau.org/org/77-257-686-961>
+            prov:agent <hhttps://data.idnau.org/pid/adb/org/77-257-686-961>
         ] ;
 .
 

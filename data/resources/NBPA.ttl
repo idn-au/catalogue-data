@@ -1,15 +1,16 @@
+PREFIX croles: <https://w3id.org/idn/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX ex: <https://example.com/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://w3id.org/idn/dataset/democat>
-    dcterms:hasPart <https://w3id.org/idn/resource/NBPA> ;
+<https://data.idnau.org/pid/democat>
+    dcterms:hasPart <https://data.idnau.org/pid/democat/NBPA> ;
 .
 
-<https://w3id.org/idn/resource/NBPA>
+<https://data.idnau.org/pid/democat/NBPA>
     a dcat:Resource ;
     dcterms:description "Noongar Boodjar Language Centre (NBLC) in Perth have partnered with the Atlas of Living Australia to link Noongar-Wudjari language and knowledge for plants and animals to western science knowledge to create the Noongar-Wudjari Plant and Animal online Encyclopedia. This project focused on the Noongar-Wudjari clan, from the South coast of WA, and worked specifically with Wudjari knowledge holders - Lynette Knapp and Gail Yorkshire to record, preserve and share their ancestral language and knowledge about plants and animals. Knowledge and language for 90 plants and animals were collected and are now ready for publication through the Atlas of Living Australia (ala.org.au)." ;
     dcterms:identifier "NBPA"^^xsd:token ;
@@ -27,18 +28,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:rightsHolder ;
-            prov:agent <https://data.idnau.org/org/39-719-813-963>
+            prov:agent <https://data.idnau.org/pid/adb/org/39-719-813-963>
         ] ,
         [
             dcat:hadRole iso:custodian ;
-            prov:agent <https://data.idnau.org/org/39-719-813-963>
+            prov:agent <https://data.idnau.org/pid/adb/org/39-719-813-963>
         ] ,
         [
             dcat:hadRole iso:originator ;
             prov:agent <https://linked.data.gov.au/org/ala>
         ] ;
-    ex:home "https://profiles.ala.org.au/opus/noongar" ;
-    ex:notes """The material in this profile contains the traditional knowledge or ICIP of the Noongar people and has been created by and published with the consent of these people. They assert their ownership, authority and control over this ICIP. The ICIP includes language and names, cultural information about species and their use and management. Dealing with any part of the knowledge for any purpose that has not been authorised by the custodians may breach the trust and customary laws of the Noongar people and may also breach the Copyright Act 1968 (Cth) and Moral Rights Act.
+    dcterms:isPartOf [ dcat:hadRole croles:home ; prov:entity <https://profiles.ala.org.au/opus/noongar> ] ;
+    skos:note """The material in this profile contains the traditional knowledge or ICIP of the Noongar people and has been created by and published with the consent of these people. They assert their ownership, authority and control over this ICIP. The ICIP includes language and names, cultural information about species and their use and management. Dealing with any part of the knowledge for any purpose that has not been authorised by the custodians may breach the trust and customary laws of the Noongar people and may also breach the Copyright Act 1968 (Cth) and Moral Rights Act.
 For enquiries regarding permitted reproduction of any part of this profile contact Noongar Language Centre (info@nbalc.org.au)
 
 e.g. https://profiles.ala.org.au/opus/noongar/profile/Tjilyiny""" ;

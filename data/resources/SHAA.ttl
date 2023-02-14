@@ -1,15 +1,16 @@
+PREFIX croles: <https://w3id.org/idn/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX ex: <https://example.com/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://w3id.org/idn/dataset/democat>
-    dcterms:hasPart <https://w3id.org/idn/resource/SHAA> ;
+<https://data.idnau.org/pid/democat>
+    dcterms:hasPart <https://data.idnau.org/pid/democat/SHAA> ;
 .
 
-<https://w3id.org/idn/resource/SHAA>
+<https://data.idnau.org/pid/democat/SHAA>
     a dcat:Resource ;
     dcterms:description """Data workbooks presenting the latest Social Health Atlases of Australia are available for the whole of Australia by Population Health Area, Local Government Area, and Primary Health Network, and by Indigenous Area for the Aboriginal & Torres Strait Islander population. Data are also available by Quintile of Socioeconomic Disadvantage of Area (current period and time series), and Remoteness Area (current period and time series), for both the whole population, and the Aboriginal & Torres Strait Islander population (current period only).
 
@@ -31,18 +32,18 @@ These workbooks are derived from ABS Census data releases.""" ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:rightsHolder ;
-            prov:agent <https://data.idnau.org/org/phidu>
+            prov:agent <https://data.idnau.org/pid/adb/org/phidu>
         ] ,
         [
             dcat:hadRole iso:custodian ;
-            prov:agent <https://data.idnau.org/org/99-154-937-005>
+            prov:agent <https://data.idnau.org/pid/adb/org/99-154-937-005>
         ] ,
         [
             dcat:hadRole iso:originator ;
-            prov:agent <https://data.idnau.org/org/phidu>
+            prov:agent <https://data.idnau.org/pid/adb/org/phidu>
         ] ;
-    ex:home "https://phidu.torrens.edu.au/social-health-atlases/data" ;
-    ex:notes """This catalogue contains specific Aboriginal and Torres Strait Islander Population datasets
+    dcterms:isPartOf [ dcat:hadRole croles:home ; prov:entity <https://phidu.torrens.edu.au/social-health-atlases/data> ] ;
+    skos:note """This catalogue contains specific Aboriginal and Torres Strait Islander Population datasets
 
 ABS SA2 Regions of Australia""" ;
 .
