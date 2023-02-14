@@ -37,7 +37,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         ] ,
         [
             dcat:hadRole iso:custodian ;
-            prov:agent "Centre for Indigenous Business Leadership, UniMelb."
+            prov:agent <https://data.idnau.org/org/um-ddcibl>
         ] ;
     ex:notes """The report describes the building of an I-BLADE dataset. Alot of linkage work has been done across various business registries. Cannot find any public trace of the actual dataset? Why not? Is there a data management plan? Marcia's name is on this report.
 

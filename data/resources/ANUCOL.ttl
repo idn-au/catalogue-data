@@ -14,8 +14,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:identifier "ANUCOL"^^xsd:token ;
     dcterms:title "2020 ANU First Nations Collections Review" ;
     prov:qualifiedAttribution [
-            dcat:hadRole iso:custodian ;
-            prov:agent "ANU Collections"
-        ] ;
+        dcat:hadRole iso:custodian ;
+        prov:agent <https://data.idnau.org/org/anu-collections>
+    ] ;
 .
 

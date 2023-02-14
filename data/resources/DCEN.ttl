@@ -29,15 +29,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:originator ;
-            prov:agent "Qld Department of Seniors, Disability Services and Aboriginal and Torres Strait Islander Partnerships"
+            prov:agent <https://data.idnau.org/org/qld-dsdsatsip>
         ] ,
         [
             dcat:hadRole iso:rightsHolder ;
-            prov:agent "The State of Queensland"
+            prov:agent <https://data.idnau.org/org/75-818-456-675>
         ] ,
         [
             dcat:hadRole iso:custodian ;
-            prov:agent "Qld Department of Seniors, Disability Services and Aboriginal and Torres Strait Islander Partnerships"
+            prov:agent <https://data.idnau.org/org/qld-dsdsatsip>
         ] ;
     ex:home "https://www.data.qld.gov.au/dataset/correspondence-relating-to-aboriginal-and-torres-strait-islander-people-deebing-creek" ;
     ex:notes "This is an index to paper documents available in the Qld State Library" ;

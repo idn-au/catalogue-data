@@ -14,8 +14,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:identifier "DUALPN"^^xsd:token ;
     dcterms:title "Dual Placenames" ;
     prov:qualifiedAttribution [
-            dcat:hadRole iso:custodian ;
-            prov:agent "WGPN"
-        ] ;
+        dcat:hadRole iso:custodian ;
+        prov:agent <https://data.idnau.org/org/icsm-wgpn>
+    ] ;
 .
 

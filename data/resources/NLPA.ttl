@@ -14,8 +14,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:identifier "NLPA"^^xsd:token ;
     dcterms:title "People Australia" ;
     prov:qualifiedAttribution [
-            dcat:hadRole iso:custodian ;
-            prov:agent "National Library"
-        ] ;
+        dcat:hadRole iso:custodian ;
+        prov:agent <https://linked.data.gov.au/org/nla>
+    ] ;
 .
 

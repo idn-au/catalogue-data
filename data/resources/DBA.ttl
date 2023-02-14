@@ -29,17 +29,17 @@ Comprises Barwick's publications and conference papers; Barwick's PhD.; work wit
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:rightsHolder ;
-            prov:agent "State Library of Victoria"
+            prov:agent <https://data.idnau.org/org/73-190-237-854>
         ] ,
         [
             dcat:hadRole iso:originator ;
-            prov:agent "Diane Barwick"
+            prov:agent <https://data.idnau.org/person/barwick>
         ] ,
         [
             dcat:hadRole iso:custodian ;
-            prov:agent "State Library of Victoria"
+            prov:agent <https://data.idnau.org/org/73-190-237-854>
         ] ;
-    ex:home "State Library of Victoria" ;
+    ex:home <https://data.idnau.org/org/73-190-237-854> ;
     ex:notes """This collection of work created by Diane Barwich is a series of 45 sub-collections containing the research undertaken by Barwick starting with her undergraduate work in Canada.
 
 https://www.austehc.unimelb.edu.au/guides/barw/barw.htm""" ;

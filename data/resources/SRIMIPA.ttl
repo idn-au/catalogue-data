@@ -29,7 +29,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:rightsHolder ;
-            prov:agent "SVA Consulting"
+            prov:agent <https://data.idnau.org/org/94-100-487-572>
         ] ,
         [
             dcat:hadRole iso:custodian ;

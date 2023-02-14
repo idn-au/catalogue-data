@@ -14,8 +14,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:identifier "GDPGPI"^^xsd:token ;
     dcterms:title "GDP and Genuine Progress Indicator" ;
     prov:qualifiedAttribution [
-            dcat:hadRole iso:custodian ;
-            prov:agent "Torrens"
-        ] ;
+        dcat:hadRole iso:custodian ;
+        prov:agent <https://data.idnau.org/org/99-154-937-005>
+    ] ;
 .
 

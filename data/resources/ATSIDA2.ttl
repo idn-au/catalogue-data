@@ -15,7 +15,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:title "The Aboriginal and Torres Strait Islander Data Archive at Jumbunna, UTS" ;
     prov:qualifiedAttribution [
             dcat:hadRole iso:custodian ;
-            prov:agent <https://linked.data.gov.au/org/uts>
+            prov:agent <hhttps://data.idnau.org/org/77-257-686-961>
         ] ;
 .
 

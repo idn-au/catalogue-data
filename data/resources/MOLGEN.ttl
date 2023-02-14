@@ -14,8 +14,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:identifier "MOLGEN"^^xsd:token ;
     dcterms:title "Tasmanian Aboriginal genealogies" ;
     prov:qualifiedAttribution [
-            dcat:hadRole iso:custodian ;
-            prov:agent "Tasmanian Museum"
-        ] ;
+        dcat:hadRole iso:custodian ;
+        prov:agent <https://data.idnau.org/org/17-334-217-592>
+    ] ;
 .
 

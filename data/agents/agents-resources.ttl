@@ -1,0 +1,146 @@
+# Agents for the resources files
+
+PREFIX schema: <https://schema.org/>
+
+<https://data.idnau.org/org/28-221-722-606>
+    a schema:Organization ;
+    schema:identifier "28 221 722 606"^^<https://data.idnau.org/pid/agentsdb/abn> ;
+    schema:name "Yothu Yindi" ;
+.
+
+<https://data.idnau.org/org/61-249-878-937>
+    a schema:Organization ;
+    schema:identifier "61 249 878 937"^^<https://data.idnau.org/pid/agentsdb/abn> ;
+    schema:name "University of Adelaide" ;
+.
+
+<https://data.idnau.org/org/73-190-237-854>
+    a schema:Organization ;
+    schema:identifier "73 190 237 854"^^<https://data.idnau.org/pid/agentsdb/abn> ;
+    schema:name "State Library of Victoria" ;
+.
+
+<https://data.idnau.org/org/75-818-456-675>
+    a schema:Organization ;
+    schema:identifier "75 818 456 675"^^<https://data.idnau.org/pid/agentsdb/abn> ;
+    schema:name "The State of Queensland" ;
+.
+
+<https://data.idnau.org/org/78-094-372-050>
+    a schema:Organization ;
+    schema:identifier "78 094 372 050"^^<https://data.idnau.org/pid/agentsdb/abn> ;
+    schema:name "Productivity Commission" ;
+.
+
+<https://data.idnau.org/org/94-100-487-572>
+    a schema:Organization ;
+    schema:identifier "94 100 487 572"^^<https://data.idnau.org/pid/agentsdb/abn> ;
+    schema:name "SVA Consulting" ;
+.
+
+<https://data.idnau.org/org/99-154-937-005>
+    a schema:Organization ;
+    schema:identifier "99 154 937 005"^^<https://data.idnau.org/pid/agentsdb/abn> ;
+    schema:name "Torrens University Australia" ;
+.
+
+<https://data.idnau.org/org/aiatsis>
+    a schema:Organization ;
+    schema:name "AIATSIS" ;
+.
+
+<https://data.idnau.org/org/anu-archives>
+    a schema:Organization ;
+    schema:name "ANU Archives" ;
+.
+
+<https://data.idnau.org/org/anu-collections>
+    a schema:Organization ;
+    schema:name "ANU Collections" ;
+.
+
+<https://data.idnau.org/org/anu-library>
+    a schema:Organization ;
+    schema:name "ANU Library" ;
+.
+
+<https://data.idnau.org/org/anu-nceph>
+    a schema:Organization ;
+    schema:name "National Centre for Epidemiology and Population Health" ;
+    schema:parentOrganization <https://linked.data.gov.au/org/anu> ;
+.
+
+<https://data.idnau.org/org/anu-rsd>
+    a schema:Organization ;
+    schema:name "Research Service Division" ;
+.
+
+<https://data.idnau.org/org/atsida>
+    a schema:Organization ;
+    schema:name "ATSIDA.1" ;
+.
+
+<https://data.idnau.org/org/jumbunna>
+    a schema:Organization ;
+    schema:name "Jumbunna" ;
+    schema:parentOrganization <https://linked.data.gov.au/org/uts> ;
+.
+
+<https://data.idnau.org/org/mayi-kuwayu-study>
+    a schema:Organization ;
+    schema:name "Mayi Kuwayu" ;
+    schema:parentOrganization <https://data.idnau.org/org/anu-fnp> ;
+.
+
+<https://data.idnau.org/org/ncig>
+    a schema:Organization ;
+    schema:name "National Centre for Indigenous Genomics" ;
+    schema:parentOrganization <https://linked.data.gov.au/org/anu> ;
+.
+
+<https://data.idnau.org/org/phidu>
+    a schema:Organization ;
+    schema:name "Public Health Information Development Unit" ;
+.
+
+<https://data.idnau.org/org/qld-dsdsatsip>
+    a schema:Organization ;
+    schema:name "Qld Department of Seniors, Disability Services and Aboriginal and Torres Strait Islander Partnerships" ;
+.
+
+<https://data.idnau.org/person/barwick>
+    a schema:Person ;
+    schema:name "Diane Barwick" ;
+.
+
+<https://data.idnau.org/person/briscoe>
+    a schema:Person ;
+    schema:name "Gordon Briscoe" ;
+.
+
+<https://orcid.org/0000-0002-2151-2190>
+    a schema:Person ;
+    schema:name "Janet McDougall" ;
+.
+
+<https://orcid.org/0000-0002-5477-0874>
+    a schema:Organization ;
+    schema:name "Len Smith" ;
+.
+
+<https://orcid.org/0000-0003-1983-6687>
+    a schema:Person ;
+    schema:name "Sandra Silcot" ;
+.
+
+<https://data.idnau.org/org/anu-fnp>
+    a schema:Organization ;
+    schema:name "ANU First Nations Portfolio" ;
+    schema:parentOrganization <https://linked.data.gov.au/org/anu> ;
+.
+
+<https://linked.data.gov.au/org/uts>
+    a schema:Organization ;
+    schema:identifier "77 257 686 961"^^<https://data.idnau.org/pid/agentsdb/abn> ;
+    schema:name "University of Technology Sydney" ;
+.

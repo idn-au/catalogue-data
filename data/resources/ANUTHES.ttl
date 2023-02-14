@@ -33,11 +33,11 @@ Open Research holds a variety of scholarly publications including journal articl
         ] ,
         [
             dcat:hadRole iso:custodian ;
-            prov:agent "ANU Library"
+            prov:agent <https://data.idnau.org/org/anu-library>
         ] ,
         [
             dcat:hadRole iso:originator ;
-            prov:agent "ANU Library"
+            prov:agent <https://data.idnau.org/org/anu-library>
         ] ;
     ex:home "https://openresearch-repository.anu.edu.au/handle/1885/1" ;
     ex:notes "This link is for research tagged as 'Indigenous' - which is a subset of the collection" ;

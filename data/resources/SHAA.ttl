@@ -31,15 +31,15 @@ These workbooks are derived from ABS Census data releases.""" ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:rightsHolder ;
-            prov:agent "PHIDU, Torrens University Australia"
+            prov:agent <https://data.idnau.org/org/phidu>
         ] ,
         [
             dcat:hadRole iso:custodian ;
-            prov:agent "Torrens University Australia"
+            prov:agent <https://data.idnau.org/org/99-154-937-005>
         ] ,
         [
             dcat:hadRole iso:originator ;
-            prov:agent "PHIDU, Torrens University Australia"
+            prov:agent <https://data.idnau.org/org/phidu>
         ] ;
     ex:home "https://phidu.torrens.edu.au/social-health-atlases/data" ;
     ex:notes """This catalogue contains specific Aboriginal and Torres Strait Islander Population datasets

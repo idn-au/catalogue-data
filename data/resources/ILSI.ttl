@@ -30,7 +30,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         ] ,
         [
             dcat:hadRole iso:rightsHolder ;
-            prov:agent "Commonwealth of Australia"
+            prov:agent <https://linked.data.gov.au/org/au>
         ] ,
         [
             dcat:hadRole iso:originator ;

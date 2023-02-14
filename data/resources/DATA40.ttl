@@ -27,15 +27,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:originator ;
-            prov:agent "University of Adelaide"
+            prov:agent <https://data.idnau.org/org/61-249-878-937>
         ] ,
         [
             dcat:hadRole iso:custodian ;
-            prov:agent "Library and Archive NT"
+            prov:agent <https://data.idnau.org/org/lant>
         ] ,
         [
             dcat:hadRole iso:rightsHolder ;
-            prov:agent "LANT"
+            prov:agent <https://data.idnau.org/org/lant>
         ] ;
     ex:home "https://lant.on.worldcat.org/oclc/220930092" ;
     ex:notes """Map Showing the Distribution of the Aboriginal Tribes of Australia by Norman B Tindale 1940

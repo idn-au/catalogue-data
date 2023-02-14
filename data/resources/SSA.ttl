@@ -15,8 +15,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:title "The Sandra Smith Archive" ;
     dcterms:type "collection" ;
     prov:qualifiedAttribution [
-            dcat:hadRole iso:custodian ;
-            prov:agent "Sandra Smith"
-        ] ;
+        dcat:hadRole iso:custodian ;
+        prov:agent <https://data.idnau.org/person/sandra-smith>
+    ] ;
 .
 

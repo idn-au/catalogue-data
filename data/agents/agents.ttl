@@ -212,3 +212,20 @@ The Act establishes the Tribunal as an independent body with a wide range of fun
     sdo:name "Australian Government" ;
     sdo:url "https://www.australia.gov.au"^^xsd:anyURI ;
 .
+
+<https://orcid.org/0000-0002-5477-0874>
+    a sdo:Person ;
+    dcterms:type
+        sdo:Person ,
+        <https://w3id.org/idn/vocab/org-indigeneity/non-indigenous> ;
+    dcat:relation [
+        dcat:hadRole aarr:affiliateOf ;
+        prov:agent <https://linked.data.gov.au/org/anu> ;
+    ] ,
+    [
+        dcat:hadRole aarr:affiliateOf ;
+        prov:agent <https://linked.data.gov.au/org/idn> ;
+    ] ;
+    sdo:email "leonard.smith@anu.edu.au"^^xsd:anyURI ;
+    sdo:name "Len Smith"@en ;
+.

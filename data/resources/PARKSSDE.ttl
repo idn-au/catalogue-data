@@ -34,15 +34,15 @@ https://www.awe.gov.au/agriculture-land/land/indigenous-protected-areas""" ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:custodian ;
-            prov:agent "Department of Environment"
+            prov:agent <https://linked.data.gov.au/org/dcceew>
         ] ,
         [
             dcat:hadRole iso:originator ;
-            prov:agent "AWE"
+            prov:agent <https://linked.data.gov.au/org/dawe>
         ] ,
         [
             dcat:hadRole iso:rightsHolder ;
-            prov:agent "Australian Government"
+            prov:agent <https://linked.data.gov.au/org/au>
         ] ;
     ex:home "http://www.environment.gov.au/fed/catalog/main/home.page" ;
     ex:notes """CreativeCommons Attribution 3.0 Australia License

@@ -22,7 +22,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         <https://w3id.org/idn/vocab/indigeneity/about-indigenous-things> ;
     prov:qualifiedAttribution [
             dcat:hadRole iso:custodian ;
-            prov:agent "Research Service Division (RSD)"
+            prov:agent <https://data.idnau.org/org/anu-rsd>
         ] ;
 .
 

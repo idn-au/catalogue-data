@@ -27,15 +27,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:rightsHolder ;
-            prov:agent "Noongar Boodjar Language Cultural Aboriginal Corporation"
+            prov:agent <https://data.idnau.org/org/39-719-813-963>
         ] ,
         [
             dcat:hadRole iso:custodian ;
-            prov:agent "NBLC"
+            prov:agent <https://data.idnau.org/org/39-719-813-963>
         ] ,
         [
             dcat:hadRole iso:originator ;
-            prov:agent "ALA"
+            prov:agent <https://linked.data.gov.au/org/ala>
         ] ;
     ex:home "https://profiles.ala.org.au/opus/noongar" ;
     ex:notes """The material in this profile contains the traditional knowledge or ICIP of the Noongar people and has been created by and published with the consent of these people. They assert their ownership, authority and control over this ICIP. The ICIP includes language and names, cultural information about species and their use and management. Dealing with any part of the knowledge for any purpose that has not been authorised by the custodians may breach the trust and customary laws of the Noongar people and may also breach the Copyright Act 1968 (Cth) and Moral Rights Act.

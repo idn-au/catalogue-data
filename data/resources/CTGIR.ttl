@@ -17,9 +17,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:title "Closing the gap information repository" ;
     prov:qualifiedAttribution [
             dcat:hadRole iso:custodian ;
-            prov:agent "Productivity Commission"
+            prov:agent <https://data.idnau.org/org/78-094-372-050>
         ] ;
     ex:home "https://www.pc.gov.au/closing-the-gap-data" ;
-    ex:notes "As at March 2022, reporting for Priorty Reform 4 \"Shared access to data and information at a regional level\" is yet to be developed. See: https://www.pc.gov.au/closing-the-gap-data/dashboard/priority/reform4" ;
+    ex:notes "As at March 2022, reporting for Priority Reform 4 \"Shared access to data and information at a regional level\" is yet to be developed. See: https://www.pc.gov.au/closing-the-gap-data/dashboard/priority/reform4" ;
 .
 

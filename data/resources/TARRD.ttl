@@ -30,15 +30,15 @@ As Tandana is government funded it reports annually on the funding supplied and 
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:rightsHolder ;
-            prov:agent "Government of SA"
+            prov:agent <https://linked.data.gov.au/org/south-australia>
         ] ,
         [
             dcat:hadRole iso:originator ;
-            prov:agent "Tandanya National Aboriginal Cultural Institute"
+            prov:agent <https://data.idnau.org/org/tandanya>
         ] ,
         [
             dcat:hadRole iso:custodian ;
-            prov:agent "Tandanya National Aboriginal Cultural Institute"
+            prov:agent <https://data.idnau.org/org/tandanya>
         ] ;
     ex:home "https://data.sa.gov.au/" ;
     ex:notes """Tandana is owned and managed by the National Aboriginal Cultural Institute Inc. It is Australia’s oldest Aboriginal-owned and managed multi-arts centre. In 2014, Tandanya celebrated 25 years of continuous operation since the institute was incorporated in 1989.

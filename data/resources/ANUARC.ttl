@@ -30,11 +30,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         ] ,
         [
             dcat:hadRole iso:originator ;
-            prov:agent "ANU Library"
+            prov:agent <https://data.idnau.org/org/anu-library>
         ] ,
         [
             dcat:hadRole iso:custodian ;
-            prov:agent "ANU Archives"
+            prov:agent <https://data.idnau.org/org/anu-archives>
         ] ;
     ex:home "https://openresearch-repository.anu.edu.au/handle/1885/2" ;
     ex:notes "This link is for research tagged as 'Indigenous' - which is a subset of the collection" ;

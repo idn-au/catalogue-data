@@ -30,7 +30,11 @@ Aboriginal and Torres Strait Islander people, researchers and other users should
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:originator ;
-            prov:agent "Gordon Briscoe, Len Smith"
+            prov:agent <https://data.idnau.org/person/briscoe>
+        ] ,
+        [
+            dcat:hadRole iso:originator ;
+            prov:agent <https://orcid.org/0000-0002-5477-0874>
         ] ,
         [
             dcat:hadRole iso:rightsHolder ;
@@ -38,7 +42,7 @@ Aboriginal and Torres Strait Islander people, researchers and other users should
         ] ,
         [
             dcat:hadRole iso:custodian ;
-            prov:agent "ATSIDA.1"
+            prov:agent <https://data.idnau.org/org/atsida>
         ] ;
     ex:fair """FAIR=4% (F-UJI)
 https://rdxx.org/notes.len/idc93/https%20__www.atsida.edu.au_archive_datasets_au.edu.anu.ada.ddi.20002-aus.json""" ;

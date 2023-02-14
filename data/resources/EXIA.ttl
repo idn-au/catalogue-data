@@ -14,8 +14,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:identifier "EXIA"^^xsd:token ;
     dcterms:title "Expenditure on Indigenous advancement." ;
     prov:qualifiedAttribution [
-            dcat:hadRole iso:custodian ;
-            prov:agent "Yothu Yindi"
-        ] ;
+        dcat:hadRole iso:custodian ;
+        prov:agent <https://data.idnau.org/org/28-221-722-606>
+    ] ;
 .
 

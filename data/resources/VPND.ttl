@@ -28,15 +28,15 @@ This data is reported annually to the AIHW as part of the National Perinatal Dat
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:custodian ;
-            prov:agent "VicHealth"
+            prov:agent <https://data.idnau.org/org/vic-health>
         ] ,
         [
             dcat:hadRole iso:rightsHolder ;
-            prov:agent "Victorian Department of Health"
+            prov:agent <https://data.idnau.org/org/vic-health>
         ] ,
         [
             dcat:hadRole iso:originator ;
-            prov:agent "Victorian Department of Health"
+            prov:agent <https://data.idnau.org/org/vic-health>
         ] ;
     ex:notes """I only know the general situation. Jane Freemantle is across it. Negotiation needed with VicHealth.
 hdss.helpdesk@health.vic.gov.au

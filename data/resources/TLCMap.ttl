@@ -16,8 +16,8 @@ Note that historical placenames in TLCmap is a HASS-I integration activity.""" ;
     dcterms:identifier "TLCMap"^^xsd:token ;
     dcterms:title "Time Layered Cultural Map of Australia" ;
     prov:qualifiedAttribution [
-            dcat:hadRole iso:custodian ;
-            prov:agent "University of Newcastle"
-        ] ;
+        dcat:hadRole iso:custodian ;
+        prov:agent <https://linked.data.gov.au/org/unewcastle>
+    ] ;
 .
 

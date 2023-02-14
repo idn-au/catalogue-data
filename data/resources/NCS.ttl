@@ -29,15 +29,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:custodian ;
-            prov:agent "NSW Bureau of Crime Statistics and Research"
+            prov:agent <https://data.idnau.org/org/nsw-bcsar>
         ] ,
         [
             dcat:hadRole iso:rightsHolder ;
-            prov:agent "Government of NSW"
+            prov:agent <https://linked.data.gov.au/org/nsw>
         ] ,
         [
             dcat:hadRole iso:originator ;
-            prov:agent "NSW Department of Communities and Justice"
+            prov:agent <https://data.idnau.org/org/nsw-dcj>
         ] ;
     ex:home "https://data.nsw.gov.au/data/dataset/nsw-custody-statistics" ;
     ex:notes "Access to point data for research requires an application process." ;

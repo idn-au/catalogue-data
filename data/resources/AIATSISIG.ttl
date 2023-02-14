@@ -14,8 +14,16 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:identifier "AIATSISIG"^^xsd:token ;
     dcterms:title "Indigenous Gazetteer" ;
     prov:qualifiedAttribution [
-            dcat:hadRole iso:custodian ;
-            prov:agent "AIATSIS, GA, ABS"
-        ] ;
+        dcat:hadRole iso:custodian ;
+        prov:agent <https://data.idnau.org/org/aiatsis>
+    ] ,
+    [
+        dcat:hadRole iso:custodian ;
+        prov:agent <https://linked.data.gov.au/org/ga>
+    ] ,
+    [
+        dcat:hadRole iso:custodian ;
+        prov:agent <https://linked.data.gov.au/org/abs>
+    ] ;
 .
 

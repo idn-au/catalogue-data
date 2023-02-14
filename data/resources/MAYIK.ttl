@@ -31,15 +31,15 @@ The Mayi Kuwayu team are experienced at working closely with communities across 
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:rightsHolder ;
-            prov:agent "Mayi Kuwayu - ANU"
+            prov:agent <https://data.idnau.org/org/mayi-kuwayu-study>
         ] ,
         [
             dcat:hadRole iso:originator ;
-            prov:agent "Mayi Kuwayu - ANU"
+            prov:agent <https://data.idnau.org/org/mayi-kuwayu-study>
         ] ,
         [
             dcat:hadRole iso:custodian ;
-            prov:agent "NATIONAL CENTRE FOR EPIDEMIOLOGY AND POPULATION HEALTH"
+            prov:agent <https://data.idnau.org/org/anu-nceph>
         ] ;
     ex:home "https://mkstudy.com.au/" ;
     ex:notes "Longitudinal dataset?" ;

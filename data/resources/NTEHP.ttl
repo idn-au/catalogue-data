@@ -15,9 +15,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:identifier "NTEHP"^^xsd:token ;
     dcterms:title "The Fred Hollows Archive (National Trachoma and Eye Health Program)" ;
     prov:qualifiedAttribution [
-            dcat:hadRole iso:custodian ;
-            prov:agent "AIATSIS, UNSW Archives"
-        ] ;
+        dcat:hadRole iso:custodian ;
+        prov:agent <https://data.idnau.org/org/aiatsis>
+    ] ,
+    [
+        dcat:hadRole iso:custodian ;
+        prov:agent <https://data.idnau.org/org/unsw-archive>
+    ] ;
     ex:notes """I met with AIATSIS staff on 23 March 2021 to discuss the HTEHP data: Kylie Moloney, the acting manager of manuscripts; Cathryn Zdanowicz, archivist, and Daryl Ciobal and Gregory Oakes from the digitisation section. Cathy advised that they hold 39 boxes of patient cards, each with about 750-900 cards - say 30 to 35,000 cards in all, from Queensland, NT and WA for the period 1976-1979. The records have not been processed by AIATSIS. These records are for children only. (Microfiche of the adult records, and other NTEHP material, are believed to be with Fred Hollows' papers at the UNSW Archives). They are A4 cardboard carbon copies. The originals went to the communities. Data includes unique ID numbers, name, parents' names, address, place of examination and test results.
 
 Kylie said she would prepare a paper outlining what will be involved in processing, conserving and digitising their records - but nothing has happened.

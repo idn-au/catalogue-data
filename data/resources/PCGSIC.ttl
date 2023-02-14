@@ -10,12 +10,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://w3id.org/idn/resource/PCGSIC>
     a dcat:Resource ;
-    dcterms:description "https://www.pc.gov.au/search?collection=productivity-commission-web&query=Indigenous%20compendium&form=site-search&start_rank=1" ;
+    dcterms:source "https://www.pc.gov.au/ongoing/report-on-government-services/indigenous-compendium-2014"^^xsd:anyURI ;
     dcterms:identifier "PCGSIC"^^xsd:token ;
     dcterms:title "AG Productivity Commission - Report on Government Services: Indigenous Compendium reports 2005-2015" ;
     prov:qualifiedAttribution [
-            dcat:hadRole iso:custodian ;
-            prov:agent "AG"
-        ] ;
+        dcat:hadRole iso:custodian ;
+        prov:agent <https://data.idnau.org/org/78-094-372-050>
+    ] ;
 .
 

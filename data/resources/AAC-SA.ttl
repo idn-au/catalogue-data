@@ -32,7 +32,11 @@ Aboriginal and Torres Strait Islander people, researchers and other users should
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:originator ;
-            prov:agent "Gordon Briscoe, Len Smith"
+            prov:agent <https://data.idnau.org/person/briscoe>
+        ] ,
+        [
+            dcat:hadRole iso:originator ;
+            prov:agent <https://orcid.org/0000-0002-5477-0874>
         ] ,
         [
             dcat:hadRole iso:rightsHolder ;
@@ -40,7 +44,7 @@ Aboriginal and Torres Strait Islander people, researchers and other users should
         ] ,
         [
             dcat:hadRole iso:custodian ;
-            prov:agent "ATSIDA.1"
+            prov:agent <https://data.idnau.org/org/atsida>
         ] ;
     ex:home "https://www.atsida.edu.au/" ;
     ex:notes "The Annual Aboriginal Census is considered as a significant official source of Aboriginal population statistics. It was conducted annually in June from 1921 to 1944, exempting the war years between 1941 and 1944 in each State and Territory. The 1944 census was incomplete with New South Wales not taking part at all. Enumeration of Aboriginal populations was poor and difficulties in classification occurred. The Census was a collaboration of the Commonwealth Bureau of Census and Statistics who initiated the study, State and Territory Statisticians, the Protector of Aborigines, and local police officers who conducted the enumeration. The Annual Aboriginal Census is also referred to as the Annual Census of Aborigines and Police Census." ;

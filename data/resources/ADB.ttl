@@ -14,8 +14,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:identifier "ADB"^^xsd:token ;
     dcterms:title "The Australian Dictionary of Biography" ;
     prov:qualifiedAttribution [
-            dcat:hadRole iso:custodian ;
-            prov:agent "ADB"
-        ] ;
+        dcat:hadRole iso:custodian ;
+        prov:agent <https://linked.data.gov.au/org/anu>
+    ] ;
 .
 

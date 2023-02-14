@@ -32,11 +32,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:rightsHolder ;
-            prov:agent <https://linked.data.gov.au/org/uts>
+            prov:agent <https://data.idnau.org/org/77-257-686-961>
         ] ,
         [
             dcat:hadRole iso:originator ;
-            prov:agent <https://linked.data.gov.au/org/uts>
+            prov:agent <https://data.idnau.org/org/77-257-686-961>
         ] ,
         [
             dcat:hadRole iso:custodian ;
@@ -44,7 +44,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         ] ,
         [
             dcat:hadRole iso:custodian ;
-            prov:agent <https://linked.data.gov.au/org/uts>
+            prov:agent <https://data.idnau.org/org/77-257-686-961>
         ] ;
     ex:home "https://www.atsida.edu.au/" ;
     ex:notes

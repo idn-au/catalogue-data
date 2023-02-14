@@ -36,7 +36,7 @@ Increased and diversified investment from a range of funding sources would meet 
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:rightsHolder ;
-            prov:agent "SVA Consulting"
+            prov:agent <https://data.idnau.org/org/94-100-487-572>
         ] ,
         [
             dcat:hadRole iso:originator ;

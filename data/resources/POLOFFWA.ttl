@@ -14,8 +14,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:identifier "POLOFFWA"^^xsd:token ;
     dcterms:title "Police Offenses WA (Erin Mathews)" ;
     prov:qualifiedAttribution [
-            dcat:hadRole iso:custodian ;
-            prov:agent "Marcia Langton"
-        ] ;
+        dcat:hadRole iso:custodian ;
+        prov:agent <https://orcid.org/0000-0002-1398-7524>
+    ] ;
 .
 
