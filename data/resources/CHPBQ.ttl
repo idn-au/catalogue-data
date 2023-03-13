@@ -1,4 +1,4 @@
-PREFIX croles: <https://w3id.org/idn/vocab/cat-roles/>
+PREFIX croles: <https://data.idnau.org/pid/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -7,10 +7,10 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
-    dcterms:hasPart <https://data.idnau.org/pid/democat/CHPBQ> ;
+    dcterms:hasPart <https://data.idnau.org/pid/CHPBQ> ;
 .
 
-<https://data.idnau.org/pid/democat/CHPBQ>
+<https://data.idnau.org/pid/CHPBQ>
     a dcat:Resource ;
     dcterms:description "The Cultural Heritage Parties dataset is the spatial representation of state-wide Aboriginal and Torres Strait Islander Native Title Party boundaries within Queensland as described under the Aboriginal Cultural Heritage Act 2003 and the Torres Strait Islander Cultural Heritage Act 2003 (the Acts)." ;
     dcterms:format "ESRI Shape file SHP, MapInfo Tab file TAB, ESRI file geodatabase FGDB, Google file KMZ, and Geopackage version 1.0, 1.1, or 1.2 file GPKG" ;
@@ -25,8 +25,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     # dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;  # TODO: no Concept from the vocab selected
     dcat:accessURL "https://qldspatial.information.qld.gov.au/catalogue/custom/search.page?q=%22Cultural%20Heritage%20Party%20boundaries%20-%20Queensland%22"^^xsd:anyURI ;
     dcat:theme
-        <https://w3id.org/idn/vocab/idn-th/place> ,
-        <https://w3id.org/idn/vocab/indigeneity/about-indigenous-things> ;
+        <https://data.idnau.org/pid/vocab/idn-th/place> ,
+        <https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-things> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:rightsHolder ;

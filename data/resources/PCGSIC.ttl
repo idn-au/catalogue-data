@@ -5,10 +5,10 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
-    dcterms:hasPart <https://data.idnau.org/pid/democat/PCGSIC> ;
+    dcterms:hasPart <https://data.idnau.org/pid/PCGSIC> ;
 .
 
-<https://data.idnau.org/pid/democat/PCGSIC>
+<https://data.idnau.org/pid/PCGSIC>
     a dcat:Resource ;
     dcterms:source "https://www.pc.gov.au/ongoing/report-on-government-services/indigenous-compendium-2014"^^xsd:anyURI ;
     dcterms:identifier "PCGSIC"^^xsd:token ;

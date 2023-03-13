@@ -6,10 +6,10 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
-    dcterms:hasPart <https://data.idnau.org/pid/democat/NTEHP> ;
+    dcterms:hasPart <https://data.idnau.org/pid/NTEHP> ;
 .
 
-<https://data.idnau.org/pid/democat/NTEHP>
+<https://data.idnau.org/pid/NTEHP>
     a dcat:Resource ;
     dcterms:description "This comprises records of about 70,000 Indigenous and 30,000 non-Indigenous people surveyed in the 1970s and 1980s. Some paper records are held at AIATSIS. Microfilms of others are at UNSW Archives. There have been preliminary discussions with AIATSIS, the National Library and former members of the Hollows team about a program to digitise the records. IDN staff/resources would be needed." ;
     dcterms:identifier "NTEHP"^^xsd:token ;

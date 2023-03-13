@@ -6,10 +6,10 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
-    dcterms:hasPart <https://data.idnau.org/pid/democat/KHRD> ;
+    dcterms:hasPart <https://data.idnau.org/pid/KHRD> ;
 .
 
-<https://data.idnau.org/pid/democat/KHRD>
+<https://data.idnau.org/pid/KHRD>
     a dcat:Resource ;
     dcterms:description """Sandra Silcot has identified the steps required to make this fully maintainable and sustainable.
 Koori Health Research Database (Janet McCalman) traces BDM of 7,800 Aboriginals in Victoria & New South Wales Australia from 19th Century to the present. It is built from Yggdrasil, an existing open-source web database application designed for large population studies of family history https://rdxx.org/notes.sandra/khrd/slides/khrd-apa2012-talk.pdf.html""" ;
@@ -23,9 +23,9 @@ Koori Health Research Database (Janet McCalman) traces BDM of 7,800 Aboriginals 
     dcterms:type "dataset" ;
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/restricted> ;
     dcat:theme
-        <https://w3id.org/idn/vocab/idn-th/subject> ,
-        <https://w3id.org/idn/vocab/indigeneity/about-indigenous-people> ,
-        <https://w3id.org/idn/vocab/idn-th/indigenous-demographics> ;
+        <https://data.idnau.org/pid/vocab/idn-th/subject> ,
+        <https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-people> ,
+        <https://data.idnau.org/pid/vocab/idn-th/indigenous-demographics> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:custodian ;

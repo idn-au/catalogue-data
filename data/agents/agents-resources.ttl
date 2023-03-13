@@ -1,118 +1,118 @@
 PREFIX adb: <https://data.idnau.org/pid/adb/>
 PREFIX sdo: <https://schema.org/>
 
-<https://data.idnau.org/pid/adb/org/28-221-722-606>
+<https://data.idnau.org/pid/org/28-221-722-606>
     a sdo:Organization ;
     sdo:identifier "28 221 722 606"^^adb:abn ;
     sdo:name "Yothu Yindi" ;
 .
 
-<https://data.idnau.org/pid/adb/org/61-249-878-937>
+<https://data.idnau.org/pid/org/61-249-878-937>
     a sdo:Organization ;
     sdo:identifier "61 249 878 937"^^adb:abn ;
     sdo:name "University of Adelaide" ;
 .
 
-<https://data.idnau.org/pid/adb/org/73-190-237-854>
+<https://data.idnau.org/pid/org/73-190-237-854>
     a sdo:Organization ;
     sdo:identifier "73 190 237 854"^^adb:abn ;
     sdo:name "State Library of Victoria" ;
 .
 
-<https://data.idnau.org/pid/adb/org/75-818-456-675>
+<https://data.idnau.org/pid/org/75-818-456-675>
     a sdo:Organization ;
     sdo:identifier "75 818 456 675"^^adb:abn ;
     sdo:name "The State of Queensland" ;
 .
 
-<https://data.idnau.org/pid/adb/org/78-094-372-050>
+<https://data.idnau.org/pid/org/78-094-372-050>
     a sdo:Organization ;
     sdo:identifier "78 094 372 050"^^adb:abn ;
     sdo:name "Productivity Commission" ;
 .
 
-<https://data.idnau.org/pid/adb/org/94-100-487-572>
+<https://data.idnau.org/pid/org/94-100-487-572>
     a sdo:Organization ;
     sdo:identifier "94 100 487 572"^^adb:abn ;
     sdo:name "SVA Consulting" ;
 .
 
-<https://data.idnau.org/pid/adb/org/99-154-937-005>
+<https://data.idnau.org/pid/org/99-154-937-005>
     a sdo:Organization ;
     sdo:identifier "99 154 937 005"^^adb:abn ;
     sdo:name "Torrens University Australia" ;
 .
 
-<https://data.idnau.org/pid/adb/org/aiatsis>
+<https://data.idnau.org/pid/org/aiatsis>
     a sdo:Organization ;
     sdo:name "AIATSIS" ;
 .
 
-<https://data.idnau.org/pid/adb/org/anu-archives>
+<https://data.idnau.org/pid/org/anu-archives>
     a sdo:Organization ;
     sdo:name "ANU Archives" ;
 .
 
-<https://data.idnau.org/pid/adb/org/anu-collections>
+<https://data.idnau.org/pid/org/anu-collections>
     a sdo:Organization ;
     sdo:name "ANU Collections" ;
 .
 
-<https://data.idnau.org/pid/adb/org/anu-library>
+<https://data.idnau.org/pid/org/anu-library>
     a sdo:Organization ;
     sdo:name "ANU Library" ;
 .
 
-<https://data.idnau.org/pid/adb/org/anu-nceph>
+<https://data.idnau.org/pid/org/anu-nceph>
     a sdo:Organization ;
     sdo:name "National Centre for Epidemiology and Population Health" ;
     sdo:parentOrganization <https://linked.data.gov.au/org/anu> ;
 .
 
-<https://data.idnau.org/pid/adb/org/anu-rsd>
+<https://data.idnau.org/pid/org/anu-rsd>
     a sdo:Organization ;
     sdo:name "Research Service Division" ;
 .
 
-<https://data.idnau.org/pid/adb/org/atsida>
+<https://data.idnau.org/pid/org/atsida>
     a sdo:Organization ;
     sdo:name "ATSIDA.1" ;
 .
 
-<https://data.idnau.org/pid/adb/org/jumbunna>
+<https://data.idnau.org/pid/org/jumbunna>
     a sdo:Organization ;
     sdo:name "Jumbunna" ;
     sdo:parentOrganization <https://linked.data.gov.au/org/uts> ;
 .
 
-<https://data.idnau.org/pid/adb/org/mayi-kuwayu-study>
+<https://data.idnau.org/pid/org/mayi-kuwayu-study>
     a sdo:Organization ;
     sdo:name "Mayi Kuwayu" ;
-    sdo:parentOrganization <https://data.idnau.org/pid/adb/org/anu-fnp> ;
+    sdo:parentOrganization <https://data.idnau.org/pid/org/anu-fnp> ;
 .
 
-<https://data.idnau.org/pid/adb/org/ncig>
+<https://data.idnau.org/pid/org/ncig>
     a sdo:Organization ;
     sdo:name "National Centre for Indigenous Genomics" ;
     sdo:parentOrganization <https://linked.data.gov.au/org/anu> ;
 .
 
-<https://data.idnau.org/pid/adb/org/phidu>
+<https://data.idnau.org/pid/org/phidu>
     a sdo:Organization ;
     sdo:name "Public Health Information Development Unit" ;
 .
 
-<https://data.idnau.org/pid/adb/org/qld-dsdsatsip>
+<https://data.idnau.org/pid/org/qld-dsdsatsip>
     a sdo:Organization ;
     sdo:name "Qld Department of Seniors, Disability Services and Aboriginal and Torres Strait Islander Partnerships" ;
 .
 
-<https://data.idnau.org/person/barwick>
+<https://data.idnau.org/pid/person/barwick>
     a sdo:Person ;
     sdo:name "Diane Barwick" ;
 .
 
-<https://data.idnau.org/person/briscoe>
+<https://data.idnau.org/pid/person/briscoe>
     a sdo:Person ;
     sdo:name "Gordon Briscoe" ;
 .
@@ -141,7 +141,7 @@ PREFIX sdo: <https://schema.org/>
     sdo:name "Sandra Silcot" ;
 .
 
-<https://data.idnau.org/pid/adb/org/anu-fnp>
+<https://data.idnau.org/pid/org/anu-fnp>
     a sdo:Organization ;
     sdo:name "ANU First Nations Portfolio" ;
     sdo:parentOrganization <https://linked.data.gov.au/org/anu> ;
@@ -153,7 +153,7 @@ PREFIX sdo: <https://schema.org/>
     sdo:name "University of Technology Sydney" ;
 .
 
-<https://data.idnau.org/pid/adb/org/44-122-865-623>
+<https://data.idnau.org/pid/org/44-122-865-623>
     a sdo:Organization ;
     sdo:identifier "44 122 865 623"^^adb:abn ;
     sdo:name "The Kimberley Institute" ;

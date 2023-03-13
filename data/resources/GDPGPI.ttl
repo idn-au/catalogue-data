@@ -5,10 +5,10 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
-    dcterms:hasPart <https://data.idnau.org/pid/democat/GDPGPI> ;
+    dcterms:hasPart <https://data.idnau.org/pid/GDPGPI> ;
 .
 
-<https://data.idnau.org/pid/democat/GDPGPI>
+<https://data.idnau.org/pid/GDPGPI>
     a dcat:Resource ;
     dcterms:description "(Torrens University). An earlier application with Marcia for AIATSIS funding was never considered." ;
     dcterms:identifier "GDPGPI"^^xsd:token ;

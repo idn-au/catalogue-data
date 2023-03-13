@@ -1,4 +1,4 @@
-PREFIX croles: <https://w3id.org/idn/vocab/cat-roles/>
+PREFIX croles: <https://data.idnau.org/pid/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -9,10 +9,10 @@ PREFIX time: <http://www.w3.org/2006/time#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
-    dcterms:hasPart <https://data.idnau.org/pid/democat/YUMI> ;
+    dcterms:hasPart <https://data.idnau.org/pid/YUMI> ;
 .
 
-<https://data.idnau.org/pid/democat/YUMI>
+<https://data.idnau.org/pid/YUMI>
     a dcat:Resource ;
     dcterms:description """Yumi Sabe is an Australian Kriol term that translates to 'we know', or, 'we have the knowledge'.
 
@@ -35,8 +35,8 @@ This is a beta product that is still being refined and developed. Please contact
         prov:entity <https://yumi-sabe.aiatsis.gov.au> ;
     ] ;
     dcat:theme
-        <https://w3id.org/idn/vocab/idn-th/subject> ,
-        <https://w3id.org/idn/vocab/indigeneity/about-indigenous-things> ;
+        <https://data.idnau.org/pid/vocab/idn-th/subject> ,
+        <https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-things> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:originator ;

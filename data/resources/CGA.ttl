@@ -1,4 +1,4 @@
-PREFIX croles: <https://w3id.org/idn/vocab/cat-roles/>
+PREFIX croles: <https://data.idnau.org/pid/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -7,10 +7,10 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
-    dcterms:hasPart <https://data.idnau.org/pid/democat/CGA> ;
+    dcterms:hasPart <https://data.idnau.org/pid/CGA> ;
 .
 
-<https://data.idnau.org/pid/democat/CGA>
+<https://data.idnau.org/pid/CGA>
     a dcat:Resource ;
     dcterms:description """The Composite Gazetteer of Australia is a cloud-based system allowing users to easily discover, interrogate and download place names information from Australia and its external territories. It is developed as a partnership between contributing agencies of the Intergovernmental Committee on Surveying and Mapping (ICSM) and is built on modern infrastructure providing automated ingestion and validation, producing a composite dataset from the individual jurisdictional gazetteers.
 
@@ -26,8 +26,8 @@ The place names database is a collection of jurisdictional data that is combined
     # dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;  # TODO: no Concept from the vocab selected
     dcat:accessURL "https://placenames.fsdf.org.au/"^^xsd:anyURI ;
     dcat:theme
-        <https://w3id.org/idn/vocab/idn-th/place> ,
-        <https://w3id.org/idn/vocab/indigeneity/about-indigenous-things> ;
+        <https://data.idnau.org/pid/vocab/idn-th/place> ,
+        <https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-things> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:custodian ;

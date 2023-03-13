@@ -1,16 +1,16 @@
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX democat: <https://data.idnau.org/pid/democat/>
+PREFIX democat: <https://data.idnau.org/pid/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
-    dcterms:hasPart <https://data.idnau.org/pid/democat/cfm3-db86> ;
+    dcterms:hasPart <https://data.idnau.org/pid/cfm3-db86> ;
 .
 
-<https://data.idnau.org/pid/democat/cfm3-db86>
+<https://data.idnau.org/pid/cfm3-db86>
     a dcat:Resource ;
     dcterms:description "The Australia's Indigenous land and forest estate (2020) is a continental spatial dataset that identifies and reports separately the individual attributes of Australia's Indigenous estate, namely the extent of land and forest over which Indigenous peoples and communities have ownership, management and co-management, or other special rights." ;
     dcterms:format "GIS files in ESRI software: Raster and GeoTIFF" ;
@@ -28,8 +28,8 @@ Agricultural and Resource Economics and Sciences, Canberra, June, 2022.""" ;
     # dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;  # TODO: no Concept from the vocab selected
     dcat:accessURL "https://www.agriculture.gov.au/abares/forestsaustralia/forest-data-maps-and-tools/spatial-data/indigenous-land-and-forest#:~:text=The%20Australia's%20Indigenous%20land%20and,management%20and%20co%2Dmanagement%2C%20or"^^xsd:anyURI ;
     dcat:theme
-        <https://w3id.org/idn/vocab/idn-th/place> ,
-        <https://w3id.org/idn/vocab/indigeneity/about-indigenous-things> ;
+        <https://data.idnau.org/pid/vocab/idn-th/place> ,
+        <https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-things> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:originator ;

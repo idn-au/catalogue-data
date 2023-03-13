@@ -1,5 +1,5 @@
-PREFIX : <https://w3id.org/idn/vocab/cat-roles/>
-PREFIX cs: <https://w3id.org/idn/vocab/cat-roles>
+PREFIX : <https://data.idnau.org/pid/vocab/cat-roles/>
+PREFIX cs: <https://data.idnau.org/pid/vocab/cat-roles>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX sdo: <https://schema.org/>
@@ -8,7 +8,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :home
     a skos:Concept ;
-    dcterms:identifier "home"^^xsd:token ;
     dcterms:provenance "Created for the IDN project, 2023"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A catalogue for a resource that is considered to house its point-of-true information" ;
@@ -19,7 +18,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :non-home
     a skos:Concept ;
-    dcterms:identifier "non-home"^^xsd:token ;
     dcterms:provenance "Created for the IDN project, 2023"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A catalogue for a resource that is not considered to house its point-of-true information" ;
@@ -30,7 +28,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :non-original
     a skos:Concept ;
-    dcterms:identifier "non-original"^^xsd:token ;
     dcterms:provenance "Created for the IDN project, 2023"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "An catalogue for a resource that is not the one that first published it" ;
@@ -41,7 +38,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :original
     a skos:Concept ;
-    dcterms:identifier "original"^^xsd:token ;
     dcterms:provenance "Created for the IDN project, 2023"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "An catalogue for a resource that is the one that first published it"@en ;
@@ -54,7 +50,6 @@ cs:
     a skos:ConceptScheme ;
     dcterms:created "2023-01-17"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/idn> ;
-    dcterms:identifier "cat-roles"^^xsd:token ;
     dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
     dcterms:modified "2023-01-17"^^xsd:date ;
     dcterms:provenance "This vocabulary was established to assist the IDN with differentiating resources' various catalogues. There seems to be no precedent for this form of catalogue classification elsewhere."@en ;

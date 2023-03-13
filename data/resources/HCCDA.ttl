@@ -1,16 +1,16 @@
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX democat: <https://data.idnau.org/pid/democat/>
+PREFIX democat: <https://data.idnau.org/pid/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
-    dcterms:hasPart <https://data.idnau.org/pid/democat/MP6WRS> ;
+    dcterms:hasPart <https://data.idnau.org/pid/MP6WRS> ;
 .
 
-<https://data.idnau.org/pid/democat/MP6WRS>
+<https://data.idnau.org/pid/MP6WRS>
     a dcat:Resource ;
     dcterms:description "The Historical Census and Colonial Data Archive (HCCDA) is an archive of Australian colonial census publications and reports covering the period from 1833 to 1901, the year of Australia's federation. The corpus includes 18,638 pages of text, and approximately 15000 tables, all with full digital images, text conversion and individually identified pages and tables. Please note that the archive contains colonial census reports, but not individual census returns." ;
     dcterms:format "xtable, xhtml" ;

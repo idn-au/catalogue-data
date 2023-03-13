@@ -1,4 +1,4 @@
-PREFIX croles: <https://w3id.org/idn/vocab/cat-roles/>
+PREFIX croles: <https://data.idnau.org/pid/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -7,10 +7,10 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
-    dcterms:hasPart <https://data.idnau.org/pid/democat/CTGIR> ;
+    dcterms:hasPart <https://data.idnau.org/pid/CTGIR> ;
 .
 
-<https://data.idnau.org/pid/democat/CTGIR>
+<https://data.idnau.org/pid/CTGIR>
     a dcat:Resource ;
     dcterms:description "Productivity Commissions data dashboard arising from the National Agreement on Closing the Gap." ;
     dcterms:identifier "CTGIR"^^xsd:token ;

@@ -5,10 +5,10 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
-    dcterms:hasPart <https://data.idnau.org/pid/democat/AIATSISIG> ;
+    dcterms:hasPart <https://data.idnau.org/pid/AIATSISIG> ;
 .
 
-<https://data.idnau.org/pid/democat/AIATSISIG>
+<https://data.idnau.org/pid/AIATSISIG>
     a dcat:Resource ;
     dcterms:description "An Indigenous geography and gazetteer, including a Loc-I framework for tribal, language and community data. Requires developmental work in collaboration with Universities, ABS, AIHW, Geoscience Australia, AURIN etc etc." ;
     dcterms:identifier "AIATSISIG"^^xsd:token ;

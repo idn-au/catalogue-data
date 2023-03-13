@@ -1,4 +1,4 @@
-PREFIX croles: <https://w3id.org/idn/vocab/cat-roles/>
+PREFIX croles: <https://data.idnau.org/pid/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -7,10 +7,10 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
-    dcterms:hasPart <https://data.idnau.org/pid/democat/NBPA> ;
+    dcterms:hasPart <https://data.idnau.org/pid/NBPA> ;
 .
 
-<https://data.idnau.org/pid/democat/NBPA>
+<https://data.idnau.org/pid/NBPA>
     a dcat:Resource ;
     dcterms:description "Noongar Boodjar Language Centre (NBLC) in Perth have partnered with the Atlas of Living Australia to link Noongar-Wudjari language and knowledge for plants and animals to western science knowledge to create the Noongar-Wudjari Plant and Animal online Encyclopedia. This project focused on the Noongar-Wudjari clan, from the South coast of WA, and worked specifically with Wudjari knowledge holders - Lynette Knapp and Gail Yorkshire to record, preserve and share their ancestral language and knowledge about plants and animals. Knowledge and language for 90 plants and animals were collected and are now ready for publication through the Atlas of Living Australia (ala.org.au)." ;
     dcterms:identifier "NBPA"^^xsd:token ;
@@ -23,8 +23,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/conditional> ;
     dcat:accessURL "https://profiles.ala.org.au/opus/noongar"^^xsd:anyURI ;
     dcat:theme
-        <https://w3id.org/idn/vocab/idn-th/indigenous-language> ,
-        <https://w3id.org/idn/vocab/indigeneity/by-indigenous-people> ;
+        <https://data.idnau.org/pid/vocab/idn-th/indigenous-language> ,
+        <https://data.idnau.org/pid/vocab/indigeneity/by-indigenous-people> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:rightsHolder ;

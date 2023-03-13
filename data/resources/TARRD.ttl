@@ -1,4 +1,4 @@
-PREFIX croles: <https://w3id.org/idn/vocab/cat-roles/>
+PREFIX croles: <https://data.idnau.org/pid/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -26,8 +26,8 @@ As Tandana is government funded it reports annually on the funding supplied and 
     # dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;  # TODO: no Concept from the vocab selected
     dcat:accessURL "https://data.sa.gov.au/data/dataset/d70aead0-f61b-4279-b677-685d564b7fd1/resource/71107f3a-6991-4d04-934f-0d31f9fee9ee/download/tandanyaannualreportregulatorydata.xlsx"^^xsd:anyURI ;
     dcat:theme
-        <https://w3id.org/idn/vocab/idn-th/subject> ,
-        <https://w3id.org/idn/vocab/indigeneity/by-indigenous-people> ;
+        <https://data.idnau.org/pid/vocab/idn-th/subject> ,
+        <https://data.idnau.org/pid/vocab/indigeneity/by-indigenous-people> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:rightsHolder ;

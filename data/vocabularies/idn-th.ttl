@@ -1,5 +1,5 @@
-PREFIX : <https://w3id.org/idn/vocab/idn-th/>
-PREFIX cs: <https://w3id.org/idn/vocab/idn-th>
+PREFIX : <https://data.idnau.org/pid/vocab/idn-th/>
+PREFIX cs: <https://data.idnau.org/pid/vocab/idn-th>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -10,7 +10,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 
 :apais-vocabulary
     a skos:Collection ;
-    dcterms:identifier "apais-vocabulary"^^xsd:token ;
     dcterms:source "https://vocabularyserver.com/apais/"^^xsd:anyURI ;
     skos:definition "Indigenous keywords from the APAIS vocabulary" ;
     skos:member
@@ -51,7 +50,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 <https://vocabularyserver.com/apais/xml.php?skosTema=2179>
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
-    dcterms:identifier "R1720"^^xsd:token ;
     dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader
@@ -69,7 +67,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 <https://vocabularyserver.com/apais/xml.php?skosTema=22>
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
-    dcterms:identifier "R1686"^^xsd:token ;
     dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:altLabel "Dreaming stories"@en ;
@@ -85,7 +82,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 <https://vocabularyserver.com/apais/xml.php?skosTema=23>
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
-    dcterms:identifier "N0958"^^xsd:token ;
     dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader :keyword ;
@@ -97,7 +93,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 <https://vocabularyserver.com/apais/xml.php?skosTema=24>
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
-    dcterms:identifier "N0004"^^xsd:token ;
     dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader :keyword ;
@@ -109,7 +104,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 <https://vocabularyserver.com/apais/xml.php?skosTema=29>
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
-    dcterms:identifier "N0005"^^xsd:token ;
     dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader :keyword ;
@@ -121,7 +115,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 <https://vocabularyserver.com/apais/xml.php?skosTema=765>
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
-    dcterms:identifier "N0279"^^xsd:token ;
     dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader :keyword ;
@@ -132,7 +125,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 
 :indigenous-demographics
     a skos:Concept ;
-    dcterms:identifier "indigenous-demographics"^^xsd:token ;
     dcterms:provenance "Created for the IDN project, 2022"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Concerned with the demographics of indigenous people in Australia"@en ;
@@ -142,7 +134,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 
 :indigenous-language
     a skos:Concept ;
-    dcterms:identifier "indigenous-language"^^xsd:token ;
     dcterms:provenance "Created for the IDN project, 2022"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A theme of the resource is an indigenous language" ;
@@ -152,7 +143,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 
 :place
     a skos:Concept ;
-    dcterms:identifier "subject"^^xsd:token ;
     dcterms:provenance "Created for the IDN project, 2022"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A theme of the resource is a Place: a location" ;
@@ -162,7 +152,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 
 :subject
     a skos:Concept ;
-    dcterms:identifier "subject"^^xsd:token ;
     dcterms:provenance "Created for the IDN project, 2022"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A theme of the resource is a Subject: a focus of investigation" ;
@@ -173,7 +162,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 <https://vocabularyserver.com/apais/xml.php?skosTema=10>
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
-    dcterms:identifier "R0005"^^xsd:token ;
     dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:altLabel "Education, Aboriginal"@en ;
@@ -189,7 +177,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 <https://vocabularyserver.com/apais/xml.php?skosTema=11>
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
-    dcterms:identifier "R1671"^^xsd:token ;
     dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:altLabel "Employment of Aborigines"@en ;
@@ -205,7 +192,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 <https://vocabularyserver.com/apais/xml.php?skosTema=12>
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
-    dcterms:identifier "R0006"^^xsd:token ;
     dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader
@@ -220,7 +206,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 <https://vocabularyserver.com/apais/xml.php?skosTema=13>
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
-    dcterms:identifier "R1723"^^xsd:token ;
     dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:altLabel
@@ -238,7 +223,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 <https://vocabularyserver.com/apais/xml.php?skosTema=15>
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
-    dcterms:identifier "R1685"^^xsd:token ;
     dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader
@@ -254,7 +238,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 <https://vocabularyserver.com/apais/xml.php?skosTema=16>
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
-    dcterms:identifier "R1817"^^xsd:token ;
     dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader
@@ -270,7 +253,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 <https://vocabularyserver.com/apais/xml.php?skosTema=17>
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
-    dcterms:identifier "R1883"^^xsd:token ;
     dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader
@@ -285,7 +267,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 <https://vocabularyserver.com/apais/xml.php?skosTema=18>
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
-    dcterms:identifier "R1810"^^xsd:token ;
     dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader
@@ -300,7 +281,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 <https://vocabularyserver.com/apais/xml.php?skosTema=21>
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
-    dcterms:identifier "R1884"^^xsd:token ;
     dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:altLabel "Racial reconciliation"@en ;
@@ -313,7 +293,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 <https://vocabularyserver.com/apais/xml.php?skosTema=25>
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
-    dcterms:identifier "R1681"^^xsd:token ;
     dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader
@@ -328,7 +307,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 <https://vocabularyserver.com/apais/xml.php?skosTema=26>
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
-    dcterms:identifier "R1885"^^xsd:token ;
     dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader
@@ -343,7 +321,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 <https://vocabularyserver.com/apais/xml.php?skosTema=28>
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
-    dcterms:identifier "R1796"^^xsd:token ;
     dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader
@@ -358,7 +335,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 <https://vocabularyserver.com/apais/xml.php?skosTema=4>
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
-    dcterms:identifier "R1818"^^xsd:token ;
     dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader <https://vocabularyserver.com/apais/xml.php?skosTema=3> ;
@@ -370,7 +346,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 <https://vocabularyserver.com/apais/xml.php?skosTema=6>
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
-    dcterms:identifier "R1834"^^xsd:token ;
     dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader
@@ -385,7 +360,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 <https://vocabularyserver.com/apais/xml.php?skosTema=7>
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
-    dcterms:identifier "R1680"^^xsd:token ;
     dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:altLabel "Aboriginal reserves"@en ;
@@ -399,7 +373,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 <https://vocabularyserver.com/apais/xml.php?skosTema=1096>
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
-    dcterms:identifier "R1791"^^xsd:token ;
     dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader
@@ -417,7 +390,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 <https://vocabularyserver.com/apais/xml.php?skosTema=14>
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
-    dcterms:identifier "R0007"^^xsd:token ;
     dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:altLabel "Land rights, Aboriginal"@en ;
@@ -434,7 +406,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 <https://vocabularyserver.com/apais/xml.php?skosTema=3>
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
-    dcterms:identifier "R0003"^^xsd:token ;
     dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:altLabel "Aboriginal paintings"@en ;
@@ -451,7 +422,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 <https://vocabularyserver.com/apais/xml.php?skosTema=9>
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
-    dcterms:identifier "R1467"^^xsd:token ;
     dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader
@@ -467,7 +437,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 <https://vocabularyserver.com/apais/xml.php?skosTema=2178>
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
-    dcterms:identifier "R1287"^^xsd:token ;
     dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader
@@ -483,7 +452,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 <https://vocabularyserver.com/apais/xml.php?skosTema=5>
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
-    dcterms:identifier "R1682"^^xsd:token ;
     dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader
@@ -500,7 +468,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 <https://vocabularyserver.com/apais/xml.php?skosTema=1483>
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
-    dcterms:identifier "R1891"^^xsd:token ;
     dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:altLabel "Aboriginal title"@en ;
@@ -519,7 +486,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 <https://vocabularyserver.com/apais/xml.php?skosTema=8>
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
-    dcterms:identifier "R0004"^^xsd:token ;
     dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:broader
@@ -538,7 +504,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 <https://vocabularyserver.com/apais/xml.php?skosTema=27>
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
-    dcterms:identifier "R0009"^^xsd:token ;
     dcterms:provenance "Taken directly from APAIS online" ;
     rdfs:isDefinedBy <https://vocabularyserver.com/apais/> ;
     skos:altLabel
@@ -573,7 +538,6 @@ PREFIX apais: <https://vocabularyserver.com/apais/xml.php?skosTema=>
 
 :keyword
     a skos:Concept ;
-    dcterms:identifier "keyword"^^xsd:token ;
     dcterms:provenance "Created for the IDN project, 2022"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A theme of the resource is a keyword" ;
@@ -585,7 +549,6 @@ cs:
     a skos:ConceptScheme ;
     dcterms:created "2022-07-15"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/idn> ;
-    dcterms:identifier "idn-th"^^xsd:token ;
     dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
     dcterms:modified "2022-08-29"^^xsd:date ;
     dcterms:provenance "This vocabulary was established with a few, broad, themes early in the IDN's 2022 project and will be expanded to incorporate indigenous terms from other data holders, acting as an overarching vocabulary"@en ;

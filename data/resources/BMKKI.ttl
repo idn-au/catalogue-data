@@ -6,10 +6,10 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
-    dcterms:hasPart <https://data.idnau.org/pid/democat/BMKKI> ;
+    dcterms:hasPart <https://data.idnau.org/pid/BMKKI> ;
 .
 
-<https://data.idnau.org/pid/democat/BMKKI>
+<https://data.idnau.org/pid/BMKKI>
     a dcat:Resource ;
     dcterms:description """The Indigenous Protected Areas (IPA) programme has demonstrated successes across a broad range of outcome areas, effectively overcoming barriers to addressing Indigenous disadvantage and engaging Indigenous Australians in meaningful employment to achieve large scale conservation outcomes, thus aligning the interests of Indigenous Australians and the broader community.
 
@@ -31,8 +31,8 @@ Increased and diversified investment from a range of funding sources would meet 
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/conditional> ;
     dcat:accessURL "https://www.niaa.gov.au/resource-centre/indigenous-affairs/birriliburu-matuwa-kurrara-kurrara-ipa"^^xsd:anyURI ;
     dcat:theme
-        <https://w3id.org/idn/vocab/idn-th/subject> ,
-        <https://w3id.org/idn/vocab/indigeneity/about-indigenous-people> ;
+        <https://data.idnau.org/pid/vocab/idn-th/subject> ,
+        <https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-people> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:rightsHolder ;

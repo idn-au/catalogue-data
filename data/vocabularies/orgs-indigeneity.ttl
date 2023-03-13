@@ -1,5 +1,5 @@
-PREFIX : <https://w3id.org/idn/vocab/org-indigeneity/>
-PREFIX cs: <https://w3id.org/idn/vocab/org-indigeneity>
+PREFIX : <https://data.idnau.org/pid/vocab/org-indigeneity/>
+PREFIX cs: <https://data.idnau.org/pid/vocab/org-indigeneity>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX sdo: <https://schema.org/>
@@ -8,7 +8,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :run-by-indigenous-persons
     a skos:Concept ;
-    dcterms:identifier "rbip"^^xsd:token ;
     dcterms:provenance "Created for the IDN project, 2022"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The organisation is run (managed) by indigenous people" ;
@@ -18,7 +17,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :owned-by-indigenous-persons
     a skos:Concept ;
-    dcterms:identifier "obip"^^xsd:token ;
     dcterms:provenance "Created for the IDN project, 2022"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The organisation is owned by indigenous people" ;
@@ -28,7 +26,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :indigenous-persons-organisation
     a skos:Concept ;
-    dcterms:identifier "ipo"^^xsd:token ;
     dcterms:provenance "Created for the IDN project, 2022"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The organisation comprises of indigenous persons" ;
@@ -38,7 +35,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :indigeneity-unknown
     a skos:Concept ;
-    dcterms:identifier "iu"^^xsd:token ;
     dcterms:provenance "Created for the IDN project, 2022"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The organisation's indigeneity is unknown" ;
@@ -48,7 +44,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :non-indigenous
     a skos:Concept ;
-    dcterms:identifier "ni"^^xsd:token ;
     dcterms:provenance "Created for the IDN project, 2022"@en ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The organisation is not an indigenous organisation" ;
@@ -67,7 +62,6 @@ cs:
     a skos:ConceptScheme ;
     dcterms:created "2022-09-24"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/idn> ;
-    dcterms:identifier "organisations-indigeneity"^^xsd:token ;
     dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
     dcterms:modified "2022-09-24"^^xsd:date ;
     dcterms:publisher <https://linked.data.gov.au/org/idn> ;

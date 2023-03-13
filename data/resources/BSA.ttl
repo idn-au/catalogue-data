@@ -5,10 +5,10 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
-    dcterms:hasPart <https://data.idnau.org/pid/democat/BSA> ;
+    dcterms:hasPart <https://data.idnau.org/pid/BSA> ;
 .
 
-<https://data.idnau.org/pid/democat/BSA>
+<https://data.idnau.org/pid/BSA>
     a dcat:Resource ;
     dcterms:description "Historical population data and biographical records" ;
     dcterms:identifier "BSA"^^xsd:token ;

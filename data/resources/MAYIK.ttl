@@ -1,4 +1,4 @@
-PREFIX croles: <https://w3id.org/idn/vocab/cat-roles/>
+PREFIX croles: <https://data.idnau.org/pid/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -7,10 +7,10 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
-    dcterms:hasPart <https://data.idnau.org/pid/democat/MAYIK> ;
+    dcterms:hasPart <https://data.idnau.org/pid/MAYIK> ;
 .
 
-<https://data.idnau.org/pid/democat/MAYIK>
+<https://data.idnau.org/pid/MAYIK>
     a dcat:Resource ;
     dcterms:description """The Mayi Kuwayu Study looks at how Aboriginal and Torres Strait Islander wellbeing is linked to things like connection to country, cultural practices, spirituality and language use.
 Our research team follows a large number of Aboriginal and Torres Strait Islander people and asks about their culture and wellbeing. As a longitudinal study, we are surveying people and then ask them to take the same survey every few years, so that we can understand what influences changes over time.
@@ -27,8 +27,8 @@ The Mayi Kuwayu team are experienced at working closely with communities across 
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/restricted> ;
     dcat:accessURL "https://mkstudy.com.au/dataapplicationprocess/"^^xsd:anyURI ;
     dcat:theme
-        <https://w3id.org/idn/vocab/idn-th/subject> ,
-        <https://w3id.org/idn/vocab/indigeneity/about-indigenous-people> ;
+        <https://data.idnau.org/pid/vocab/idn-th/subject> ,
+        <https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-people> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:rightsHolder ;

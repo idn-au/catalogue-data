@@ -1,17 +1,17 @@
-PREFIX croles: <https://w3id.org/idn/vocab/cat-roles/>
+PREFIX croles: <https://data.idnau.org/pid/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX democat: <https://data.idnau.org/pid/democat/>
+PREFIX democat: <https://data.idnau.org/pid/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
-    dcterms:hasPart <https://data.idnau.org/pid/democat/SMMG> ;
+    dcterms:hasPart <https://data.idnau.org/pid/SMMG> ;
 .
 
-<https://data.idnau.org/pid/democat/SMMG>
+<https://data.idnau.org/pid/SMMG>
     a dcat:Resource ;
     dcterms:description "Summarises all available aerial survey data and metadata used to characterise the long-term distribution and abundance of magpie geese in the Northern Territory undertaken by different institutions and publically available in several journals (Appendix A). Summarised also are results from a PhD study (E. Ligtermoet) documenting the cultural harvesting values of magpie geese ascertained by interviews with Kakadu Traditional Owners (2011-2015)." ;
     dcterms:format "pdf" ;
@@ -28,8 +28,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     # dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;  # TODO: no Concept from the vocab selected
     dcat:accessURL "https://doi.org/10.4225/08/58521aabad9f5"^^xsd:anyURI ;
     dcat:theme
-        <https://w3id.org/idn/vocab/idn-th/keyword> ,
-        <https://w3id.org/idn/vocab/indigeneity/by-indigenous-people> ;
+        <https://data.idnau.org/pid/vocab/idn-th/keyword> ,
+        <https://data.idnau.org/pid/vocab/indigeneity/by-indigenous-people> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:custodian ;

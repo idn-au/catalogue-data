@@ -1,17 +1,17 @@
-PREFIX croles: <https://w3id.org/idn/vocab/cat-roles/>
+PREFIX croles: <https://data.idnau.org/pid/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX democat: <https://data.idnau.org/pid/democat/>
+PREFIX democat: <https://data.idnau.org/pid/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
-    dcterms:hasPart <https://data.idnau.org/pid/democat/ATSICZ> ;
+    dcterms:hasPart <https://data.idnau.org/pid/ATSICZ> ;
 .
 
-<https://data.idnau.org/pid/democat/ATSICZ>
+<https://data.idnau.org/pid/ATSICZ>
     a dcat:Resource ;
     dcterms:description """The Aboriginal and Torres Strait Islander Community Profiles (ACPs) are tabulations giving key census characteristics of Aboriginal and Torres Strait Islander persons, families and dwellings, covering most topics on the 1991 Census of Population and Housing form. This profile is presented at the ATSIC Zone level.
 The ACP consists of 29 tables which crosstabulate characteristics including gender, age, place of birth, religion, marital status, education, income, occupation and employment status.""" ;
@@ -27,8 +27,8 @@ The ACP consists of 29 tables which crosstabulate characteristics including gend
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/metadata-only> ;
     dcat:accessURL "https://www.atsida.edu.au/archive/datasets/au.edu.anu.ada.ddi.08003-atsic-zones"^^xsd:anyURI ;
     dcat:theme
-        <https://w3id.org/idn/vocab/idn-th/subject> ,
-        <https://w3id.org/idn/vocab/indigeneity/about-indigenous-people> ;
+        <https://data.idnau.org/pid/vocab/idn-th/subject> ,
+        <https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-people> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:originator ;

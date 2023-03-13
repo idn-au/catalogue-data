@@ -1,4 +1,4 @@
-PREFIX croles: <https://w3id.org/idn/vocab/cat-roles/>
+PREFIX croles: <https://data.idnau.org/pid/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -7,10 +7,10 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
-    dcterms:hasPart <https://data.idnau.org/pid/democat/RIIC> ;
+    dcterms:hasPart <https://data.idnau.org/pid/RIIC> ;
 .
 
-<https://data.idnau.org/pid/democat/RIIC>
+<https://data.idnau.org/pid/RIIC>
     a dcat:Resource ;
     dcterms:description """Aboriginal and Torres Strait Islander people are the Indigenous people of Australia. They are not one group, but comprise hundreds of groups that have their own distinct set of languages, histories and cultural traditions.
 
@@ -31,8 +31,8 @@ AIHW products that focus specifically on Indigenous Australians are captured on 
     # dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;  # TODO: no Concept from the vocab selected
     dcat:accessURL "https://www.rific.gov.au/Access-Data"^^xsd:anyURI ;
     dcat:theme
-        <https://w3id.org/idn/vocab/idn-th/subject> ,
-        <https://w3id.org/idn/vocab/indigeneity/about-indigenous-people> ;
+        <https://data.idnau.org/pid/vocab/idn-th/subject> ,
+        <https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-people> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:originator ;

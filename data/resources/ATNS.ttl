@@ -6,10 +6,10 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
-    dcterms:hasPart <https://data.idnau.org/pid/democat/ATNS> ;
+    dcterms:hasPart <https://data.idnau.org/pid/ATNS> ;
 .
 
-<https://data.idnau.org/pid/democat/ATNS>
+<https://data.idnau.org/pid/ATNS>
     a dcat:Resource ;
     dcterms:description """Needs to be made fully maintainable, sustainable interoperable and web-accessible
 
@@ -27,20 +27,20 @@ We gather and review information from publicly available academic sources, onlin
     # dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;  # TODO: no Concept from the vocab selected
     dcat:accessURL "https://www.atns.net.au/"^^xsd:anyURI ;
     dcat:theme
-        <https://w3id.org/idn/vocab/idn-th/subject> ,
-        <https://w3id.org/idn/vocab/indigeneity/about-indigenous-people> ;
+        <https://data.idnau.org/pid/vocab/idn-th/subject> ,
+        <https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-people> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:originator ;
-            prov:agent <https://w3id.org/idn/agent/atns>
+            prov:agent <https://data.idnau.org/pid/org/atns>
         ] ,
         [
             dcat:hadRole iso:rightsHolder ;
-            prov:agent <https://w3id.org/idn/agent/atns>
+            prov:agent <https://data.idnau.org/pid/org/atns>
         ] ,
         [
             dcat:hadRole iso:custodian ;
-            prov:agent <https://w3id.org/idn/agent/isu>
+            prov:agent <https://data.idnau.org/pid/org/isu>
         ] ;
     # dcterms:isPartOf [ dcat:hadRole croles:home ; prov:entity <https://www.atns.net.au/> ] ;  # online at the accessURL endpoint but this address is a single resource, not a catalogue
     skos:note "ATNS was launched in 2002 and developed under a series of Australian Research Council (ARC) Linkage Projects focusing on treaties and agreement making with Indigenous Australians. The projects were led by a team of multidisciplinary researchers and partner organisations, including Indigenous organisations and industry partners. " ;

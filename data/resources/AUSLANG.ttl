@@ -1,4 +1,4 @@
-PREFIX croles: <https://w3id.org/idn/vocab/cat-roles/>
+PREFIX croles: <https://data.idnau.org/pid/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -7,10 +7,10 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
-    dcterms:hasPart <https://data.idnau.org/pid/democat/AUSLANG> ;
+    dcterms:hasPart <https://data.idnau.org/pid/AUSLANG> ;
 .
 
-<https://data.idnau.org/pid/democat/AUSLANG>
+<https://data.idnau.org/pid/AUSLANG>
     a dcat:Resource ;
     dcterms:description """Austlang provides information about Indigenous Australian languages which has been assembled from referenced sources.
 The dataset provided here includes the language names, each with a unique alpha-numeric code which functions as a stable identifier, alternative/variant names and spellings and the approximate location of each language variety.""" ;
@@ -25,8 +25,8 @@ The dataset provided here includes the language names, each with a unique alpha-
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/conditional> ;
     dcat:accessURL "https://data.gov.au/data/dataset/70132e6f-259c-4e0f-9f95-4aed1101c053/resource/e9a9ea06-d821-4b53-a05f-877409a1a19c/download/aiatsis_austlang_endpoint_001.csv"^^xsd:anyURI ;
     dcat:theme
-        <https://w3id.org/idn/vocab/idn-th/indigenous-language> ,
-        <https://w3id.org/idn/vocab/indigeneity/about-indigenous-people> ;
+        <https://data.idnau.org/pid/vocab/idn-th/indigenous-language> ,
+        <https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-people> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:originator ;

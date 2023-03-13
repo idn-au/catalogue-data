@@ -7,10 +7,10 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
-    dcterms:hasPart <https://data.idnau.org/pid/democat/NNTT> ;
+    dcterms:hasPart <https://data.idnau.org/pid/NNTT> ;
 .
 
-<https://data.idnau.org/pid/democat/NNTT>
+<https://data.idnau.org/pid/NNTT>
     a dcat:Resource ;
     dcterms:description "Databases held by the NNTT" ;
     dcterms:identifier "NNTT"^^xsd:token ;
@@ -20,7 +20,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcat:accessURL "http://www.nntt.gov.au/assistance/Geospatial/Pages/DataDownload.aspx"^^xsd:anyURI ;
     prov:qualifiedAttribution [
         dcat:hadRole iso:custodian ;
-        prov:agent <https://w3id.org/idn/agent/nntt>
+        prov:agent <https://data.idnau.org/pid/org/nntt>
     ] ;
     dcat:accessURL "http://www.nntt.gov.au/searchRegApps/Pages/default.aspx" ;
     skos:note """Len says Marcia may need to negotiate their agreement to interface this with loc-i.

@@ -1,7 +1,7 @@
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX idnrole: <https://w3id.org/idn/vocab/idn-role-codes/>
+PREFIX idnrole: <https://data.idnau.org/pid/vocab/idn-role-codes/>
 PREFIX idnaccess: <http://idn.kurrawong.net/vocab/data-access-rights/>
 PREFIX idntheme: <http://idn.kurrawong.net/vocab/idn-th/>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
@@ -33,8 +33,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcat:accessURL "https://linked.data.gov.au/dataset/asgsed3/ILOC"^^xsd:anyURI ;
     dcat:theme
         idntheme:indigenous-demographics ,
-        <https://w3id.org/idn/vocab/idn-th/place> ,
-        <https://w3id.org/idn/vocab/indigeneity/about-indigenous-things> ;
+        <https://data.idnau.org/pid/vocab/idn-th/place> ,
+        <https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-things> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:custodian ;
@@ -46,7 +46,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         ] ,
         [
             dcat:hadRole idnrole:subjectAgentRepresentatitve ;
-            prov:agent <https://w3id.org/idn/agent/abs-coatsisagent/abs-catsis>
+            prov:agent <https://data.idnau.org/pid/org/abs-catsis>
         ] ;
     skos:note """Added this to show the full ASGS Indigenous hierarchy -- minimal description for now.
 

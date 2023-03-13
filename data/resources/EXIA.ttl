@@ -5,10 +5,10 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
-    dcterms:hasPart <https://data.idnau.org/pid/democat/EXIA> ;
+    dcterms:hasPart <https://data.idnau.org/pid/EXIA> ;
 .
 
-<https://data.idnau.org/pid/democat/EXIA>
+<https://data.idnau.org/pid/EXIA>
     a dcat:Resource ;
     dcterms:description "Barry Hansen and Yothu Yindi Foundation have done extensive work on where the money goes in the NT. Needs to be a national database." ;
     dcterms:identifier "EXIA"^^xsd:token ;

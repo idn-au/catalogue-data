@@ -1,15 +1,15 @@
-PREFIX croles: <https://w3id.org/idn/vocab/cat-roles/>
+PREFIX croles: <https://data.idnau.org/pid/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://data.idnau.org/pid/democat/idndc>
-    dcterms:hasPart <https://data.idnau.org/pid/democat/ATSICCP> ;
+<https://data.idnau.org/pid/idndc>
+    dcterms:hasPart <https://data.idnau.org/pid/ATSICCP> ;
 .
 
-<https://data.idnau.org/pid/democat/ATSICCP>
+<https://data.idnau.org/pid/ATSICCP>
     a dcat:Resource ;
     dcterms:description """"Census indigenous community profiles" a CORE set of data produced by ABS various levels of abstraction:
 All the EC's (Empowered Communities) would need access to this. Could be an excellent indigenous geospatial/loc-i case study for the the project's Geospatial portal e.g. semantic description of these profiles in a manner which enables easier access to data by EC data groups.First step would be to express EC boundaries in loc-i compatible ways.

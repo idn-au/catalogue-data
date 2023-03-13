@@ -1,4 +1,4 @@
-PREFIX croles: <https://w3id.org/idn/vocab/cat-roles/>
+PREFIX croles: <https://data.idnau.org/pid/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -7,10 +7,10 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
-    dcterms:hasPart <https://data.idnau.org/pid/democat/ANUARC> ;
+    dcterms:hasPart <https://data.idnau.org/pid/ANUARC> ;
 .
 
-<https://data.idnau.org/pid/democat/ANUARC>
+<https://data.idnau.org/pid/ANUARC>
     a dcat:Resource ;
     dcterms:description "The Australian National University is home to many research collections of national and international significance. Material from the ANU Archives, ANU Classics Museum, ANU Library, Asia Pacific Map Collection and the Noel Butlin Archives Centre are being progressivley digitised and made available through this repository." ;
     dcterms:identifier "ANUARC"^^xsd:token ;
@@ -22,8 +22,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/conditional> ;
     dcat:accessURL "https://archivescollection.anu.edu.au/index.php/informationobject/browse?repos=965&query=Aboriginal&topLod=0"^^xsd:anyURI ;
     dcat:theme
-        <https://w3id.org/idn/vocab/idn-th/subject> ,
-        <https://w3id.org/idn/vocab/indigeneity/about-indigenous-things> ;
+        <https://data.idnau.org/pid/vocab/idn-th/subject> ,
+        <https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-things> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:rightsHolder ;

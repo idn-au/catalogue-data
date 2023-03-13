@@ -5,10 +5,10 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
-    dcterms:hasPart <https://data.idnau.org/pid/democat/NLPA> ;
+    dcterms:hasPart <https://data.idnau.org/pid/NLPA> ;
 .
 
-<https://data.idnau.org/pid/democat/NLPA>
+<https://data.idnau.org/pid/NLPA>
     a dcat:Resource ;
     dcterms:description "Existing database at the National Library" ;
     dcterms:identifier "NLPA"^^xsd:token ;

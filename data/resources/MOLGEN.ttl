@@ -5,10 +5,10 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
-    dcterms:hasPart <https://data.idnau.org/pid/democat/MOLGEN> ;
+    dcterms:hasPart <https://data.idnau.org/pid/MOLGEN> ;
 .
 
-<https://data.idnau.org/pid/democat/MOLGEN>
+<https://data.idnau.org/pid/MOLGEN>
     a dcat:Resource ;
     dcterms:description "These are extensive paper records which Ian Anderson has proposed incorporating in a database. Negotiation is still needed." ;
     dcterms:identifier "MOLGEN"^^xsd:token ;

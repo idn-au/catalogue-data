@@ -1,4 +1,4 @@
-PREFIX croles: <https://w3id.org/idn/vocab/cat-roles/>
+PREFIX croles: <https://data.idnau.org/pid/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
@@ -6,10 +6,10 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
-    dcterms:hasPart <https://data.idnau.org/pid/democat/ANUORC> ;
+    dcterms:hasPart <https://data.idnau.org/pid/ANUORC> ;
 .
 
-<https://data.idnau.org/pid/democat/ANUORC>
+<https://data.idnau.org/pid/ANUORC>
     a dcat:Resource ;
     dcterms:description "The University's Open Research digital repository ecompasses a number of research collections which the wider community is free to browse." ;
     dcterms:identifier "ANUORC"^^xsd:token ;

@@ -1,4 +1,4 @@
-PREFIX croles: <https://w3id.org/idn/vocab/cat-roles/>
+PREFIX croles: <https://data.idnau.org/pid/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -7,10 +7,10 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
-    dcterms:hasPart <https://data.idnau.org/pid/democat/NCS> ;
+    dcterms:hasPart <https://data.idnau.org/pid/NCS> ;
 .
 
-<https://data.idnau.org/pid/democat/NCS>
+<https://data.idnau.org/pid/NCS>
     a dcat:Resource ;
     dcterms:description "NSW prison population data and quarterly custody reports" ;
     dcterms:format "csv" ;
@@ -25,8 +25,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     # dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;  # TODO: no Concept from the vocab selected
     dcat:accessURL "https://www.bocsar.nsw.gov.au/Pages/bocsar_custody_stats/bocsar_custody_stats.aspx"^^xsd:anyURI ;
     dcat:theme
-        <https://w3id.org/idn/vocab/idn-th/subject> ,
-        <https://w3id.org/idn/vocab/indigeneity/about-indigenous-people> ;
+        <https://data.idnau.org/pid/vocab/idn-th/subject> ,
+        <https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-people> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:custodian ;

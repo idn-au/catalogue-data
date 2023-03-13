@@ -1,4 +1,4 @@
-PREFIX croles: <https://w3id.org/idn/vocab/cat-roles/>
+PREFIX croles: <https://data.idnau.org/pid/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -7,10 +7,10 @@ PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
-    dcterms:hasPart <https://data.idnau.org/pid/democat/NCIG> ;
+    dcterms:hasPart <https://data.idnau.org/pid/NCIG> ;
 .
 
-<https://data.idnau.org/pid/democat/NCIG>
+<https://data.idnau.org/pid/NCIG>
     a dcat:Resource ;
     dcterms:description """We are making a national resource for Indigenous health and heritage, which is based on our collection of biological samples, genome data and documents from Indigenous communities in many parts of Australia. You can find out more about NCIG and its collections at ncig.anu.edu.au.
 
@@ -32,8 +32,8 @@ http://www.ncig-ihhr.anu.edu.au/index.html""" ;
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/conditional> ;
     dcat:accessURL "https://ncig-ihhr.anu.edu.au/browse.html"^^xsd:anyURI ;
     dcat:theme
-        <https://w3id.org/idn/vocab/idn-th/subject> ,
-        <https://w3id.org/idn/vocab/indigeneity/about-indigenous-people> ;
+        <https://data.idnau.org/pid/vocab/idn-th/subject> ,
+        <https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-people> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:originator ;

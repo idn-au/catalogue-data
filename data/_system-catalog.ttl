@@ -1,7 +1,7 @@
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX idnth: <https://w3id.org/idn/vocab/idn-data-themes/>
-PREFIX idnroles: <https://w3id.org/idn/vocab/idn-role-codes/>
+PREFIX idnth: <https://data.idnau.org/pid/vocab/idn-th/>
+PREFIX idnroles: <https://data.idnau.org/pid/vocab/idn-role-codes/>
 PREFIX isoroles: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
@@ -9,7 +9,7 @@ PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://w3id.org/idn/system/catprez>
+<https://data.idnau.org/pid/system/catprez>
     a dcat:Catalog ;
     dcterms:identifier "catprez"^^xsd:token ;
     dcterms:title "CatPrez System Catalogue" ;

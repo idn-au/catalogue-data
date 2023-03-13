@@ -1,4 +1,4 @@
-PREFIX croles: <https://w3id.org/idn/vocab/cat-roles/>
+PREFIX croles: <https://data.idnau.org/pid/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -9,10 +9,10 @@ PREFIX time: <http://www.w3.org/2006/time#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
-    dcterms:hasPart <https://data.idnau.org/pid/democat/YKC> ;
+    dcterms:hasPart <https://data.idnau.org/pid/YKC> ;
 .
 
-<https://data.idnau.org/pid/democat/YKC>
+<https://data.idnau.org/pid/YKC>
     a dcat:Resource ;
     dcterms:description """The Yawuru Knowing Our Community (YKC) Household Survey was commissioned by the Nyamba Buru Yawuru Board of Directors in December 2010. This report and associated data base are the property of the NBY Board. The report was designed and produced by The Kimberley Institute, Centre for Aboriginal Economic Policy Research at The Australian National University, and the Broome Aboriginal community.
 In September 2010, the NBY Board resolved to undertake a comprehensive population survey of Broome to inform the Board’s investment strategy, particularly on social housing.""" ;
@@ -29,20 +29,20 @@ In September 2010, the NBY Board resolved to undertake a comprehensive populatio
     # dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;  # TODO: no Concept from the vocab selected
     dcat:accessURL "http://www.kimberleyinstitute.org.au/wp-content/uploads/2015/07/The-2011-Yawuru-Knowing-Our-Community-Survey1.pdf"^^xsd:anyURI ;
     dcat:theme
-        <https://w3id.org/idn/vocab/indigeneity/by-indigenous-people> ,
+        <https://data.idnau.org/pid/vocab/indigeneity/by-indigenous-people> ,
         "Subject" ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:custodian ;
-            prov:agent <https://w3id.org/idn/agent/nby>
+            prov:agent <https://data.idnau.org/pid/org/nby>
         ] ,
         [
             dcat:hadRole iso:rightsHolder ;
-            prov:agent <https://w3id.org/idn/agent/nby>
+            prov:agent <https://data.idnau.org/pid/org/nby>
         ] ,
         [
             dcat:hadRole iso:originator ;
-            prov:agent <https://w3id.org/idn/agent/nby>
+            prov:agent <https://data.idnau.org/pid/org/nby>
         ] ;
     dcterms:isPartOf [ dcat:hadRole croles:home ; prov:entity <https://data.idnau.org/pid/adb/org/44-122-865-623> ] ;
     skos:note """Survey was done in conjunction with ANU.

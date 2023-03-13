@@ -1,5 +1,5 @@
-PREFIX bc: <http://w3id.org/idn/vocab/bc-labels/>
-PREFIX cs: <http://w3id.org/idn/vocab/bc-labels>
+PREFIX bc: <http://data.idnau.org/pid/vocab/bc-labels/>
+PREFIX cs: <http://data.idnau.org/pid/vocab/bc-labels>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX lc: <https://linked.data.gov.au/def/lc/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
