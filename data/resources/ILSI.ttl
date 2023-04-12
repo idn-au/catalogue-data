@@ -2,6 +2,7 @@ PREFIX croles: <https://data.idnau.org/pid/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX democat: <https://data.idnau.org/pid/>
+PREFIX ex: <https://example.com/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
@@ -44,3 +45,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     ex:localContext "Attribution Incomplete Notice" ;
 .
 
+<https://data.idnau.org/pid/ILSI>
+    a dcat:Resource ;
+    dcterms:description "Land that is owned or managed by Australia’s Indigenous communities, or over which Indigenous people have use and rights, was compiled from information supplied by Australian, state and territory governments and other statutory authorities with Indigenous land and sea management interests." ;
+    ex:localContext "Attribution Incomplete Notice" ;
