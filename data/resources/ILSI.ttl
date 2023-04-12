@@ -44,8 +44,3 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:isPartOf [ dcat:hadRole croles:home ; prov:entity <https://data.csiro.au> ] ;
     ex:localContext "Attribution Incomplete Notice" ;
 .
-
-<https://data.idnau.org/pid/ILSI>
-    a dcat:Resource ;
-    dcterms:description "Land that is owned or managed by Australia’s Indigenous communities, or over which Indigenous people have use and rights, was compiled from information supplied by Australian, state and territory governments and other statutory authorities with Indigenous land and sea management interests." ;
-    ex:localContext "Attribution Incomplete Notice" ;
