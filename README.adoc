@@ -33,7 +33,7 @@ This repository contains:
 ** metadata entries for the catalogued resources in `data/democat/`
 * the vocabularies within the IDN's Register of vocabularies
 ** within `data/vocabularies/`
-* background ontologies used to provide property labelling within the above data and others stored elsewhere
+* background ontologies used to provide labelling for Prez' data
 ** within `data/_background/`
 * IDN Prez system metadata
 ** within `data/system/`
