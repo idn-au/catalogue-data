@@ -7,7 +7,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 da:closed-access-rights
     a skos:Collection ;
-    dcterms:identifier "closed-access-rights"^^xsd:token ;
     skos:definition "Selective restriction of access to data that is OFFICIAL (low or negligible confidentiality impact), SENSITIVE (moderate confidentiality impact) or PROTECTED (high confidentiality impact)."@en ;
     skos:member
         da:conditional ,
@@ -20,7 +19,6 @@ da:closed-access-rights
 
 da:open-access-rights
     a skos:Collection ;
-    dcterms:identifier "open-access-rights"^^xsd:token ;
     skos:definition "Data that is non-sensitive, freely available, easily discovered and accessed, and published in ways and with licences that allow easy reuse."@en ;
     skos:member da:open ;
     skos:prefLabel "Open data access rights"@en ;
@@ -28,7 +26,6 @@ da:open-access-rights
 
 da:conditional
     a skos:Concept ;
-    dcterms:identifier "conditional"^^xsd:token ;
     skos:definition "Conditionally protected access refers to a resource that is stored in a system but is not freely accessible and remains protected based on the satisfaction of other specified criteria. Access is limited to specific personnel or user groups. "@en ;
     skos:inScheme <https://linked.data.gov.au/def/data-access-rights> ;
     skos:prefLabel "Conditionally protected"@en ;
@@ -37,7 +34,6 @@ da:conditional
 
 da:embargoed
     a skos:Concept ;
-    dcterms:identifier "embargoed"^^xsd:token ;
     skos:definition "Embargoed access refers to a resource accessible as metadata only until released for open access on a specified date."@en ;
     skos:inScheme <https://linked.data.gov.au/def/data-access-rights> ;
     skos:prefLabel "Embargoed access"@en ;
@@ -46,7 +42,6 @@ da:embargoed
 
 da:metadata-only
     a skos:Concept ;
-    dcterms:identifier "metadata-only"^^xsd:token ;
     skos:definition "Metadata only access refers to a resource in which access is limited to metadata only. Access to the resource requires granting of access rights."@en ;
     skos:inScheme <https://linked.data.gov.au/def/data-access-rights> ;
     skos:prefLabel "Metadata only access"@en ;
@@ -55,7 +50,6 @@ da:metadata-only
 
 da:open
     a skos:Concept ;
-    dcterms:identifier "open"^^xsd:token ;
     skos:altLabel "Open file"@en ;
     skos:definition "Open access refers to a resource that is immediately and permanently online, and free for all on the Web, without financial and technical barriers."@en ;
     skos:inScheme <https://linked.data.gov.au/def/data-access-rights> ;
@@ -65,7 +59,6 @@ da:open
 
 da:protected
     a skos:Concept ;
-    dcterms:identifier "protected"^^xsd:token ;
     skos:definition "Protected access refers to a resource that is stored in a system but is not freely accessible due to specific legal or policy decisions, such as active legal proceedings or ministerial discretion. Access is limited to specific personnel or user groups. "@en ;
     skos:inScheme <https://linked.data.gov.au/def/data-access-rights> ;
     skos:prefLabel "Protected access"@en ;
@@ -74,7 +67,6 @@ da:protected
 
 da:restricted
     a skos:Concept ;
-    dcterms:identifier "restricted"^^xsd:token ;
     skos:definition "Restricted access refers to a resource that is stored in a system but is not freely accessible. Access is limited to specific personnel or user groups."@en ;
     skos:inScheme <https://linked.data.gov.au/def/data-access-rights> ;
     skos:prefLabel "Restricted access"@en ;
@@ -91,7 +83,6 @@ da:restricted
     a
         owl:Ontology ,
         skos:ConceptScheme ;
-    dcterms:identifier "data-access-rights"^^xsd:token ;
     dcterms:created "2019-04-03"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/gsq> ;
     dcterms:modified "2021-02-08"^^xsd:date ;

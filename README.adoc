@@ -1,48 +1,61 @@
 = IDN Catalogue Data
 
-This repository contains the data of the https://mspgh.unimelb.edu.au/centres-institutes/centre-for-health-equity/research-group/indigenous-data-network[Indigenous Data Network (IDN)]'s Knowledge Graph which is delivered online via the https://github.com/rdflib/prez/[Prez] system as a demonstration catalogue, Agents Database and lists of vocabularies:
+This repository contains part of the data of the https://mspgh.unimelb.edu.au/centres-institutes/centre-for-health-equity/research-group/indigenous-data-network[Indigenous Data Network (IDN)]'s Knowledge Graph which is delivered online via the https://github.com/rdflib/prez/[Prez] system as a series of catalogues and reference datasets, such as spatial data collections and vocabularies.
 
-* http://idn.kurrawong.net
+The IDN Prez system is online at:
 
-== IDN Catalogues and Databases
-The IDN is producing four things:
+* **http://data.idnau.org**
 
-. a **Demonstration Catalogue** of Australian datasets
-.. with varying levels of indigenous relevance to demonstrate several aspects of indigenous data governance, sovereignty and how to even rate the "indigenous-ness" of data in the first place.
-. an **Agents Database**
-.. containing information about Agents - People and Organisations - that have some relation to indigenous data
-.. this repository does contain the source data of this Database
-.. see the folder _data/agents/_
-. a **Catalogue of Last Resort** for indigenous data
-.. this data is not linked to that catalogue
-. a **Register** of IDN vocabularies
+== IDN Catalogues and Datasets
 
-== Metadata and Data
-This repository only contains the metadata files of resources listed in the Demonstration Catalogue, not the resources' data or the catalogue's system code.
+The IDN is producing multiple systems and datasets:
 
-It does contain the source _data_ of the items in the Agents Database currently, but this may change as the data grows.
+. https://data.idnau.org/pid/democat[**Demonstration Catalogue**] of Australian datasets
+** with varying levels of indigenous relevance to demonstrate several aspects of indigenous data governance, sovereignty and how to even rate the "indigenous-ness" of data in the first place.
+. https://data.idnau.org/pid/agentsdb[**Agents Database**]
+** containing information about Agents - People and Organisations - that have some relation to indigenous data
+. https://data.idnau.org/pid/umidcat[**University of Melbourne's Indigenous Data Catalogue**]
+** this is currently (May, 2023) empty but will fill shortly
+. https://data.idnau.org/v/vocab[**Register of vocabularies**]
+** multiple vocabularies, all assembled and some created, by the IDN that support modelling indigenous data
+. https://data.idnau.org/s/datasets[**Indigenous spatial reference data**]
+** indigenous language, land use, treaty and other areas
+** all from other sources, attributed in the data
+
+Additionally, the IDN will support a catalogue of https://www.anu.edu.au[ANU]'s indigenous data underdevelopment by ANU's https://anufirstnations.com.au/[First National Portfolio] that's not online yet.
+
+This repository contains only some of those system's data, see next.
+
+== This repository's content
+This repository contains:
+
+* Demonstration Catalogue items' metadata
+** metadata entries for the catalogued resources in `data/democat/`
+* the vocabularies within the IDN's Register of vocabularies
+** within `data/vocabularies/`
+* background ontologies used to provide property labelling within the above data and others stored elsewhere
+** within `data/_background/`
+* IDN Prez system metadata
+** within `data/system/`
+** defines things like the multiple IDN catalogues, system labels etc.
+
+Also:
+
+* `data/ubpublished/` contains data either previously published and removed but not deleted as it may be used again
+
+Stored elsewhere are:
+
+* Agents Database content
+** some test data is stored here in but the Agents DB is building/storing its own data within it
+** see the https://github.com/idn-au/agentsdb-data[AgentsDB data] repository
+* Indigenous spatial reference data
+** some of these datasets are large so their raw content isn't directly available
+** see the repo <https://github.com/idn-au/spatial-data> for a listing of the datasets and instructions on how they are produced
 
 == (Meta)Data Models
-The metadata of items in both the Demonstration Catalogue and the Catalogue of Last Resort are formulated according to the https://w3id.org/idn/def/cp[_IDN Catalogue Profile_] which is a data cataloguing standard based on https://www.w3.org/TR/vocab-dcat/[DCAT].
+The metadata of items in the Demonstration Catalogue and all other catalogues based on IDN work - the UoM IDCat and the ANU's FNP's future catalogue - use the https://w3id.org/idn/def/cp[_IDN Catalogue Profile_] which is a data cataloguing standard based on https://www.w3.org/TR/vocab-dcat/[DCAT].
 
 Agents data in the Agents Database are formulated according to the https://w3id.org/idn/def/agp[_Agents Governance Profile_].
-
-== Content
-The assets in this repository are stored like this:
-
-* `data/` folder
-** contains all the metadata records for the Demonstration Catalogue
-** `_background/` folder within `data/`
-** contains further the ontologies used by the data, mainly for nice property labels
-** `resources/` - the IDN's demo catalogue Resources (metadata records)
-** `vocabularies/` - all IDN vocabularies
-** `_system_catalogue.ttl` - the metadata for the IDN system as a whole
-
-NOTE: Spatial data loaded into the IDN Knowledge Graph is not stored in this repository but in <https://github.com/idn-au/spatial-data-etl>
-
-For the Agents Database:
-
-* `agents/` - the Agents database
 
 
 == License & Rights

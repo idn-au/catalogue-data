@@ -1,9 +1,11 @@
+these other catalogues are temporarily unpublished to keep Prez looking tidy but may be re-added soon
+
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-
+ 
 <https://data.gov.au>
     a dcat:Catalog ;
     dcat:accessURL "https://data.gov.au"^^xsd:anyURI ;
@@ -36,7 +38,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         prov:agent <https://linked.data.gov.au/org/abs>
     ] ;
 .
-
 
 <https://www.atsida.edu.au>
     a dcat:Catalog ;
