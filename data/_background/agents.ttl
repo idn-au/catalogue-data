@@ -8,6 +8,30 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:label "Indigenous Data Network" ;
 .
 
-<https://data.idnau.org/pid/agent/isu>
+<https://data.idnau.org/pid/org/isu>
     rdfs:label "Indigenous Studies Unit" ;
+.
+
+<https://linked.data.gov.au/org/anu>
+    rdfs:label "Australian National University" ;
+.
+
+<https://data.idnau.org/pid/org/atsida>
+    rdfs:label "ATSIDA" ;
+.
+
+<https://orcid.org/0000-0002-5477-0874>
+    rdfs:label "Len Smith" ;
+.
+
+<https://data.idnau.org/person/briscoe>
+    rdfs:label "Gordon Briscoe" ;
+.
+
+<https://data.idnau.org/pid/org/atns>
+    rdfs:label "Agreements Treaties and Negotiated Settlements" ;
+.
+
+<https://linked.data.gov.au/org/uom>
+    rdfs:label "University of Melbourne" ;
 .

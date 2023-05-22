@@ -1,0 +1,10 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+<https://www.atsida.edu.au>
+    rdfs:label "ATSIDA" ;
+.
+
+<https://data.idnau.org/pid/democat>
+    rdfs:label "IDN Demonstration Catalogue" ;
+.

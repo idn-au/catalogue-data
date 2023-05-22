@@ -46,7 +46,7 @@ Aboriginal and Torres Strait Islander people, researchers and other users should
         ] ,
         [
             dcat:hadRole iso:custodian ;
-            prov:agent <https://data.idnau.org/pid/adb/org/atsida>
+            prov:agent <https://data.idnau.org/pid/org/atsida>
         ] ;
     skos:note """FAIR=4% (F-UJI)
 https://rdxx.org/notes.len/idc93/https%20__www.atsida.edu.au_archive_datasets_au.edu.anu.ada.ddi.20002-aus.json""" ;

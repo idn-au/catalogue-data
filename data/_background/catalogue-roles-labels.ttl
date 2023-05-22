@@ -1,0 +1,22 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+<https://data.idnau.org/pid/vocab/cat-roles>
+    rdfs:label "Catalogue Roles"@en ;
+.
+
+<https://data.idnau.org/pid/vocab/cat-roles/home>
+    rdfs:label "Home"@en ;
+.
+
+<https://data.idnau.org/pid/vocab/cat-roles/non-home>
+    rdfs:label "Non-Home"@en ;
+.
+
+<https://data.idnau.org/pid/vocab/cat-roles/non-original>
+    rdfs:label "Non-Original"@en ;
+.
+
+<https://data.idnau.org/pid/vocab/cat-roles/original>
+    rdfs:label "Original"@en ;
+.
+

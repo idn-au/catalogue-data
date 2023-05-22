@@ -1,0 +1,38 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+<https://kurrawong.net>
+    rdfs:label "KurrawongAI" ;
+.
+
+<https://linked.data.gov.au/def/vocab-derivation-modes>
+    rdfs:label "Vocabulary Derivation Modes"@en ;
+.
+
+<https://linked.data.gov.au/def/vocab-derivation-modes/direct>
+    rdfs:label "Direct"@en ;
+.
+
+<https://linked.data.gov.au/def/vocab-derivation-modes/extension>
+    rdfs:label "Extension"@en ;
+.
+
+<https://linked.data.gov.au/def/vocab-derivation-modes/not-applicable>
+    rdfs:label "Not Applicable"@en ;
+.
+
+<https://linked.data.gov.au/def/vocab-derivation-modes/relabelling>
+    rdfs:label "Relabelling"@en ;
+.
+
+<https://linked.data.gov.au/def/vocab-derivation-modes/subsetting>
+    rdfs:label "Subsetting"@en ;
+.
+
+<https://linked.data.gov.au/def/vocab-derivation-modes/subsetting-and-extension>
+    rdfs:label "Subset & Extension"@en ;
+.
+
+<https://linked.data.gov.au/org/mer>
+    rdfs:label "SA Minerals and Energy Resources" ;
+.
+

@@ -1,112 +1,102 @@
-PREFIX : <https://data.idnau.org/pid/vocab/idn-role-codes/>
-PREFIX cs: <https://data.idnau.org/pid/vocab/idn-role-codes>
-PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-iso:author
-    skos:prefLabel "author"@en ;
-    skos:topConceptOf cs: ;
+<http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/author>
+    rdfs:label "author"@en ;
 .
 
-iso:coAuthor
-    skos:prefLabel "co author"@en ;
-    skos:topConceptOf cs: ;
+<http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/coAuthor>
+    rdfs:label "co author"@en ;
 .
 
-iso:collaborator
-    skos:prefLabel "collaborator"@en ;
-    skos:topConceptOf cs: ;
+<http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/collaborator>
+    rdfs:label "collaborator"@en ;
 .
 
-iso:contributor
-    skos:prefLabel "contributor"@en ;
-    skos:topConceptOf cs: ;
+<http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/contributor>
+    rdfs:label "contributor"@en ;
 .
 
-iso:custodian
-    skos:prefLabel "custodian"@en ;
-    skos:topConceptOf cs: ;
+<http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/custodian>
+    rdfs:label "custodian"@en ;
 .
 
-iso:distributor
-    skos:prefLabel "distributor"@en ;
-    skos:topConceptOf cs: ;
+<http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/distributor>
+    rdfs:label "distributor"@en ;
 .
 
-iso:editor
-    skos:prefLabel "editor"@en ;
-    skos:topConceptOf cs: ;
+<http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/editor>
+    rdfs:label "editor"@en ;
 .
 
-iso:funder
-    skos:prefLabel "funder"@en ;
-    skos:topConceptOf cs: ;
+<http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/funder>
+    rdfs:label "funder"@en ;
 .
 
-iso:mediator
-    skos:prefLabel "mediator"@en ;
-    skos:topConceptOf cs: ;
+<http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/mediator>
+    rdfs:label "mediator"@en ;
 .
 
-iso:originator
-    skos:prefLabel "originator"@en ;
-    skos:topConceptOf cs: ;
+<http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/originator>
+    rdfs:label "originator"@en ;
 .
 
-iso:owner
-    skos:prefLabel "owner"@en ;
-    skos:topConceptOf cs: ;
+<http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/owner>
+    rdfs:label "owner"@en ;
 .
 
-iso:pointOfContact
-    skos:prefLabel "point of contact"@en ;
-    skos:topConceptOf cs: ;
+<http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/pointOfContact>
+    rdfs:label "point of contact"@en ;
 .
 
-iso:principalInvestigator
-    skos:prefLabel "principal investigator"@en ;
-    skos:topConceptOf cs: ;
+<http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/principalInvestigator>
+    rdfs:label "principal investigator"@en ;
 .
 
-iso:processor
-    skos:prefLabel "processor"@en ;
-    skos:topConceptOf cs: ;
+<http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/processor>
+    rdfs:label "processor"@en ;
 .
 
-iso:publisher
-    skos:prefLabel "publisher"@en ;
-    skos:topConceptOf cs: ;
+<http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/publisher>
+    rdfs:label "publisher"@en ;
 .
 
-iso:resourceProvider
-    skos:prefLabel "resource provider"@en ;
-    skos:topConceptOf cs: ;
+<http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/resourceProvider>
+    rdfs:label "resource provider"@en ;
 .
 
-iso:rightsHolder
-    skos:prefLabel "rights holder"@en ;
-    skos:topConceptOf cs: ;
+<http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/rightsHolder>
+    rdfs:label "rights holder"@en ;
 .
 
-iso:sponsor
-    skos:prefLabel "sponsor"@en ;
-    skos:topConceptOf cs: ;
+<http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/sponsor>
+    rdfs:label "sponsor"@en ;
 .
 
-iso:stakeholder
-    skos:prefLabel "stakeholder"@en ;
-    skos:topConceptOf cs: ;
+<http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/stakeholder>
+    rdfs:label "stakeholder"@en ;
 .
 
-iso:user
-    skos:prefLabel "user"@en ;
+<http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/user>
+    rdfs:label "user"@en ;
 .
 
-:subjectAgent
-    skos:prefLabel "subject agent"@en ;
-    skos:topConceptOf cs: ;
+<https://data.idnau.org/pid/vocab/idn-role-codes>
+    rdfs:label "IDN Role Codes"@en ;
 .
 
-:subjectAgentRepresentative
-    skos:prefLabel "subject agent representative"@en ;
+<https://data.idnau.org/pid/vocab/idn-role-codes/iso-roles>
+    rdfs:label "ISO CI Role Code codes"@en ;
 .
+
+<https://data.idnau.org/pid/vocab/idn-role-codes/subjectAgent>
+    rdfs:label "subject agent"@en ;
+.
+
+<https://data.idnau.org/pid/vocab/idn-role-codes/subjectAgentRepresentative>
+    rdfs:label "subject agent representative"@en ;
+.
+
+<https://linked.data.gov.au/org/idn>
+    rdfs:label "Indigenous Data Network" ;
+.
+

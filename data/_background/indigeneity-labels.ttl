@@ -1,0 +1,22 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+<https://data.idnau.org/pid/vocab/indigeneity>
+    rdfs:label "Data Indigeneity"@en ;
+.
+
+<https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-people>
+    rdfs:label "About Indigenous People"@en ;
+.
+
+<https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-things>
+    rdfs:label "About Indigenous Things"@en ;
+.
+
+<https://data.idnau.org/pid/vocab/indigeneity/by-indigenous-people>
+    rdfs:label "By Indigenous People"@en ;
+.
+
+<https://linked.data.gov.au/org/idn>
+    rdfs:label "Indigenous Data Network" ;
+.
+

@@ -1,0 +1,38 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+<https://linked.data.gov.au/def/data-access-rights>
+    rdfs:label "Data Access Rights"@en ;
+.
+
+<https://linked.data.gov.au/def/data-access-rights/closed-access-rights>
+    rdfs:label "Closed data access rights"@en ;
+.
+
+<https://linked.data.gov.au/def/data-access-rights/conditional>
+    rdfs:label "Conditionally protected"@en ;
+.
+
+<https://linked.data.gov.au/def/data-access-rights/embargoed>
+    rdfs:label "Embargoed access"@en ;
+.
+
+<https://linked.data.gov.au/def/data-access-rights/metadata-only>
+    rdfs:label "Metadata only access"@en ;
+.
+
+<https://linked.data.gov.au/def/data-access-rights/open>
+    rdfs:label "Open access"@en ;
+.
+
+<https://linked.data.gov.au/def/data-access-rights/open-access-rights>
+    rdfs:label "Open data access rights"@en ;
+.
+
+<https://linked.data.gov.au/def/data-access-rights/protected>
+    rdfs:label "Protected access"@en ;
+.
+
+<https://linked.data.gov.au/def/data-access-rights/restricted>
+    rdfs:label "Restricted access"@en ;
+.
+

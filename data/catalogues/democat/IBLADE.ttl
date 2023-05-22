@@ -16,7 +16,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:identifier "IBLADE"^^xsd:token ;
     dcterms:issued "2021-05-01"^^xsd:date ;
     dcterms:license "Other rights" ;
-    dcterms:rights <https://linked.data.gov.au/org/um> ;
+    dcterms:rights <https://linked.data.gov.au/org/uom> ;
     dcterms:spatial <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;
     dcterms:temporal "2006-2018" ;
     dcterms:title "Indigenous Business Sector Snapshot 1.1 Indigenous Businesses Sector Snapshot Study, Insights from I-BLADE 1.0" ;
@@ -29,17 +29,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:rightsHolder ;
-            prov:agent <https://linked.data.gov.au/org/um>
+            prov:agent <https://linked.data.gov.au/org/uom>
         ] ,
         [
             dcat:hadRole iso:originator ;
-            prov:agent <https://linked.data.gov.au/org/um>
+            prov:agent <https://linked.data.gov.au/org/uom>
         ] ,
         [
             dcat:hadRole iso:custodian ;
-            prov:agent <https://data.idnau.org/pid/adb/org/um-ddcibl>
+            prov:agent <https://data.idnau.org/pid/org/um-ddcibl>
         ] ;
-    skos:note """The report describes the building of an I-BLADE dataset. Alot of linkage work has been done across various business registries. Cannot find any public trace of the actual dataset? Why not? Is there a data management plan? Marcia's name is on this report.
+    skos:note """The report describes the building of an I-BLADE dataset. A lot of linkage work has been done across various business registries. Cannot find any public trace of the actual dataset? Why not? Is there a data management plan? Marcia's name is on this report.
 
 Very interesting case as a depth study, geospatial potential.
 
