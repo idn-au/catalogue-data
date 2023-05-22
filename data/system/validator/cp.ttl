@@ -1,0 +1,51 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdo: <https://schema.org/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+<https://data.idnau.org/pid/cp/validator-compounded>
+    a owl:Ontology ;
+    dcterms:provenance "This validator for the IDN Catalogue Profile was made within the IDN's ID Catalogue project 2021 - 2022."@en ;
+    owl:versionIRI <https://data.idnau.org/pid/cp/0.0.1> ;
+    owl:versionInfo "0.0.1" ;
+    sdo:codeRespository "https://github.com/idn-au/idn-catalogue-profile/"^^xsd:anyURI ;
+    sdo:copyrightHolder <https://orcid.org/0000-0002-8742-7730> ;
+    sdo:copyrightNotice "(c) Indigenous Data Network, 2022" ;
+    sdo:copyrightYear "2022"^^xsd:gYear ;
+    sdo:creator <https://orcid.org/0000-0002-8742-7730> ;
+    sdo:dateCreated "2022-07-18"^^xsd:date ;
+    sdo:dateIssued "2022-07-19"^^xsd:date ;
+    sdo:dateModified "2023-05-08"^^xsd:date ;
+    sdo:description "A SHACL validator IDN Catalogue Profile."@en ;
+    sdo:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    sdo:name "IDN CP Validator"@en ;
+    sdo:publisher <https://linked.data.gov.au/org/idn> ;
+.
+
+<https://orcid.org/0000-0002-8742-7730>
+    a sdo:Person ;
+    sdo:name "Nicholas J. Car"@en ;
+    sdo:email "nick@kurrawong.ai"^^xsd:anyURI ;
+    sdo:affiliation <https://kurrawong.ai> ;
+.
+
+<https://kurrawong.ai>
+    a sdo:Organization ;
+    sdo:name "KurrawongAI" ;
+    sdo:description "KurrawongAI is a small, Artificial Intelligence, company in Australia specialising in Knowledge Graphs." ;
+    sdo:url "https://kurrawong.ai"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/idn>
+    a sdo:Organization ;
+    sdo:name "Indigenous Data Network" ;
+    sdo:description "The IDN is within the University of Melbourne. It was established in 2018 to support and coordinate the governance of Indigenous data for Aboriginal and Torres Strait Islander peoples and empower Aboriginal and Torres Strait Islander communities to decide their own local data priorities." ;
+    sdo:url "https://mspgh.unimelb.edu.au/centres-institutes/centre-for-health-equity/research-group/indigenous-data-network"^^xsd:anyURI ;
+.
