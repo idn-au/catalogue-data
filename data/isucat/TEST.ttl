@@ -1,0 +1,28 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX isucat: <https://data.idnau.org/pid/isucat>
+PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+isucat:
+    dcterms:hasPart democat:ISU-TEST ;
+.
+
+<https://data.idnau.org/pid/ISU-TEST>
+    a dcat:Resource ;
+    dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/metadata-only> ;
+    dcterms:created "2023-05-22"^^xsd:date ;
+    dcterms:description "This is a test catalogue entry record for the ISU catalogue." ;
+    dcterms:title "Test dataset for the ISU Catalogue" ;
+    dcat:theme <https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-people> ;
+    prov:qualifiedAttribution
+        [
+            dcat:hadRole iso:originator ;
+            prov:agent <https://orcid.org/0000-0002-8742-7730>
+        ] ,
+        [
+            dcat:hadRole iso:custodian ;
+            prov:agent <https://data.idnau.org/pid/agent/isu>
+        ] ;
+.

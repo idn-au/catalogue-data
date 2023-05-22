@@ -1,0 +1,6 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+
+<https://data.idnau.org/pid/isucat>
+    dcterms:hasPart <https://data.idnau.org/pid/ATNS> ;
+.

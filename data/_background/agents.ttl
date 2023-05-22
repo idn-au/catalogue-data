@@ -4,3 +4,10 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:label "AIATSIS"
 .
 
+<https://linked.data.gov.au/org/idn>
+    rdfs:label "Indigenous Data Network" ;
+.
+
+<https://data.idnau.org/pid/agent/isu>
+    rdfs:label "Indigenous Studies Unit" ;
+.

@@ -25,5 +25,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
             isoroles:custodian ;
     ] ;
     dcterms:hasPart
-        <https://data.idnau.org/pid/democat> ;
+        <https://data.idnau.org/pid/democat> ,
+        <https://data.idnau.org/pid/isucat> ;
 .
