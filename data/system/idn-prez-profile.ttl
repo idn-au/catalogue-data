@@ -1,0 +1,11 @@
+PREFIX altr-ext: <http://www.w3.org/ns/dx/conneg/altr-ext#>
+PREFIX sdo:      <https://schema.org/>
+PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+
+<https://www.w3.org/TR/vocab-dcat/>
+    a prof:Profile ;
+    altr-ext:hasLabelPredicate sdo:name .
+
+<http://www.opengis.net/spec/ogcapi-features-1/1.0/req/oas30>
+    a prof:Profile ;
+    altr-ext:hasLabelPredicate sdo:name .
