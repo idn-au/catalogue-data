@@ -16,7 +16,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:title "ANU Research Information Enterprise System" ;
     dcterms:type "collection" ;
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/restricted> ;
-    dcat:accessURL "https://www.google.com/url?q=https://anu365.sharepoint.com/:x:/s/IDC/EV9nyOj8W_BIv21RBYO0_VgBsFBPGkEr68c7_D5gkjRdnw?e%3DLoKvwU&sa=D&source=editors&ust=1661739128253932&usg=AOvVaw1joY_FzajxLEs2S1I-BImg"^^xsd:anyURI ;
     dcat:theme
         <https://data.idnau.org/pid/vocab/idn-th/subject> ,
         <https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-things> ;
