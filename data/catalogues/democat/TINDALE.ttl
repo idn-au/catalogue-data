@@ -1,7 +1,9 @@
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
@@ -13,9 +15,18 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:description "Strong demand but controversial." ;
     dcterms:identifier "TINDALE"^^xsd:token ;
     dcterms:title "Tindale/Horton map" ;
+    dcterms:spatial <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;
     prov:qualifiedAttribution [
-            dcat:hadRole iso:custodian ;
-            prov:agent <https://linked.data.gov.au/org/aiatsis>
-        ] ;
+        dcat:hadRole iso:custodian ;
+        prov:agent <https://linked.data.gov.au/org/aiatsis>
+    ] ;
+    geo:hasBoundingBox _:geo ;
+    geo:hasGeometry _:geo ;
+.
+
+_:geo
+    a geo:Geometry ;
+    rdfs:label "Australia" ;
+    geo:asWKT "POLYGON ((96.0 -45.0, 168.0 -45.0, 168.0 -9.0, 96.0 -9.0, 96.0 -45.0))"^^geo:wktLiteral
 .
 

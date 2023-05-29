@@ -1,9 +1,10 @@
 PREFIX croles: <https://data.idnau.org/pid/vocab/cat-roles/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX time: <http://www.w3.org/2006/time#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -47,12 +48,19 @@ In September 2010, the NBY Board resolved to undertake a comprehensive populatio
     dcterms:isPartOf [ dcat:hadRole croles:home ; prov:entity <https://data.idnau.org/pid/adb/org/44-122-865-623> ] ;
     skos:note """Survey was done in conjunction with ANU.
 
-Mentioned in Aiatsis submission to Closing The Gap p10 here: https://aiatsis.gov.au/sites/default/files/research_pub/aiatsis_ctg_refresh_submission_-_final_3.pdf
+Mentioned in AIATSIS submission to Closing The Gap p10 here: https://aiatsis.gov.au/sites/default/files/research_pub/aiatsis_ctg_refresh_submission_-_final_3.pdf
 
 This resource not findable in Trove. Search in AIATSIS for "Yawuru Knowing Our Community Survey". When quoted, no results. Without quotes, 881 results.
 
 Nothing in ATSIDA - found AUSTLANG definition for Yawuru. In ADA, zero. ANU Data Commons (ANU a co-author) - zero.
 
 Found Yawuru in ATNS: https://www.atns.net.au/agreement?EntityID=5028 and their ILUA and related bodies.""" ;
+    geo:hasBoundingBox _:geo ;
+    geo:hasGeometry _:geo ;
 .
 
+_:geo
+    a geo:Geometry ;
+    rdfs:label "The Kimberley" ;
+    geo:asWKT "POLYGON ((121.749112 -16.077347, 121.749112 -19.374443, 126.776969 -19.374443, 126.776969 -16.077347, 121.749112 -16.077347))"^^geo:wktLiteral ;
+.

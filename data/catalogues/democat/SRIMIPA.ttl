@@ -1,8 +1,10 @@
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 PREFIX iso: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
@@ -17,7 +19,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:issued "0601-01-01"^^xsd:date ;
     dcterms:license "All Rights Reserved" ;
     dcterms:rights "This information is confidential and was prepared by SVA Consulting solely for the use of our client, it is not to be relied on by any third party without prior consent." ;
-    dcterms:spatial "Tabbimoble" ;
+    dcterms:spatial <https://data.idnau.org/pid/capad2020/CWTH_IPA48> ; # the Minyumai IPA
     dcterms:temporal "July 2011 - July 2015" ;
     dcterms:title "Social Return on Investment analysis of the Minyumai Indigenous Protected Area" ;
     dcterms:type "Document" ;
@@ -41,5 +43,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         ] ;
     skos:note """Minyumai is a 2,164 hectare freehold property of largely uncleared native forest, woodland and wetland habitats on the far north coast of NSW. The IPA was declared in August 2011 and is managed under the International Union for Conservation of Nature (IUCN) Categories IV and VI as a protected area managed mainly for conservation through management intervention and for the sustainable use of natural ecosystems.
 Minyumai has been managed by the Bandjalang clan for tens of thousands of years. The land was formerly wetlands and the main route between coastal and inland camp sites. Indeed, the term Minyumai means 'main camp'.""" ;
+    geo:hasBoundingBox _:geo ;
+    geo:hasGeometry _:geo ;
+.
+
+_:geo
+    a geo:Geometry ;
+    rdfs:label "Minyumai Indigenous Protected Area" ;
+    geo:asWKT "POLYGON ((153.403536 -29.150040,153.305208 -29.150040,153.305208 -29.223224,153.403536 -29.223224,153.403536 -29.150040))"^^geo:wktLiteral
 .
 

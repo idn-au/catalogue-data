@@ -1,5 +1,7 @@
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/democat>
@@ -13,5 +15,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 https://www.datalinkage-wa.org.au/dlb-services/derived-indigenous-status-flag/ ?""" ;
     dcterms:identifier "WALD"^^xsd:token ;
     dcterms:title "Western Australia Linked Data" ;
+    geo:hasBoundingBox _:geo ;
+    geo:hasGeometry _:geo ;
+.
+
+_:geo
+    a geo:Geometry ;
+    rdfs:label "Western Australia" ;
+    geo:asWKT "POLYGON ((129.0094533 -11.5578693, 110.3766408 -11.730033, 110.3766408 -36.414486, 129.0533986 -36.555816, 129.0094533 -11.5578693))"^^geo:wktLiteral ;
 .
 

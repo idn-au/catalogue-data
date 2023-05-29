@@ -14,8 +14,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:identifier "BSA"^^xsd:token ;
     dcterms:title "Briscoe-Smith Archive" ;
     prov:qualifiedAttribution [
-            dcat:hadRole iso:custodian ;
-            prov:agent <https://linked.data.gov.au/org/ada>
-        ] ;
+        dcat:hadRole iso:custodian ;
+        prov:agent <https://linked.data.gov.au/org/ada>
+    ] ;
 .
 
