@@ -32,7 +32,6 @@ http://www.ncig-ihhr.anu.edu.au/index.html""" ;
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/conditional> ;
     dcat:accessURL "https://ncig-ihhr.anu.edu.au/browse.html"^^xsd:anyURI ;
     dcat:theme
-        <https://data.idnau.org/pid/vocab/idn-th/subject> ,
         <https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-people> ;
     prov:qualifiedAttribution
         [

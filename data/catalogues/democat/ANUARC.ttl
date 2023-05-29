@@ -22,7 +22,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/conditional> ;
     dcat:accessURL "https://archivescollection.anu.edu.au/index.php/informationobject/browse?repos=965&query=Aboriginal&topLod=0"^^xsd:anyURI ;
     dcat:theme
-        <https://data.idnau.org/pid/vocab/idn-th/subject> ,
         <https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-things> ;
     prov:qualifiedAttribution
         [

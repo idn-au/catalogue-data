@@ -13,6 +13,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:description "UTS has taken over this data, but needs help to turn it into an ongoing public database" ;
     dcterms:identifier "DECUTS"^^xsd:token ;
     dcterms:title "Aboriginal Deaths and Injuries in Custody" ;
+    dcat:theme <https://vocabularyserver.com/apais/xml.php?skosTema=28> ;
     prov:qualifiedAttribution [
         dcat:hadRole iso:custodian ;
         prov:agent <https://data.idnau.org/pid/adb/org/jumbunna>

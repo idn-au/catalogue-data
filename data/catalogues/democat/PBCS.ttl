@@ -30,7 +30,6 @@ Case study in exemplary IDG.
     # dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;  # TODO: no Concept from the vocab selected
     dcat:accessURL "https://aiatsis.gov.au/sites/default/files/research_pub/pbc_survey_2019.pdf"^^xsd:anyURI ;
     dcat:theme
-        <https://data.idnau.org/pid/vocab/idn-th/subject> ,
         <https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-things> ;
     prov:qualifiedAttribution
         [

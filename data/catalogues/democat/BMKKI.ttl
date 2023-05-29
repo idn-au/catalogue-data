@@ -31,7 +31,6 @@ Increased and diversified investment from a range of funding sources would meet 
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/conditional> ;
     dcat:accessURL "https://www.niaa.gov.au/resource-centre/indigenous-affairs/birriliburu-matuwa-kurrara-kurrara-ipa"^^xsd:anyURI ;
     dcat:theme
-        <https://data.idnau.org/pid/vocab/idn-th/subject> ,
         <https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-people> ;
     prov:qualifiedAttribution
         [

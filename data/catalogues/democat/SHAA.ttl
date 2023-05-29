@@ -27,7 +27,6 @@ These workbooks are derived from ABS Census data releases.""" ;
     # dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;  # TODO: no Concept from the vocab selected
     dcat:accessURL "https://phidu.torrens.edu.au/social-health-atlases/data#aboriginal-torres-strait-islander-social-health-atlas-of-australia-indigenous-areas"^^xsd:anyURI ;
     dcat:theme
-        <https://data.idnau.org/pid/vocab/idn-th/subject> ,
         <https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-people> ;
     prov:qualifiedAttribution
         [

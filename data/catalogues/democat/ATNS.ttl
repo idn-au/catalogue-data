@@ -27,8 +27,8 @@ We gather and review information from publicly available academic sources, onlin
     # dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;  # TODO: no Concept from the vocab selected
     dcat:accessURL "https://www.atns.net.au/"^^xsd:anyURI ;
     dcat:theme
-        <https://data.idnau.org/pid/vocab/idn-th/subject> ,
-        <https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-people> ;
+        <https://vocabularyserver.com/apais/xml.php?skosTema=14> ,
+        <https://vocabularyserver.com/apais/xml.php?skosTema=1483> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:originator ;

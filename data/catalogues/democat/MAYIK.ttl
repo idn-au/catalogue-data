@@ -27,7 +27,6 @@ The Mayi Kuwayu team are experienced at working closely with communities across 
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/restricted> ;
     dcat:accessURL "https://mkstudy.com.au/dataapplicationprocess/"^^xsd:anyURI ;
     dcat:theme
-        <https://data.idnau.org/pid/vocab/idn-th/subject> ,
         <https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-people> ;
     prov:qualifiedAttribution
         [

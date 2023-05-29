@@ -17,5 +17,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         dcat:hadRole iso:custodian ;
         prov:agent <https://linked.data.gov.au/org/anu>
     ] ;
+    dcterms:theme <https://vocabularyserver.com/apais/xml.php?skosTema=27> ;
 .
 

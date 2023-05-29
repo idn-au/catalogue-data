@@ -25,6 +25,7 @@ This data is reported annually to the AIHW as part of the National Perinatal Dat
     dcterms:title "The Victorian Perinatal database" ;
     dcterms:type "collection" ;
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/restricted> ;
+    dcterms:theme <https://vocabularyserver.com/apais/xml.php?skosTema=12> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:custodian ;

@@ -31,7 +31,6 @@ Aboriginal and Torres Strait Islander people, researchers and other users should
     dcterms:title "Annual Aboriginal Census,1921-1944 - South Australia" ;
     dcat:accessURL "https://www.atsida.edu.au/archive/datasets/au.edu.anu.ada.ddi.20002-sa"^^xsd:anyURI ;
     dcat:theme
-        <https://data.idnau.org/pid/vocab/idn-th/subject> ,
         <https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-people> ;
     prov:qualifiedAttribution
         [

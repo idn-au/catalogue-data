@@ -13,7 +13,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://data.idnau.org/pid/POLOFFWA>
     a dcat:Resource ;
-    dcterms:description "" ;
+    dcterms:description "This dataset is of police offences by Aboriginals in Western Australia" ;
     dcterms:identifier "POLOFFWA"^^xsd:token ;
     dcterms:title "Police Offenses WA (Erin Mathews)" ;
     prov:qualifiedAttribution [
@@ -22,6 +22,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     ] ;
     geo:hasBoundingBox _:geo ;
     geo:hasGeometry _:geo ;
+    dcat:theme
+        <https://vocabularyserver.com/apais/xml.php?skosTema=28> ,
+        <https://vocabularyserver.com/apais/xml.php?skosTema=1096> ;
 .
 
 _:geo

@@ -35,7 +35,6 @@ This is a beta product that is still being refined and developed. Please contact
         prov:entity <https://yumi-sabe.aiatsis.gov.au> ;
     ] ;
     dcat:theme
-        <https://data.idnau.org/pid/vocab/idn-th/subject> ,
         <https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-things> ;
     prov:qualifiedAttribution
         [

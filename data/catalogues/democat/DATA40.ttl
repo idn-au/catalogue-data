@@ -23,8 +23,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     # dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;  # TODO: no Concept from the vocab selected
     dcat:accessURL "https://lant.nt.gov.au/system/files/uploads/stories/resources/2020-09/D11.1LANT-NormanTindaleMap1940.pdf"^^xsd:anyURI ;
     dcat:theme
-        <https://data.idnau.org/pid/vocab/idn-th/indigenous-language> ,
-        <https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-people> ;
+        <https://vocabularyserver.com/apais/xml.php?skosTema=15> ;
     prov:qualifiedAttribution
         [
             dcat:hadRole iso:originator ;

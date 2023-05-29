@@ -25,7 +25,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     # dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;  # TODO: no Concept from the vocab selected
     dcat:accessURL "https://www.data.qld.gov.au/dataset/correspondence-relating-to-aboriginal-and-torres-strait-islander-people-deebing-creek/resource/21b98a5e-9d9a-4795-9693-faac505c7e0c"^^xsd:anyURI ;
     dcat:theme
-        <https://data.idnau.org/pid/vocab/idn-th/subject> ,
         <https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-people> ;
     prov:qualifiedAttribution
         [
