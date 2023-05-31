@@ -25,7 +25,12 @@ We gather and review information from publicly available academic sources, onlin
     dcterms:title "The Agreements, Treaties and Negotiated Settlements Database" ;
     dcterms:type "collection" ;
     # dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;  # TODO: no Concept from the vocab selected
-    dcat:accessURL "https://www.atns.net.au/"^^xsd:anyURI ;
+    dcat:distribution [
+        a dcat:Distribution ;
+        dcterms:title "Online database and website" ;
+        dcat:accessURL "https://www.atns.net.au/"^^xsd:anyURI ;
+        dcterms:format "text/html" ;
+    ] ;
     dcat:theme
         <https://vocabularyserver.com/apais/xml.php?skosTema=14> ,
         <https://vocabularyserver.com/apais/xml.php?skosTema=1483> ;

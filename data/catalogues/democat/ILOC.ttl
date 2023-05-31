@@ -46,7 +46,11 @@ This catalog entry refers to the latest ASGS release. For all releases refer to 
     ] ;
     dcterms:type <http://www.opengis.net/ont/geosparql#FeatureCollection> ;
     dcterms:accessRights dar:open ;
-    dcat:accessURL "https://linked.data.gov.au/dataset/asgsed3/ILOC"^^xsd:anyURI ;
+    dcat:distribution [
+        a dcat:Distribution ;
+        dcterms:title "OGC Features API & Linked Data" ;
+        dcat:accessURL "https://linked.data.gov.au/dataset/asgsed3/ILOC"^^xsd:anyURI ;
+    ] ;
     dcterms:isPartOf [
         dcat:hadRole croles:home ;
         prov:entity <https://asgs.linked.fsdf.org.au> ;
@@ -68,20 +72,5 @@ This catalog entry refers to the latest ASGS release. For all releases refer to 
             dcat:hadRole <https://data.idnau.org/pid/vocab/idn-role-codes/subjectAgentRepresentatitve> ;
             prov:agent <https://data.idnau.org/pid/org/abs-coatsis> ;
         ] ;
-    skos:note """Access to customised subsets of the ILOC geospatial reference dataset which aggregate the ILOCs of relevance to indigenous community groups - Land councils and Empowered Communities for example - would be a worthwhile excercise for Place-based case studies.
-
-*** QUESTION: First dcat:accessURL is for the ABS description page. Then 2 more in dcat:distribution (one for the linked data edition, one for the spatial dataset)???? Unsure???
-
-*** TODO: Create entry for ASGS (Collection) itself having these parts:
-
-     ISTRUCT (Collection, describe Indigenous Structure)
-
-https://asgs.linked.fsdf.org.au/dataset/asgsed3/collections/ILOC (done)
-https://asgs.linked.fsdf.org.au/dataset/asgsed3/collections/IARE (done - included here? ok or not?)
-https://asgs.linked.fsdf.org.au/dataset/asgsed3/collections/IREG (done - included here - ok or not?)
-
-*** Should the codes and descriptions be described separately from the geospatial boundaries i.e. different forms of the "logical" collection?
-
-*** TODO: represent the different temporal editions of ASGS (this one just described the latest). Help needed to Kiss - perhaps add the versions later.""" ;
 .
 

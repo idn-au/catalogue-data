@@ -19,7 +19,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
             iso:originator ;
         prov:agent <https://linked.data.gov.au/org/idn>
     ] ;
-    dcat:distributions <https://data.idnau.org/pid/adb> ;
+    dcat:distribution [
+        a dcat:Distribution ;
+        dcterms:title "Online DB" ;
+        dcat:accessURL "https://data.idnau.org/pid/agentsdb"^^xsd:anyURI ;
+    ] ;
 .
 
 <https://data.idnau.org/pid/adb>

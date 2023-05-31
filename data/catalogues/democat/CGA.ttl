@@ -26,7 +26,16 @@ The place names database is a collection of jurisdictional data that is combined
     dcterms:title "Compound Gazetteer of Australia" ;
     dcterms:type "dataset" ;
     # dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;  # TODO: no Concept from the vocab selected
-    dcat:accessURL "https://placenames.fsdf.org.au/"^^xsd:anyURI ;
+    dcat:distribution [
+        a dcat:Distribution ;
+        dcterms:title "Online searchable portal" ;
+        dcat:accessURL "https://placenames.fsdf.org.au"^^xsd:anyURI ;
+    ] ,
+    [
+        a dcat:Distribution ;
+        dcterms:title "OGC Features API & Linked Data" ;
+        dcat:accessURL "https://linked.fsdf.org.au/dataset/placenames/collections/places"^^xsd:anyURI ;
+    ] ;
     dcat:theme
         <https://data.idnau.org/pid/vocab/idn-th/place> ,
         <https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-things> ;
