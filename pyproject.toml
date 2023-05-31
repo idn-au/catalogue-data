@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "catalogue-data"
+version = "0.1.0"
+description = ""
+authors = ["jamiefeiss <jamie.feiss@gmail.com>"]
+readme = "README.md"
+packages = [{include = "catalogue_data"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pyshacl = "^0.23.0"
+rdflib = "^6.3.2"
+httpx = "^0.24.1"
+asyncio = "^3.4.3"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
