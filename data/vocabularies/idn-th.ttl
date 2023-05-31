@@ -117,24 +117,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "Employment of Aborigines"@en ;
 .
 
-:indigenous-demographics
-    a skos:Concept ;
-    dcterms:provenance "Created for the IDN project, 2022"@en ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Concerned with the demographics of indigenous people in Australia"@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Indigenous Demographics"@en ;
-.
-
-:indigenous-language
-    a skos:Concept ;
-    dcterms:provenance "Created for the IDN project, 2022"@en ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "A theme of the resource is an indigenous language" ;
-    skos:inScheme cs: ;
-    skos:prefLabel "Indigenous Language"@en ;
-.
-
 <https://vocabularyserver.com/apais/xml.php?skosTema=10>
     a skos:Concept ;
     dcterms:created "2011-04-29"^^xsd:date ;
@@ -502,8 +484,12 @@ cs:
     ] ;
     skos:definition "The Indigenous Data Network's general-purpose vocabulary of thematic terms for indigenous data."@en ;
     skos:hasTopConcept
-        :indigenous-demographics ,
-        :indigenous-language ;
+        <https://vocabularyserver.com/apais/xml.php?skosTema=23> ,
+        <https://vocabularyserver.com/apais/xml.php?skosTema=24> ,
+        <https://vocabularyserver.com/apais/xml.php?skosTema=29> ,
+        <https://vocabularyserver.com/apais/xml.php?skosTema=765> ,
+        <https://vocabularyserver.com/apais/xml.php?skosTema=21> ,
+        <https://vocabularyserver.com/apais/xml.php?skosTema=7> ;
     skos:prefLabel "IDN Themes"@en ;
 .
 
