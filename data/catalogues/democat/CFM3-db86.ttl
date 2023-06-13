@@ -26,7 +26,23 @@ Agricultural and Resource Economics and Sciences, Canberra, June, 2022.""" ;
     dcterms:title "Australia's Indigenous land and forest estate (2020)" ;
     dcterms:type "Datasets" ;
     # dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;  # TODO: no Concept from the vocab selected
-    dcat:accessURL "https://www.agriculture.gov.au/abares/forestsaustralia/forest-data-maps-and-tools/spatial-data/indigenous-land-and-forest#:~:text=The%20Australia's%20Indigenous%20land%20and,management%20and%20co%2Dmanagement%2C%20or"^^xsd:anyURI ;
+    dcat:distribution [
+        a dcat:Distribution ;
+        dcterms:title "Multi-part file download with metadata" ;
+        dcat:accessURL "https://www.agriculture.gov.au/abares/forestsaustralia/forest-data-maps-and-tools/spatial-data/indigenous-land-and-forest#:~:text=The%20Australia's%20Indigenous%20land%20and,management%20and%20co%2Dmanagement%2C%20or"^^xsd:anyURI ;
+    ] ,
+    [
+        a dcat:Distribution ;
+        dcterms:title "Esri grid" ;
+        dcat:accessURL "https://www.agriculture.gov.au/sites/default/files/documents/ind_est20_Grid.zip"^^xsd:anyURI ;
+        dcat:byteSize 44000000 ;
+    ] ,
+    [
+        a dcat:Distribution ;
+        dcterms:title "GeoTIFF" ;
+        dcat:accessURL "https://www.agriculture.gov.au/sites/default/files/documents/ind_est20_GeoTIFF.zip"^^xsd:anyURI ;
+        dcat:byteSize 74000000 ;
+    ] ;
     dcat:theme
         <https://vocabularyserver.com/apais/xml.php?skosTema=1483> ;
     prov:qualifiedAttribution

@@ -23,7 +23,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     dcterms:title "Correspondence relating to Aboriginal and Torres Strait Islander people - Deebing Creek explanatory notes" ;
     dcterms:type "Dataset" ;
     # dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;  # TODO: no Concept from the vocab selected
-    dcat:accessURL "https://www.data.qld.gov.au/dataset/correspondence-relating-to-aboriginal-and-torres-strait-islander-people-deebing-creek/resource/21b98a5e-9d9a-4795-9693-faac505c7e0c"^^xsd:anyURI ;
+    dcat:distribution [
+        a dcat:Distribution ;
+        dcterms:title "File download via data.qld.gov.au" ;
+        dcat:downloadURL "https://www.data.qld.gov.au/dataset/fa8fe6cd-8560-4a1b-8d8a-698c49e308fd/resource/21b98a5e-9d9a-4795-9693-faac505c7e0c/download/indexes-atsi-corro-1894-1915-deebing-creek.csv"^^xsd:anyURI ;
+        dcterms:format "text/csv" ;
+    ] ;
     dcat:theme
         <https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-people> ;
     prov:qualifiedAttribution

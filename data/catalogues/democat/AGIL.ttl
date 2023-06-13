@@ -39,7 +39,19 @@ This dataset is NOT a complete listing of all locations at which indigenous peop
     dcterms:type "dataset" ;
     # dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights> ;  # TODO: no Concept from the vocab selected
     dcat:distribution [
-        dcat:accessURL "https://data.gov.au/data/dataset/34b1c164-fbe8-44a0-84fd-467dba645aa7/resource/d891a36f-57f6-41f7-ada6-fc65069103dc/download/agil20190208.xlsx"^^xsd:anyURI
+        a dcat:Distribution ;
+        dcterms:title "File download via data.gov.au" ;
+        dcat:downloadURL "https://data.gov.au/data/dataset/34b1c164-fbe8-44a0-84fd-467dba645aa7/resource/d891a36f-57f6-41f7-ada6-fc65069103dc/download/agil20190208.xlsx"^^xsd:anyURI ;
+        dcterms:format "application/vnd.ms-excel" ;
+    ] ,
+    [
+        a dcat:Distribution ;
+        dcterms:title "OGC Features API & Linked Data" ;
+        dcat:accessURL "https://data.idnau.org/pid/agil"^^xsd:anyURI ;
+        dcterms:format
+            "application/geo+json" ,
+            "text/turtle" ,
+            "text/html" ;
     ] ;
     dcterms:isPartOf [
         dcat:hadRole croles:home ;

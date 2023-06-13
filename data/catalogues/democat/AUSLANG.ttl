@@ -25,7 +25,23 @@ The dataset provided here includes the language names, each with a unique alpha-
     dcterms:title "Austlang database." ;
     dcterms:type "dataset" ;
     dcterms:accessRights <https://linked.data.gov.au/def/data-access-rights/conditional> ;
-    dcat:accessURL "https://data.gov.au/data/dataset/70132e6f-259c-4e0f-9f95-4aed1101c053/resource/e9a9ea06-d821-4b53-a05f-877409a1a19c/download/aiatsis_austlang_endpoint_001.csv"^^xsd:anyURI ;
+    dcat:distribution [
+        a dcat:Distribution ;
+        dcterms:title "Online database and website" ;
+        dcat:accessURL "https://collection.aiatsis.gov.au/datasets/austlang/001"^^xsd:anyURI ;
+        dcterms:format "text/html" ;
+    ] ,
+    [
+        a dcat:Distribution ;
+        dcterms:title "File download via data.gov.au" ;
+        dcat:downloadURL "https://data.gov.au/data/dataset/70132e6f-259c-4e0f-9f95-4aed1101c053/resource/e9a9ea06-d821-4b53-a05f-877409a1a19c/download/aiatsis_austlang_endpoint_001.csv"^^xsd:anyURI ;
+        dcterms:format "text/csv" ;
+    ] ,
+    [
+        a dcat:Distribution ;
+        dcterms:title "OGC Features API & Linked Data" ;
+        dcat:accessURL "https://data.idnau.org/pid/ilm/austlang"^^xsd:anyURI ;
+    ] ;
     dcat:theme
         <https://data.idnau.org/pid/vocab/idn-th/indigenous-language> ,
         <https://data.idnau.org/pid/vocab/indigeneity/about-indigenous-people> ;
