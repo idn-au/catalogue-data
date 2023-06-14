@@ -26,6 +26,12 @@ jobs:
             vocabs:
               - 'data/vocabularies/**'
       # only setup for validation if any data has changed
+      - name: Setup Python
+        if: steps.changes.outputs.data == 'true'
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          # cache: poetry
       - name: Install Poetry
         if: steps.changes.outputs.data == 'true'
         run: |
@@ -33,12 +39,6 @@ jobs:
           python3 -m venv $POETRY_HOME
           $POETRY_HOME/bin/pip install poetry==1.2.0
           $POETRY_HOME/bin/poetry --version
-      - name: Setup Python
-        if: steps.changes.outputs.data == 'true'
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-          cache: poetry
       - name: Install dependencies
         if: steps.changes.outputs.data == 'true'
         run: poetry install --without dev
