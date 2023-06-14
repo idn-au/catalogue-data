@@ -1,5 +1,6 @@
 from typing import List
 from pathlib import Path
+import argparse
 import httpx
 from pyshacl import validate
 
@@ -8,7 +9,6 @@ def validate_files(data_files: List[str], validator: str):
     invalid_files = {}
 
     for f in data_files:
-        print(f)
         v = validate(
             f,
             shacl_graph=validator,
@@ -26,6 +26,8 @@ def validate_files(data_files: List[str], validator: str):
 
 def validate_catalogs():
     """Validates all resources in `data/catalogues/` and all catalogues in `data/system/`."""
+    print("Validating catalogues...")
+    
     demo_directory = Path(__file__).parent.parent / "data" / "catalogues" / "democat"
     isu_directory = Path(__file__).parent.parent / "data" / "catalogues" / "isucat"
     system_base_directory = Path(__file__).parent.parent / "data" / "system"
@@ -42,11 +44,14 @@ def validate_catalogs():
 
     validator_content = httpx.get("https://raw.githubusercontent.com/idn-au/idn-catalogue-profile/main/rd/validator.ttl").text
     
-    print("Validating catalogues...")
     validate_files(catalog_files, validator_content)
+
+    print("Validation complete")
 
 def validate_vocabs():
     """Validates all vocabularies in `data/vocabularies/`."""
+    print("Validating vocabularies...")
+    
     vocab_directory = Path(__file__).parent.parent / "data" / "vocabularies"
     vocab_files = [str(f) for f in vocab_directory.glob("*.ttl")]
 
@@ -54,14 +59,30 @@ def validate_vocabs():
     with open(vocab_validator_path, "r") as file:
         validator_content = file.read()
     
-    print("Validating vocabularies...")
     validate_files(vocab_files, validator_content)
 
-# need CLI args to run specific functions
+    print("Validation complete")
 
 def main():
-    # validate_vocabs()
-    validate_catalogs()
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--catalogs",
+        help="Validate the catalog data",
+        action=argparse.BooleanOptionalAction
+    )
+    parser.add_argument(
+        "--vocabs",
+        help="Validate the vocab data",
+        action=argparse.BooleanOptionalAction
+    )
+
+    args = parser.parse_args()
+
+    if args.catalogs:
+        validate_catalogs()
+    if args.vocabs:
+        validate_vocabs()
+
         
 if __name__ == "__main__":
     main()
