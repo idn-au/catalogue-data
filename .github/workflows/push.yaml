@@ -53,12 +53,12 @@ jobs:
       # upload background data if changed
       - name: Upload background
         if: steps.changes.outputs.background == 'true'
-        run: $POETRY_HOME/bin/python3 upload.py --background
+        run: $POETRY_HOME/bin/python3 scripts/upload.py --background
       # upload catalogue data if changed
       - name: Upload catalogs
         if: steps.changes.outputs.catalogs == 'true'
-        run: $POETRY_HOME/bin/python3 upload.py --catalogs
+        run: $POETRY_HOME/bin/python3 scripts/upload.py --catalogs
       # upload vocabulary data if changed
       - name: Upload vocabs
         if: steps.changes.outputs.vocabs == 'true'
-        run: $POETRY_HOME/bin/python3 upload.py --vocabs
+        run: $POETRY_HOME/bin/python3 scripts/upload.py --vocabs

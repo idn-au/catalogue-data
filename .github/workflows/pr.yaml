@@ -46,9 +46,9 @@ jobs:
       # validate catalogue data if changed
       - name: Validate catalogs
         if: steps.changes.outputs.catalogs == 'true'
-        run: $POETRY_HOME/bin/python3 validate.py --catalogs
+        run: $POETRY_HOME/bin/python3 scripts/validate.py --catalogs
       # validate vocabulary data if changed
       - name: Validate vocabs
         if: steps.changes.outputs.vocabs == 'true'
-        run: $POETRY_HOME/bin/python3 validate.py --vocabs
+        run: $POETRY_HOME/bin/python3 scripts/validate.py --vocabs
 
