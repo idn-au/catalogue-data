@@ -10,7 +10,7 @@ jobs:
   upload:
     runs-on: ubuntu-latest
     env:
-      # POETRY_HOME: /opt/poetry
+      POETRY_HOME: /opt/poetry
       TRIPLESTORE_URL: ${{ secrets.TRIPLESTORE_URL }}
       TRIPLESTORE_USERNAME: ${{ secrets.TRIPLESTORE_USERNAME }}
       TRIPLESTORE_PASSWORD: ${{ secrets.TRIPLESTORE_PASSWORD }}
@@ -41,27 +41,24 @@ jobs:
         with:
           python-version: '3.10'
           # cache: poetry
-      # - name: Install Poetry
-      #   if: steps.changes.outputs.data == 'true'
-      #   run: |
-      #     python3 -m venv $POETRY_HOME
-      #     $POETRY_HOME/bin/pip install poetry==1.2.0
-      #     $POETRY_HOME/bin/poetry --version
       - name: Install Poetry
         if: steps.changes.outputs.data == 'true'
-        run: pip install poetry
+        run: |
+          python3 -m venv $POETRY_HOME
+          $POETRY_HOME/bin/pip install poetry==1.2.0
+          $POETRY_HOME/bin/poetry --version
       - name: Install dependencies
         if: steps.changes.outputs.data == 'true'
-        run: poetry install --without dev
+        run: $POETRY_HOME/bin/poetry install --without dev
       # upload background data if changed
       - name: Upload background
         if: steps.changes.outputs.background == 'true'
-        run: python3 scripts/upload.py --background
+        run: $POETRY_HOME/bin/poetry run scripts/upload.py --background
       # upload catalogue data if changed
       - name: Upload catalogs
         if: steps.changes.outputs.catalogs == 'true'
-        run: python3 scripts/upload.py --catalogs
+        run: $POETRY_HOME/bin/poetry run scripts/upload.py --catalogs
       # upload vocabulary data if changed
       - name: Upload vocabs
         if: steps.changes.outputs.vocabs == 'true'
-        run: python3 scripts/upload.py --vocabs
+        run: $POETRY_HOME/bin/poetry run scripts/upload.py --vocabs
