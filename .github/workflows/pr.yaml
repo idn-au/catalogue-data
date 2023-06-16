@@ -8,8 +8,8 @@ on:
 jobs:
   validate:
     runs-on: ubuntu-latest
-    env:
-      POETRY_HOME: /opt/poetry
+    # env:
+    #   POETRY_HOME: /opt/poetry
     steps:
       - name: Checkout the repo
         uses: actions/checkout@v3
@@ -35,20 +35,16 @@ jobs:
           python-version: '3.10'
           # cache: poetry
       - name: Install Poetry
-        if: steps.changes.outputs.data == 'true'
-        run: |
-          python3 -m venv $POETRY_HOME
-          $POETRY_HOME/bin/pip install poetry==1.2.0
-          $POETRY_HOME/bin/poetry --version
+        uses: snok/install-poetry@v1
       - name: Install dependencies
         if: steps.changes.outputs.data == 'true'
-        run: $POETRY_HOME/bin/poetry install --without dev
+        run: poetry install --without dev --no-interaction --no-root
       # validate catalogue data if changed
       - name: Validate catalogs
         if: steps.changes.outputs.catalogs == 'true'
-        run: $POETRY_HOME/bin/poetry run scripts/validate.py --catalogs
+        run: poetry run python scripts/validate.py --catalogs
       # validate vocabulary data if changed
       - name: Validate vocabs
         if: steps.changes.outputs.vocabs == 'true'
-        run: $POETRY_HOME/bin/poetry run scripts/validate.py --vocabs
+        run: poetry run python scripts/validate.py --vocabs
 
