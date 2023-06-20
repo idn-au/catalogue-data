@@ -4,7 +4,7 @@ This repository contains part of the data of the https://mspgh.unimelb.edu.au/ce
 
 The IDN Prez system is online at:
 
-* **http://data.idnau.org**
+* **https://data.idnau.org**
 
 == IDN Catalogues and Datasets
 

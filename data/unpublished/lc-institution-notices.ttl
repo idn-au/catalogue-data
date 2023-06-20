@@ -1,11 +1,11 @@
-PREFIX cs: <http://data.idnau.org/pid/vocab/lc-in>
+PREFIX cs: <https://data.idnau.org/pid/vocab/lc-in>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX lc: <https://linked.data.gov.au/def/lc/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX in: <http://data.idnau.org/pid/vocab/lc-in/>
+PREFIX in: <https://data.idnau.org/pid/vocab/lc-in/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 cs:
