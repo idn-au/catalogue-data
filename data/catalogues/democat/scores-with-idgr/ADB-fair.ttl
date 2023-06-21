@@ -1,0 +1,56 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX scores: <https://linked.data.gov.au/def/scores/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://data.idnau.org/pid/ADB>
+    a dcat:Resource ;
+    scores:hasScore
+        [
+            a
+                qb:ObservationGroup ,
+                scores:FairScore ;
+            qb:observation
+                [
+                    a qb:Observation ;
+                    scores:fairAScore 0
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:fairRScore 3
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:fairFScore 8
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:fairIScore 2
+                ] ;
+            scores:refResource <https://data.idnau.org/pid/ADB>
+        ] ,
+        [
+            a
+                qb:ObservationGroup ,
+                scores:FairScoreNormalised ;
+            qb:observation
+                [
+                    a qb:Observation ;
+                    scores:fairIScoreNormalised "0.25"
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:fairRScoreNormalised "0.43"
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:fairAScoreNormalised "0.00"
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:fairFScoreNormalised "0.47"
+                ] ;
+            scores:refResource <https://data.idnau.org/pid/ADB>
+        ] ;
+.
+

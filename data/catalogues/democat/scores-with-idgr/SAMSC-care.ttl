@@ -1,0 +1,56 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX scores: <https://linked.data.gov.au/def/scores/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://www.catalog.slsa.sa.gov.au/record=b2187904~S10>
+    a dcat:Resource ;
+    scores:hasScore
+        [
+            a
+                qb:ObservationGroup ,
+                scores:CareScoreNormalised ;
+            qb:observation
+                [
+                    a qb:Observation ;
+                    scores:careRScoreNormalised "0.11"
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:careCScoreNormalised "0.50"
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:careAScoreNormalised "0.22"
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:careEScoreNormalised "0.00"
+                ] ;
+            scores:refResource <https://www.catalog.slsa.sa.gov.au/record=b2187904~S10>
+        ] ,
+        [
+            a
+                qb:ObservationGroup ,
+                scores:CareScore ;
+            qb:observation
+                [
+                    a qb:Observation ;
+                    scores:careEScore 0
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:careAScore 2
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:careCScore 4
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:careRScore 1
+                ] ;
+            scores:refResource <https://www.catalog.slsa.sa.gov.au/record=b2187904~S10>
+        ] ;
+.
+

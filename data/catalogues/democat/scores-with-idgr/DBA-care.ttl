@@ -1,0 +1,56 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX scores: <https://linked.data.gov.au/def/scores/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<http://search.slv.vic.gov.au/permalink/f/1fe7t3h/SLV_VOYAGER1641200>
+    a dcat:Resource ;
+    scores:hasScore
+        [
+            a
+                qb:ObservationGroup ,
+                scores:CareScore ;
+            qb:observation
+                [
+                    a qb:Observation ;
+                    scores:careAScore 5
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:careCScore 7
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:careRScore 1
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:careEScore 0
+                ] ;
+            scores:refResource <http://search.slv.vic.gov.au/permalink/f/1fe7t3h/SLV_VOYAGER1641200>
+        ] ,
+        [
+            a
+                qb:ObservationGroup ,
+                scores:CareScoreNormalised ;
+            qb:observation
+                [
+                    a qb:Observation ;
+                    scores:careEScoreNormalised "0.00"
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:careCScoreNormalised "0.88"
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:careAScoreNormalised "0.56"
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:careRScoreNormalised "0.11"
+                ] ;
+            scores:refResource <http://search.slv.vic.gov.au/permalink/f/1fe7t3h/SLV_VOYAGER1641200>
+        ] ;
+.
+
