@@ -1,0 +1,59 @@
+name: Upload data to triplestore
+
+on:
+  workflow_call:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    env:
+      TRIPLESTORE_URL: ${{ secrets.TRIPLESTORE_URL }}
+      TRIPLESTORE_USERNAME: ${{ secrets.TRIPLESTORE_USERNAME }}
+      TRIPLESTORE_PASSWORD: ${{ secrets.TRIPLESTORE_PASSWORD }}
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v3
+      # Detects files changed in specific directories
+      - uses: dorny/paths-filter@v2
+        id: changes
+        with:
+          filters: |
+            data:
+              - 'data/_background/**'
+              - 'data/catalogues/**'
+              - 'data/system/**'
+              - 'data/vocabularies/**'
+            background:
+              - 'data/_background/**'
+            catalogs:
+              - 'data/catalogues/**'
+              - 'data/system/**'
+            vocabs:
+              - 'data/vocabularies/**'
+      # only setup for upload if any data has changed
+      - name: Setup Python
+        if: steps.changes.outputs.data == 'true'
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          # cache: poetry
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+      - name: Install dependencies
+        if: steps.changes.outputs.data == 'true'
+        run: poetry install --without dev --no-interaction --no-root
+      # upload background data if changed
+      - name: Upload background
+        if: steps.changes.outputs.background == 'true'
+        run: poetry run python scripts/upload.py --background
+      # upload catalogue data if changed
+      - name: Upload catalogs
+        if: steps.changes.outputs.catalogs == 'true'
+        run: poetry run python scripts/upload.py --catalogs
+      # upload vocabulary data if changed
+      - name: Upload vocabs
+        if: steps.changes.outputs.vocabs == 'true'
+        run: poetry run python scripts/upload.py --vocabs
