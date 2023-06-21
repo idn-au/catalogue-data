@@ -1,0 +1,56 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX scores: <https://linked.data.gov.au/def/scores/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://www.environment.gov.au/fed/catalog/search/resource/downloadData.page?uuid=%7BC64658F0-95AD-4209-8D1E-F94BD0A4E827%7D>
+    a dcat:Resource ;
+    scores:hasScore
+        [
+            a
+                qb:ObservationGroup ,
+                scores:CareScore ;
+            qb:observation
+                [
+                    a qb:Observation ;
+                    scores:careRScore 1
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:careAScore 5
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:careCScore 4
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:careEScore 0
+                ] ;
+            scores:refResource <https://www.environment.gov.au/fed/catalog/search/resource/downloadData.page?uuid=%7BC64658F0-95AD-4209-8D1E-F94BD0A4E827%7D>
+        ] ,
+        [
+            a
+                qb:ObservationGroup ,
+                scores:CareScoreNormalised ;
+            qb:observation
+                [
+                    a qb:Observation ;
+                    scores:careCScoreNormalised "0.50"
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:careAScoreNormalised "0.56"
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:careEScoreNormalised "0.00"
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:careRScoreNormalised "0.11"
+                ] ;
+            scores:refResource <https://www.environment.gov.au/fed/catalog/search/resource/downloadData.page?uuid=%7BC64658F0-95AD-4209-8D1E-F94BD0A4E827%7D>
+        ] ;
+.
+

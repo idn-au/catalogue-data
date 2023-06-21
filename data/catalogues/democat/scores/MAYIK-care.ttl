@@ -1,0 +1,56 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX scores: <https://linked.data.gov.au/def/scores/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://data.idnau.org/pid/MAYIK>
+    a dcat:Resource ;
+    scores:hasScore
+        [
+            a
+                qb:ObservationGroup ,
+                scores:CareScoreNormalised ;
+            qb:observation
+                [
+                    a qb:Observation ;
+                    scores:careRScoreNormalised "0.00"
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:careAScoreNormalised "0.33"
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:careEScoreNormalised "0.00"
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:careCScoreNormalised "0.50"
+                ] ;
+            scores:refResource <https://data.idnau.org/pid/MAYIK>
+        ] ,
+        [
+            a
+                qb:ObservationGroup ,
+                scores:CareScore ;
+            qb:observation
+                [
+                    a qb:Observation ;
+                    scores:careAScore 3
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:careCScore 4
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:careRScore 0
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:careEScore 0
+                ] ;
+            scores:refResource <https://data.idnau.org/pid/MAYIK>
+        ] ;
+.
+

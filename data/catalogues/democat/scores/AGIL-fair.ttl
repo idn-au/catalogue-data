@@ -1,0 +1,56 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX scores: <https://linked.data.gov.au/def/scores/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://data.gov.au/data/dataset/34b1c164-fbe8-44a0-84fd-467dba645aa7>
+    a dcat:Resource ;
+    scores:hasScore
+        [
+            a
+                qb:ObservationGroup ,
+                scores:FairScore ;
+            qb:observation
+                [
+                    a qb:Observation ;
+                    scores:fairIScore 5
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:fairAScore 0
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:fairFScore 10
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:fairRScore 5
+                ] ;
+            scores:refResource <https://data.gov.au/data/dataset/34b1c164-fbe8-44a0-84fd-467dba645aa7>
+        ] ,
+        [
+            a
+                qb:ObservationGroup ,
+                scores:FairScoreNormalised ;
+            qb:observation
+                [
+                    a qb:Observation ;
+                    scores:fairIScoreNormalised "0.62"
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:fairAScoreNormalised "0.00"
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:fairFScoreNormalised "0.59"
+                ] ,
+                [
+                    a qb:Observation ;
+                    scores:fairRScoreNormalised "0.71"
+                ] ;
+            scores:refResource <https://data.gov.au/data/dataset/34b1c164-fbe8-44a0-84fd-467dba645aa7>
+        ] ;
+.
+

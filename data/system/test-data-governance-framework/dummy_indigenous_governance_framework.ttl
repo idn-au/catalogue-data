@@ -1,0 +1,19 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+<https://data.idnau.org/pid/isucat>
+    dcterms:hasPart <http://example.com/governance-framework> .
+
+<https://data.idnau.org/pid/democat>
+    dcterms:hasPart <http://example.com/governance-framework>
+.
+
+<http://example.com/governance-framework>
+    rdfs:label "Indigenous Data Governance Framework" ;
+    rdfs:comment """This dummy governance framework can be moved up a directory (to the system folder) when running the
+    scores calculator (https://github.com/idn-au/scores-calculator/). It can then be included as context when running
+     the FAIR and CARE scores calculator. This allows users to determine the impact of including a governance framework
+     on the FAIR and CARE scores of Resources."""
+.
