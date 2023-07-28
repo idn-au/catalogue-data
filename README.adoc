@@ -41,7 +41,7 @@ This repository contains:
 
 Also:
 
-* `data/ubpublished/` contains data either previously published and removed but not deleted as it may be used again
+* `data/unpublished/` contains data either previously published and removed but not deleted as it may be used again
 
 Stored elsewhere are:
 
