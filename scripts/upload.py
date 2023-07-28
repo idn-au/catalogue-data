@@ -11,6 +11,9 @@ TRIPLESTORE_PASSWORD = os.environ.get("TRIPLESTORE_PASSWORD", "")
 TIMEOUT = 30.0
 
 BACKGROUND_GRAPH_IRI = "https://background-data"
+SCORES_GRAPH_IRI = "https://scores"
+
+data_dir = Path(__file__).parent.parent / "data"
 
 # if background files changed, clear & reupload to background named graph
 def upload_background():
@@ -21,9 +24,12 @@ def upload_background():
     sparql_update_query(f"DROP GRAPH <{BACKGROUND_GRAPH_IRI}>")
 
     # upload everything in data/_background/
-    background_directory = Path(__file__).parent.parent / "data" / "_background"
+    background_directory = data_dir / "_background"
     for f in background_directory.glob("*.ttl"):
         upload_named_graph(f, BACKGROUND_GRAPH_IRI, False)
+    
+    # prez profile
+    upload_named_graph(data_dir / "system" / "idn-prez-profile.ttl", BACKGROUND_GRAPH_IRI, False)
     
     print("Upload complete")
 
@@ -31,29 +37,37 @@ def upload_background():
 def upload_catalogs():
     """Uploads all resource files from `data/catalogues/` and all catalogues from `data/system/`, both into their own named graphs."""
     print("Uploading catalogues...")
+
+    sparql_update_query(f"DROP GRAPH <{SCORES_GRAPH_IRI}>")
     
     # upload resources in data/catalogues/democat/
-    demo_directory = Path(__file__).parent.parent / "data" / "catalogues" / "democat"
+    demo_directory = data_dir / "catalogues" / "democat"
     for f in demo_directory.glob("*.ttl"):
         iri = find_named_graph(f, DCAT.Resource)
         upload_named_graph(f, iri)
+        # upload scores
+        upload_named_graph(f"{demo_directory / 'scores'}/{f.stem}-fair.ttl", SCORES_GRAPH_IRI, False)
+        upload_named_graph(f"{demo_directory / 'scores'}/{f.stem}-care.ttl", SCORES_GRAPH_IRI, False)
 
     # upload resources in data/catalogues/isucat/
-    isu_directory = Path(__file__).parent.parent / "data" / "catalogues" / "isucat"
+    isu_directory = data_dir / "catalogues" / "isucat"
     for f in isu_directory.glob("*.ttl"):
         iri = find_named_graph(f, DCAT.Resource)
         upload_named_graph(f, iri)
+        # upload scores
+        upload_named_graph(f"{isu_directory / 'scores'}/{f.stem}-fair.ttl", SCORES_GRAPH_IRI, False)
+        upload_named_graph(f"{isu_directory / 'scores'}/{f.stem}-care.ttl", SCORES_GRAPH_IRI, False)
 
     # upload catalog in data/system/catalog-democat.ttl
-    democat_path = Path(__file__).parent.parent / "data" / "system" / "catalog-democat.ttl"
+    democat_path = data_dir / "system" / "catalog-democat.ttl"
     democat_iri = find_named_graph(democat_path, DCAT.Catalog)
     upload_named_graph(democat_path, democat_iri)
     # upload catalog in data/system/catalog-isu.ttl
-    isucat_path = Path(__file__).parent.parent / "data" / "system" / "catalog-isu.ttl"
+    isucat_path = data_dir / "system" / "catalog-isu.ttl"
     isucat_iri = find_named_graph(isucat_path, DCAT.Catalog)
     upload_named_graph(isucat_path, isucat_iri)
     # upload catalog in data/system/catalog-system.ttl
-    systemcat_path = Path(__file__).parent.parent / "data" / "system" / "catalog-system.ttl"
+    systemcat_path = data_dir / "system" / "catalog-system.ttl"
     systemcat_iri = find_named_graph(systemcat_path, DCAT.Catalog)
     upload_named_graph(systemcat_path, systemcat_iri)
 
@@ -120,7 +134,7 @@ def upload_vocabs():
     print("Uploading vocabularies...")
 
     # upload vocabs in data/vocabularies/
-    vocab_directory = Path(__file__).parent.parent / "data" / "vocabularies"
+    vocab_directory = data_dir / "vocabularies"
     for f in vocab_directory.glob("*.ttl"):
         iri = find_named_graph(f, SKOS.ConceptScheme)
         upload_named_graph(f, iri)
