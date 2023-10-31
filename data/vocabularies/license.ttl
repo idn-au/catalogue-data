@@ -1,0 +1,150 @@
+PREFIX cs: <https://linked.data.gov.au/def/license>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX isoroles: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdo: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<http://purl.org/NET/rdflicense/allrightsreserved>
+    a skos:Concept ;
+    dcterms:source "http://en.wikipedia.org/wiki/All_rights_reserved"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://purl.org/NET/rdflicense> ;
+    skos:definition "The phrase \"All rights reserved\" is used to indicate that the copyright holder reserves, or holds for their own use, all the rights provided by copyright law, such as distribution, performance, and creation of derivative works; that is, they have not waived any such right."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "All rights reserved"@en ;
+    skos:topConceptOf cs: ;
+.
+
+<http://purl.org/NET/rdflicense/cc-by-nc-nd4.0>
+    a skos:Concept ;
+    dcterms:source "https://creativecommons.org/licenses/by-nc-nd/4.0/"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://purl.org/NET/rdflicense> ;
+    skos:definition """Creative Commons 4.0 - By Attribution - Non Commercial - No Derivatives
+This license enables reusers to copy and distribute the material in any medium or format in unadapted form only, for noncommercial purposes only, and only so long as attribution is given to the creator. CC BY-NC-ND includes the following elements:
+BY - credit must be given to the creator.
+NC - Only noncommercial uses of the work are permitted.
+ND - No derivatives or adaptations of the work are permitted."""@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "CC BY-NC-ND"@en ;
+    skos:topConceptOf cs: ;
+.
+
+<http://purl.org/NET/rdflicense/cc-by-nc-sa4.0>
+    a skos:Concept ;
+    dcterms:source "https://creativecommons.org/licenses/by-nc-sa/4.0/"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://purl.org/NET/rdflicense> ;
+    skos:definition """Creative Commons 4.0 - By Attribution - Non Commercial - Share Alike
+This license enables reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator. If you remix, adapt, or build upon the material, you must license the modified material under identical terms. CC BY-NC-SA includes the following elements:
+BY - credit must be given to the creator.
+NC - Only noncommercial uses of the work are permitted.
+SA - Adaptations must be shared under the same terms."""@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "CC BY-NC-SA"@en ;
+    skos:topConceptOf cs: ;
+.
+
+<http://purl.org/NET/rdflicense/cc-by-nc4.0>
+    a skos:Concept ;
+    dcterms:source "https://creativecommons.org/licenses/by-nc/4.0/"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://purl.org/NET/rdflicense> ;
+    skos:definition """Creative Commons 4.0 - By Attribution - Non Commercial
+This license enables reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator. CC BY-NC includes the following elements:
+BY - credit must be given to the creator.
+NC - Only noncommercial uses of the work are permitted."""@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "CC BY-NC"@en ;
+    skos:topConceptOf cs: ;
+.
+
+<http://purl.org/NET/rdflicense/cc-by-nd4.0>
+    a skos:Concept ;
+    dcterms:source "https://creativecommons.org/licenses/by-nd/4.0/"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://purl.org/NET/rdflicense> ;
+    skos:definition """Creative Commons 4.0 - By Attribution - No Derivatives
+ This license enables reusers to copy and distribute the material in any medium or format in unadapted form only, and only so long as attribution is given to the creator. The license allows for commercial use. CC BY-ND includes the following elements:
+BY - credit must be given to the creator.
+ND - No derivatives or adaptations of the work are permitted."""@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "CC BY-ND"@en ;
+    skos:topConceptOf cs: ;
+.
+
+<http://purl.org/NET/rdflicense/cc-by-sa4.0>
+    a skos:Concept ;
+    dcterms:source "https://creativecommons.org/licenses/by-sa/4.0/"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://purl.org/NET/rdflicense> ;
+    skos:definition """Creative Commons 4.0 - By Attribution - Share Alike
+This license enables reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use. If you remix, adapt, or build upon the material, you must license the modified material under identical terms. CC BY-SA includes the following elements:
+BY - credit must be given to the creator.
+SA - Adaptations must be shared under the same terms."""@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "CC BY-SA"@en ;
+    skos:topConceptOf cs: ;
+.
+
+<http://purl.org/NET/rdflicense/cc-by4.0>
+    a skos:Concept ;
+    dcterms:source "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://purl.org/NET/rdflicense> ;
+    skos:definition """Creative Commons 4.0 - By Attribution
+This license enables reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use. CC BY includes the following elements:
+BY - credit must be given to the creator."""@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "CC BY"@en ;
+    skos:topConceptOf cs: ;
+.
+
+<http://purl.org/NET/rdflicense/cc-zero1.0>
+    a skos:Concept ;
+    dcterms:source "https://creativecommons.org/publicdomain/zero/1.0/"^^xsd:anyURI ;
+    rdfs:isDefinedBy <http://purl.org/NET/rdflicense> ;
+    skos:definition """Public Domain Dedication
+CC0 (aka CC Zero) is a public dedication tool, which enables creators to give up their copyright and put their works into the worldwide public domain. CC0 enables reusers to distribute, remix, adapt, and build upon the material in any medium or format, with no conditions."""@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "CC0"@en ;
+    skos:topConceptOf cs: ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    dcterms:created "2023-10-30"^^xsd:date ;
+    dcterms:creator [
+            a sdo:Organization ;
+            sdo:name "Indigneous Data Network" ;
+            sdo:url "https://idnau.org/#/"^^xsd:anyURI ;
+        ] ;
+    dcterms:identifier "license"^^xsd:token ;
+    dcterms:modified "2023-10-30"^^xsd:date ;
+    dcterms:provenance "This vocabulary is being used to populate content for data licence pick lists in online catalogue tools."@en ;
+    dcterms:publisher [
+            a sdo:Organization ;
+            sdo:name "Indigenous Data Network" ;
+            sdo:url "https://idnau.org/#/"^^xsd:anyURI ;
+        ] ;
+    owl:versionIRI <https://linked.data.gov.au/def/license/1> ;
+    owl:versionInfo "1" ;
+    skos:definition "Licenses used in the description of data assets being catalogued so that data users are aware of the permissions they are obligated to uphold when reusing the data."@en ;
+    skos:hasTopConcept
+        <http://purl.org/NET/rdflicense/allrightsreserved> ,
+        <http://purl.org/NET/rdflicense/cc-by-nc-nd4.0> ,
+        <http://purl.org/NET/rdflicense/cc-by-nc-sa4.0> ,
+        <http://purl.org/NET/rdflicense/cc-by-nc4.0> ,
+        <http://purl.org/NET/rdflicense/cc-by-nd4.0> ,
+        <http://purl.org/NET/rdflicense/cc-by-sa4.0> ,
+        <http://purl.org/NET/rdflicense/cc-by4.0> ,
+        <http://purl.org/NET/rdflicense/cc-zero1.0> ;
+    skos:prefLabel "Data License"@en ;
+    prov:qualifiedAttribution [
+            dcat:hadRole isoroles:custodian ;
+            prov:agent [                
+                    a sdo:Person ;
+                    sdo:name "M. Smith" ;
+                    sdo:email "margie@kurrawong.ai"^^xsd:anyURI ;
+                ]
+        ] ;
+.
+
