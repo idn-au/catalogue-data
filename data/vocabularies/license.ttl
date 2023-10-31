@@ -119,6 +119,7 @@ cs:
         ] ;
     dcterms:identifier "license"^^xsd:token ;
     dcterms:modified "2023-10-30"^^xsd:date ;
+    dcterms:provenance "This vocabulary is being used to populate content for data licence pick lists in online catalogue tools."@en ;
     dcterms:publisher [
             a sdo:Organization ;
             sdo:name "Indigenous Data Network" ;
@@ -136,7 +137,6 @@ cs:
         <http://purl.org/NET/rdflicense/cc-by-sa4.0> ,
         <http://purl.org/NET/rdflicense/cc-by4.0> ,
         <http://purl.org/NET/rdflicense/cc-zero1.0> ;
-    skos:historyNote "This vocabulary is being used to populate content for data licence pick lists in online catalogue tools."@en ;
     skos:prefLabel "Data License"@en ;
     prov:qualifiedAttribution [
             dcat:hadRole isoroles:custodian ;
