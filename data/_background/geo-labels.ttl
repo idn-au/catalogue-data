@@ -1,11 +1,19 @@
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
+<http://www.opengis.net/ont/geosparql#hasGeometry>
+  rdfs:label "has geometry" ;
+.
+
 <http://www.opengis.net/ont/geosparql#hasBoundingBox>
   rdfs:label "has bounding box" ;
 .
 
 <http://www.opengis.net/ont/geosparql#asWKT>
   rdfs:label "as WKT" ;
+.
+
+<http://www.opengis.net/ont/geosparql#sfWithin>
+  rdfs:label "within" ;
 .
 
 <http://www.opengis.net/ont/geosparql#Geometry>
