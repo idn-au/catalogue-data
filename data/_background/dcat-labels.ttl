@@ -115,7 +115,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 .
 
 <http://www.w3.org/ns/dcat#hadRole>
-    rdfs:label "hadRole"@en ;
+    rdfs:label "had role"@en ;
     rdfs:comment "The function of an entity or agent with respect to another entity or resource."@en ;
 .
 
