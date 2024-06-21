@@ -25,14 +25,11 @@ jobs:
               - 'data/_background/**'
               - 'data/catalogues/**'
               - 'data/system/**'
-              - 'data/vocabularies/**'
             background:
               - 'data/_background/**'
             catalogs:
               - 'data/catalogues/**'
               - 'data/system/**'
-            vocabs:
-              - 'data/vocabularies/**'
       # only setup for upload if any data has changed
       - name: Setup Python
         if: steps.changes.outputs.data == 'true'
@@ -54,7 +51,3 @@ jobs:
       - name: Upload catalogs
         if: steps.changes.outputs.catalogs == 'true'
         run: poetry run python scripts/upload.py --catalogs
-      # upload vocabulary data if changed
-      - name: Upload vocabs
-        if: steps.changes.outputs.vocabs == 'true'
-        run: poetry run python scripts/upload.py --vocabs
