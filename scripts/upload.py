@@ -129,18 +129,6 @@ def upload_catalogs():
 
     print("Upload complete")
 
-def upload_vocabs():
-    """Uploads all vocabulary files from `data/vocabularies/` into their own named graphs."""
-    print("Uploading vocabularies...")
-
-    # upload vocabs in data/vocabularies/
-    vocab_directory = data_dir / "vocabularies"
-    for f in vocab_directory.glob("*.ttl"):
-        iri = find_named_graph(f, SKOS.ConceptScheme)
-        upload_named_graph(f, iri)
-    
-    print("Upload complete")
-
 # returns named graph IRI from class
 def find_named_graph(file: Path, object_class: URIRef) -> str:
     """Finds the IRI of the object from a file based on a specified class."""
@@ -200,11 +188,6 @@ def main():
         help="Update the catalog data",
         action=argparse.BooleanOptionalAction
     )
-    parser.add_argument(
-        "--vocabs",
-        help="Update the vocab data",
-        action=argparse.BooleanOptionalAction
-    )
 
     args = parser.parse_args()
 
@@ -212,8 +195,6 @@ def main():
         upload_background()
     if args.catalogs:
         upload_catalogs()
-    if args.vocabs:
-        upload_vocabs()
 
 if __name__ == "__main__":
     main()

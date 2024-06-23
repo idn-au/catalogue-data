@@ -48,21 +48,6 @@ def validate_catalogs():
 
     print("Validation complete")
 
-def validate_vocabs():
-    """Validates all vocabularies in `data/vocabularies/`."""
-    print("Validating vocabularies...")
-    
-    vocab_directory = Path(__file__).parent.parent / "data" / "vocabularies"
-    vocab_files = [str(f) for f in vocab_directory.glob("*.ttl")]
-
-    vocab_validator_path = vocab_directory / "validator" / "vocpub.ttl"
-    with open(vocab_validator_path, "r") as file:
-        validator_content = file.read()
-    
-    validate_files(vocab_files, validator_content)
-
-    print("Validation complete")
-
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -70,18 +55,11 @@ def main():
         help="Validate the catalog data",
         action=argparse.BooleanOptionalAction
     )
-    parser.add_argument(
-        "--vocabs",
-        help="Validate the vocab data",
-        action=argparse.BooleanOptionalAction
-    )
 
     args = parser.parse_args()
 
     if args.catalogs:
         validate_catalogs()
-    if args.vocabs:
-        validate_vocabs()
 
         
 if __name__ == "__main__":
