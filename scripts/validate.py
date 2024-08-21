@@ -1,8 +1,9 @@
 from typing import List
 from pathlib import Path
-import argparse
 import httpx
 from pyshacl import validate
+
+ROOT_DIR = Path(__file__).parent.parent
 
 def validate_files(data_files: List[str], validator: str):
     """Runs pySHACL validation on a list of files against a provided SHACL validator."""
@@ -28,9 +29,9 @@ def validate_catalogs():
     """Validates all resources in `data/catalogues/` and all catalogues in `data/system/`."""
     print("Validating catalogues...")
     
-    demo_directory = Path(__file__).parent.parent / "data" / "catalogues" / "democat"
-    isu_directory = Path(__file__).parent.parent / "data" / "catalogues" / "isucat"
-    system_base_directory = Path(__file__).parent.parent / "data" / "system"
+    demo_directory = ROOT_DIR / "data" / "catalogues" / "democat"
+    isu_directory = ROOT_DIR / "data" / "catalogues" / "isucat"
+    system_base_directory = ROOT_DIR / "data" / "system"
     system_directory = [
         system_base_directory / "catalog-democat.ttl",
         system_base_directory / "catalog-isu.ttl",
@@ -42,24 +43,17 @@ def validate_catalogs():
         *[str(f) for f in system_directory],
     ]
 
-    validator_content = httpx.get("https://raw.githubusercontent.com/idn-au/idn-catalogue-profile/main/rd/validator.ttl").text
+    r = httpx.get("https://raw.githubusercontent.com/idn-au/idn-catalogue-profile/main/resources/validator.ttl")
+    r.raise_for_status()
+    
+    validator_content = r.text
     
     validate_files(catalog_files, validator_content)
 
     print("Validation complete")
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--catalogs",
-        help="Validate the catalog data",
-        action=argparse.BooleanOptionalAction
-    )
-
-    args = parser.parse_args()
-
-    if args.catalogs:
-        validate_catalogs()
+    validate_catalogs()
 
         
 if __name__ == "__main__":

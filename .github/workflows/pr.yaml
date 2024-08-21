@@ -19,9 +19,6 @@ jobs:
             data:
               - 'data/catalogues/**'
               - 'data/system/**'
-            catalogs:
-              - 'data/catalogues/**'
-              - 'data/system/**'
       # only setup for validation if any data has changed
       - name: Setup Python
         if: steps.changes.outputs.data == 'true'
@@ -37,5 +34,5 @@ jobs:
         run: poetry install --without dev --no-interaction --no-root
       # validate catalogue data if changed
       - name: Validate catalogs
-        if: steps.changes.outputs.catalogs == 'true'
-        run: poetry run python scripts/validate.py --catalogs
+        if: steps.changes.outputs.data == 'true'
+        run: poetry run python scripts/validate.py
