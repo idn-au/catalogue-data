@@ -1,5 +1,6 @@
-.DS_Store
+.vscode/
 .idea/
 .venv/
-old/
-*.sh
+__pycache__/
+.env
+.DS_Store
