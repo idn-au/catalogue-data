@@ -32,22 +32,22 @@ jobs:
               - 'data/system/**'
       # only setup for upload if any data has changed
       - name: Setup Python
-        if: steps.changes.outputs.data == 'true'
+        if: ${{ steps.changes.outputs.data == 'true' || github.event_name != 'push' }}
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
           # cache: poetry
       - name: Install Poetry
-        if: steps.changes.outputs.data == 'true'
+        if: ${{ steps.changes.outputs.data == 'true' || github.event_name != 'push' }}
         uses: snok/install-poetry@v1
       - name: Install dependencies
-        if: steps.changes.outputs.data == 'true'
+        if: ${{ steps.changes.outputs.data == 'true' || github.event_name != 'push' }}
         run: poetry install --without dev --no-interaction --no-root
       # upload background data if changed
       - name: Upload background
-        if: steps.changes.outputs.background == 'true'
+        if: ${{ steps.changes.outputs.background == 'true' || github.event_name != 'push' }}
         run: poetry run python scripts/upload.py --background
       # upload catalogue data if changed
       - name: Upload catalogs
-        if: steps.changes.outputs.catalogs == 'true'
+        if: ${{ steps.changes.outputs.catalogs == 'true' || github.event_name != 'push' }}
         run: poetry run python scripts/upload.py --catalogs
