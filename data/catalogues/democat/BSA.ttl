@@ -1,0 +1,22 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX droles: <https://linked.data.gov.au/def/data-roles/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+
+<https://data.idnau.org/pid/BSA>
+    a dcat:Resource ;
+    dcterms:title "Briscoe-Smith Archive" ;
+    dcterms:description "Historical population data and biographical records" ;
+    prov:qualifiedAttribution [
+        dcat:hadRole droles:author ;
+        prov:agent <https://orcid.org/0000-0002-5477-0874> ;
+    ] ,
+    [
+        dcat:hadRole droles:subjectAgent ;
+        prov:agent <https://vocabularyserver.com/apais/xml.php?skosTema=1096>
+    ] ,
+    [
+        dcat:hadRole droles:custodian ;
+        prov:agent <https://linked.data.gov.au/org/ada>
+    ] ;
+.
