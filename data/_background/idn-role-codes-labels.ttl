@@ -100,3 +100,29 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     rdfs:label "Indigenous Data Network" ;
 .
 
+<https://linked.data.gov.au/def/data-roles>
+    rdfs:label "Data Role"@en ;
+.
+
+<https://linked.data.gov.au/def/data-roles/subjectAgent>
+    rdfs:label "subject agent"@en ;
+.
+
+<https://linked.data.gov.au/def/data-roles/subjectAgentRepresentative>
+    rdfs:label "subject agent representative"@en ;
+.
+
+<https://linked.data.gov.au/def/data-roles/pointOfContact>
+    rdfs:label "point of contact"@en ;
+.
+
+<https://linked.data.gov.au/def/data-roles/custodian>
+    rdfs:label "custodian"@en ;
+.
+
+<https://linked.data.gov.au/def/data-roles/owner>
+    rdfs:label "owner"@en ;
+.
+
+
+
