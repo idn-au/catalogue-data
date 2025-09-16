@@ -1,0 +1,55 @@
+# This creative work used for testing CARE scoring is by a Person of unknown indigenous status, indicated by dcterms, and is not about indigenous things and has no indigenous themes, keywords or description.
+
+PREFIX aarr: <https://data.idnau.org/pid/vocab/aarr/>
+PREFIX dataIndig: <https://data.idnau.org/pid/vocab/indigeneity/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX drole: <https://linked.data.gov.au/def/data-roles/>
+PREFIX id: <http://id.loc.gov/vocabulary/identifiers/>
+PREFIX idnth: <https://data.idnau.org/pid/vocab/idn-th/>
+PREFIX pis: <https://data.idnau.org/pid/vocab/persons-indigenous-status/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://doi.org/10.1080/24750158.2024.2411643>
+a schema:CreativeWork ;
+schema:name "Outbreak! Containing, Translating and Transmitting Biosecurity Grey Literature" ;
+schema:description "Biosecurity research focuses on invasive species. The dissemination of biosecurity research is hampered by three major issues. First, biosecurity research is not always published and can be difficult to access. Second, biosecurity participants ask questions in different ways..." ;
+schema:creator <https://orcid.org/0000-0001-5640-3202> ;
+dcterms:created "2024"^^xsd:gYear ;
+dcat:theme <https://linked.data.gov.au/def/policy/fefc1657-d98d-4f81-bc7f-3150cd3f6652> ;
+schema:keywords "Biosecurity, grey literature, open access, corpus linguistics, graph databases, controlled vocabularies" ;
+schema:publisher <https://ror.org/04bd6je18>
+.
+
+<https://orcid.org/0000-0001-5640-3202>
+a schema:Person ;
+schema:name "Les Kneebone" ;
+dcterms:type pis:indigenousStatusUnknown ;
+schema:description "Vocabulary Specialist at KurrawongAI" ;
+schema:identifier "https://orcid.org/0000-0001-5640-3202"^^id:orcid ;
+ schema:email "les@kurrawong.ai"^^xsd:anyURI ;
+    dcat:qualifiedRelation [
+    a dcat:Relationship ;
+        dcat:hadRole aarr:memberOf ;
+        schema:agent <https://kurrawong.ai>
+    ] 
+.
+
+<https://kurrawong.ai>
+    a schema:Organization ;
+    dcterms:type <https://data.idnau.org/pid/vocab/org-indigeneity/non-indigenous> ;
+    schema:description "Kurrawong AI is a small, Artificial Intelligence, company in Australia specialising in Knowledge Graphs." ;
+    schema:identifier "31353542036"^^id:ausbn ;
+    schema:name "KurrawongAI" ;
+    schema:url "https://kurrawong.ai"^^xsd:anyURI ;
+.
+
+<https://ror.org/04bd6je18>
+a schema:Organization ;
+schema:description "Publishing company" ;
+schema:name "Taylor and Francis" ;
+schema:url "https://taylorandfrancis.com"^^xsd:anyURI
+.
