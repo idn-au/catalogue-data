@@ -1,0 +1,44 @@
+# this ScholarlyArticle for CARE scoring testing is created by an Indigenous person indicated with the dcterms:type property and Persons Indigenous Status vocabulary, and is not about Indigenous things or people, and indludes no Indigenous themes, keywords or other descriptive metadata. 
+
+PREFIX aarr: <https://data.idnau.org/pid/vocab/aarr/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX drole:  <https://linked.data.gov.au/def/data-roles/>
+PREFIX id: <http://id.loc.gov/vocabulary/identifiers/>
+PREFIX fabio: <http://purl.org/spar/fabio/>
+PREFIX orgrol: <https://data.idnau.org/pid/orgRole/>
+PREFIX pis: <https://data.idnau.org/pid/vocab/persons-indigenous-status/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX schema: <http://schema.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://doi.org/10.1192/bja.2025.17>
+a schema:ScholarlyArticle ;
+schema:name "Interventions from pregnancy to two years after birth for parents experiencing complex post-traumatic stress disorder and/or with childhood experience of maltreatment: a Cochrane Review." ;
+dcterms:created "2025"^^xsd:gYear ;
+schema:publisher <https://ror.org/03jsdjx34> ;
+schema:description "Includes evidence from 1925 participants in 15 randomised controlled trials that investigated the effect of 17 interventions. All included studies were published after 2005. Interventions included seven parenting interventions, eight psychological interventions and two service system approaches. The studies were funded by major research councils, government departments and philanthropic/charitable organisations. All evidence was of low or very low certainty." ;
+schema:keywords "post-traumatic stress disorder, child maltreatment" ;
+dcat:theme <https://linked.data.gov.au/def/policy/5c4d7647-75ac-4884-8c43-3a9738d79602> , <https://linked.data.gov.au/def/policy/42c2bcf0-0dce-4bf7-9fb6-2ebea19c100c> ;
+dcterms:creator <https://orcid.org/0000-0003-3446-0227> 
+.
+
+<https://orcid.org/0000-0003-3446-0227> 
+a schema:Person ;
+schema:name "Catherine Chamberlain" ;
+dcterms:type pis:indigenous ;
+schema:email "cacham@unimelb.edu.au"^^xsd:anyURI ;
+    dcat:qualifiedRelation [
+    a dcat:Relationship ;
+        dcat:hadRole aarr:memberOf ;
+        schema:agent <https://linked.data.gov.au/org/um>
+    ] 
+.
+
+<https://ror.org/03jsdjx34>
+a schema:Organization ;
+schema:name "Cambridge University Press" ;
+schema:url "http://www.cambridge.org/"^^xsd:anyURI ;
+schema:identifiers "https://ror.org/03jsdjx34"^^id:ror
+.
