@@ -1,0 +1,44 @@
+# this VideoObject for testing CARE scoring is created by an Indigenous Person and performed in an Indigneous lanaguage and is NOT about Indigenous things or people, themes etc. The Publisher is a non-indigenous organization.
+
+PREFIX aarr: <https://data.idnau.org/pid/vocab/aarr/>
+PREFIX austlang: <https://data.idnau.org/pid/austlang/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX drole:  <https://linked.data.gov.au/def/data-roles/>
+PREFIX id: <http://id.loc.gov/vocabulary/identifiers/>
+PREFIX iso639-2: <http://id.loc.gov/vocabulary/iso639-2/>
+PREFIX fabio: <http://purl.org/spar/fabio/>
+PREFIX orgrol: <https://data.idnau.org/pid/orgRole/>
+PREFIX orgind: <https://data.idnau.org/pid/vocab/org-indigeneity/>
+PREFIX pis: <https://data.idnau.org/pid/vocab/persons-indigenous-status/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX schema: <http://schema.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://www.youtube.com/watch?v=tEdweyPh-N8>
+a schema:VideoObject ;
+schema:name "Mitch Tambo performs John Farnham's You're the Voice in Gamilaraay language" ;
+schema:description "The Indigenous singer a proud Gamilaraay and Birri Gubba man, delivers a rendition of John Farnham’s classic at the NITV sunrise ceremony as part of 26 January Survival Day, Invasion Day and Australia Day events"; 
+schema:keywords "Empowerment, Social change, Social justice, Civil rights" ;
+dcat:theme <https://linked.data.gov.au/def/policy/2a8a5ffc-04f1-4dd6-9ffa-71fd82333c7f> ;
+schema:created "2020"^^xsd:gYear ;
+dcterms:creator <https://dbpedia.org/page/Mitch_Tambo> ;
+dcterms:publisher <https://www.sbs.com.au> ;
+dcterms:language austlang::D23
+.
+
+<https://dbpedia.org/page/Mitch_Tambo>
+a schema:Person ;
+schema:name "Mitch Tambo" ;
+schema:email "management@mitchtambo.com"^^xsd:anyURI ;
+dcterms:type pis:indigenous
+.
+
+<https://www.sbs.com.au>
+a schema:Organization ;
+schema:name "SBS" ;
+schema:alternateName "Special Broadcasting Service" ;
+schema:url "https://www.sbs.com.au"^^xsd:anyURI ;
+dcterms:type orgind:non-indigenous
+.
