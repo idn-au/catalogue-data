@@ -19,7 +19,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://catalogue.nla.gov.au/catalog/2003311>
 a schema:CreativeWork ;
-schema:name "Yolngu-matha : an introduction to Gumatj and related languages in N.E. Arnhem Land / editors: Raymatja Mununggiritj, Trevor Stockly" ;
+schema:name "Yolngu-matha : an introduction to Gumatj and related languages in N.E. Arnhem Land" ;
 schema:description "Introduction to Yolngu (Aboriginal) culture, language ; sign language ; moities and skins ; kin terms ; map of outstations, list of speakers, phonology, grammar, dialogues." ;
 schema:created "1985"^^xsd:gYear ;
 schema:publisher <https://www.austlit.edu.au/austlit/page/A128141> ;
