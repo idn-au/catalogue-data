@@ -21,14 +21,15 @@ schema:name "Annual Aboriginal Census,1921-1944 - Western Australia"@en ;
 schema:description "This study contains time series of data of the Annual Aboriginal Census for Australia, Australian Capital Territory, New South Wales, Northern Territory, Queensland, South Australia, Tasmania, Victoria and Western Australia from 1921 to 1944. The file au.edu.anu.ada.ddi.20002-wa is the data for the Western Australia."@en ;
 dcat:theme idnth:indigenous-demographics ;
 dcterms:type dataIndig:about-indigenous-people ;
-dcterms:created "2011"^^xsd:gYear ;
+schema:dateCreated "2011-01-01"^^xsd:date ;
+schema:dateModified "2026-05-13"^^xsd:date ;
 dcterms:publisher <https://linked.data.gov.au/org/uts> ;
 dcterms:rights "Copyright © 2011, The Australian National University. All rights reserved." ;
 dcterms:bibliographicCitation "G.Briscoe and L.Smith. Australian Aboriginal Census,1921-1944. [Codebook]. Canberra: Australian Data Archive, The Australian National University, 2011." ;
-schema:identifier "au.edu.anu.ada.ddi.20002-wa" ;
+schema:identifier "au.edu.anu.ada.ddi.20002-wa"^^xsd:token ;
 prov:qualifiedAttribution [
   a prov:Attribution ;
-    dcat:hadRole drole:principalInvestigator ;
+    prov:hadRole drole:principalInvestigator ;
     prov:agent <https://orcid.org/0000-0002-5477-0874> ;
     ] ;
 schema:url "https://www.atsida.edu.au/archive/datasets/au.edu.anu.ada.ddi.20002-wa"^^xsd:anyURI ;
@@ -62,4 +63,18 @@ a schema:Organization ;
 schema:name "University of Technology Sydney" ;
 schema:url "https://www.uts.edu.au"^^xsd:anyURI ;
 dcterms:type orgind:non-indigenous
+.
+
+<https://linked.data.gov.au/org/anu>
+a schema:Organization ;
+schema:name "Australian National University" ;
+schema:url "https://www.anu.edu.au"^^xsd:anyURI ;
+dcterms:type orgind:non-indigenous
+.
+
+<https://linked.data.gov.au/org/idn>
+a schema:Organization ;
+schema:name "Indigenous Data Network" ;
+schema:url "https://mspgh.unimelb.edu.au/centres-institutes/onemda/research-group/indigenous-studies-unit/indigenous-data-network$0"^^xsd:anyURI ;
+dcterms:type orgind:indigenous
 .
