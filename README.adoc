@@ -10,19 +10,19 @@ The IDN Prez system is online at:
 
 The IDN is producing multiple systems and datasets:
 
-. https://data.idnau.org/pid/democat[**Demonstration Catalogue**] of Australian datasets
+. https://data.idnau.org/pid/demo-catalogue[**Demonstration Catalogue**] of Australian datasets
 ** with varying levels of indigenous relevance to demonstrate several aspects of indigenous data governance, sovereignty and how to even rate the "indigenous-ness" of data in the first place.
-. https://data.idnau.org/pid/agentsdb[**Agents Database**]
+. https://agentsdb.idnau.org[**Agents Database**]
 ** containing information about Agents - People and Organisations - that have some relation to indigenous data
 . https://data.idnau.org/pid/umidcat[**University of Melbourne's Indigenous Data Catalogue**]
 ** this is currently (May, 2023) empty but will fill shortly
 . https://data.idnau.org/v/vocab[**Register of vocabularies**]
 ** multiple vocabularies, all assembled and some created, by the IDN that support modelling indigenous data
-. https://data.idnau.org/s/datasets[**Indigenous spatial reference data**]
+. https://data.idnau.org/pid/refdata-catalogue[**Indigenous spatial reference data**]
 ** indigenous language, land use, treaty and other areas
 ** all from other sources, attributed in the data
 
-Additionally, the IDN will support a catalogue of https://www.anu.edu.au[ANU]'s indigenous data underdevelopment by ANU's https://anufirstnations.com.au/[First National Portfolio] that's not online yet.
+  Additionally, the IDN will support a catalogue of https://www.anu.edu.au[ANU]'s indigenous data underdevelopment by ANU's https://anufirstnations.com.au/[First National Portfolio] that's not online yet.
 
 This repository contains only some of those system's data, see next.
 
@@ -47,7 +47,7 @@ Stored elsewhere are:
 ** some test data is stored here in but the Agents DB is building/storing its own data within it
 ** see the https://github.com/idn-au/agentsdb-data[AgentsDB data] repository
 * IDN's Register of vocabularies
-** see the https://github.com/idn-au/vocab-data[Vocab data] repository
+** see the https://github.com/idn-au/refdata-catalogue[Vocab data] repository
 * Indigenous spatial reference data
 ** some of these datasets are large so their raw content isn't directly available
 ** see the repo <https://github.com/idn-au/spatial-data> for a listing of the datasets and instructions on how they are produced
