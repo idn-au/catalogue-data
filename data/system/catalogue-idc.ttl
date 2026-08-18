@@ -1,0 +1,42 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX idnth: <https://data.idnau.org/pid/vocab/idn-th/>
+PREFIX droles: <https://linked.data.gov.au/def/data-roles/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://data.idnau.org/pid/catalogue/idc>
+    a schema:DataCatalog ;
+    schema:identifier "catidc"^^xsd:token ;
+    schema:name "Indigenous Data Commons Catalogue"@en ;
+    schema:description "This is a top level catalogue for the Indigenous Data Commons and lists all its other catalogue instances"@en ;
+    dcterms:historyNote "This is an experimental catalogue developed as part of an effort to identify and consistently describe all catalogues in the Indigenous Data Commonly" ;
+    schema:dateCreated "20218-08-18"^^xsd:date ;
+    schema:dateModified "20218-08-18"^^xsd:date ;
+    schema:creator <https://linked.data.gov.au/org/idn> ;
+    schema:publisher <https://linked.data.gov.au/org/idn> ;
+    schema:copyrightHolder <https://linked.data.gov.au/org/idn> ;
+    schema:copyrightYear "2026"^^xsd:gYear ;
+    schema:copyrightNotice "© Indigenous Data Network 2026" ;
+    schema:codeRepository "https://github.com/idn-au/catalogue-data"^^xsd:anyURI ;
+    schema:status <https://linked.data.gov.au/def/reg-statuses/experimental> ;
+    schema:hasPart
+        <https://anufncatalogue.anu.edu.au> ,                            # catalogue?
+        <https://linked.data.gov.au/dataset/bsa> ,                       # is this a catalogue? graph = <https://anufncatalogue.anu.edu.au/graphs/bsa>
+        <https://anufncatalogue.anu.edu.au/catalog/caepr> ,              # graph?
+        <https://anufncatalogue.anu.edu.au/catalog/compendium> ,         # graph?
+        <https://anufncatalogue.anu.edu.au/catalog/cap-pollen> ,         # graph?
+        <https://anufncatalogue.anu.edu.au/catalog/csrm> ,               # graph?
+        <https://anufncatalogue.anu.edu.au/catalog/open-research> ,      # graph = <https://anufncatalogue.anu.edu.au/graphs/open-research>
+        <https://anufncatalogue.anu.edu.au/catalog/pure> ,               # graph?
+        <https://anufncatalogue.anu.edu.au/catalog/thesis> ,             # graph?
+        <https://data.idnau.org/pid/bsa> ,                               # is this a catalogue? see also <https://linked.data.gov.au/dataset/bsa>
+        <https://data.idnau.org/pid/democat> ,
+        <https://data.idnau.org/pid/external-catalogue> ,
+        <https://data.idnau.org/pid/isucat> ,
+        <https://data.idnau.org/pid/kp-catalogue> ,
+        <https://data.idnau.org/pid/refdata-catalogue> ;
+    .
